@@ -1,2 +1,2 @@
 # Bacon-Collection
-A collection of mini game data packs 
+A whole bunch of games for a minigames server. Think of this as the server's "datapacks" folder.
