@@ -1,0 +1,1 @@
+team add ctf_team1
