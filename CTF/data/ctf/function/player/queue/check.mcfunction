@@ -1,5 +1,5 @@
 # Add to Queue
-execute in minecraft:void positioned 4 63 -105 if entity @s[dx=10,dz=10,dy=6] run function ctf:player/queue/add
+execute in minecraft:void if entity @s[x=4,y=63,z=-105,dx=10,dz=10,dy=6] run function ctf:player/queue/add
 
 # Remove from Queue
-execute in minecraft:void positioned 4 63 -105 unless entity @s[dx=10,dz=10,dy=6] run function ctf:player/queue/remove
+execute in minecraft:void unless entity @s[x=4,y=63,z=-105,dx=10,dz=10,dy=6] run function ctf:player/queue/remove
