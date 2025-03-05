@@ -1,1 +1,3 @@
-execute at @a[scores={POTTracker=1},tag=Destination_Potion] run function transportu:teleport {location:"1232 101 1392", color:"color:[1.0,0.24,0.67]"}
+# Pass off to 'determine_location' so we can run using @s and avoid running @a a bajillion times
+execute as @a[scores={POTTracker=1}] run function transportu:determine_location
+execute as @a[scores={POTTracker=1..}] run scoreboard players set @s POTTracker 0
