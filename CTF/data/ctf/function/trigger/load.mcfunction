@@ -1,0 +1,1 @@
+scoreboard objectives add ctf.settings.random_teams trigger
