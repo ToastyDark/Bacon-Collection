@@ -5,4 +5,4 @@ playsound minecraft:entity.player.teleport player @a ~ ~ ~ 0.5
 $teleport @s $(location) 0 0
 playsound minecraft:entity.generic.drink player @a ~ ~ ~ 0.5
 playsound minecraft:entity.player.teleport player @a ~ ~ ~ 0.5
-$particle dust{$(color),scale:1} ~ ~1 ~ 0.5 0.75 0.5 1 100 normal
+$execute at @s run particle dust{$(color),scale:1} ~ ~1 ~ 0.5 0.75 0.5 1 100 normal
