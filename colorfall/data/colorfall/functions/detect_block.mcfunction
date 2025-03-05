@@ -1,0 +1,2 @@
+$execute positioned -1079 100 991 run fill -1079 100 991 -1061 118 1009 dirt replace $(block)
+$execute positioned -1079 100 991 store result score %color_count cf_data run fill -1079 100 991 -1061 118 1009 $(block) replace dirt

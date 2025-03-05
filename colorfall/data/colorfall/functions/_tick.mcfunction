@@ -1,0 +1,1 @@
+execute if score ?in_game cf_data matches 1 run function colorfall:do_turn
