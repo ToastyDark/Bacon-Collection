@@ -31,4 +31,4 @@ setblock -410 78 -113 air
 scoreboard players add $rotate mazegen 1
 
 # Did the full circle try another tile
-execute if score $rotate mazegen matches 4.. run function mazegen:generate/finish_rotating
+execute if score $rotate mazegen matches 5.. run function mazegen:generate/finish_rotating
