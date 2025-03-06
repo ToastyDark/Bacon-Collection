@@ -5,6 +5,10 @@ function ctf:setup/team_2/create
 # Load Map Data
 function ctf:setup/map with storage ctf:game
 
+# Scoreboard
+function ctf:setup/scoreboard/start
+
+
 # ----------------------Players----------------------
 # Set Players as in game
 execute as @a[tag=ctf_queue] run tag @s add ctf_player

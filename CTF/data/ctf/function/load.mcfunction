@@ -4,7 +4,7 @@ function ctf:trigger/load
 
 # More
 scoreboard objectives add value dummy
-scoreboard objectives add ctf_display dummy
+scoreboard objectives add ctf_score dummy
 scoreboard objectives add ctf_kit dummy
 scoreboard objectives add ctf_died deathCount
 scoreboard objectives add ctf_flag_time dummy
