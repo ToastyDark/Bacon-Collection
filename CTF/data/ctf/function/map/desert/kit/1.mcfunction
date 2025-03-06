@@ -1,1 +1,1 @@
-give @s iron_sword
+item replace entity @s inventory.0 with iron_sword
