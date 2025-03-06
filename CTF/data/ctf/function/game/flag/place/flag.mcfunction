@@ -1,1 +1,1 @@
-$setblock $(x) $(y) $(z) $(color)_wool
+$setblock $(x) $(y) $(z) $(flag_color)_wool
