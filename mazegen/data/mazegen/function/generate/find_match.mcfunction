@@ -20,14 +20,19 @@ setblock -411 78 -113 redstone_block
 setblock -411 78 -113 air
 
 # Rotate 90. If the tile matches the surroundings of the temp position, return 1.
-
+setblock -410 78 -113 redstone_block
+setblock -410 78 -113 air
 execute if function mazegen:generate/check_match run return 1
 
 
 # Rotate 180. If the tile matches the surroundings of the temp position, return 1.
+setblock -409 78 -113 redstone_block
+setblock -409 78 -113 air
 execute if function mazegen:generate/check_match run return 1
 
 # Rotate 270. If the tile matches the surroundings of the temp position, return 1.
+setblock -408 78 -113 redstone_block
+setblock -408 78 -113 air
 execute if function mazegen:generate/check_match run return 1
 
 # If we're here without returning, we didn't find a match.
