@@ -13,10 +13,6 @@ kill @e[type=minecraft:marker,tag=mazegen_db_marker]
 # Mark all of the tile templates we use so they're used during generation
 execute positioned -448 80 -252 run function mazegen:db/mark_db
 
-# Clear the area
-fill -353 70 -134 -305 64 -217 air
-fill -353 75 -134 -305 70 -217 air
-
 # Trigger structure blocks
 # fill -304 61 -134 -353 61 -217 minecraft:redstone_block
 # fill -304 61 -134 -353 61 -217 minecraft:air
