@@ -10,6 +10,8 @@ execute as @e[type=marker,tag=mazegen_needs_90_rot,sort=random,limit=1] run tag 
 
 # Clone that tile to the temporary location, "-411 80 -113".
 execute as @e[type=marker,tag=mazegen_currently_picked_rot,limit=1] at @s run clone ~-3 ~ ~-3 ~3 ~16 ~3 -411 80 -113
+execute as @e[type=marker,tag=mazegen_currently_picked_rot] run tag @s remove mazegen_currently_picked_rot
+execute as @e[type=marker,tag=mazegen_currently_picked_rot] run tag @s remove mazegen_needs_90_rot
 
 # Save
 setblock -411 78 -113 redstone_block
