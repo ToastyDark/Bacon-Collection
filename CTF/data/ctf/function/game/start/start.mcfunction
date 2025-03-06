@@ -20,3 +20,9 @@ function ctf:setup/spawn/start with storage ctf:game
 # Set to 1st Kit
 execute as @a[tag=ctf_player] run scoreboard players set @s ctf_kit 0
 function ctf:player/kit/update with storage ctf:game
+
+# Set as Respawn
+
+
+# Start Game
+data modify storage ctf:game started set value true
