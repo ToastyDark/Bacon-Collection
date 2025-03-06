@@ -1,1 +1,1 @@
-item replace entity @s inventory.0 with bow
+item replace entity @s hotbar.0 with bow
