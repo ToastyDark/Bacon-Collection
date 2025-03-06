@@ -18,8 +18,8 @@ fill -353 70 -134 -305 64 -217 air
 fill -353 75 -134 -305 70 -217 air
 
 # Trigger structure blocks
-fill -304 61 -134 -353 61 -217 minecraft:redstone_block
-fill -304 61 -134 -353 61 -217 minecraft:air
+# fill -304 61 -134 -353 61 -217 minecraft:redstone_block
+# fill -304 61 -134 -353 61 -217 minecraft:air
 
 # Run generation
 execute positioned -350 64 -214 run function mazegen:generate/generate
