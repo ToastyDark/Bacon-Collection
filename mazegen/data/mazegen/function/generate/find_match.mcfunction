@@ -39,5 +39,7 @@ execute if function mazegen:generate/check_match run return 1
 # So, check if there are more available tiles to go through, and run this function again if so.
 execute if entity @e[type=marker,tag=mazegen_available_to_pick] run function mazegen:generate/find_match
 
+fill ~ ~ ~ ~ ~5 ~ ochre_froglight
+
 # No matches
 return 0
