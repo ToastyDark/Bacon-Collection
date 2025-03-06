@@ -1,6 +1,6 @@
 # Put the currently held temporary tile here, move forward one tile
 execute at @e[type=minecraft:marker,tag=mazegen_current_rotation_pos, limit=1] run clone -405 80 -107 -411 96 -113 ~-3 ~ ~-3
-tp @e[tag=mazegen_current_rotation_pos] ~ ~ ~7
+execute as @e[tag=mazegen_current_rotation_pos] at @s run tp @e[tag=mazegen_current_rotation_pos] ~ ~ ~7
 
 
 # Pick a random tile, copy it to temp area, rotate it 90 degrees
@@ -18,6 +18,3 @@ setblock -411 78 -113 air
 # Rotate
 setblock -410 78 -113 redstone_block
 setblock -410 78 -113 air
-
-# Schedule
-schedule function mazegen:db/rotate_90 1t
