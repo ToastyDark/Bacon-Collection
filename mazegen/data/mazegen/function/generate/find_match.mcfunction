@@ -15,19 +15,31 @@ clone -405 80 -107 -411 112 -113 ~-3 ~ ~-3
 # If the tile matches the surroundings of the temp position, return 1.
 execute if function mazegen:generate/check_match run return 1
 
+# Save temporary tile
+setblock -411 78 -113 redstone_block
+setblock -411 78 -113 air
+
 # Rotate 90. If the tile matches the surroundings of the temp position, return 1.
+setblock -410 78 -113 redstone_block
+setblock -410 78 -113 air
 execute if function mazegen:generate/check_match run return 1
 
 
 # Rotate 180. If the tile matches the surroundings of the temp position, return 1.
+setblock -409 78 -113 redstone_block
+setblock -409 78 -113 air
 execute if function mazegen:generate/check_match run return 1
 
 # Rotate 270. If the tile matches the surroundings of the temp position, return 1.
+setblock -408 78 -113 redstone_block
+setblock -408 78 -113 air
 execute if function mazegen:generate/check_match run return 1
 
 # If we're here without returning, we didn't find a match.
 # So, check if there are more available tiles to go through, and run this function again if so.
 execute if entity @e[type=marker,tag=mazegen_available_to_pick] run function mazegen:generate/find_match
+
+fill ~ ~ ~ ~ ~5 ~ ochre_froglight
 
 # No matches
 return 0
