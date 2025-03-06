@@ -15,8 +15,8 @@ execute unless entity @e[type=marker, tag=mazegen_available_to_pick] run say "[M
 execute at @e[type=marker, tag=mazegen_currently_generating_tile] run clone -405 80 -107 -411 96 -113 ~-3 ~ ~-3
 
 # If the tile matches the surroundings of the temp position, return 1, and make this tile no longer outstanding.
-execute if function mazegen:generate/check_match run function mazegen:generate/next_tile
-execute if function mazegen:generate/check_match run return 1
+execute at @e[type=marker, tag=mazegen_currently_generating_tile] if function mazegen:generate/check_match run function mazegen:generate/next_tile
+execute at @e[type=marker, tag=mazegen_currently_generating_tile] if function mazegen:generate/check_match run return 1
 
 # Rotate the tile. This is done until $rotate hits four, so it does a full "circle".
 
