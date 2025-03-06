@@ -2,6 +2,6 @@
     "values": [
       "minecraft:stone",
       "minecraft:dirt",
-      "minecraft:birch_stairs"
+      "#minecraft:stairs"
     ]
 }
