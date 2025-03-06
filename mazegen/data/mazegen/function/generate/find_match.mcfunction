@@ -15,7 +15,12 @@ clone -405 80 -107 -411 112 -113 ~-3 ~ ~-3
 # If the tile matches the surroundings of the temp position, return 1.
 execute if function mazegen:generate/check_match run return 1
 
+# Save temporary tile
+setblock -411 78 -113 redstone_block
+setblock -411 78 -113 air
+
 # Rotate 90. If the tile matches the surroundings of the temp position, return 1.
+
 execute if function mazegen:generate/check_match run return 1
 
 
