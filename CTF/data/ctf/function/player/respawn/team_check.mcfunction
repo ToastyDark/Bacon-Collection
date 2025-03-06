@@ -1,0 +1,2 @@
+$execute if entity @s[team=ctf_team1] run function ctf:player/respawn/check with storage ctf:map $(map).team1.spawn
+$execute if entity @s[team=ctf_team2] run function ctf:player/respawn/check with storage ctf:map $(map).team2.spawn
