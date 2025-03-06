@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 61,
+    "description": "Adds the tags '#rotates_with_facing' and '#rotates_with_hex'"
+  }
+}
