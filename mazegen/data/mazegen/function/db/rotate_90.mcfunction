@@ -20,3 +20,4 @@ setblock -410 78 -113 redstone_block
 setblock -410 78 -113 air
 
 # Schedule
+schedule function mazegen:db/rotate_90 1t
