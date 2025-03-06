@@ -1,1 +1,0 @@
-$execute at @s positioned $(x) $(y) $(z) align xz positioned ~-1 ~-1 ~-1 unless entity @s[dx=2,dy=3,dz=2] run function ctf:game/respawn/remove_tag

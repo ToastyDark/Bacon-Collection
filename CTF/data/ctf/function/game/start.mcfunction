@@ -26,7 +26,7 @@ execute as @a[tag=ctf_player] run scoreboard players set @s ctf_kit 0
 execute as @a[tag=ctf_player] run function ctf:player/kit/update with storage ctf:game
 
 # Set as Respawn
-execute as @a[tag=ctf_player] run function ctf:game/respawn/add_tag
+execute as @a[tag=ctf_player] run function ctf:player/respawn/add_tag
 
 
 # Start Game
