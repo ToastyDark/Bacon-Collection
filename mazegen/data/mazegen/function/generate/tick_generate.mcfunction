@@ -9,7 +9,7 @@ execute unless entity @e[type=marker, tag=mazegen_currently_generating_tile] run
 # If no tile template has been picked (mazegen_available_to_pick), pick one.
 execute unless entity @e[type=marker, tag=mazegen_currently_picked] run function mazegen:generate/pick_tile_template
 
-execute unless entity @e[type=marker, tag=mazegen_available_to_pick] run say "[MAZEGEN] Ran out of tiles to pick!"
+execute unless entity @e[type=marker, tag=mazegen_available_to_pick] at @e[type=marker, tag=mazegen_currently_generating_tile] run particle minecraft:block_marker{block_state:"barrier"} ~ ~10 ~
 
 # Clone from the temporary location, "-411 80 -113", to the current execution position
 execute at @e[type=marker, tag=mazegen_currently_generating_tile] run clone -405 80 -107 -411 96 -113 ~-3 ~ ~-3
