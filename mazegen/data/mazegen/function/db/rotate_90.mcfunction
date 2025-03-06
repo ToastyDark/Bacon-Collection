@@ -9,7 +9,7 @@ tp mazegen_current_rotation_pos ~ ~ ~7
 execute as @e[type=marker,tag=mazegen_needs_90_rot,sort=random,limit=1] run tag @s add mazegen_currently_picked_rot
 
 # Clone that tile to the temporary location, "-411 80 -113".
-execute at @e[type=minecraft:marker,tag=mazegen_current_rotation_pos, limit=1] run execute as @e[type=marker,tag=mazegen_currently_picked_rot,limit=1] at @s run clone ~-3 ~ ~-3 ~3 ~16 ~3 -411 80 -113
+execute as @e[type=marker,tag=mazegen_currently_picked_rot,limit=1] at @s run clone ~-3 ~ ~-3 ~3 ~16 ~3 -411 80 -113
 
 # Save
 setblock -411 78 -113 redstone_block
