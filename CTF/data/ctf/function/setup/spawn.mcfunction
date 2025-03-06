@@ -1,2 +1,2 @@
-execute if data storage ctf:game {map:desert} as @a[team=ctf_team1] run function ctf:map/desert/spawn/team1 with storage ctf:map desert.team1
-execute if data storage ctf:game {map:desert} as @a[team=ctf_team2] run function ctf:map/desert/spawn/team2 with storage ctf:map desert.team2
+execute if data storage ctf:game {map:desert} as @a[team=ctf_team1] run function ctf:map/desert/spawn/team1 with storage ctf:map desert.team1.spawn
+execute if data storage ctf:game {map:desert} as @a[team=ctf_team2] run function ctf:map/desert/spawn/team2 with storage ctf:map desert.team2.spawn
