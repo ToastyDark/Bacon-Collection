@@ -8,3 +8,6 @@ execute if block ~-3 ~ ~ air run return 0
 
 # Mark the tile
 summon minecraft:marker ~ ~ ~ {Tags:[mazegen_db_marker]}
+
+# Make it able to be detected by generate/clear.mcfunction
+setblock ~ ~ ~ stripped_mangrove_wood
