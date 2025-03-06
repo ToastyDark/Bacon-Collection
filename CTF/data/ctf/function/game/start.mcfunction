@@ -5,6 +5,7 @@ function ctf:setup/team_2/create
 # Load Map Data
 function ctf:setup/map with storage ctf:game
 
+
 # Scoreboard
 function ctf:setup/scoreboard/start
 
