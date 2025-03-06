@@ -32,3 +32,6 @@ scoreboard players add $rotate mazegen 1
 
 # Did the full circle try another tile
 execute if score $rotate mazegen matches 5.. run function mazegen:generate/finish_rotating
+
+# Debug
+execute at @e[type=marker, tag=mazegen_currently_generating_tile] run particle minecraft:flame ~ ~6 ~ 0 10 0 0 20
