@@ -13,4 +13,9 @@ execute unless blocks ~3 ~ ~ ~3 ~ ~ ~4 ~ ~ all if block ~4 ~ ~ #mazegen:ignore_w
 execute unless blocks ~ ~ ~-3 ~ ~ ~-3 ~ ~ ~-4 all if block ~ ~ ~-4 #mazegen:ignore_wildcards run return 0
 execute unless blocks ~-3 ~ ~ ~-3 ~ ~ ~-4 ~ ~ all if block ~-4 ~ ~ #mazegen:ignore_wildcards run return 0
 
+execute unless blocks ~ ~ ~3 ~ ~ ~3 ~ ~ ~4 all if block ~ ~ ~3 #mazegen:ignore_wildcards run return 0
+execute unless blocks ~3 ~ ~ ~3 ~ ~ ~4 ~ ~ all if block ~3 ~ ~ #mazegen:ignore_wildcards run return 0
+execute unless blocks ~ ~ ~-3 ~ ~ ~-3 ~ ~ ~-4 all if block ~ ~ ~-3 #mazegen:ignore_wildcards run return 0
+execute unless blocks ~-3 ~ ~ ~-3 ~ ~ ~-4 ~ ~ all if block ~-3 ~ ~ #mazegen:ignore_wildcards run return 0
+
 return 1
