@@ -1,0 +1,2 @@
+$execute as @a[team=ctf_team1] run function ctf:setup/spawn/tp with storage ctf:map $(map).team1.spawn
+$execute as @a[team=ctf_team1] run function ctf:setup/spawn/tp with storage ctf:map $(map).team2.spawn

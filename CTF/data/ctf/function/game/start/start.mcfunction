@@ -10,4 +10,4 @@ function ctf:setup/maps
 execute if data storage ctf:settings {random_teams:true} run function ctf:setup/random_teams/loop
 
 # Spawn Players
-function ctf:setup/spawn
+function ctf:setup/spawn/start with storage ctf:game
