@@ -4,3 +4,4 @@ execute if data storage ctf:game {started:false} run return run title @s actionb
 
 # Stop Game
 function ctf:game/end
+title @s actionbar {"text": "Game forcestoped!","bold": true,"color": "gold"}
