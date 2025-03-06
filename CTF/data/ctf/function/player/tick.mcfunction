@@ -18,3 +18,6 @@ function ctf:player/break_wool/check
 
 # Check if player steals flag
 execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag/steal
+
+# Flag Tick
+execute if entity @s[tag=ctf_has_flag] run function ctf:player/flag/tick
