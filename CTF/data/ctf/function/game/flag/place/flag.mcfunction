@@ -1,0 +1,1 @@
+$setblock $(x) $(y) $(z) $(color)_wool
