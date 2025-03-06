@@ -18,6 +18,7 @@ execute if function mazegen:generate/check_match run return 1
 # Rotate 90. If the tile matches the surroundings of the temp position, return 1.
 execute if function mazegen:generate/check_match run return 1
 
+
 # Rotate 180. If the tile matches the surroundings of the temp position, return 1.
 execute if function mazegen:generate/check_match run return 1
 
