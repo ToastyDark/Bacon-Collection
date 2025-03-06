@@ -1,0 +1,2 @@
+execute if predicate ctf:crouching run scoreboard players add @s ctf_crouch_time 1
+execute if score @s ctf_crouch_time = @s ctf_crouch_time_prev run function ctf:player/crouch/reset
