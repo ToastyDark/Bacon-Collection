@@ -1,0 +1,16 @@
+execute if entity @s[scores={ctf_mined_wool_red=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_orange=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_yellow=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_lime=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_green=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_light_blue=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_cyan=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_blue=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_purple=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_magenta=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_pink=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_light_gray=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_gray=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_brown=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_black=1..}] run return 1
+execute if entity @s[scores={ctf_mined_wool_white=1..}] run return 1
