@@ -4,3 +4,5 @@ execute unless blocks ~ ~ ~3 ~ ~ ~3 ~ ~ ~4 all run return 0
 execute unless blocks ~3 ~ ~ ~3 ~ ~ ~4 ~ ~ all run return 0
 execute unless blocks ~ ~ ~-3 ~ ~ ~-3 ~ ~ ~-4 all run return 0
 execute unless blocks ~-3 ~ ~ ~-3 ~ ~ ~-4 ~ ~ all run return 0
+
+return 1
