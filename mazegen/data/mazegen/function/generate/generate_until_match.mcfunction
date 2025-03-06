@@ -2,8 +2,8 @@
 execute if function mazegen:generate/doesmatch run return 1
 
 # Place this
-execute as @e[tag=mazegen_available_to_pick,sort=random,limit=1] run clone ~-3 ~ ~-3 ~3 ~32 ~3 -411 80 -113
-execute as @e[tag=mazegen_available_to_pick,sort=random,limit=1] run tag @s remove mazegen_available_to_pick
+execute as @e[tag=mazegen_available_to_pick,sort=random,limit=1] at @s run clone ~-3 ~ ~-3 ~3 ~32 ~3 -411 80 -113
+execute as @e[tag=mazegen_available_to_pick,sort=random,limit=1] at @s run tag @s remove mazegen_available_to_pick
 
 # Found a match, return early
 execute if function mazegen:generate/doesmatch run return 1
