@@ -1,0 +1,1 @@
+function mazegen:util/run_over_grid {size:"7", function:"function mazegen:generate/generate_one_tile", block:"stripped_cherry_wood"}
