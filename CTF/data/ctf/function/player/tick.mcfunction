@@ -5,7 +5,7 @@ function ctf:player/queue/check
 function ctf:player/crouch/tick
 
 # Check if player died
-execute if entity @s[tag=ctf_died] run function ctf:game/respawn/start
+execute if entity @s[scores={ctf_died=1..}] run function ctf:game/respawn/start
 
 # Swap Kit
 function ctf:player/kit/swap with storage ctf:game
