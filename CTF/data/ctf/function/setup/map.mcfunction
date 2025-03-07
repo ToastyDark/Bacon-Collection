@@ -8,6 +8,10 @@ function ctf:setup/team/color with storage ctf:game team2
 $data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color
 $data modify storage ctf:game team2.flag_color set from storage ctf:map $(map).team2.color
 
+# Ops Flag
+data modify storage ctf:game team1.ops_flag_color set from storage ctf:game team2.flag_color
+data modify storage ctf:game team2.ops_flag_color set from storage ctf:game team1.flag_color
+
 # Set Map Dimension
 $data modify storage ctf:game dimension set from storage ctf:map $(map).dimension
 
