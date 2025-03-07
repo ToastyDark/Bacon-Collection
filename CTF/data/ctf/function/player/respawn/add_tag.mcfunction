@@ -6,4 +6,4 @@ gamemode adventure @s
 effect give @s invisibility infinite 255 true
 
 # Heal Player
-effect give @s minecraft:saturation 1 255 true
+effect give @s minecraft:regeneration 1 255 true
