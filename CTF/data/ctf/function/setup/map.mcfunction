@@ -1,8 +1,8 @@
 # Team Colors
 $data modify storage ctf:game team1.color set from storage ctf:map $(map).team1.color
 $data modify storage ctf:game team2.color set from storage ctf:map $(map).team2.color
-function ctf:setup/team_1/color with storage ctf:game team1
-function ctf:setup/team_2/color with storage ctf:game team2
+function ctf:setup/team/color with storage ctf:game team1
+function ctf:setup/team/color with storage ctf:game team2
 
 # Flag Team Colors
 $data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color

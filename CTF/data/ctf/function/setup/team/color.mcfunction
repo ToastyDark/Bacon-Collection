@@ -1,0 +1,1 @@
+$team modify ctf_team$(team_num) color $(color)

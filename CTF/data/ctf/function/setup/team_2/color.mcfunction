@@ -1,1 +1,0 @@
-$team modify ctf_team2 color $(color)

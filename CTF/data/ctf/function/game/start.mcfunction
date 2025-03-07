@@ -1,6 +1,6 @@
 # Create Teams
-function ctf:setup/team_1/create
-function ctf:setup/team_2/create
+function ctf:setup/team/create with storage ctf:game team1
+function ctf:setup/team/create with storage ctf:game team2
 
 # Load Map Data
 function ctf:setup/map with storage ctf:game
