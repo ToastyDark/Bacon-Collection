@@ -8,6 +8,9 @@ $execute as @a[tag=ctf_player,team=!ctf_team$(team_num)] run title @s actionbar 
 # Add to Points
 $scoreboard players add ctf_team$(team_num) ctf_points 1
 
+# Add Capture Cooldown to Player
+scoreboard players add @s ctf_flag_capture_cd 1
+
 
 # Respawn
 function ctf:player/respawn/respawn

@@ -30,3 +30,6 @@ function ctf:game/spawn/check_players with storage ctf:game team2
 
 # Wrong Spawn
 execute if entity @s[scores={ctf_in_ops_spawn=1..}] run function ctf:game/spawn/wrong_spawn/check
+
+# Add to Capture Flag Cooldown
+execute if entity @s[scores={ctf_flag_capture_cd=1..}] run function ctf:game/flag/capture/cooldown
