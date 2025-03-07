@@ -7,7 +7,7 @@ function ctf:setup/map with storage ctf:game
 
 
 # Scoreboard
-function ctf:setup/scoreboard/start
+function ctf:setup/scoreboard/start with storage ctf:game
 
 # Place Team Flags
 schedule function ctf:game/flag/place/start 10t append
