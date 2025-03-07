@@ -6,7 +6,7 @@ function ctf:setup/team_2/color with storage ctf:game team2
 
 # Flag Team Colors
 $data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color
-$data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team2.color
+$data modify storage ctf:game team2.flag_color set from storage ctf:map $(map).team2.color
 
 # Set Map Dimension
 $data modify storage ctf:game dimension set from storage ctf:map $(map).dimension
@@ -46,6 +46,3 @@ $data modify storage ctf:game team2.flag_z set from storage ctf:map $(map).team2
 
 
 
-# Place Team Flags
-#$function ctf:game/flag/place/flag with storage ctf:map $(map).team1.flag
-#$function ctf:game/flag/place/flag with storage ctf:map $(map).team2.flag

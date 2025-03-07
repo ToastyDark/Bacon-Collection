@@ -5,6 +5,13 @@ function ctf:setup/team_2/create
 # Load Map Data
 function ctf:setup/map with storage ctf:game
 
+# Place Team Flags
+function ctf:game/flag/place/flag with storage ctf:game team1
+function ctf:game/flag/place/flag with storage ctf:game team2
+
+$function ctf:game/flag/place/flag with storage ctf:map $(map).team1.flag
+$function ctf:game/flag/place/flag with storage ctf:map $(map).team2.flag
+
 
 # Scoreboard
 function ctf:setup/scoreboard/start
