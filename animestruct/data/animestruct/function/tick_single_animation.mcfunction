@@ -6,7 +6,7 @@ particle minecraft:composter ~ ~ ~ 0 0 1 1 100 force
 scoreboard players remove @s animestruct.ticks 1
 
 # Timer is 0, so move to next frame
-$execute if score @s animestruct.ticks matches ..0 run tp ~$(width) ~ ~
+$execute if score @s animestruct.ticks matches ..0 run tp ~$(spacing) ~ ~
 
 # -- Remove Yourself & Return
  execute if score @s animestruct.ticks matches ..0 unless block ~ ~ ~ stripped_warped_hyphae run kill @s
