@@ -10,7 +10,7 @@ function ctf:setup/map with storage ctf:game
 function ctf:setup/scoreboard/start
 
 # Place Team Flags
-schedule function ctf:game/flag/place/start 1s append
+schedule function ctf:game/flag/place/start 10t append
 
 
 # ----------------------Players----------------------
