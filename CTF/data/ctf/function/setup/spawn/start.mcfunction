@@ -1,2 +1,1 @@
-$execute as @a[team=ctf_team1] at @s run function ctf:setup/spawn/tp with storage ctf:map $(map).team1.spawn
-$execute as @a[team=ctf_team2] at @s run function ctf:setup/spawn/tp with storage ctf:map $(map).team2.spawn
+$execute as @a[team=ctf_team$(team_num)] at @s run function ctf:setup/spawn/tp with storage ctf:game team$(team_num)
