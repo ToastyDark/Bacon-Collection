@@ -6,8 +6,7 @@ function ctf:setup/team_2/create
 function ctf:setup/map with storage ctf:game
 
 # Place Team Flags
-function ctf:game/flag/place/flag with storage ctf:game team1
-function ctf:game/flag/place/flag with storage ctf:game team2
+function ctf:game/flag/place/start with storage ctf:game
 
 
 # Scoreboard

@@ -1,1 +1,1 @@
-$execute in $(dimension) $setblock $(flag_x) $(flag_y) $(flag_z) $(flag_color)_wool
+$setblock $(flag_x) $(flag_y) $(flag_z) $(flag_color)_wool
