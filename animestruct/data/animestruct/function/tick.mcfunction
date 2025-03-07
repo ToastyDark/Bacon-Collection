@@ -1,0 +1,1 @@
+execute as @e[tag=animestruct_marker] run function animestruct:tick_single_animation
