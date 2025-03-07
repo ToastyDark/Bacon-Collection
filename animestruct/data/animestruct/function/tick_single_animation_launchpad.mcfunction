@@ -1,0 +1,1 @@
+function animestruct:tick_single_animation with entity @s data
