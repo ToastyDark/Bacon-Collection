@@ -27,3 +27,6 @@ execute if entity @s[tag=ctf_respawned] run function ctf:player/respawn/team_che
 # Check if player within a spawn
 function ctf:game/spawn/check_players with storage ctf:game team1
 function ctf:game/spawn/check_players with storage ctf:game team2
+
+# Wrong Spawn
+execute if entity @s[scores={ctf_in_ops_spawn=1..}] run function ctf:game/spawn/wrong_spawn/check

@@ -9,6 +9,8 @@ scoreboard objectives add ctf_kit dummy
 scoreboard objectives add ctf_died deathCount
 scoreboard objectives add ctf_flag_time dummy
 scoreboard objectives add ctf_flag_time_firework dummy
+scoreboard objectives add ctf_in_ops_spawn dummy
+scoreboard objectives add ctf_in_ops_spawn_prev dummy
 
 scoreboard objectives add ctf_crouch_time dummy
 scoreboard objectives add ctf_crouch_time_prev dummy
