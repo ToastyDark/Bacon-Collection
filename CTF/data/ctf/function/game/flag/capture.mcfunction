@@ -11,3 +11,7 @@ $scoreboard players add ctf_team$(team_num) ctf_points 1
 
 # Respawn
 function ctf:player/respawn/respawn
+
+
+# Replace Flag
+$function ctf:game/flag/place/team$(team_ops) with storage ctf:game

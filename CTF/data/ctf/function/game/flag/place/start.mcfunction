@@ -1,1 +1,1 @@
-function ctf:game/flag/place/check_dim with storage ctf:game
+function ctf:game/flag/place/both with storage ctf:game
