@@ -1,1 +1,1 @@
-execute as @e[tag=animestruct_marker] run function animestruct:tick_single_animation_launchpad
+execute as @e[tag=animestruct_marker] at @s run function animestruct:tick_single_animation_launchpad
