@@ -10,8 +10,6 @@ execute if entity @s[scores={ctf_died=1..}] run function ctf:player/respawn/star
 # Swap Kit
 function ctf:player/kit/swap with storage ctf:game
 
-# Check if player leaves spawn
-#execute if entity @s[tag=ctf_respawned] run function ctf:player/respawn/team_check with storage ctf:game
 
 # Check if player breaks wool
 function ctf:player/break_wool/check
@@ -21,6 +19,10 @@ execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag
 
 # Flag Tick
 execute if entity @s[tag=ctf_has_flag] run function ctf:player/flag/tick
+
+# ------------ Spawn Area Stuff ------------\
+# Check if player leaves spawn
+execute if entity @s[tag=ctf_respawned] run function ctf:player/respawn/team_check with storage ctf:game
 
 # Check if player within a spawn
 function ctf:game/spawn/check_players with storage ctf:game team1
