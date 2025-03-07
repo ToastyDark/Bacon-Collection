@@ -20,7 +20,10 @@ execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag
 # Flag Tick
 execute if entity @s[tag=ctf_has_flag] run function ctf:player/flag/tick
 
-# ------------ Spawn Area Stuff ------------\
+# Stop players from dropping items
+execute at @s run function ctf:player/no_drop/start
+
+# ------------ Spawn Area Stuff ------------
 # Check if player leaves spawn
 execute if entity @s[tag=ctf_respawned] run function ctf:player/respawn/team_check with storage ctf:game
 
