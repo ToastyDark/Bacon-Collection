@@ -3,3 +3,6 @@ tag @s add ctf_has_flag
 
 # Clear Inv
 clear @s
+
+# Flag Inv
+function ctf:player/obj/inv/flag/start
