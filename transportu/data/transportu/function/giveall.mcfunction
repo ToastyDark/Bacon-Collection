@@ -11,3 +11,6 @@ give @s potion[potion_contents={custom_color:6455374},custom_name='["",{"text":"
 
 # Neo-Desert CTF
 give @s potion[potion_contents={custom_color:16770973},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: NEO-Desert CTF","italic":false,"color":"blue"}]','["",{"text":"(-1 64 -110)","italic":false,"color":"blue"}]','["",{"text":"The Void (minecraft:void)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:neo_ctf,location:"-1 64 -110 0 0",color:"color:[0.98, 0.93, 0.68]", world:"minecraft:void"}]
+
+# Kits
+give @p potion[potion_contents={custom_color:3145800},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Kits","italic":false,"color":"blue"}]','["",{"text":"(72 -63 93)","italic":false,"color":"blue"}]','["",{"text":"Clone (minecraft:clone)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:kits,location:"72 -63 93 180 0",color:"color:[0.19, 0.0, 0.28]", world:"minecraft:clone"}]
