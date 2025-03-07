@@ -9,4 +9,5 @@ $execute as @a[tag=ctf_player,team=!ctf_team$(team_num)] run title @s actionbar 
 $scoreboard players add ctf_team$(team_num) ctf_points 1
 
 
-# Respawn Player
+# Respawn
+function ctf:player/respawn/respawn

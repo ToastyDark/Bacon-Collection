@@ -4,16 +4,8 @@ execute unless entity @s[tag=ctf_player] run return fail
 # Check if player died with flag
 execute if entity @s[tag=ctf_has_flag] run function ctf:game/flag/return/start with storage ctf:game temp
 
-# Reset Player
-function ctf:player/respawn/reset
-
-
-# Add Respawned Tag
-function ctf:player/respawn/add_tag
-
-
-# Get Kit
-function ctf:player/kit/update with storage ctf:game
+# Respawn
+function ctf:player/respawn/respawn
 
 
 
