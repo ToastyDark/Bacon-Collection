@@ -21,3 +21,7 @@ execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag
 
 # Flag Tick
 execute if entity @s[tag=ctf_has_flag] run function ctf:player/flag/tick
+
+# Check if player within a spawn
+function ctf:game/spawn/check_players with storage ctf:game team1
+function ctf:game/spawn/check_players with storage ctf:game team2
