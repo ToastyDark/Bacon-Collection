@@ -9,6 +9,9 @@ function ctf:setup/map with storage ctf:game
 # Scoreboard
 function ctf:setup/scoreboard/start
 
+# Place Team Flags
+schedule function ctf:game/flag/place/start 1s append
+
 
 # ----------------------Players----------------------
 # Set Players as in game
@@ -29,9 +32,6 @@ execute as @a[tag=ctf_player] run function ctf:player/kit/update with storage ct
 # Set as Respawn
 execute as @a[tag=ctf_player] run function ctf:player/respawn/add_tag
 
-
-# Place Team Flags
-function ctf:game/flag/place/start with storage ctf:game
 
 
 # Start Game
