@@ -14,7 +14,7 @@ execute if score @s animestruct.ticks matches -1 run scoreboard players set @s a
 # -- Remove Yourself & Return
  execute if score @s animestruct.ticks matches ..0 unless block ~ ~ ~ stripped_warped_hyphae run kill @s
  execute unless block ~ ~ ~ stripped_warped_hyphae run return 1
-
+execute unless block ~ ~ ~ stripped_warped_hyphae run say EXIT
  # -- Clone new animation
 $execute if score @s animestruct.ticks matches ..0 run execute at @s run clone ~ ~2 ~ ~$(width) ~$(height) ~$(length) $(dest)
 
