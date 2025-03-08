@@ -14,8 +14,8 @@ execute if score @s animestruct.ticks matches -1 run scoreboard players set @s a
 # -- Remove Yourself & Return
  execute if score @s animestruct.ticks matches ..0 unless block ~ ~ ~ stripped_warped_hyphae run kill @s
 
+ # -- Clone new animation
+$execute if score @s animestruct.ticks matches ..0 run execute at @s run clone ~ ~2 ~ ~$(width) ~$(height) ~$(length) $(dest)
+
 # -- Store new frame timer
 $execute if score @s animestruct.ticks matches ..0 run execute store result score @s animestruct.ticks run data get block ~$(spacing) ~-2 ~ Book.components.minecraft:writable_book_content.pages[0].raw
-
-# -- Clone new animation
-$execute if score @s animestruct.ticks matches ..0 run execute at @s run clone ~ ~2 ~ ~$(width) ~$(height) ~$(length) $(dest)
