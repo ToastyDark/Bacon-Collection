@@ -13,4 +13,4 @@ $execute if score @s animestruct.ticks matches ..0 run tp ~$(spacing) ~ ~
  execute if score @s animestruct.ticks matches ..0 unless block ~ ~ ~ stripped_warped_hyphae run kill @s
 
 # -- Store new frame timer
-$execute if score @s animestruct.ticks matches ..0 run execute store result score @s animestruct.ticks run data get block ~-$(spacing) ~-2 ~ Book.components.minecraft:writable_book_content.pages[0].raw
+$execute if score @s animestruct.ticks matches ..0 run execute store result score @s animestruct.ticks run data get block ~$(spacing) ~-2 ~ Book.components.minecraft:writable_book_content.pages[0].raw
