@@ -1,7 +1,10 @@
+# Reset Shulkerbox
+data remove block 0 0 0 Items
+
 # Store Hotbar
 scoreboard players set $invsave_slot value 0
 execute store result storage invsave players.slot int 1 run scoreboard players get $invsave_slot value
-execute in clone run function invsave:save/slot/hotbar with storage invsave players
+function invsave:save/slot/hotbar with storage invsave players
 
 
 
