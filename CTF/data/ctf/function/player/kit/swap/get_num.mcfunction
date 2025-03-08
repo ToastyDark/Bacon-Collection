@@ -15,7 +15,7 @@ $execute store result storage ctf:game team$(team_num).kit_num int 1 run scorebo
 $execute store result storage ctf:game team$(team_num).kit_num_1 int 1 run scoreboard players get $plus_1 value
 
 # Check if last kit
-$function ctf:player/kit/swap/if_last with storage ctf:game team$(team_num)
+#$function ctf:player/kit/swap/if_last with storage ctf:game team$(team_num)
 
 
 # Swap to Next
