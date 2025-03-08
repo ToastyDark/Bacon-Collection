@@ -1,6 +1,7 @@
 # Store Item
 $item replace block ~ ~ ~ container.$(slot) from entity @s inventory.$(slot)
 $data modify storage invsave players.$(id).inventory.$(slot) set from block ~ ~ ~ Items[$(slot)]
+$execute unless items block ~ ~ ~ container.$(slot) * run data modify storage invsave players.$(id).inventory.$(slot) set value air
 
 # Check if hit max
 execute if score $invsave_slot value matches 26.. run return fail
