@@ -1,4 +1,4 @@
-# execute positioned -733 66 -284 run function animestruct:start {spacing: "6", width:"5",height:"12",length:"7",name:"door_red", dest:"-733 67 -276"}
+# /execute in minecraft:clone positioned -733 66 -284 run function animestruct:start {spacing: "6", width:"4",height:"13",length:"6",name:"door_red", dest:"-649 74 -241",from:"minecraft:clone",to:"minecraft:void"}
 scoreboard objectives add animestruct.ticks dummy
 
 summon minecraft:marker ~ ~ ~ {Tags:[animestruct_marker, new_marker]}
