@@ -1,6 +1,6 @@
 # Reset Shulkerbox and Data
 function invsave:reset/shulkerbox
-$data get storage minecraft:invsave players.$(id)
+$data remove storage minecraft:invsave players.$(id)
 
 # Store Hotbar
 function invsave:reset/slot
