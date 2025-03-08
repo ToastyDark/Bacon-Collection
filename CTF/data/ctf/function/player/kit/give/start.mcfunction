@@ -1,5 +1,5 @@
 # Hotbar
-$$item replace entity @s container.0 from block ~$(kit_num) ~ ~ container.0
+$item replace entity @s container.0 from block ~$(kit_num) ~ ~ container.0
 $item replace entity @s container.1 from block ~$(kit_num) ~ ~ container.1
 $item replace entity @s container.2 from block ~$(kit_num) ~ ~ container.2
 $item replace entity @s container.3 from block ~$(kit_num) ~ ~ container.3
