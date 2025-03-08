@@ -1,22 +1,19 @@
-# Reset Shulkerbox
-setblock ~ ~ ~ yellow_shulker_box destroy
-data remove block ~ ~ ~ Items
+# Reset Shulkerbox and Data
+function invsave:reset/shulkerbox
 $data get storage minecraft:invsave players.$(id)
 
 # Store Hotbar
-scoreboard players set $invsave_slot value 0
-execute store result storage invsave players.slot int 1 run scoreboard players get $invsave_slot value
-function invsave:save/slot/hotbar with storage invsave players
+function invsave:reset/slot
+function invsave:save/store/hotbar with storage invsave players
 
+# Store Inventory
+function invsave:reset/slot
+function invsave:save/store/inventory with storage invsave players
 
+# Store Armor
+function invsave:reset/slot
+function invsave:save/store/armor with storage invsave players
 
-
-
-
-
-
-
-
-# Get Contents from Inventory
-#$data modify storage invsave:players [].save set from entity @s Inventory
-#$data modify storage invsave inv.[{UUID:[$(UUID0),$(UUID1),$(UUID2),$(UUID3)]}].save set from entity @s Inventory
+# Store Offhand
+function invsave:reset/slot
+function invsave:save/store/offhand with storage invsave players
