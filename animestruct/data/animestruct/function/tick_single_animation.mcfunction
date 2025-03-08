@@ -16,7 +16,7 @@ execute at @s if score @s animestruct.ticks matches ..0 unless block ~ ~ ~ strip
 execute at @s unless block ~ ~ ~ stripped_warped_hyphae run return 1
 
  # -- Clone new animation
-$execute at @s if score @s animestruct.ticks matches ..0 run execute at @s run clone ~ ~2 ~ ~$(width) ~$(height) ~$(length) $(dest)
+$execute at @s if score @s animestruct.ticks matches ..0 run execute at @s run clone $(from) ~ ~2 ~ ~$(width) ~$(height) ~$(length) $(to) $(dest)
 
 # -- Run command next to lectern
 execute at @s if score @s animestruct.ticks matches ..0 run setblock ~ ~-3 ~ redstone_block
