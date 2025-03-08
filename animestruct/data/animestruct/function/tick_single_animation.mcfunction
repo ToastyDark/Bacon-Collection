@@ -24,4 +24,4 @@ execute if score @s animestruct.ticks matches ..0 run setblock ~ ~-3 ~ redstone_
 execute if score @s animestruct.ticks matches ..0 run setblock ~ ~-3 ~ air
 
 # -- Store new frame timer
-execute if score @s animestruct.ticks matches ..0 run execute store result score @s animestruct.ticks run data get block ~ ~-2 ~ Book.components.minecraft:writable_book_content.pages[0].raw
+$execute if score @s animestruct.ticks matches ..0 run execute store result score @s animestruct.ticks run data get block ~-$(spacing) ~-2 ~ Book.components.minecraft:writable_book_content.pages[0].raw
