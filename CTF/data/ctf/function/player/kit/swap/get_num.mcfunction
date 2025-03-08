@@ -1,7 +1,7 @@
 # If player doesn't have kit
 execute unless entity @s[scores={ctf_kit=1..}] run scoreboard players set @s ctf_kit 0
 # Next Kit
-#execute unless entity @s[scores={ctf_died=1..}] run scoreboard players add @s ctf_kit 1
+execute unless entity @s[scores={ctf_died=1..}] run scoreboard players add @s ctf_kit 1
 
 
 # +1 Kit Num
