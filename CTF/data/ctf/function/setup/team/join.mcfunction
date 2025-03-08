@@ -5,4 +5,4 @@ tag @s remove ctf_queue
 $team join ctf_team$(team_num)
 
 # Msg
-$title @s actionbar ["",{"text":"You join team","bold": true,"color": "blue"},{"text":"Team $(color)","bold":true,"color":"$(color)"}]
+$title @s actionbar ["",{"text":"You have joined ","bold": true,"color": "blue"},{"text":"Team $(color)","bold":true,"color":"$(color)"}]

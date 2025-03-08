@@ -1,5 +1,5 @@
 # If player doesn't have kit
-execute unless entity @s[scores={ctf_kit=1..}] run scoreboard players set @s ctf_kit 0
+execute unless entity @s[scores={ctf_kit=1..}] run scoreboard players set @s ctf_kit 1
 
 # Check if last kit
 $function ctf:player/kit/swap/if_last with storage ctf:game team$(team_num)
