@@ -9,7 +9,8 @@ execute if entity @s[scores={ctf_kit=3}] run scoreboard players set @s ctf_kit 1
 execute if entity @s[team=ctf_team1] store result storage ctf:game team1.kit_num int 1 run scoreboard players get @s ctf_kit
 execute if entity @s[team=ctf_team2] store result storage ctf:game team2.kit_num int 1 run scoreboard players get @s ctf_kit
 
-# Give Items 
+# Give Items
+forceload add ~ ~
 execute if entity @s[team=ctf_team1] run function ctf:player/kit/give/start with storage ctf:game team1
 execute if entity @s[team=ctf_team2] run function ctf:player/kit/give/start with storage ctf:game team2
 
