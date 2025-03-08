@@ -26,7 +26,6 @@ $execute unless items block ~$(kit_num) ~ ~ container.17 minecraft:light_gray_st
 
 # Armor
 $item replace entity @s armor.head with leather_helmet[dyed_color=$(color_dec)]
-#item replace entity @s armor.head with leather_helmet[dyed_color=]
 $execute unless items block ~$(kit_num) ~ ~ container.22 minecraft:light_gray_stained_glass_pane run item replace entity @s armor.chest from block ~$(kit_num) ~ ~ container.22
 $execute unless items block ~$(kit_num) ~ ~ container.23 minecraft:light_gray_stained_glass_pane run item replace entity @s armor.legs from block ~$(kit_num) ~ ~ container.23
 $execute unless items block ~$(kit_num) ~ ~ container.24 minecraft:light_gray_stained_glass_pane run item replace entity @s armor.feet from block ~$(kit_num) ~ ~ container.24

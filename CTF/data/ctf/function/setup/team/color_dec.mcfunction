@@ -1,2 +1,16 @@
 $execute if data storage ctf:game team$(team_num){color:"red"} run data modify storage ctf:game team$(team_num).color_dec set value 16733525
-$execute if data storage ctf:game {team$(team_num).color:green} 
+$execute if data storage ctf:game team$(team_num){color:"orange"} run data modify storage ctf:game team$(team_num).color_dec set value 12410394
+$execute if data storage ctf:game team$(team_num){color:"yellow"} run data modify storage ctf:game team$(team_num).color_dec set value 15256595
+$execute if data storage ctf:game team$(team_num){color:"green"} run data modify storage ctf:game team$(team_num).color_dec set value 5635925
+$execute if data storage ctf:game team$(team_num){color:"dark_green"} run data modify storage ctf:game team$(team_num).color_dec set value 43520
+$execute if data storage ctf:game team$(team_num){color:"light_blue"} run data modify storage ctf:game team$(team_num).color_dec set value 5636095
+$execute if data storage ctf:game team$(team_num){color:"cyan"} run data modify storage ctf:game team$(team_num).color_dec set value 43690
+$execute if data storage ctf:game team$(team_num){color:"blue"} run data modify storage ctf:game team$(team_num).color_dec set value 5592575
+$execute if data storage ctf:game team$(team_num){color:"purple"} run data modify storage ctf:game team$(team_num).color_dec set value 11141290
+$execute if data storage ctf:game team$(team_num){color:"magenta"} run data modify storage ctf:game team$(team_num).color_dec set value 16733695
+$execute if data storage ctf:game team$(team_num){color:"pink"} run data modify storage ctf:game team$(team_num).color_dec set value 16058286
+$execute if data storage ctf:game team$(team_num){color:"brown"} run data modify storage ctf:game team$(team_num).color_dec set value 7554312
+$execute if data storage ctf:game team$(team_num){color:"gray"} run data modify storage ctf:game team$(team_num).color_dec set value 16733525
+$execute if data storage ctf:game team$(team_num){color:"dark_gray"} run data modify storage ctf:game team$(team_num).color_dec set value 5592405
+$execute if data storage ctf:game team$(team_num){color:"white"} run data modify storage ctf:game team$(team_num).color_dec set value 16777215
+$execute if data storage ctf:game team$(team_num){color:"black"} run data modify storage ctf:game team$(team_num).color_dec set value 0

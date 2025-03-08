@@ -8,4 +8,5 @@ scoreboard players reset @s ctf_flag_time_firework
 execute if entity @s[scores={ctf_crouch_time=1..}] run return fail
 
 # Spawn firework
-execute at @s run summon firework_rocket ~ ~ ~ {Life:20,LifeTime:45,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_twinkle:true,colors:[I;16777215]}]}}}}
+$execute at @s run summon firework_rocket ~ ~ ~ {Life:20,LifeTime:45,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_twinkle:true,colors:[I;$(dec_color)]}]}}}}
+#execute at @s run summon firework_rocket ~ ~ ~ {Life:20,LifeTime:45,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball",has_twinkle:true,colors:[I;16777215]}]}}}}
