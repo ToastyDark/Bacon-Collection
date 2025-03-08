@@ -44,7 +44,7 @@ execute as @a[tag=ctf_player] run function ctf:player/respawn/add_tag
 
 
 # Set to 1st Kit
-scoreboard players set @a[tag=ctf_player] ctf_kit 1
+scoreboard players set @a[tag=ctf_player] ctf_kit 0
 execute as @a[tag=ctf_player] run function ctf:player/kit/update with storage ctf:game
 
 
