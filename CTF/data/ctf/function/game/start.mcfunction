@@ -39,12 +39,13 @@ function ctf:setup/spawn/start with storage ctf:game team1
 function ctf:setup/spawn/start with storage ctf:game team2
 
 
+# Set as Respawn
+execute as @a[tag=ctf_player] run function ctf:player/respawn/add_tag
+
+
 # Set to 1st Kit
 scoreboard players set @a[tag=ctf_player] ctf_kit 1
 execute as @a[tag=ctf_player] run function ctf:player/kit/update with storage ctf:game
-
-# Set as Respawn
-execute as @a[tag=ctf_player] run function ctf:player/respawn/add_tag
 
 
 
