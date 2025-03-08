@@ -5,8 +5,8 @@
 execute as @a[scores={POTTracker=1}] at @s run function transportu:teleport with entity @s SelectedItem.components.minecraft:custom_data
 execute as @a[scores={POTTracker=1}] at @s run function transportu:teleport with entity @s Inventory[-1].components.minecraft:custom_data
 
-execute as @a[scores={CARRtracker=1}] at @s if data entity @s SelectedItem.components.minecraft:enchantment_glint_override run function transportu:void_clone_transport
-execute as @a[scores={CARRtracker=1}] at @s if data entity @s Inventory[-1].components.minecraft:enchantment_glint_override run function transportu:void_clone_transport
+execute as @a[scores={CARRtracker=1}] at @s if data entity @s SelectedItem.components.minecraft:enchantment_glint_override run function transportu:teleport_void_clone
+execute as @a[scores={CARRtracker=1}] at @s if data entity @s Inventory[-1].components.minecraft:enchantment_glint_override run function transportu:teleport_void_clone
 
 # Reset the drinking counter
 execute as @a[scores={POTTracker=1..}] run scoreboard players set @s POTTracker 0
