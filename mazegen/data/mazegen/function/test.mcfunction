@@ -1,3 +1,6 @@
+# Looks like saving and loading from structure blocks is instant, it just *appears* the next tick.
+# So, saving and loading multiple things to the same file in one tick *should* work...
+
 # clone 1
 clone -418 80 -113 -419 81 -112 -419 80 -116
 
@@ -19,3 +22,5 @@ setblock -419 79 -116 minecraft:air
 # load 2
 setblock -421 78 -109 minecraft:redstone_block
 setblock -421 78 -109 minecraft:air
+
+tick rate 10
