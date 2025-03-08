@@ -1,0 +1,2 @@
+execute if entity @s[team=ctf_team1] run function ctf:player/kit/swap/start with storage ctf:game team1
+execute if entity @s[team=ctf_team2] run function ctf:player/kit/swap/start with storage ctf:game team2
