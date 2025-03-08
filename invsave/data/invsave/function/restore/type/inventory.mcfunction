@@ -1,5 +1,6 @@
 $data modify block ~ ~ ~ Items insert $(slot) from storage invsave players.$(id).inventory.$(slot)
 $item replace entity @s inventory.$(slot) from block ~ ~ ~ container.$(slot)
+$execute unless items block ~ ~ ~ container.$(slot) * run data modify block ~ ~ ~ Items insert $(slot) value {"id":"minecraft:barrier","count":1,Slot:$(slot)b}
 
 # Check if hit max
 execute if score $invsave_slot value matches 26.. run return fail
