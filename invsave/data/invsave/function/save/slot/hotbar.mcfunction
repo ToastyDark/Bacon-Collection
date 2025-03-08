@@ -1,6 +1,6 @@
 # Store Item
-$item replace block 0 0 0 container.$(slot) from entity @s hotbar.$(slot)
-$data modify storage invsave players.$(id).hotbar.$(slot) set from block 0 0 0 Items[$(slot)]
+$item replace block ~ ~ ~ container.$(slot) from entity @s hotbar.$(slot)
+$data modify storage invsave players.$(id).hotbar.$(slot) set from block ~ ~ ~ Items[$(slot)]
 
 # Check if hit max
 execute if score $invsave_slot value matches 8.. run return fail
