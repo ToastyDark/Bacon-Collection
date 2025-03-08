@@ -21,7 +21,7 @@ $execute if score @s animestruct.ticks matches ..0 run execute at @s run clone ~
 
 # -- Run command next to lectern
 execute if score @s animestruct.ticks matches ..0 run setblock ~-3 ~ ~ redstone_block
-execute if score @s animestruct.ticks matches ..0 run setblock ~-3 ~ ~ air
+# execute if score @s animestruct.ticks matches ..0 run setblock ~-3 ~ ~ air
 
 # -- Store new frame timer
 $execute if score @s animestruct.ticks matches ..0 run execute store result score @s animestruct.ticks run data get block ~$(spacing) ~-2 ~ Book.components.minecraft:writable_book_content.pages[0].raw
