@@ -22,5 +22,3 @@ setblock -419 79 -116 minecraft:air
 # load 2
 setblock -421 78 -109 minecraft:redstone_block
 setblock -421 78 -109 minecraft:air
-
-tick rate 10
