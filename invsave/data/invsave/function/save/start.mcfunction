@@ -1,4 +1,5 @@
 # Reset Shulkerbox
+setblock 0 0 0 yellow_shulker_box
 data remove block 0 0 0 Items
 
 # Store Hotbar
