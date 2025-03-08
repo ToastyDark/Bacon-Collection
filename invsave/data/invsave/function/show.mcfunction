@@ -1,1 +1,0 @@
-$data get storage invsave inv.[{UUID:[$(UUID0),$(UUID1),$(UUID2),$(UUID3)]}].save
