@@ -3,4 +3,5 @@ scoreboard objectives add animestruct.ticks dummy
 
 summon minecraft:marker ~ ~ ~ {Tags:[animestruct_marker, new_marker]}
 $data modify entity @e[tag=animestruct_marker,tag=new_marker,limit=1] data set value {width:"$(width)",height:"$(height)",length:"$(length)",name:"$(name)", dest:"$(dest)", spacing:"$(spacing)"}
+scoreboard players set @e[tag=animestruct_marker,tag=new_marker,limit=1] animestruct.ticks -1
 tag @e[tag=animestruct_marker,tag=new_marker] remove new_marker
