@@ -1,6 +1,7 @@
 # Reset Shulkerbox
 setblock ~ ~ ~ yellow_shulker_box destroy
 data remove block ~ ~ ~ Items
+$data get storage minecraft:invsave players.$(id)
 
 # Store Hotbar
 scoreboard players set $invsave_slot value 0
