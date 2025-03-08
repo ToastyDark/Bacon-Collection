@@ -8,7 +8,7 @@ function ctf:player/crouch/tick
 execute if entity @s[scores={ctf_died=1..}] at @s run function ctf:player/respawn/start
 
 # Swap Kit
-function ctf:player/kit/swap with storage ctf:game
+function ctf:player/kit/swap/start with storage ctf:game
 
 
 # Check if player breaks wool
