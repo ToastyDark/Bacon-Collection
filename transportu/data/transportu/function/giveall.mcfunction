@@ -18,5 +18,8 @@ give @s potion[potion_contents={custom_color:3145800},custom_name='["",{"text":"
 # One In the Quiver
 give @s potion[potion_contents={custom_color:4389106},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: One In the Quiver","italic":false,"color":"blue"}]','["",{"text":"(10019 89 5044)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:oitq,location:"10019 89 5044 0 0",color:"color:[0.19, 0.5, 0.98]", world:"minecraft:minigames"}]
 
+# IItems
+give @s potion[potion_contents={custom_color:4389106},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: IItems","italic":false,"color":"blue"}]','["",{"text":"(-19982 188 1002)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:oitq,location:"-19982 188 1002 0 0",color:"color:[0.19, 0.5, 0.98]", world:"minecraft:minigames"}]
+
 # Carrot
 give @s golden_carrot[enchantment_glint_override=true,consumable={consume_seconds:0}, custom_name='["",{"text":"Carrot of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Clone or Void world","italic":false,"color":"blue"}]','["",{"text":"(Your Current Location)","italic":false,"color":"blue"}]'],rarity=uncommon,hide_additional_tooltip={}]
