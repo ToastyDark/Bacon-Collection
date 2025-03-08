@@ -1,5 +1,6 @@
 # Store Item
 $item replace block ~ ~ ~ container.$(slot) from entity @s hotbar.$(slot)
+$data modify storage invsave players.$(id).hotbar.$(slot) set value 0
 $data modify storage invsave players.$(id).hotbar.$(slot) set from block ~ ~ ~ Items[$(slot)]
 $execute unless items block ~ ~ ~ container.$(slot) * run data modify storage invsave players.$(id).hotbar.$(slot) set value air
 
