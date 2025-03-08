@@ -14,10 +14,10 @@ function invsave:reset/slot
 function invsave:restore/type/inventory with storage invsave players
 
 # Armor
-#function invsave:reset/slot
+function invsave:reset/slot
 function invsave:restore/type/armor with storage invsave players
 
 # Offhand
-#function invsave:reset/slot
+function invsave:reset/slot
 function invsave:restore/type/offhand with storage invsave players
 

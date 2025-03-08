@@ -1,4 +1,4 @@
-$data modify block ~ ~ ~ Items[{Slot:$(slot)b}] set from storage invsave players.$(id).inventory.$(slot)
+$data modify block ~ ~ ~ Items insert $(slot) from storage invsave players.$(id).inventory.$(slot)
 $item replace entity @s inventory.$(slot) from block ~ ~ ~ container.$(slot)
 
 # Check if hit max
