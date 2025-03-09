@@ -25,6 +25,9 @@ function ctf:setup/scoreboard/start with storage ctf:game
 # Place Team Flags
 schedule function ctf:game/flag/place/start 10t append
 
+# Set Game ID
+scoreboard players add $ctf_session value 1
+
 
 # ------------------------Players------------------------
 # Set Players as in game
@@ -39,14 +42,8 @@ function ctf:setup/spawn/start with storage ctf:game team1
 function ctf:setup/spawn/start with storage ctf:game team2
 
 
-# Set as Respawn
-execute as @a[tag=ctf_player] run function ctf:player/respawn/add_tag
-
-
-# Set to 1st Kit
-execute as @a[tag=ctf_player] run function invsave:clear
-scoreboard players set @a[tag=ctf_player] ctf_kit 0
-execute as @a[tag=ctf_player] run function ctf:player/kit/update with storage ctf:game
+# Prepare Player
+execute as @a[tag=ctf_player] run function ctf:player/join/setup
 
 
 

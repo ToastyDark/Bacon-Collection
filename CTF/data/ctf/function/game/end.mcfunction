@@ -1,4 +1,10 @@
+# Stop Game
 data modify storage ctf:game started set value false
+# Set flag as not stolen
+data modify storage ctf:game team1.flag_stolen set value false
+data modify storage ctf:game team2.flag_stolen set value false
+
+
 
 # Back to Spawn
 execute in void run spreadplayers -1 -109 3 10 under 64 false @a[tag=ctf_player]

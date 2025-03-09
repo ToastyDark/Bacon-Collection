@@ -1,3 +1,6 @@
+# Check if player leaves game
+execute if entity @s[scores={ctf_leave_game=1..}] run function ctf:player/join/rejoined
+
 # Check Queue
 function ctf:player/queue/check
 
