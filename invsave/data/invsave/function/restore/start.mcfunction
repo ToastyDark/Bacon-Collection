@@ -5,7 +5,7 @@ clear @s
 function invsave:reset/shulkerbox
 
 # ----------- Return Items -----------
-# Horbar
+# Hotbar
 function invsave:reset/slot
 function invsave:restore/type/hotbar with storage invsave players
 
