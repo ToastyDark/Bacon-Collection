@@ -25,8 +25,10 @@ $data modify storage ctf:game team2.flag_x set from storage ctf:map $(map).team2
 $data modify storage ctf:game team2.flag_y set from storage ctf:map $(map).team2.flag.y
 $data modify storage ctf:game team2.flag_z set from storage ctf:map $(map).team2.flag.z
 
-
-
+# Bomb Data
+$data modify storage ctf:game bomb_x set from storage ctf:map $(map).bomb.x
+$data modify storage ctf:game bomb_y set from storage ctf:map $(map).bomb.y
+$data modify storage ctf:game bomb_z set from storage ctf:map $(map).bomb.z
 
 
 

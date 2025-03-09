@@ -17,6 +17,9 @@ execute as @a[scores={ctf_crouch_time=1}] run function ctf:player/kit/swap/check
 # Check if player breaks wool
 function ctf:player/break_wool/check
 
+# Check if player takes bomb
+execute if entity @s[scores={ctf_mined_tnt=1..}] run function ctf:game/bomb/take/start
+
 # Check if player steals flag
 execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag/steal/start
 

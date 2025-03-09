@@ -1,0 +1,1 @@
+$execute in $(dimension) run setblock $(bomb_x) $(bomb_y) $(bomb_z) tnt

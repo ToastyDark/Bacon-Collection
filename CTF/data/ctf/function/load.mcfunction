@@ -18,6 +18,10 @@ scoreboard objectives add ctf_leave_game minecraft.custom:leave_game
 scoreboard objectives add ctf_crouch_time dummy
 scoreboard objectives add ctf_crouch_time_prev dummy
 
+scoreboard objectives add ctf_mined_tnt minecraft.mined:tnt
+
+
+# Break Wool
 scoreboard objectives add ctf_mined_wool_any dummy
 
 scoreboard objectives add ctf_mined_wool_red minecraft.mined:red_wool
