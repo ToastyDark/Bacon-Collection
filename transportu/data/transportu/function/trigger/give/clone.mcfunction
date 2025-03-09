@@ -1,6 +1,5 @@
 # Reset
-scoreboard players reset @s tp.clone
-scoreboard players reset @s tp.carrot
+scoreboard players reset @s tp.oitq
 
 # Give
-function transportu:give/carrot
+function transportu:give/oitq
