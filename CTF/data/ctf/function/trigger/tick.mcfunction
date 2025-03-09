@@ -24,5 +24,11 @@ scoreboard players enable @a ctf.settings.random_teams
 execute as @a[scores={ctf.settings.random_teams=1..}] run function ctf:trigger/random_teams/toggle
 
 # List Maps
-scoreboard players enable ToastyDark ctf.map
-execute as @a[scores={ctf.map=1..}] run function ctf:trigger/map/_list
+    scoreboard players enable ToastyDark ctf.map
+    execute as @a[scores={ctf.map=1..}] run function ctf:trigger/map/_list
+
+    scoreboard players enable ToastyDark ctf.maps
+    execute as @a[scores={ctf.maps=1..}] run function ctf:trigger/map/_list
+
+    scoreboard players enable ToastyDark ctf.map.desert_maze
+    execute as @a[scores={ctf.map.desert_maze=1..}] run function ctf:trigger/map/desert_maze
