@@ -1,6 +1,8 @@
 # Set Player as Flag Stolen
 function ctf:game/flag/player/set
 
+# Set what flag has
+$tag @s add ctf_has_flag_team$(team_ops)
 
 
 # Set Temp Team Data
