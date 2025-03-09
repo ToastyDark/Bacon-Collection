@@ -1,5 +1,5 @@
 # Clear Inventory
-#clear @s
+clear @s
 
 
 # Kit based on map
