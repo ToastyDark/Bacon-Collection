@@ -13,4 +13,4 @@ execute if items entity @s weapon.mainhand minecraft:golden_carrot run data modi
 execute if items entity @s weapon.offhand minecraft:golden_carrot run data modify storage transportu:temp_carrot_info info set from entity @s Inventory[-1]
 
 # Teleport if you should teleport with a carrot
-execute as @a[scores={CARRtracker=1}] at @s if data entity @s transportu:temp_carrot_info.info.components.minecraft:enchantment_glint_override run function transportu:teleport_void_clone
+execute as @a[scores={CARRtracker=1}] at @s if data storage transportu:temp_carrot_info info.components.minecraft:enchantment_glint_override run function transportu:teleport_void_clone
