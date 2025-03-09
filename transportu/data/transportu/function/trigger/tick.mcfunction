@@ -11,4 +11,4 @@ scoreboard players enable @s tp.carrot
 execute if entity @s[scores={tp.carrot=1..}] run function transportu:trigger/give/clone
 
 scoreboard players enable @s tp.oitq
-execute if entity @s[scores={tp.oitq=1..}] run function transportu:trigger/give/clone
+execute if entity @s[scores={tp.oitq=1..}] run function transportu:trigger/give/oitq
