@@ -1,5 +1,7 @@
 # Set Map Dimension
 $data modify storage ctf:game dimension set from storage ctf:map $(map).dimension
+$data modify storage ctf:game team1.dimension set from storage ctf:map $(map).dimension
+$data modify storage ctf:game team2.dimension set from storage ctf:map $(map).dimension
 
 # Set Team Spawn Points
 $data modify storage ctf:game team1.spawn_x set from storage ctf:map $(map).team1.spawn.x
