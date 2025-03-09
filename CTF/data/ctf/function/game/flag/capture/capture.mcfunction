@@ -8,6 +8,9 @@ $execute as @a[tag=ctf_player,team=!ctf_team$(team_num)] run title @s actionbar 
 # Add to Points
 $scoreboard players add ctf_team$(team_num) ctf_points 1
 
+# Mark flag as not stolen
+$data modify storage ctf:game team$(team_ops).flag_stolen set value false
+
 # Add Capture Cooldown to Player
 scoreboard players add @s ctf_flag_capture_cd 1
 
