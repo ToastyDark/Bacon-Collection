@@ -1,25 +1,29 @@
 # Potion Factory
-give @s potion[potion_contents={custom_color:16727466},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Blond\'s Potion Facility","italic":false,"color":"blue"}]','["",{"text":"(-1232 101 1392)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},enchantment_glint_override=true,custom_data={destination:potion, location:"-1232 101 1392 0 0",color:"color:[1.0,0.24,0.67]", world:"minecraft:minigames"}]
+function transportu:give/factory
+
 # The Mansion
-give @s potion[potion_contents={custom_color:11542321},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: The Mansion","italic":false,"color":"blue"}]','["",{"text":"(-1021 168 1707)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:mansion,location:"-1021 168 1707 0 0",color:"color:[0.69,0.12,0.19]", world:"minecraft:minigames"}]
+function transportu:give/mansion
+
 # Colorfall
-give @s potion[potion_contents={custom_color:16727089},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: ColorFall","italic":false,"color":"blue"}]','["",{"text":"(-1090 122 1000)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:colorfall,location:"-1090 122 1000 -90 0",color:"color:[1.0,0.24,0.19]", world:"minecraft:minigames"}]
+function transportu:give/colorfall
+
 # Plots
-give @s potion[potion_contents={custom_color:2369073},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Plots","italic":false,"color":"blue"}]','["",{"text":"(930 98 2711)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:plots, location:"930 98 2711 0 0",color:"color:[0.14,0.15,0.19]", world:"minecraft:minigames"}]
+function transportu:give/plots
+
 # Garden
-give @s potion[potion_contents={custom_color:6455374},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Garden","italic":false,"color":"blue"}]','["",{"text":"(-878 150 1950)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:garden,location:"-878 150 1950 0 0",color:"color:[0.42,0.54,0.32]", world:"minecraft:minigames"}]
+function transportu:give/garden
 
 # Neo-Desert CTF
-give @s potion[potion_contents={custom_color:16770973},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: NEO-Desert CTF","italic":false,"color":"blue"}]','["",{"text":"(-1 64 -110)","italic":false,"color":"blue"}]','["",{"text":"The Void (minecraft:void)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:neo_ctf,location:"-1 64 -110 0 0",color:"color:[0.98, 0.93, 0.68]", world:"minecraft:void"}]
+function transportu:give/neo_desert_ctf
 
 # Kits
-give @s potion[potion_contents={custom_color:3145800},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Kits","italic":false,"color":"blue"}]','["",{"text":"(72 -63 93)","italic":false,"color":"blue"}]','["",{"text":"Clone (minecraft:clone)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:kits,location:"72 -63 93 180 0",color:"color:[0.19, 0.0, 0.28]", world:"minecraft:clone"}]
+function transportu:give/kits
 
 # One In the Quiver
-give @s potion[potion_contents={custom_color:4389106},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: One In the Quiver","italic":false,"color":"blue"}]','["",{"text":"(10019 89 5044)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:oitq,location:"10019 89 5044 0 0",color:"color:[0.19, 0.5, 0.98]", world:"minecraft:minigames"}]
+function transportu:give/kits
 
 # IItems
-give @s potion[potion_contents={custom_color:4389106},custom_name='["",{"text":"Potion of Teleportation","italic":false}]',lore=['["",{"text":"Destination: IItems","italic":false,"color":"blue"}]','["",{"text":"(-19980 151 1034)","italic":false,"color":"blue"}]','["",{"text":"Minigames (minecraft:minigames)","italic":false,"color":"#4d4279"}]'],rarity=uncommon,hide_additional_tooltip={},custom_data={destination:oitq,location:"-19980 151 1034 0 0",color:"color:[0.19, 0.5, 0.98]", world:"minecraft:minigames"}]
+function transportu:give/iitems
 
 # Carrot
-give @s golden_carrot[enchantment_glint_override=true,consumable={consume_seconds:0}, custom_name='["",{"text":"Carrot of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Clone or Void world","italic":false,"color":"blue"}]','["",{"text":"(Your Current Location)","italic":false,"color":"blue"}]'],rarity=uncommon,hide_additional_tooltip={}]
+function transportu:give/carrot

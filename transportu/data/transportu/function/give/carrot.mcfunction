@@ -1,0 +1,1 @@
+give @s golden_carrot[enchantment_glint_override=true,consumable={consume_seconds:0}, custom_name='["",{"text":"Carrot of Teleportation","italic":false}]',lore=['["",{"text":"Destination: Clone or Void world","italic":false,"color":"blue"}]','["",{"text":"(Your Current Location)","italic":false,"color":"blue"}]'],rarity=uncommon,hide_additional_tooltip={}]
