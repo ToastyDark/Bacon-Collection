@@ -9,7 +9,8 @@ $tag @s add ctf_has_flag_team$(team_ops)
 function ctf:game/flag/set_temp_team
 
 # Set Stolen
-$data modify storage ctf:game team$(team_num).flag_stolen set value true
+execute if entity @s[team=ctf_team1] run schedule function ctf:game/flag/steal/delay/data_set_team1 2t append
+execute if entity @s[team=ctf_team2] run schedule function ctf:game/flag/steal/delay/data_set_team2 2t append
 
 # Stolen Commands
 function ctf:game/flag/stolen with storage ctf:game temp

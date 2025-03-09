@@ -1,0 +1,1 @@
+data modify storage ctf:game team1.flag_stolen set value true
