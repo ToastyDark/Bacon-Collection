@@ -4,9 +4,6 @@
 
 execute as @a run function transportu:check_should_teleport_potion
 
-execute as @a[scores={CARRtracker=1}] at @s if data entity @s SelectedItem.components.minecraft:enchantment_glint_override run function transportu:teleport_void_clone
-# execute as @a[scores={CARRtracker=1}] at @s if data entity @s Inventory[-1].components.minecraft:enchantment_glint_override run function transportu:teleport_void_clone
-
 # Reset the drinking counter
 execute as @a[scores={POTTracker=1..}] run scoreboard players set @s POTTracker 0
 
