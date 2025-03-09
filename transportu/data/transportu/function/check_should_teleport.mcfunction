@@ -14,3 +14,12 @@ execute if items entity @s weapon.offhand minecraft:golden_carrot run data modif
 
 # Teleport if you should teleport with a carrot
 execute as @s[scores={CARRtracker=1}] at @s if data storage transportu:temp_carrot_info info.components.minecraft:enchantment_glint_override run function transportu:teleport_void_clone
+
+# Reset scores
+
+# Reset the drinking counter
+execute as @s[scores={POTTracker=1..}] run scoreboard players set @s POTTracker 0
+
+# Reset the eating counter
+execute as @s[scores={CARRtracker=1..}] run scoreboard players set @s CARRtracker 0
+
