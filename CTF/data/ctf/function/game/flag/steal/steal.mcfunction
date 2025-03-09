@@ -2,7 +2,7 @@
 $kill @e[distance=..7,type=item,nbt={Item:{id:"minecraft:$(ops_flag_color)_wool"}}]
 
 # Set Player as Flag Stolen
-function ctf:game/flag/player/set
+$function ctf:game/flag/player/set with storage ctf:game team$(team_num)
 
 # Set what flag has
 $tag @s add ctf_has_flag_team$(team_ops)
