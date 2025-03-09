@@ -1,3 +1,6 @@
+# Remove Wool from groun
+$kill @e[distance=..7,type=item,nbt={Item:{id:"minecraft:$(ops_flag_color)_wool"}}]
+
 # Set Player as Flag Stolen
 function ctf:game/flag/player/set
 
