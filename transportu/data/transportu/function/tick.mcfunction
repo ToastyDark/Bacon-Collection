@@ -9,3 +9,8 @@ execute as @a[scores={POTTracker=1..}] run scoreboard players set @s POTTracker 
 
 # Reset the eating counter
 execute as @a[scores={CARRtracker=1..}] run scoreboard players set @s CARRtracker 0
+
+
+
+# Triggers
+execute as @a run function transportu:trigger/tick
