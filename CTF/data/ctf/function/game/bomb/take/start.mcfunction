@@ -6,4 +6,4 @@ execute if entity @s[tag=!ctf_player] run return fail
 
 
 # Steal Bomb
-function ctf:game/bomb/take/take
+execute at @s run function ctf:game/bomb/take/take
