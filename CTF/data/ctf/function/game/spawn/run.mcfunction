@@ -11,7 +11,7 @@ $execute if entity @s[tag=ctf_has_flag,team=ctf_team$(team_ops),nbt={OnGround:tr
 
 # --------------- Bomb ---------------
 # Player Delivers Bomb
-#$execute if entity @s[tag=ctf_has_bomb,team=ctf_team$(team_ops),nbt={OnGround:true}] run function ctf:game/bomb/deliver/deliver with storage ctf:game team$(team_ops)
+$execute if entity @s[tag=ctf_has_bomb,team=ctf_team$(team_ops),nbt={OnGround:true}] run function ctf:game/bomb/deliver/deliver with storage ctf:game team$(team_ops)
 
 # Bomb Wrong Spawn
 $execute if entity @s[tag=ctf_has_bomb,team=ctf_team$(team_num),nbt={OnGround:true}] run function ctf:game/spawn/wrong_spawn/add with storage ctf:game
