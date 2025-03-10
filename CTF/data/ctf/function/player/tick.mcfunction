@@ -42,3 +42,6 @@ execute if entity @s[scores={ctf_in_ops_spawn=1..}] run function ctf:game/spawn/
 
 # Add to Capture Flag Cooldown
 execute if entity @s[scores={ctf_flag_capture_cd=1..}] run function ctf:game/flag/capture/cooldown
+
+# Kit Swap Cooldown
+execute if entity @s[scores={ctf_kit_swap_cd=1..}] run function ctf:player/kit/cooldown/update
