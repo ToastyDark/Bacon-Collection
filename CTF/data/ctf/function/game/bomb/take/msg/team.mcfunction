@@ -1,0 +1,1 @@
+title @s actionbar {"text":"A teammate has the bomb","bold": true, "color": "green"}

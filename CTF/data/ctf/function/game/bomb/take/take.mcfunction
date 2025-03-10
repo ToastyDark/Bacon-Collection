@@ -12,3 +12,6 @@ execute if entity @s[team=ctf_team2] run data modify storage ctf:game bomb.team_
 # MSG
 execute if entity @s[team=ctf_team1] run function ctf:game/bomb/take/msg/display with storage ctf:game team1
 execute if entity @s[team=ctf_team2] run function ctf:game/bomb/take/msg/display with storage ctf:game team2
+
+# Playsound
+execute as @a[tag=ctf_player] at @s run playsound minecraft:entity.creeper.primed master @s ~ ~ ~ 2 1.6 1
