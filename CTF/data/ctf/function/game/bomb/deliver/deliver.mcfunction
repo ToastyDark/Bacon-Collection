@@ -6,7 +6,7 @@ $execute at @s as @a[tag=ctf_player,team=ctf_team$(team_ops)] run playsound mine
 
 # Announce to ops
 $execute as @a[tag=ctf_player,team=ctf_team$(team_num)] run title @s actionbar {"text":"Your spawn was blown up","bold": true, "color": "red"}
-$execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num)] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 1 3 0.1
+$execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num)] run playsound minecraft:entity.generic.explode master @a ~ ~ ~ 3 1 0.1
 execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a
 
 
