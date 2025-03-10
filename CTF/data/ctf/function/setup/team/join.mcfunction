@@ -1,5 +1,6 @@
 # Remove from Queue
 tag @s remove ctf_queue
+$tag @s remove ctf_queue$(team_num)
 
 # Join Game
 tag @s add ctf_player
