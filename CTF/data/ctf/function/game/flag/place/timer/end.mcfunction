@@ -3,7 +3,7 @@ $scoreboard players reset $flag$(team_ops)_respawn_cd value
 $scoreboard players reset $flag$(team_ops)_respawn_cd_d value
 $scoreboard players reset $flag$(team_ops)_respawn_cd_tick value
 
-# Place Bomb
+# Place Flag
 $function ctf:game/flag/place/replace with storage ctf:game team $(team_ops)
 
 # Kill Display

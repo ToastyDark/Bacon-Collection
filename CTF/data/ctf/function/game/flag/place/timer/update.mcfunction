@@ -1,4 +1,4 @@
-$scoreboard players add $flag$(team_ops)_respawn_tick value 1
+#$scoreboard players add $flag$(team_ops)_respawn_tick value 1
 
 # Remove 1 decimal every 2 ticks
 $execute if score $flag$(team_ops)_respawn_tick value matches 2.. run scoreboard players remove $flag$(team_ops)_respawn_cd_d value 1
