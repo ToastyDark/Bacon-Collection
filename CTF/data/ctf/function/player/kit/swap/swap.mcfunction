@@ -1,6 +1,6 @@
 # Swap
 # Play Swap Sound
-#execute at @s run playsound minecraft:entity.armadillo.scute_drop
+execute at @s run playsound minecraft:entity.armadillo.scute_drop
 
 # Give Items
 forceload add ~ ~
