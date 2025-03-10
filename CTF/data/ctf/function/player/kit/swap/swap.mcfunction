@@ -3,6 +3,7 @@
 execute at @s run playsound minecraft:entity.armadillo.scute_drop
 
 # Give Items
+clear @s
 forceload add ~ ~
 $function ctf:player/kit/give/start with storage ctf:game team$(team_num)
 
