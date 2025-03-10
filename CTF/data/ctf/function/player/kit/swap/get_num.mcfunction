@@ -2,7 +2,7 @@
 $execute if entity @s[scores={ctf_kit=1..}] run function ctf:player/kit/swap/if_last with storage ctf:game team$(team_num)
 
 # Next Kit
-execute unless entity @s[tag=ctf_died] run scoreboard players add @s ctf_kit 1
+execute unless entity @s[scores={ctf_died=1..}] run scoreboard players add @s ctf_kit 1
 
 
 # +1 Kit Num
