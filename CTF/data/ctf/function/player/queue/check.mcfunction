@@ -7,12 +7,12 @@
 
 # Join Team 1
     # Add
-    execute in minecraft:void align xyz positioned -9 63 -118 unless entity @s[dx=4,dz=7,dy=4] run function ctf:player/queue/team1/join
+    execute in minecraft:void align xyz positioned -9 63 -118 if entity @s[dx=4,dz=7,dy=4] run function ctf:player/queue/team1/join
     # Remove
     #execute in minecraft:void align xyz positioned 3 63 -118 unless entity @s[dx=4,dz=7,dy=4,tag=ctf_queue1] run function ctf:player/queue/team1/leave
 
 # Join Team 2
     # Add
-    execute in minecraft:void align xyz positioned -9 63 -118 unless entity @s[dx=4,dz=7,dy=4] run function ctf:player/queue/team2/join
+    execute in minecraft:void align xyz positioned -9 63 -118 if entity @s[dx=4,dz=7,dy=4] run function ctf:player/queue/team2/join
     # Remove
     #execute in minecraft:void align xyz positioned 3 63 -118 unless entity @s[dx=4,dz=7,dy=4,tag=ctf_queue2] run function ctf:player/queue/team2/leave
