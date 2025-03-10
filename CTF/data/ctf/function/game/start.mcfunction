@@ -36,14 +36,18 @@ scoreboard players add $ctf_session value 1
 
 
 # ------------------------Players------------------------
-# Set Players as in game
-execute as @a[tag=ctf_queue] run tag @s add ctf_player
+# ------------Sort Teams ------------
+# Preset Team 1
+execute as @a[tag=ctf_queue1] run function ctf:setup/team/join with storage ctf:game team1
+
+# Preset Team 2
+execute as @a[tag=ctf_queue2] run function ctf:setup/team/join with storage ctf:game team2
+
+# Random Teams
+execute if data storage ctf:settings {random_teams:true} run function ctf:setup/random_teams/find_lowest_players
 
 
-# Sort Teams
-execute if data storage ctf:settings {random_teams:true} run function ctf:setup/random_teams/loop
-
-# Spawn Players
+# ------------ Spawn Players ------------
 function ctf:setup/spawn/start with storage ctf:game team1
 function ctf:setup/spawn/start with storage ctf:game team2
 
