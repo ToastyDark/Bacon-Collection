@@ -18,4 +18,4 @@ $execute store result storage ctf:game team$(team_num).kit_num_1 int 1 run score
 
 
 # Swap to Next
-#$function ctf:player/kit/swap/swap with storage ctf:game team$(team_num)
+$function ctf:player/kit/swap/swap with storage ctf:game team$(team_num)
