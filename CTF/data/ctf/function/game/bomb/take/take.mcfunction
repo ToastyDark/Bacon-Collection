@@ -6,6 +6,7 @@ function ctf:game/bomb/take/player_data
 
 
 # Set Stolen
+data modify storage ctf:game bomb.stolen set value true
 execute if entity @s[team=ctf_team1] run data modify storage ctf:game bomb.team_has set value 1
 execute if entity @s[team=ctf_team2] run data modify storage ctf:game bomb.team_has set value 2
 
