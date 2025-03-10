@@ -31,7 +31,6 @@ $data modify storage ctf:game bomb_y set from storage ctf:map $(map).bomb.y
 $data modify storage ctf:game bomb_z set from storage ctf:map $(map).bomb.z
 
 
-
 # ---------------COLORS---------------
 # Team Colors
 $data modify storage ctf:game team1.color set from storage ctf:map $(map).team1.color
