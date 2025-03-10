@@ -12,5 +12,5 @@ tag @s add ctf_queue
 
 
 # Notif
-title @s actionbar ["",{"text":"Entered queue for ","bold": true,"color": "green"},{"text":"Team 1","bold":true,"color":"red"}]
+title @s actionbar ["",{"text":"Entered queue for ","bold": true,"color": "green"},{"text":"CTF","bold":true,"color":"gold"}]
 execute at @s run playsound block.note_block.harp master @s ~ ~ ~ 1 1.1 1
