@@ -5,7 +5,7 @@ $execute if score $flag$(team_ops)_respawn_tick value matches 2.. run scoreboard
 $execute if score $flag$(team_ops)_respawn_tick value matches 2.. run scoreboard players reset $flag$(team_ops)_respawn_tick value
 
 # Remove 1 second when decimal is 0
-$execute if score $flag$(team_ops)_respawn_cd value matches 0 if score $flag$(team_ops)_respawn_cd_d value matches 0 run function ctf:game/flag/place/timer/end with storage ctf:game team$(team_num)
+$execute if score $flag$(team_ops)_respawn_cd value matches 0 if score $flag$(team_ops)_respawn_cd_d value matches 0 run function ctf:game/flag/place/timer/end with storage ctf:game team$(team_ops)
 $execute if score $flag$(team_ops)_respawn_cd_d value matches ..0 run scoreboard players remove $flag$(team_ops)_respawn_cd value 1
 $execute if score $flag$(team_ops)_respawn_cd_d value matches ..0 run scoreboard players set $flag$(team_ops)_respawn_cd_d value 9
 
