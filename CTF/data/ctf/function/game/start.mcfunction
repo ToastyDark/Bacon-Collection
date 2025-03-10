@@ -36,6 +36,8 @@ scoreboard players add $ctf_session value 1
 
 
 # ------------------------Players------------------------
+scoreboard players set $ctf_team1_count value 0
+scoreboard players set $ctf_team2_count value 0
 # ------------Sort Teams ------------
 # Preset Team 1
 execute as @a[tag=ctf_queue1] run function ctf:setup/team/join with storage ctf:game team1
