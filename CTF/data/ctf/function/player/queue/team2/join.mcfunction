@@ -1,8 +1,8 @@
-tag @s remove ctf_queue1
-tag @s remove ctf_queue
-
 # Stop if player already in queue
 execute if entity @s[tag=ctf_queue1] run return fail
+
+tag @s remove ctf_queue1
+tag @s remove ctf_queue
 
 # Add Tag
 tag @s add ctf_queue2
