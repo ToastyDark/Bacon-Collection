@@ -6,4 +6,4 @@ execute if entity @s[tag=ctf_has_bomb,team=ctf_team1] run function ctf:game/flag
 execute if entity @s[tag=ctf_has_bomb,team=ctf_team2] run function ctf:game/flag/replace/replace with storage ctf:game team1
 
 # Replace Bomb
-execute if entity @s[tag=ctf_has_flag] run function ctf:game/bomb/place/place with storage ctf:game
+execute if entity @s[tag=ctf_has_flag] run function ctf:game/bomb/replace/replace with storage ctf:game
