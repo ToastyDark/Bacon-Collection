@@ -14,7 +14,7 @@ $title @s actionbar ["",{"text":"You have joined ","bold": true,"color": "blue"}
 
 # Add 1 to Counts
 scoreboard players add $ctf_player_count value 1
-$scoreboard players add $ctf_team$(team_num)_count value
+$scoreboard players add $ctf_team$(team_num)_count value 1
 
 # Set Next Random Join
 scoreboard players add $ctf_team_join_next value 1
