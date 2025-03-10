@@ -3,7 +3,7 @@
     execute in minecraft:void align xyz positioned -5 63 -114 if entity @s[dx=7,dz=7,dy=5] run function ctf:player/queue/random/join
 
     # Remove from Queue
-    execute in minecraft:void align xyz positioned -5 63 -114 unless entity @s[dx=7,dz=7,dy=5,tag=ctf_queue] run function ctf:player/queue/random/leave
+    #execute in minecraft:void align xyz positioned -5 63 -114 unless entity @s[dx=7,dz=7,dy=5,tag=ctf_queue] run function ctf:player/queue/random/leave
 
 # Join Team 1
     # Add
