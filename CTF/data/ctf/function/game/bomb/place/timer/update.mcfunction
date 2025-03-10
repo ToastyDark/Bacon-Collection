@@ -6,7 +6,7 @@ execute if score $bomb_respawn_tick value matches 2.. run scoreboard players res
 
 # Remove 1 second when decimal is 0
 execute if score $bomb_respawn_cd_d value matches ..0 run scoreboard players remove $bomb_respawn_cd value 1
-execute if score bomb_respawn_cd value matches 0 if score $bomb_respawn_cd_d value matches 0 run function ctf:game/bomb/place/timer/end with storage ctf:game
+execute if score $bomb_respawn_cd value matches 0 if score $bomb_respawn_cd_d value matches 0 run function ctf:game/bomb/place/timer/end with storage ctf:game
 
 
 # Update Display
