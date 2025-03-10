@@ -30,6 +30,9 @@ $data modify storage ctf:game bomb_x set from storage ctf:map $(map).bomb.x
 $data modify storage ctf:game bomb_y set from storage ctf:map $(map).bomb.y
 $data modify storage ctf:game bomb_z set from storage ctf:map $(map).bomb.z
 
+# Time of Day
+$data modify storage ctf:game time set from storage ctf:map $(map).time
+
 
 # ---------------COLORS---------------
 # Team Colors
