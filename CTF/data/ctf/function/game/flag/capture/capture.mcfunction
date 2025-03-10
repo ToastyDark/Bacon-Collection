@@ -20,4 +20,5 @@ function ctf:player/respawn/respawn
 
 
 # Replace Flag
-$function ctf:game/flag/place/team$(team_ops) with storage ctf:game
+#$function ctf:game/flag/place/team$(team_ops) with storage ctf:game
+$function ctf:game/flag/place/timer/start with storage ctf:game team$(team_num)
