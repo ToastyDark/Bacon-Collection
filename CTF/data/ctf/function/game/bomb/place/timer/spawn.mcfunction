@@ -1,1 +1,1 @@
-$execute in $(dimension) position $(bomb_x) $(bomb_y) $(bomb_z) run summon text_display ~ ~1.5 ~ {Tags:["ctf_bomb_timer"]}
+$execute in $(dimension) positioned $(bomb_x) $(bomb_y) $(bomb_z) run summon text_display ~ ~1.5 ~ {Tags:["ctf_bomb_timer"]}
