@@ -1,5 +1,5 @@
 # Replace Bomb
-function ctf:game/bomb/place/place with storage ctf:game bomb
+function ctf:game/bomb/place/place with storage ctf:game
 
 # Set bomb as returned
 data modify storage ctf:game bomb.stolen set value false
