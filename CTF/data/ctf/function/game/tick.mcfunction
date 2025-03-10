@@ -8,5 +8,5 @@ execute if data storage ctf:game bomb{stolen:true} if data storage ctf:game bomb
 
 # Replace Timers
 execute if score $bomb_respawn_cd value matches 0.. run function ctf:game/bomb/place/timer/update
-execute if score $flag2_respawn_cd value matches 0.. run function ctf:game/flag/place/timer/update with storage ctf:game team1
-execute if score $flag1_respawn_cd value matches 0.. run function ctf:game/flag/place/timer/update with storage ctf:game team2
+execute if score $flag2_respawn_cd value matches 0.. run function ctf:game/flag/place/timer/update with storage ctf:game team2
+execute if score $flag1_respawn_cd value matches 0.. run function ctf:game/flag/place/timer/update with storage ctf:game team1
