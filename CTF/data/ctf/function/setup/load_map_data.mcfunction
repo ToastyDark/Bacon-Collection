@@ -33,6 +33,15 @@ $data modify storage ctf:game bomb_z set from storage ctf:map $(map).bomb.z
 # Time of Day
 $data modify storage ctf:game time set from storage ctf:map $(map).time
 
+# Points to Win
+$data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
+execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
+
+# Flag Respwn Delay
+$data modify storage ctf:game flag_respawn_delay set from storage ctf:map $(map).flag_respawn_delay
+
+# Bomb rRespawn Delay
+$data modify storage ctf:game bomb_respawn_delay set from storage ctf:map $(map).bomb_respawn_delay
 
 # ---------------COLORS---------------
 # Team Colors
