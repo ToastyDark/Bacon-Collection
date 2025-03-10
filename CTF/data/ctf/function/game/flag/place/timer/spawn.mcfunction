@@ -1,1 +1,1 @@
-$execute in $(dimension) positioned $(flag_x) $(flag_y) $(flag_z) run summon text_display ~ ~1.5 ~ {Tags:["ctf_flag$(team_ops)_timer"],billboard:"center"}
+$execute in $(dimension) positioned $(flag_x) $(flag_y) $(flag_z) run summon text_display ~ ~1.5 ~ {Tags:["ctf_flag$(team_num)_timer"],billboard:"center"}
