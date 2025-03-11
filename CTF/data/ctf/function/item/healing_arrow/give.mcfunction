@@ -1,1 +1,1 @@
-give @s arrow[custom_name='{"text":"Lingering Healing Arrow","color":"red","italic":false}',custom_data={ctf_healing_arrow:true}]
+give @s tipped_arrow[custom_name='{"text":"Lingering Healing Arrow","color":"red","italic":false}',custom_data={ctf_healing_arrow:true},potion_contents={custom_color:16711680}]
