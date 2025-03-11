@@ -1,1 +1,1 @@
-execute as @e[type=arrow,nbt={weapon:{components:{"minecraft:custom_data":{ctf_healing_arrow:true}}}}] run say hi
+execute as @e[type=arrow,nbt={item:{components:{"minecraft:custom_data":{ctf_healing_arrow:true}}}}] run say hi
