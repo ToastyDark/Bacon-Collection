@@ -32,3 +32,6 @@ execute as @a[scores={ctf.settings.random_teams=1..}] run function ctf:trigger/r
 
     scoreboard players enable ToastyDark ctf.map.desert_maze
     execute as @a[scores={ctf.map.desert_maze=1..}] run function ctf:trigger/map/desert_maze
+
+    scoreboard players enable ToastyDark ctf.map.sandcastle
+    execute as @a[scores={ctf.map.sandcastle=1..}] run function ctf:trigger/map/sandcastle
