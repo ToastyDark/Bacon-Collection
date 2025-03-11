@@ -7,3 +7,7 @@ execute if entity @s[scores={value=1}] run ride @n[type=area_effect_cloud] mount
 
 # Kill arrow
 execute if entity @s[scores={value=200..}] run kill @s
+
+
+# Display Particles
+execute if entity @s[scores={value=2..}] run particle entity_effect{color:[1.000,0.000,0.000,1.00]} ~ ~ ~ 1.5 0 1.5 .5 20 force @a[distance=35..]
