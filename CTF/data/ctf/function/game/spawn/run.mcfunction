@@ -1,4 +1,4 @@
-# Check if player has flag
+# Stop if player just respawned
 execute if entity @s[tag=ctf_respawned] run return fail
 
 
