@@ -9,4 +9,4 @@ title @s actionbar ["",{"text":"Map Changed: ","bold": true,"color": "gray"},{"t
 execute at @s run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 1 0.6 1
 
 
-gamerule sendCommandFeedback true
+#gamerule sendCommandFeedback true
