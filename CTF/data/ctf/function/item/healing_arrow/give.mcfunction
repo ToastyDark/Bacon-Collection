@@ -1,1 +1,1 @@
-give @s tipped_arrow[custom_name='{"text":"Lingering Healing Arrow","color":"red","italic":false}',custom_data={ctf_healing_arrow:true},potion_contents={custom_color:16711680}]
+give @s tipped_arrow[custom_name='{"text":"Lingering Healing Arrow","color":"red","italic":false}',custom_data={ctf_healing_arrow:true},potion_contents={custom_color:16711680},lore=['{"color":"gray","italic":false,"text":"Aid your teammates. Creates a \\nlingering healing zone."}'],hide_additional_tooltip={}]
