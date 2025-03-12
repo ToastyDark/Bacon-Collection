@@ -1,6 +1,9 @@
 # Load Triggers
 function ctf:trigger/load
 
+# Load Stats
+function ctf:stats/load
+
 
 # More
 scoreboard objectives add value dummy

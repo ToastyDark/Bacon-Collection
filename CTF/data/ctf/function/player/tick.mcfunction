@@ -1,8 +1,12 @@
-# Check if player leaves game
-execute if entity @s[scores={ctf_leave_game=1..}] run function ctf:player/join/rejoined
+# ------------------ Lobby ------------------
 
 # Check Queue
 function ctf:player/queue/check
+
+
+# ---------------- Base Game ----------------
+# Check if player leaves game
+execute if entity @s[scores={ctf_leave_game=1..}] run function ctf:player/join/rejoined
 
 # Crouch Timer
 function ctf:player/crouch/tick
@@ -13,7 +17,7 @@ execute if entity @s[scores={ctf_died=1..}] at @s run function ctf:player/respaw
 # Swap Kit
 execute if entity @s[scores={ctf_crouch_time=1},nbt={OnGround:true}] run function ctf:player/kit/swap/check_team with storage ctf:game
 
-
+# ---------------- Objective Stuff ----------------
 # Check if player breaks wool
 function ctf:player/break_wool/check
 
@@ -23,7 +27,7 @@ execute if entity @s[scores={ctf_mined_tnt=1..}] run function ctf:game/bomb/take
 # Check if player steals flag
 execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag/steal/start
 
-# Flag Tick
+# Player Has Flag
 execute if entity @s[tag=ctf_has_flag] run function ctf:player/flag/tick
 
 # Stop players from dropping items
