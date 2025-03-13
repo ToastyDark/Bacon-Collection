@@ -2,7 +2,7 @@
 clear @s
 
 # Remove Wool from ground
-$kill @e[distance=..7,type=item,nbt={Item:{id:"minecraft:$(ops_flag_color)_wool"}}]
+$execute at @s run kill @e[distance=..7,type=item,nbt={Item:{id:"minecraft:$(ops_flag_color)_wool"}}]
 
 # Start Loop
 execute unless score $ctf_flag_slot_temp value matches 0.. run scoreboard players set $ctf_flag_slot_temp value 0
