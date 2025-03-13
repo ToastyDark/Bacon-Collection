@@ -1,0 +1,25 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "player"
+        },
+        "killing_blow": {
+          "tags": [
+            {
+              "expected":false,
+              "id": "minecraft:is_projectile"
+            }
+          ]
+          
+        }
+        
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:advancement/deaths/melee"
+  }
+}

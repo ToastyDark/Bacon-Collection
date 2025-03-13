@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "killing_blow": {
+          "tags": [
+            {
+              "expected":true,
+              "id": "minecraft:is_projectile"
+            }
+          ]
+          
+        }
+        
+      }
+    }
+  },
+  "rewards": {
+    "function": "ctf:advancement/kills/ranged"
+  }
+}
