@@ -1,7 +1,8 @@
-execute store result score $flag_carrier_wool_count value run execute if items entity @s container.* minecraft:red_wool
+$execute store result score $team_$(team_num)flag_carrier_wool_count value run execute if items entity @s container.* minecraft:$(color_flag_color)_wool
 
 # Stop if player hasn't touched inventory
 $execute if score $team_$(team_num)flag_carrier_wool_count value matches 36 run return fail
 
 
 # Reset Inventory
+$function ctf:player/obj/inv/flag/start with storage ctf:game team$(team_num)
