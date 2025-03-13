@@ -10,4 +10,4 @@ execute if score @s museq.id = @s museq.temp at @s run function museq:tick_song 
 
 # No match, remove this item and try again
 execute unless score @s museq.id = @s museq.temp run data remove storage museq:temp_check players[0]
-execute unless score @s museq.id = @s museq.temp run function museq:search/find_song_recursive
+execute unless score @s museq.id = @s museq.temp if data storage museq:temp_check players[0] run function museq:search/find_song_recursive
