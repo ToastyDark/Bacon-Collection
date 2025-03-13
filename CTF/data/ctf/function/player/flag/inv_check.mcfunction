@@ -1,3 +1,4 @@
+$scoreboard players reset $team_$(team_num)_flag_carrier_wool_count value
 $execute store result score $team_$(team_num)_flag_carrier_wool_count value run execute if items entity @s container.* minecraft:$(color_flag_color)_wool
 
 # Stop if player hasn't touched inventory
