@@ -1,1 +1,1 @@
-execute as Jake_28 run function museq:songs/test
+execute as Jake_28 at @s run function museq:songs/test
