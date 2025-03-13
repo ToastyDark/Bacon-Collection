@@ -85,6 +85,8 @@ public class Main {
 		
 		XMLTag lmms_project = XMLTag.parse(new ActualStringBuffer(Files.readString(Paths.get(filename_in))));
 		
+		boolean allow_bad_bpms = Files.exists(Paths.get("allow_bad_bpms.txt"));
+		
 		// Convert BPM to ticks per 32nd
 		int bpm = 150;
 		for (XMLTag head 			: lmms_project.tag("head")) bpm = Integer.parseInt(head.attribute("bpm"));
@@ -92,18 +94,25 @@ public class Main {
 		System.out.println("");
 		if (bpm != 150 && bpm != 75 && bpm != 50) {
 			System.out.println("WARNING! " + bpm + " is not a safe bpm!!");
-			 if (bpm > 100) {
-				 System.out.println("I'll be nice and round it to 150 for you, but be careful next time!");
-				 bpm = 150;
-			 }
-			 if (bpm > 60 && bpm <= 100) {
-				 System.out.println("I'll be nice and round it to 75 for you, but be careful next time!");
-				 bpm = 75;
-			 }
-			 if (bpm > 0 && bpm <= 60) {
-				 System.out.println("I'll be nice and round it to 50 for you, but be careful next time!");
-				 bpm = 50;
-			 }
+			
+			if (allow_bad_bpms) {	
+				 System.out.println("[Discovered 'allow_bad_bpms.txt', ignoring issue]");
+			} else {
+				
+				 if (bpm > 100) {
+					 System.out.println("I'll be nice and round it to 150 for you, but be careful next time!");
+					 bpm = 150;
+				 }
+				 if (bpm > 60 && bpm <= 100) {
+					 System.out.println("I'll be nice and round it to 75 for you, but be careful next time!");
+					 bpm = 75;
+				 }
+				 if (bpm > 0 && bpm <= 60) {
+					 System.out.println("I'll be nice and round it to 50 for you, but be careful next time!");
+					 bpm = 50;
+				 }
+				 
+			}
 				System.out.println("");
 		}
 		
