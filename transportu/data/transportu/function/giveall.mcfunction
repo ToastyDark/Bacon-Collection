@@ -27,3 +27,6 @@ function transportu:give/iitems
 
 # Carrot
 function transportu:give/carrot
+
+# Void Spawn Build
+function transportu:give/void_spawn_build
