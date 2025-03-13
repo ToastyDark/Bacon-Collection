@@ -1,6 +1,6 @@
 {
     "values": [
         "museq:tick",
-        "museq:trigger/trigger_tick"
+        "museq:trigger/trigger_tickproxy"
     ]
 }
