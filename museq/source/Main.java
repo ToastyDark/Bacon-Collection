@@ -51,7 +51,7 @@ public class Main {
 			song_list += "tellraw @s {\"text\":\""+song_name+"\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
 		
 			// Trigger
-			String scoreboard_name = "museq." + song.getName();
+			String scoreboard_name = "mq." + song.getName();
 			trigger_load += "scoreboard objectives add " + scoreboard_name + " trigger" + "\n";
 			
 			trigger_tick += "# " + song.getName() + "\n";
