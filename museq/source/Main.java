@@ -47,7 +47,7 @@ public class Main {
 			
 			// Song list
 			String song_name = song.getName();
-			String command = "function museq:search/change_song {song:\""+song_name+"\"}";
+			String command = "trigger mq."+song_name;
 			song_list += "tellraw @s {\"text\":\""+song_name+"\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
 		
 			// Trigger
