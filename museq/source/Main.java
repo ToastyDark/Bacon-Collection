@@ -28,6 +28,8 @@ public class Main {
 			root_directory = new File(System.getProperty("user.dir"));
 		}
 		
+		String song_list = "";
+		
 		String data_path = root_directory.getPath() + "/data\\museq\\function\\songs\\";
 		
 		File songs = new File("songs/");
@@ -37,7 +39,18 @@ public class Main {
 				continue;
 			}
 			export(song.getPath(), data_path + song.getName() + ".mcfunction");
+			
+			// Song list
+			String song_name = song.getName();
+			String command = "say hello " + song_name + "!";
+			song_list += "tellraw @s {\"text\":\""+song_name+"\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
 		}
+		
+		
+		String song_list_path = data_path + "songlist.mcfunction";
+		Paths.get(song_list_path).toFile().getParentFile().mkdirs();
+		Files.writeString(Paths.get(song_list_path), song_list);
+		
 	}
 	
 	public static void export(String filename_in, String filename_out) throws ParseException, IOException {
