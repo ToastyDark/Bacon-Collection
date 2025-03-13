@@ -16,4 +16,4 @@ data merge storage transportu:temp {temp_rx:"0"}
 data merge storage transportu:temp {temp_rz:"0"}
 
 
-function transportu:makedirect with storage transportu:temp
+function transportu:make/makedirect with storage transportu:temp
