@@ -56,8 +56,8 @@ public class Main {
 			
 			trigger_tick += "# " + song.getName() + "\n";
 			String trigger_enable = "scoreboard players enable @s " + scoreboard_name + "\n";
-			String trigger_run = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run function museq:search/change_song {song:\"" + song.getName() + "\"}" + "\n";
-			String trigger_reset = "scoreboard players reset @s " + scoreboard_name + "\n";
+			String trigger_run    = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run function museq:search/change_song {song:\"" + song.getName() + "\"}" + "\n";
+			String trigger_reset  = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run scoreboard players reset @s " + scoreboard_name + "\n";
 			
 			trigger_tick += trigger_enable + trigger_run + trigger_reset + "\n";
 		}
