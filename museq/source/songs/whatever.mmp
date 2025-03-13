@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!DOCTYPE lmms-project>
+<lmms-project type="song" creator="LMMS" creatorversion="1.2.2" version="1.0">
+  <head timesig_numerator="4" bpm="140" mastervol="100" masterpitch="0" timesig_denominator="4"/>
+  <song>
+    <trackcontainer visible="1" x="6" width="600" type="song" y="2" height="300" maximized="1" minimized="0">
+      <track muted="0" type="0" name="harp.ogg" solo="0">
+        <instrumenttrack usemasterpitch="1" pitch="0" pitchrange="1" vol="100" pan="0" fxch="0" basenote="54">
+          <instrument name="audiofileprocessor">
+            <audiofileprocessor src="noteblock/harp.ogg" sframe="0" reversed="0" lframe="0" amp="100" eframe="1" interp="1" looped="0" stutter="0"/>
+          </instrument>
+          <eldata fcut="14000" ftype="0" fres="0.5" fwet="0">
+            <elvol latt="0" lspd="0.1" amt="0" lspd_syncmode="0" sustain="0.5" lspd_denominator="4" userwavefile="" hold="0.5" lpdel="0" x100="0" dec="0.5" rel="0.1" lamt="0" att="0" lspd_numerator="4" pdel="0" lshp="0" ctlenvamt="0"/>
+            <elcut latt="0" lspd="0.1" amt="0" lspd_syncmode="0" sustain="0.5" lspd_denominator="4" userwavefile="" hold="0.5" lpdel="0" x100="0" dec="0.5" rel="0.1" lamt="0" att="0" lspd_numerator="4" pdel="0" lshp="0" ctlenvamt="0"/>
+            <elres latt="0" lspd="0.1" amt="0" lspd_syncmode="0" sustain="0.5" lspd_denominator="4" userwavefile="" hold="0.5" lpdel="0" x100="0" dec="0.5" rel="0.1" lamt="0" att="0" lspd_numerator="4" pdel="0" lshp="0" ctlenvamt="0"/>
+          </eldata>
+          <chordcreator chord="0" chord-enabled="0" chordrange="1"/>
+          <arpeggiator arprange="1" arpgate="100" arpmode="0" arpcycle="0" arp="0" arptime_syncmode="0" arptime="200" arpskip="0" arptime_numerator="4" arp-enabled="0" arptime_denominator="4" arpmiss="0" arpdir="0"/>
+          <midiport basevelocity="63" fixedinputvelocity="-1" inputchannel="0" outputchannel="1" outputcontroller="0" outputprogram="1" inputcontroller="0" fixedoutputnote="-1" writable="0" fixedoutputvelocity="-1" readable="0"/>
+          <fxchain enabled="0" numofeffects="0"/>
+        </instrumenttrack>
+        <pattern muted="0" type="1" steps="16" name="harp.ogg" pos="0">
+          <note len="48" key="64" vol="100" pan="0" pos="0"/>
+          <note len="48" key="68" vol="100" pan="0" pos="36"/>
+          <note len="48" key="62" vol="100" pan="0" pos="72"/>
+          <note len="48" key="62" vol="100" pan="0" pos="132"/>
+          <note len="48" key="72" vol="100" pan="0" pos="204"/>
+          <note len="48" key="63" vol="100" pan="0" pos="300"/>
+          <note len="48" key="72" vol="100" pan="0" pos="348"/>
+          <note len="48" key="64" vol="100" pan="0" pos="360"/>
+          <note len="48" key="62" vol="100" pan="0" pos="360"/>
+          <note len="48" key="68" vol="100" pan="0" pos="372"/>
+          <note len="48" key="59" vol="100" pan="0" pos="408"/>
+          <note len="48" key="63" vol="100" pan="0" pos="432"/>
+          <note len="48" key="71" vol="100" pan="0" pos="492"/>
+          <note len="48" key="67" vol="100" pan="0" pos="744"/>
+        </pattern>
+      </track>
+      <track muted="0" type="0" name="icechime.ogg" solo="0">
+        <instrumenttrack usemasterpitch="1" pitch="0" pitchrange="1" vol="100" pan="0" fxch="0" basenote="54">
+          <instrument name="audiofileprocessor">
+            <audiofileprocessor src="noteblock/icechime.ogg" sframe="0" reversed="0" lframe="0" amp="100" eframe="1" interp="1" looped="0" stutter="0"/>
+          </instrument>
+          <eldata fcut="14000" ftype="0" fres="0.5" fwet="0">
+            <elvol latt="0" lspd="0.1" amt="0" lspd_syncmode="0" sustain="0.5" lspd_denominator="4" userwavefile="" hold="0.5" lpdel="0" x100="0" dec="0.5" rel="0.1" lamt="0" att="0" lspd_numerator="4" pdel="0" lshp="0" ctlenvamt="0"/>
+            <elcut latt="0" lspd="0.1" amt="0" lspd_syncmode="0" sustain="0.5" lspd_denominator="4" userwavefile="" hold="0.5" lpdel="0" x100="0" dec="0.5" rel="0.1" lamt="0" att="0" lspd_numerator="4" pdel="0" lshp="0" ctlenvamt="0"/>
+            <elres latt="0" lspd="0.1" amt="0" lspd_syncmode="0" sustain="0.5" lspd_denominator="4" userwavefile="" hold="0.5" lpdel="0" x100="0" dec="0.5" rel="0.1" lamt="0" att="0" lspd_numerator="4" pdel="0" lshp="0" ctlenvamt="0"/>
+          </eldata>
+          <chordcreator chord="0" chord-enabled="0" chordrange="1"/>
+          <arpeggiator arprange="1" arpgate="100" arpmode="0" arpcycle="0" arp="0" arptime_syncmode="0" arptime="200" arpskip="0" arptime_numerator="4" arp-enabled="0" arptime_denominator="4" arpmiss="0" arpdir="0"/>
+          <midiport basevelocity="63" fixedinputvelocity="-1" inputchannel="0" outputchannel="1" outputcontroller="0" outputprogram="1" inputcontroller="0" fixedoutputnote="-1" writable="0" fixedoutputvelocity="-1" readable="0"/>
+          <fxchain enabled="0" numofeffects="0"/>
+        </instrumenttrack>
+        <pattern muted="0" type="1" steps="16" name="icechime.ogg" pos="0">
+          <note len="48" key="70" vol="100" pan="0" pos="48"/>
+          <note len="48" key="66" vol="100" pan="0" pos="96"/>
+          <note len="48" key="60" vol="100" pan="0" pos="144"/>
+          <note len="48" key="68" vol="100" pan="0" pos="240"/>
+          <note len="48" key="60" vol="100" pan="0" pos="312"/>
+          <note len="48" key="60" vol="100" pan="0" pos="384"/>
+          <note len="48" key="68" vol="100" pan="0" pos="396"/>
+          <note len="48" key="58" vol="100" pan="0" pos="444"/>
+          <note len="48" key="69" vol="100" pan="0" pos="696"/>
+          <note len="48" key="62" vol="100" pan="0" pos="720"/>
+        </pattern>
+      </track>
+    </trackcontainer>
+    <track muted="0" type="6" name="Automation track" solo="0">
+      <automationtrack/>
+      <automationpattern mute="0" len="192" prog="0" name="Numerator" tens="1" pos="0"/>
+      <automationpattern mute="0" len="192" prog="0" name="Denominator" tens="1" pos="0"/>
+      <automationpattern mute="0" len="192" prog="0" name="Tempo" tens="1" pos="0"/>
+      <automationpattern mute="0" len="192" prog="0" name="Master volume" tens="1" pos="0"/>
+      <automationpattern mute="0" len="192" prog="0" name="Master pitch" tens="1" pos="0"/>
+    </track>
+    <fxmixer visible="1" x="5" width="543" y="310" height="333" maximized="0" minimized="0">
+      <fxchannel muted="0" soloed="0" volume="1" num="0" name="Master">
+        <fxchain enabled="0" numofeffects="0"/>
+      </fxchannel>
+    </fxmixer>
+    <ControllerRackView visible="1" x="680" width="350" y="310" height="200" maximized="0" minimized="0"/>
+    <pianoroll visible="0" x="5" width="860" y="5" height="480" maximized="1" minimized="0"/>
+    <automationeditor visible="0" x="1" width="860" y="1" height="400" maximized="0" minimized="0"/>
+    <projectnotes visible="0" x="700" width="687" y="10" height="400" maximized="0" minimized="0"><![CDATA[<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html><head><meta name="qrichtext" content="1" /><style type="text/css">
+p, li { white-space: pre-wrap; }
+</style></head><body style=" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;">
+<p style="-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:7.5pt;"><br /></p></body></html>]]></projectnotes>
+    <timeline lp1pos="768" lpstate="0" lp0pos="0"/>
+    <controllers/>
+  </song>
+</lmms-project>

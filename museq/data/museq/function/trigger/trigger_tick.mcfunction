@@ -30,3 +30,8 @@ scoreboard players enable @s mq.test.mmp
 execute if entity @s[scores={mq.test.mmp=1..}] run function museq:search/change_song {song:"test.mmp"}
 execute if entity @s[scores={mq.test.mmp=1..}] run scoreboard players reset @s mq.test.mmp
 
+# whatever.mmp
+scoreboard players enable @s mq.whatever.mmp
+execute if entity @s[scores={mq.whatever.mmp=1..}] run function museq:search/change_song {song:"whatever.mmp"}
+execute if entity @s[scores={mq.whatever.mmp=1..}] run scoreboard players reset @s mq.whatever.mmp
+
