@@ -78,27 +78,6 @@ execute if score @s museq.tick matches 998 run playsound minecraft:block.note_bl
 execute if score @s museq.tick matches 1000 run playsound minecraft:block.note_block.flute record @s ~ ~ ~ 1.0 1.189
 execute if score @s museq.tick matches 1006 run playsound minecraft:block.note_block.flute record @s ~ ~ ~ 1.0 0.891
 execute if score @s museq.tick matches 1008 run playsound minecraft:block.note_block.flute record @s ~ ~ ~ 1.0 1.122
-execute if score @s museq.tick matches 256 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 262 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 264 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 272 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 280 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 288 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 294 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 296 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 304 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 318 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 320 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 326 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 328 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 336 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 344 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 352 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 358 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 360 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 366 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 368 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 382 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 1.189
 execute if score @s museq.tick matches 512 run playsound minecraft:block.note_block.hat record @s ~ ~ ~ 1.0 1.189
 execute if score @s museq.tick matches 518 run playsound minecraft:block.note_block.hat record @s ~ ~ ~ 1.0 1.189
 execute if score @s museq.tick matches 520 run playsound minecraft:block.note_block.hat record @s ~ ~ ~ 1.0 1.189
@@ -528,9 +507,6 @@ execute if score @s museq.tick matches 1272 run playsound minecraft:block.note_b
 execute if score @s museq.tick matches 1276 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.19 1.414
 execute if score @s museq.tick matches 1276 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 1.0 1.335
 execute if score @s museq.tick matches 1276 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.51 1.122
-execute if score @s museq.tick matches 1280 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.51 1.335
-execute if score @s museq.tick matches 1280 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.19 1.122
-execute if score @s museq.tick matches 1284 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.19 1.335
 execute if score @s museq.tick matches 256 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 1.0 2.0
 execute if score @s museq.tick matches 258 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 0.4 2.0
 execute if score @s museq.tick matches 260 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 0.59 2.0
@@ -1351,21 +1327,5 @@ execute if score @s museq.tick matches 252 run playsound minecraft:block.note_bl
 execute if score @s museq.tick matches 256 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 0.51 1.335
 execute if score @s museq.tick matches 256 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 0.19 1.122
 execute if score @s museq.tick matches 260 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 0.19 1.335
-execute if score @s museq.tick matches 1536 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 1540 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.335
-execute if score @s museq.tick matches 1544 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.414
-execute if score @s museq.tick matches 1548 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.782
-execute if score @s museq.tick matches 1552 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.414
-execute if score @s museq.tick matches 1556 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.587
-execute if score @s museq.tick matches 1560 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 1564 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.335
-execute if score @s museq.tick matches 1568 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.587
-execute if score @s museq.tick matches 1572 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.782
-execute if score @s museq.tick matches 1576 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 1580 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.059
-execute if score @s museq.tick matches 1584 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.587
-execute if score @s museq.tick matches 1588 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.414
-execute if score @s museq.tick matches 1592 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.122
-execute if score @s museq.tick matches 1596 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.0 1.335
 scoreboard players add @s museq.tick 1
-execute if score @s museq.tick matches 1600.. run scoreboard players set @s museq.tick 0
+execute if score @s museq.tick matches 1280.. run scoreboard players set @s museq.tick 0
