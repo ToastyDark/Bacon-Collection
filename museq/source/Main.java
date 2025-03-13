@@ -28,9 +28,14 @@ public class Main {
 			root_directory = new File(System.getProperty("user.dir"));
 		}
 		
-		String song_list = "";
+		// ... //
+		String song_list = "# Generated File \n\n";
+		String trigger_load = "# Generated File \n\n";
+		String trigger_tick = "# Generated File \n\n";
+
+		// ... //
 		
-		String data_path = root_directory.getPath() + "/data\\museq\\function\\songs\\";
+		String data_path = root_directory.getPath() + "/data\\museq\\function\\";
 		
 		File songs = new File("songs/");
 		for (File song : songs.listFiles()) {
@@ -38,19 +43,38 @@ public class Main {
 				System.out.println("Can't export a compressed project. Try saving as .mmp.");
 				continue;
 			}
-			export(song.getPath(), data_path + song.getName() + ".mcfunction");
+			export(song.getPath(), data_path + "songs\\" + song.getName() + ".mcfunction");
 			
 			// Song list
 			String song_name = song.getName();
-			String command = "say hello " + song_name + "!";
+			String command = "function museq:search/change_song {song:\""+song_name+"\"}";
 			song_list += "tellraw @s {\"text\":\""+song_name+"\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
+		
+			// Trigger
+			String scoreboard_name = "museq." + song.getName();
+			trigger_load += "scoreboard objectives add " + scoreboard_name + " trigger" + "\n";
+			
+			trigger_tick += "# " + song.getName() + "\n";
+			String trigger_enable = "scoreboard players enable @s " + scoreboard_name + "\n";
+			String trigger_run = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run function museq:search/change_song {song:" + song.getName() + "}" + "\n";
+			String trigger_reset = "scoreboard players reset @s " + scoreboard_name + "\n";
+			
+			trigger_tick += trigger_enable + trigger_run + trigger_reset + "\n";
 		}
 		
-		
-		String song_list_path = data_path + "songlist.mcfunction";
+		// Song list
+		String song_list_path = data_path + "meta\\songlist.mcfunction";
 		Paths.get(song_list_path).toFile().getParentFile().mkdirs();
 		Files.writeString(Paths.get(song_list_path), song_list);
 		
+		// Trigger
+		String trigger_load_path = data_path + "trigger\\trigger_load.mcfunction";
+		Paths.get(trigger_load_path).toFile().getParentFile().mkdirs();
+		Files.writeString(Paths.get(trigger_load_path), trigger_load);
+		
+		String trigger_tick_path = data_path + "trigger\\trigger_tick.mcfunction";
+		Paths.get(trigger_tick_path).toFile().getParentFile().mkdirs();
+		Files.writeString(Paths.get(trigger_tick_path), trigger_tick);
 	}
 	
 	public static void export(String filename_in, String filename_out) throws ParseException, IOException {

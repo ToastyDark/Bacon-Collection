@@ -1,5 +1,6 @@
 {
     "values": [
-        "museq:tick"
+        "museq:tick",
+        "museq:trigger/trigger_tick"
     ]
 }

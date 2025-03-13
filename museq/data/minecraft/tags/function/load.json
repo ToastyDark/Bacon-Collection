@@ -1,5 +1,6 @@
 {
     "values": [
-        "museq:load"
+        "museq:load",
+        "museq:trigger/trigger_load"
     ]
 }
