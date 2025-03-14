@@ -30,6 +30,9 @@ execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag
 # Player Has Flag
 execute if entity @s[tag=ctf_has_flag] run function ctf:player/flag/tick
 
+# Player Has Bomb
+execute if entity @s[tag=ctf_has_bomb] run function ctf:player/bomb/tick
+
 # Stop players from dropping items
 execute at @s run function ctf:player/no_drop/start
 
