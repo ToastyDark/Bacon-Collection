@@ -1,3 +1,6 @@
+# Get Armor
+#$function ctf:player/obj/inv/flag/armor with storage ctf:game team$(team_num)
+
 # Clear previous inv
 clear @s
 
@@ -10,3 +13,7 @@ $execute store result storage ctf:game team$(team_num).temp_flag_slot int 1 run 
 
 
 $function ctf:player/obj/inv/flag/loop with storage ctf:game team$(team_num)
+
+
+# Replace Head
+$item replace entity @s armor.head with minecraft:$(ops_flag_color)_wool[attribute_modifiers=[{id:"armor",type:"armor",amount:10,operation:"add_value",slot:"any"}],hide_additional_tooltip={}] 1
