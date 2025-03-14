@@ -7,4 +7,3 @@ scoreboard objectives add mq.ctf_note_silt.mmp trigger
 scoreboard objectives add mq.range.mmp trigger
 scoreboard objectives add mq.test.mmp trigger
 scoreboard objectives add mq.whatever.mmp trigger
-scoreboard objectives add mq.whatever.mmp.bak trigger

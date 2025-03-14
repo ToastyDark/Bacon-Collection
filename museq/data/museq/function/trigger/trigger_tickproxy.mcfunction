@@ -1,1 +1,0 @@
-execute as @a run function museq:trigger/trigger_tick
