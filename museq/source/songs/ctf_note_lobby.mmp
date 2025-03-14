@@ -21,7 +21,8 @@
         </instrumenttrack>
         <pattern muted="0" name="pling.ogg" type="1" steps="16" pos="0">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -38,7 +39,8 @@
         </pattern>
         <pattern muted="0" name="" type="1" steps="16" pos="384">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -46,16 +48,17 @@
           <note key="50" pos="168" pan="0" vol="68" len="24"/>
           <note key="52" pos="192" pan="0" vol="100" len="24"/>
           <note key="48" pos="240" pan="0" vol="100" len="24"/>
-          <note key="47" pos="264" pan="0" vol="121" len="24"/>
-          <note key="45" pos="288" pan="0" vol="114" len="24"/>
-          <note key="45" pos="312" pan="0" vol="38" len="24"/>
-          <note key="45" pos="336" pan="0" vol="12" len="24"/>
+          <note key="52" pos="264" pan="0" vol="121" len="24"/>
+          <note key="57" pos="288" pan="0" vol="114" len="24"/>
+          <note key="57" pos="312" pan="0" vol="38" len="24"/>
+          <note key="57" pos="336" pan="0" vol="12" len="24"/>
           <note key="45" pos="360" pan="0" vol="80" len="12"/>
           <note key="45" pos="372" pan="0" vol="97" len="12"/>
         </pattern>
         <pattern muted="0" name="" type="1" steps="16" pos="768">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -72,7 +75,8 @@
         </pattern>
         <pattern muted="0" name="" type="1" steps="16" pos="1152">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -80,16 +84,17 @@
           <note key="50" pos="168" pan="0" vol="68" len="24"/>
           <note key="52" pos="192" pan="0" vol="100" len="24"/>
           <note key="48" pos="240" pan="0" vol="100" len="24"/>
-          <note key="47" pos="264" pan="0" vol="121" len="24"/>
-          <note key="45" pos="288" pan="0" vol="114" len="24"/>
-          <note key="45" pos="312" pan="0" vol="38" len="24"/>
-          <note key="45" pos="336" pan="0" vol="12" len="24"/>
+          <note key="52" pos="264" pan="0" vol="121" len="24"/>
+          <note key="57" pos="288" pan="0" vol="114" len="24"/>
+          <note key="57" pos="312" pan="0" vol="38" len="24"/>
+          <note key="57" pos="336" pan="0" vol="12" len="24"/>
           <note key="45" pos="360" pan="0" vol="80" len="12"/>
           <note key="45" pos="372" pan="0" vol="97" len="12"/>
         </pattern>
         <pattern muted="0" name="" type="1" steps="16" pos="1536">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -97,16 +102,17 @@
           <note key="50" pos="168" pan="0" vol="68" len="24"/>
           <note key="52" pos="192" pan="0" vol="100" len="24"/>
           <note key="48" pos="240" pan="0" vol="100" len="24"/>
-          <note key="47" pos="264" pan="0" vol="121" len="24"/>
-          <note key="45" pos="288" pan="0" vol="114" len="24"/>
-          <note key="45" pos="312" pan="0" vol="38" len="24"/>
-          <note key="45" pos="336" pan="0" vol="12" len="24"/>
+          <note key="52" pos="264" pan="0" vol="121" len="24"/>
+          <note key="57" pos="288" pan="0" vol="114" len="24"/>
+          <note key="57" pos="312" pan="0" vol="38" len="24"/>
+          <note key="57" pos="336" pan="0" vol="12" len="24"/>
           <note key="45" pos="360" pan="0" vol="80" len="12"/>
           <note key="45" pos="372" pan="0" vol="97" len="12"/>
         </pattern>
         <pattern muted="0" name="" type="1" steps="16" pos="1920">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -114,16 +120,17 @@
           <note key="50" pos="168" pan="0" vol="68" len="24"/>
           <note key="52" pos="192" pan="0" vol="100" len="24"/>
           <note key="48" pos="240" pan="0" vol="100" len="24"/>
-          <note key="47" pos="264" pan="0" vol="121" len="24"/>
-          <note key="45" pos="288" pan="0" vol="114" len="24"/>
-          <note key="45" pos="312" pan="0" vol="38" len="24"/>
-          <note key="45" pos="336" pan="0" vol="12" len="24"/>
+          <note key="52" pos="264" pan="0" vol="121" len="24"/>
+          <note key="57" pos="288" pan="0" vol="114" len="24"/>
+          <note key="57" pos="312" pan="0" vol="38" len="24"/>
+          <note key="57" pos="336" pan="0" vol="12" len="24"/>
           <note key="45" pos="360" pan="0" vol="80" len="12"/>
           <note key="45" pos="372" pan="0" vol="97" len="12"/>
         </pattern>
         <pattern muted="0" name="" type="1" steps="16" pos="2304">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -140,7 +147,8 @@
         </pattern>
         <pattern muted="0" name="" type="1" steps="16" pos="2688">
           <note key="45" pos="0" pan="0" vol="100" len="24"/>
-          <note key="41" pos="48" pan="0" vol="100" len="24"/>
+          <note key="53" pos="48" pan="0" vol="100" len="24"/>
+          <note key="52" pos="72" pan="0" vol="100" len="24"/>
           <note key="45" pos="72" pan="0" vol="100" len="24"/>
           <note key="50" pos="96" pan="0" vol="100" len="24"/>
           <note key="50" pos="120" pan="0" vol="53" len="24"/>
@@ -148,10 +156,10 @@
           <note key="50" pos="168" pan="0" vol="68" len="24"/>
           <note key="52" pos="192" pan="0" vol="100" len="24"/>
           <note key="48" pos="240" pan="0" vol="100" len="24"/>
-          <note key="47" pos="264" pan="0" vol="121" len="24"/>
-          <note key="45" pos="288" pan="0" vol="114" len="24"/>
-          <note key="45" pos="312" pan="0" vol="38" len="24"/>
-          <note key="45" pos="336" pan="0" vol="12" len="24"/>
+          <note key="52" pos="264" pan="0" vol="121" len="24"/>
+          <note key="57" pos="288" pan="0" vol="114" len="24"/>
+          <note key="57" pos="312" pan="0" vol="38" len="24"/>
+          <note key="57" pos="336" pan="0" vol="12" len="24"/>
           <note key="45" pos="360" pan="0" vol="80" len="12"/>
           <note key="45" pos="372" pan="0" vol="97" len="12"/>
         </pattern>
