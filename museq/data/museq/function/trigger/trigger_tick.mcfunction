@@ -42,3 +42,8 @@ execute if entity @s[scores={mq.whatever.mmp=1..}] run function museq:meta/stopa
 execute if entity @s[scores={mq.whatever.mmp=1..}] run tag @s add museq.whatever.mmp
 execute if entity @s[scores={mq.whatever.mmp=1..}] run scoreboard players reset @s mq.whatever.mmp
 
+# [Stop All]
+scoreboard players enable @s mq.stopall
+execute if entity @s[scores={mq.stopall=1..}] run function museq:meta/stopall
+execute if entity @s[scores={mq.stopall=1..}] run scoreboard players reset @s mq.stopall
+

@@ -52,20 +52,14 @@ public class Main {
 			String song_name = song.getName();
 			
 			// Song list
-			String command = "/trigger mq."+song_name;
-			song_list += "tellraw @s {\"text\":\""+song_name+"\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
+			song_list += tellraw(song_name, "gold", "/trigger mq."+song_name);
 		
 			// Trigger
 			String scoreboard_name = "mq." + song_name;
 			trigger_load += "scoreboard objectives add " + scoreboard_name + " trigger" + "\n";
 			
 			trigger_tick += "# " + song_name + "\n";
-			String trigger_enable = "scoreboard players enable @s " + scoreboard_name + "\n";
-			String trigger_run    = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run function museq:meta/stopall\n";
-			 	   trigger_run   += "execute if entity @s[scores={"+scoreboard_name+"=1..}] run tag @s add museq." + song_name + "\n";
-			String trigger_reset  = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run scoreboard players reset @s " + scoreboard_name + "\n";
-			
-			trigger_tick += trigger_enable + trigger_run + trigger_reset + "\n";
+			trigger_tick += trigger(scoreboard_name, "function museq:meta/stopall", "tag @s add museq." + song_name );
 			
 			// Song tick
 			song_tick += "# " + song_name + "\n";
@@ -77,21 +71,38 @@ public class Main {
 			
 		}
 		
-		// Song list
-		saveFunction(data_path + "meta\\songlist.mcfunction", song_list);
-
-		// Trigger
-		saveFunction(data_path + "trigger\\trigger_load.mcfunction", trigger_load);
-		saveFunction(data_path + "trigger\\trigger_tick.mcfunction", trigger_tick);
+		// Stop all
+		song_list += tellraw("[Stop All]", "red", "/trigger mq.stopall");	   // Add to song list
+		trigger_load += "scoreboard objectives add mq.stopall trigger" + "\n"; // Trigger // on load
+		trigger_tick += "# " + "[Stop All]" + "\n";							   // Trigger // on tick
+		trigger_tick += trigger("mq.stopall", "function museq:meta/stopall");  // Trigger // on tick
 		
-		// Song tick
-		saveFunction(data_path + "songs\\_tick.mcfunction", song_tick);
-		
-		// Song clear
-		saveFunction(data_path + "meta\\stopall.mcfunction", song_clear);
+		// Save functions //
+		saveFunction(data_path + "meta\\songlist.mcfunction", song_list);			// Song list
+		saveFunction(data_path + "trigger\\trigger_load.mcfunction", trigger_load);	// Triggers
+		saveFunction(data_path + "trigger\\trigger_tick.mcfunction", trigger_tick); // Triggers
+		saveFunction(data_path + "songs\\_tick.mcfunction", song_tick);				// Song tick
+		saveFunction(data_path + "meta\\stopall.mcfunction", song_clear);			// Song clear
 	
 	}
 	
+	/** Creates the commands to run a list of commands when a given scoreboard is triggered. */
+	public static String trigger(String scoreboard, String... commands) {
+		String trigger_enable = "scoreboard players enable @s " + scoreboard + "\n";
+		String trigger_run    = "";
+		for (String cmd : commands) {
+		 	   trigger_run   += "execute if entity @s[scores={"+scoreboard+"=1..}] run " + cmd + "\n";
+		}
+		String trigger_reset  = "execute if entity @s[scores={"+scoreboard+"=1..}] run scoreboard players reset @s " + scoreboard + "\n";
+		return trigger_enable + trigger_run + trigger_reset + "\n";
+	}
+
+	/** Creates a tellraw command with a string, color, and onClick command. */
+	public static String tellraw(String text, String color, String command) {
+		return "tellraw @s {\"text\":\""+text+"\",\"color\":\""+color+"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
+	}
+	
+	/** Saves a string to disk. */
 	public static void saveFunction(String filename, String function) throws IOException {
 		Paths.get(filename).toFile().getParentFile().mkdirs();
 		Files.writeString(Paths.get(filename), function);
