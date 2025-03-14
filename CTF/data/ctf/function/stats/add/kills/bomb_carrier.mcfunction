@@ -1,0 +1,1 @@
+scoreboard players add @s ctf_round_bombs_stopped 1

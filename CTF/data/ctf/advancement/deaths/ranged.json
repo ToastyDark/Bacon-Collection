@@ -20,6 +20,6 @@
     }
   },
   "rewards": {
-    "function": "ctf:advancement/deaths/melee"
+    "function": "ctf:stats/add/deaths/melee"
   }
 }
