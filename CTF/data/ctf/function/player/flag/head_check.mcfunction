@@ -1,5 +1,5 @@
 # Stop if player hasn't touched head
-$execute if items entity @s armor.head $(ops_flag_color)_woll run return fail
+$execute if items entity @s armor.head $(ops_flag_color)_wool run return fail
 
 
 # Reset Inventory
