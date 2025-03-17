@@ -12,4 +12,3 @@ execute if data storage ctf:game {started:true} run function ctf:game/tick
 function ctf:item/tick
 
 #
-say hi
