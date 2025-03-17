@@ -32,6 +32,8 @@ public class Main {
 		String song_list = "# Generated File \n\n";
 		String trigger_load = "# Generated File \n\n";
 		String trigger_tick = "# Generated File \n\n";
+		String song_tick = "# Generated File \n\n";
+		String song_clear = "# Generated File \n\n";
 
 		// ... //
 		
@@ -45,38 +47,68 @@ public class Main {
 			}
 			export(song.getPath(), data_path + "songs\\" + song.getName() + ".mcfunction");
 			
-			// Song list
+			// Functions //
+			
 			String song_name = song.getName();
-			String command = "/trigger mq."+song_name;
-			song_list += "tellraw @s {\"text\":\""+song_name+"\",\"color\":\"gold\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
+			
+			// Song list
+			song_list += tellraw(song_name, "gold", "/trigger mq."+song_name);
 		
 			// Trigger
-			String scoreboard_name = "mq." + song.getName();
+			String scoreboard_name = "mq." + song_name;
 			trigger_load += "scoreboard objectives add " + scoreboard_name + " trigger" + "\n";
 			
-			trigger_tick += "# " + song.getName() + "\n";
-			String trigger_enable = "scoreboard players enable @s " + scoreboard_name + "\n";
-			String trigger_run    = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run function museq:search/change_song {song:\"" + song.getName() + "\"}" + "\n";
-			String trigger_reset  = "execute if entity @s[scores={"+scoreboard_name+"=1..}] run scoreboard players reset @s " + scoreboard_name + "\n";
+			trigger_tick += "# " + song_name + "\n";
+			trigger_tick += trigger(scoreboard_name, "function museq:meta/stopall", "tag @s add museq." + song_name );
 			
-			trigger_tick += trigger_enable + trigger_run + trigger_reset + "\n";
+			// Song tick
+			song_tick += "# " + song_name + "\n";
+			song_tick += "execute as @a[tag=museq."+song_name+"] at @s run function museq:songs/" + song_name + "\n\n";
+			
+			// Clear songs
+			song_clear += "# " + song_name + "\n";
+			song_clear += "tag @s remove museq." + song_name + "\n\n";
+			
 		}
 		
-		// Song list
-		String song_list_path = data_path + "meta\\songlist.mcfunction";
-		Paths.get(song_list_path).toFile().getParentFile().mkdirs();
-		Files.writeString(Paths.get(song_list_path), song_list);
+		// Stop all
+		song_list += tellraw("[Stop All]", "red", "/trigger mq.stopall");	   // Add to song list
+		trigger_load += "scoreboard objectives add mq.stopall trigger" + "\n"; // Trigger // on load
+		trigger_tick += "# " + "[Stop All]" + "\n";							   // Trigger // on tick
+		trigger_tick += trigger("mq.stopall", "function museq:meta/stopall");  // Trigger // on tick
 		
-		// Trigger
-		String trigger_load_path = data_path + "trigger\\trigger_load.mcfunction";
-		Paths.get(trigger_load_path).toFile().getParentFile().mkdirs();
-		Files.writeString(Paths.get(trigger_load_path), trigger_load);
-		
-		String trigger_tick_path = data_path + "trigger\\trigger_tick.mcfunction";
-		Paths.get(trigger_tick_path).toFile().getParentFile().mkdirs();
-		Files.writeString(Paths.get(trigger_tick_path), trigger_tick);
+		// Save functions //
+		saveFunction(data_path + "meta\\songlist.mcfunction", song_list);			// Song list
+		saveFunction(data_path + "trigger\\trigger_load.mcfunction", trigger_load);	// Triggers
+		saveFunction(data_path + "trigger\\trigger_tick.mcfunction", trigger_tick); // Triggers
+		saveFunction(data_path + "songs\\_tick.mcfunction", song_tick);				// Song tick
+		saveFunction(data_path + "meta\\stopall.mcfunction", song_clear);			// Song clear
+	
 	}
 	
+	/** Creates the commands to run a list of commands when a given scoreboard is triggered. */
+	public static String trigger(String scoreboard, String... commands) {
+		String trigger_enable = "scoreboard players enable @s " + scoreboard + "\n";
+		String trigger_run    = "";
+		for (String cmd : commands) {
+		 	   trigger_run   += "execute if entity @s[scores={"+scoreboard+"=1..}] run " + cmd + "\n";
+		}
+		String trigger_reset  = "execute if entity @s[scores={"+scoreboard+"=1..}] run scoreboard players reset @s " + scoreboard + "\n";
+		return trigger_enable + trigger_run + trigger_reset + "\n";
+	}
+
+	/** Creates a tellraw command with a string, color, and onClick command. */
+	public static String tellraw(String text, String color, String command) {
+		return "tellraw @s {\"text\":\""+text+"\",\"color\":\""+color+"\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\""+command+"\"}}\n";
+	}
+	
+	/** Saves a string to disk. */
+	public static void saveFunction(String filename, String function) throws IOException {
+		Paths.get(filename).toFile().getParentFile().mkdirs();
+		Files.writeString(Paths.get(filename), function);
+	}
+	
+	/** Exports an LMMs project to a function. */
 	public static void export(String filename_in, String filename_out) throws ParseException, IOException {
 		
 		System.out.println("Exporting Project: " + filename_in);
