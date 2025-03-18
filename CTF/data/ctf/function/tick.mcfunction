@@ -14,3 +14,6 @@ function ctf:item/tick
 
 # Spectator Tick
 function ctf:spectate/tick
+
+# Lobby Tick
+function ctf:lobby/tick

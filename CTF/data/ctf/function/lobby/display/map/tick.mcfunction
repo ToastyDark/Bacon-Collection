@@ -1,0 +1,2 @@
+# Update Map Display
+data modify entity @e[type=text_display,tag=ctf_map_display,limit=1] text set value '["",{"score":{"name":"$bomb_respawn_cd","objective":"value"},"bold":true,"color":"gold"},{"text":".","bold":true,"color":"gold"},{"score":{"name":"$bomb_respawn_cd_d","objective":"value"},"bold":true,"color":"gold"},{"text":"s","bold":true,"color":"gold"}]'
