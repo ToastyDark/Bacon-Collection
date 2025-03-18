@@ -68,6 +68,12 @@ function ctf:setup/team/color_dec with storage ctf:game team2
 
 
 
+# ---------------Spectator Data---------------
+data modify storage ctf:game spectator.dimension set from storage ctf:game dimension
+$data modify storage ctf:game spectator.spawn_x set from storage ctf:map $(map).spectator.spawn_x
+$data modify storage ctf:game spectator.spawn_y set from storage ctf:map $(map).spectator.spawn_y
+$data modify storage ctf:game spectator.spawn_z set from storage ctf:map $(map).spectator.spawn_z
+
 
 # Flag Colors
 #$function ctf:map/$(map)/color/team1_flag with storage ctf:map $(map).team1
