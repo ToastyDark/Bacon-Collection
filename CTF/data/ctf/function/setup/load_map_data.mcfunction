@@ -73,6 +73,8 @@ data modify storage ctf:game spectator.dimension set from storage ctf:game dimen
 $data modify storage ctf:game spectator.spawn_x set from storage ctf:map $(map).spectator.spawn_x
 $data modify storage ctf:game spectator.spawn_y set from storage ctf:map $(map).spectator.spawn_y
 $data modify storage ctf:game spectator.spawn_z set from storage ctf:map $(map).spectator.spawn_z
+$data modify storage ctf:game spectator.spawn_rx set from storage ctf:map $(map).spectator.spawn_rx
+$data modify storage ctf:game spectator.spawn_ry set from storage ctf:map $(map).spectator.spawn_ry
 
 
 # Flag Colors
