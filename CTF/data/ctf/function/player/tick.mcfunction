@@ -1,7 +1,7 @@
 # ------------------ Lobby ------------------
 
 # Check Queue
-function ctf:player/queue/check
+function ctf:lobby/queue/check
 
 
 # ---------------- Base Game ----------------
