@@ -6,14 +6,14 @@ function ctf:trigger/tick
 execute as @a run function ctf:player/tick
 
 # Game Tick
-execute if data storage ctf:game {started:true} run function ctf:game/tick
+execute if data storage ctf:game {started:true} run function ctf:game/tick with storage ctf:game
 
 # Item
 function ctf:item/tick
 
 
 # Spectator Tick
-function ctf:spectate/tick
+function ctf:lobby/spectate/tick
 
 # Lobby Tick
 function ctf:lobby/tick

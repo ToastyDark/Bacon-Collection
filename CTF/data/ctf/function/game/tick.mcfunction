@@ -1,3 +1,7 @@
+# Run Map Tick
+$function ctf:map/$(map)/tick
+
+
 # End if no players in game
 
 

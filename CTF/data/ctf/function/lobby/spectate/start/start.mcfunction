@@ -1,5 +1,5 @@
 #
-execute at @s run function ctf:spectate/start/tp with storage ctf:game spectator
+execute at @s run function ctf:lobby/spectate/start/tp with storage ctf:game spectator
 
 # Play Sound
 playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 1 1.4 1

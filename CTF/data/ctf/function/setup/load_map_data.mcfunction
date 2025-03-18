@@ -1,4 +1,8 @@
-# Set Map Dimension
+# ---------------Load Literal Map Data---------------
+$function ctf:map/$(map)/load
+
+
+# --------------- Set Map Dimension ---------------
 $data modify storage ctf:game dimension set from storage ctf:map $(map).dimension
 $data modify storage ctf:game team1.dimension set from storage ctf:map $(map).dimension
 $data modify storage ctf:game team2.dimension set from storage ctf:map $(map).dimension
@@ -82,13 +86,3 @@ $data modify storage ctf:game kit_dimension set from storage ctf:map $(map).kit.
 $data modify storage ctf:game kit_x set from storage ctf:map $(map).kit.x
 $data modify storage ctf:game kit_y set from storage ctf:map $(map).kit.y
 $data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
-
-
-# Flag Colors
-#$function ctf:map/$(map)/color/team1_flag with storage ctf:map $(map).team1
-#$function ctf:map/$(map)/color/team2_flag with storage ctf:map $(map).team2
-#$$data modify storage ctf:map $(map).team1.flag.color set value $(color)
-#$$data modify storage ctf:map $(map).team2.flag.color set value $(color)
-
-
-
