@@ -7,7 +7,7 @@
         "block": [
             {
                 "namespace": "minecraft",
-                "path": "advancements/.*"
+                "path": "advancement/.*"
             }
         ]
     }
