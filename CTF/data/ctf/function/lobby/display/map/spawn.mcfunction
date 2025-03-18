@@ -1,1 +1,1 @@
-execute in void positioned 38 80 -108 run summon text_display ~ ~ ~ {Tags:["ctf_map_display"],billboard:"center"}
+execute in void positioned 38 81 -109 run summon text_display ~ ~ ~ {Tags:["ctf_map_display"],billboard:"center"}

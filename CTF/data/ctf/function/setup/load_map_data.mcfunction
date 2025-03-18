@@ -77,6 +77,13 @@ $data modify storage ctf:game spectator.spawn_rx set from storage ctf:map $(map)
 $data modify storage ctf:game spectator.spawn_ry set from storage ctf:map $(map).spectator.spawn_ry
 
 
+# ---------------Kit Data---------------
+$data modify storage ctf:game kit_dimension set from storage ctf:map $(map).kit.dimension
+$data modify storage ctf:game kit_x set from storage ctf:map $(map).kit.x
+$data modify storage ctf:game kit_y set from storage ctf:map $(map).kit.y
+$data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
+
+
 # Flag Colors
 #$function ctf:map/$(map)/color/team1_flag with storage ctf:map $(map).team1
 #$function ctf:map/$(map)/color/team2_flag with storage ctf:map $(map).team2
