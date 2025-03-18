@@ -7,7 +7,7 @@ data modify storage ctf:game team2.flag_stolen set value false
 
 
 # Back to Spawn
-execute as @a[tag=ctf_player] run function ctf:lobby/tp
+#execute in void run spreadplayers -1 -109 3 10 under 64 false @a[tag=ctf_player]
 
 # Restore World Time
 function ctf:setup/time/restore with storage ctf:game temp
