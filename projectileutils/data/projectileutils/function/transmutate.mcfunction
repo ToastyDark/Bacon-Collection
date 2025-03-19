@@ -13,6 +13,7 @@
 
 $summon $(summon_type) ~ ~ ~ {$(summon_data), Tags:["projectileutils.summon", "projectileutils.entity"]}
 data modify entity @e[type=item,tag=projectileutils.summon,limit=1] Item.components."minecraft:custom_data".function set from entity @s item.components."minecraft:custom_data".function
+data modify entity @e[type=item,tag=projectileutils.summon,limit=1] Item.components."minecraft:custom_data".owner set from entity @s Owner
 data modify entity @e[type=item,tag=projectileutils.summon,limit=1] Motion set from entity @s Motion
 tag @e[type=item] remove projectileutils.summon
 kill @s
