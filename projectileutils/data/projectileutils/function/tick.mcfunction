@@ -7,4 +7,4 @@ scoreboard players reset @a projectileutils.bow
 
 
 # Trigger command for grounded items that just landed
-execute as @e[type=item,tag=projectileutils.entity,nbt={OnGround: 1b}] unless data entity @s {Item:{components:{"minecraft:custom_data":{grounded:1b}}}} at @s run function projectileutils:landed_init with entity @s Item.components."minecraft:custom_data".function
+execute as @e[type=item,tag=projectileutils.entity,nbt={OnGround: 1b}] unless data entity @s {Item:{components:{"minecraft:custom_data":{grounded:1b}}}} at @s run function projectileutils:landed_init with entity @s Item.components."minecraft:custom_data"
