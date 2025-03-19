@@ -1,0 +1,1 @@
+title @s actionbar {"text": "A CTF Game is already in session!","bold": true,"color": "red"}
