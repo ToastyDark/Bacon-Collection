@@ -1,6 +1,9 @@
+# Check if player leaves queue
+execute if data storage ctf:game {started:false} as @a if entity @s[scores={ctf_crouch_time=1..}] run function ctf:lobby/queue/leave/crouch_check
+
+
 # Update Map Names
 function ctf:lobby/display/map/update_display_name with storage ctf:game
-
 
 
 # Update if in lobby to true
