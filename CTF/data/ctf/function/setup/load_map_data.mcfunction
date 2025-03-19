@@ -1,4 +1,8 @@
-# Set Map Dimension
+# ---------------Load Literal Map Data---------------
+$function ctf:map/$(map)/load
+
+
+# --------------- Set Map Dimension ---------------
 $data modify storage ctf:game dimension set from storage ctf:map $(map).dimension
 $data modify storage ctf:game team1.dimension set from storage ctf:map $(map).dimension
 $data modify storage ctf:game team2.dimension set from storage ctf:map $(map).dimension
@@ -68,12 +72,17 @@ function ctf:setup/team/color_dec with storage ctf:game team2
 
 
 
+# ---------------Spectator Data---------------
+data modify storage ctf:game spectator.dimension set from storage ctf:game dimension
+$data modify storage ctf:game spectator.spawn_x set from storage ctf:map $(map).spectator.spawn_x
+$data modify storage ctf:game spectator.spawn_y set from storage ctf:map $(map).spectator.spawn_y
+$data modify storage ctf:game spectator.spawn_z set from storage ctf:map $(map).spectator.spawn_z
+$data modify storage ctf:game spectator.spawn_rx set from storage ctf:map $(map).spectator.spawn_rx
+$data modify storage ctf:game spectator.spawn_ry set from storage ctf:map $(map).spectator.spawn_ry
 
-# Flag Colors
-#$function ctf:map/$(map)/color/team1_flag with storage ctf:map $(map).team1
-#$function ctf:map/$(map)/color/team2_flag with storage ctf:map $(map).team2
-#$$data modify storage ctf:map $(map).team1.flag.color set value $(color)
-#$$data modify storage ctf:map $(map).team2.flag.color set value $(color)
 
-
-
+# ---------------Kit Data---------------
+$data modify storage ctf:game kit_dimension set from storage ctf:map $(map).kit.dimension
+$data modify storage ctf:game kit_x set from storage ctf:map $(map).kit.x
+$data modify storage ctf:game kit_y set from storage ctf:map $(map).kit.y
+$data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z

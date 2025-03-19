@@ -1,6 +1,6 @@
 # ------------------------Check if Should------------------------
 # Stop if game is already runningh
-execute if data storage ctf:game {started:true} run return run title @s actionbar {"text": "A CTF Game is already in session!","bold": true,"color": "red"}
+execute if data storage ctf:game {started:true} run return run function ctf:lobby/msg/game_already
 
 # Stop if no one's in queue
 execute unless entity @a[tag=ctf_queue] run return run title @s actionbar {"text": "No players are queued for CTF","bold": true,"color": "red"}

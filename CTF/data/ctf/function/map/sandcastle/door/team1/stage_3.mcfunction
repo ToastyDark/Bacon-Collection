@@ -1,0 +1,1 @@
+execute in minecraft:clone run setblock -735 68 -258 minecraft:redstone_block

@@ -8,7 +8,11 @@ execute as @a[scores={ctf.stop=1..}] run function ctf:trigger/stop/stop
 
 # Queue
 scoreboard players enable @a ctf.queue
-execute as @a[scores={ctf.queue=1..}] run function ctf:trigger/queue/queue
+execute as @a[scores={ctf.queue=1..}] run function ctf:trigger/lobby_tp/tp
+
+# CTF
+scoreboard players enable @a ctf
+execute as @a[scores={ctf=1..}] run function ctf:trigger/lobby_tp/tp
 
 # Join
 scoreboard players enable @a ctf.join
@@ -17,6 +21,10 @@ execute as @a[scores={ctf.join=1..}] run function ctf:trigger/join/join
 # Leave
 scoreboard players enable @a ctf.leave
 execute as @a[scores={ctf.leave=1..}] run function ctf:trigger/leave/leave
+
+# Join
+scoreboard players enable @a ctf.invite
+execute as @a[scores={ctf.invite=1..}] run function ctf:trigger/invite/start
 
 
 # Random Teams
