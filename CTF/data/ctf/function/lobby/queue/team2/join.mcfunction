@@ -1,6 +1,6 @@
 # Stop if player already in queue
-execute if entity @s[tag=ctf_queue] run return fail
-execute if entity @s[tag=ctf_queue1] run return fail
+#execute if entity @s[tag=ctf_queue] run return fail
+#execute if entity @s[tag=ctf_queue1] run return fail
 execute if entity @s[tag=ctf_queue2] run return fail
 
 tag @s remove ctf_queue1
