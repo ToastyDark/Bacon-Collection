@@ -1,5 +1,5 @@
 # Stop if door uses maxed out
-execute if score $ctf_map_sandcastle_door_team1 value matches ..3 run scoreboard players add $ctf_map_sandcastle_door_team1 value 1
+execute unless score $ctf_map_sandcastle_door_team1 value matches 3.. run scoreboard players add $ctf_map_sandcastle_door_team1 value 1
 
 # Check Door Stage
 # Stage 1
