@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:arrow] at @s run function projectileutils:transmutate with entity @s item.components."minecraft:custom_data"
