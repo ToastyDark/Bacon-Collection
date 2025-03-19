@@ -1,0 +1,1 @@
+title @s actionbar ["",{"text":"Team Selection: ","bold": true,"color": "gray"},{"text":"Red","bold":true,"color":"red"}]

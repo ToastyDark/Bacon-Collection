@@ -16,3 +16,9 @@
     execute in void align xyz positioned 46 78 -124 if entity @s[dx=6,dz=6,dy=7] at @s run function ctf:lobby/queue/team2/join
     # Remove
     #execute in void align xyz positioned 46 78 -124 unless entity @s[dx=6,dz=6,dy=7] if entity @s[tag=ctf_queue2] at @s run function ctf:lobby/queue/team2/leave
+
+
+# Actionbar
+execute if entity @s[tag=ctf_queue] run function ctf:lobby/queue/random/msg
+execute if entity @s[tag=ctf_queue1] run function ctf:lobby/queue/team1/msg
+execute if entity @s[tag=ctf_queue2] run function ctf:lobby/queue/team2/msg
