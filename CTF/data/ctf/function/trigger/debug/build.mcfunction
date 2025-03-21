@@ -8,4 +8,4 @@ tellraw @s {"text":"Display"}
 
 
 # Display
-function ctf:trigger/debug/tellraw with storage ctf:game temp
+function ctf:trigger/debug/tellraw with storage ctf:temp
