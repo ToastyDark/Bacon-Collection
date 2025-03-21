@@ -7,6 +7,9 @@ scoreboard objectives add ctf.join trigger
 scoreboard objectives add ctf.leave trigger
 scoreboard objectives add ctf.invite trigger
 
+# Map Making
+scoreboard objectives add ctf.debug trigger
+
 # Settings
 scoreboard objectives add ctf.map trigger
 scoreboard objectives add ctf.maps trigger

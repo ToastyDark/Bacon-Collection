@@ -26,6 +26,10 @@ execute as @a[scores={ctf.leave=1..}] run function ctf:trigger/leave/leave
 scoreboard players enable @a ctf.invite
 execute as @a[scores={ctf.invite=1..}] run function ctf:trigger/invite/start
 
+# Debug
+scoreboard players enable @a ctf.debug
+execute as @a[scores={ctf.debug=1..}] run function ctf:trigger/debug/main
+
 
 # Random Teams
 scoreboard players enable @a ctf.settings.random_teams
