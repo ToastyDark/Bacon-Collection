@@ -2,7 +2,7 @@
 data modify storage ctf:temp debug_msg set value []
 
 # Header
-$data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"Map Info for $(map)","bold":true,"underlined":true,"color":"gold"}]'
+$data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"Map Info for $(map)","bold":true,"underlined":true,"color":"gold"},{"text":"\\n"}]'
 
 
 # Display Name
