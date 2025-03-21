@@ -1,1 +1,0 @@
-data modify storage ctf:temp debug_msg append value '[{"text":"MISSING","bold":true,"color":"red"}]'
