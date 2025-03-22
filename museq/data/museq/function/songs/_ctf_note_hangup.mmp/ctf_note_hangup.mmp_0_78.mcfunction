@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 248..248 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_79
+execute if score @s museq.tick matches 250..250 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_80
+execute if score @s museq.tick matches 252..252 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_81
+execute if score @s museq.tick matches 252..252 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_82
+execute if score @s museq.tick matches 254..254 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_83
+execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_84
+execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_85
+execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_86
+execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_87
+execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_78_88

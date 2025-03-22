@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 300..300 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_290
+execute if score @s museq.tick matches 300..300 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_291
+execute if score @s museq.tick matches 300..300 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_292
+execute if score @s museq.tick matches 302..302 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_293
+execute if score @s museq.tick matches 304..304 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_294
+execute if score @s museq.tick matches 304..304 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_295
+execute if score @s museq.tick matches 304..304 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_296
+execute if score @s museq.tick matches 304..304 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_297
+execute if score @s museq.tick matches 304..304 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_298
+execute if score @s museq.tick matches 304..308 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_289_299

@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 472..472 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_523
+execute if score @s museq.tick matches 472..472 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_524
+execute if score @s museq.tick matches 472..472 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_525
+execute if score @s museq.tick matches 472..472 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_526
+execute if score @s museq.tick matches 472..472 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_527
+execute if score @s museq.tick matches 474..474 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_528
+execute if score @s museq.tick matches 476..476 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_529
+execute if score @s museq.tick matches 476..476 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_530
+execute if score @s museq.tick matches 476..476 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_531
+execute if score @s museq.tick matches 476..478 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_444_522_532

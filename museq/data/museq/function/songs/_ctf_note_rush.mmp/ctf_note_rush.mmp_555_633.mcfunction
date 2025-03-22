@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 624..624 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_634
+execute if score @s museq.tick matches 624..624 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_635
+execute if score @s museq.tick matches 624..624 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_636
+execute if score @s museq.tick matches 624..624 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_637
+execute if score @s museq.tick matches 638..638 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_638
+execute if score @s museq.tick matches 640..640 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_639
+execute if score @s museq.tick matches 640..640 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_640
+execute if score @s museq.tick matches 640..640 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_641
+execute if score @s museq.tick matches 640..640 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_642
+execute if score @s museq.tick matches 646..648 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_555_633_643

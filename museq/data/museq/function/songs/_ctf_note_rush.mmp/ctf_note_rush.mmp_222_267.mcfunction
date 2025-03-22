@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 284..284 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_268
+execute if score @s museq.tick matches 284..284 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_269
+execute if score @s museq.tick matches 286..286 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_270
+execute if score @s museq.tick matches 286..286 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_271
+execute if score @s museq.tick matches 287..287 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_272
+execute if score @s museq.tick matches 288..288 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_273
+execute if score @s museq.tick matches 288..288 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_274
+execute if score @s museq.tick matches 288..288 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_275
+execute if score @s museq.tick matches 288..288 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_276
+execute if score @s museq.tick matches 288..292 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_222_267_277

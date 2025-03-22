@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 1090..1090 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1034
+execute if score @s museq.tick matches 1090..1090 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1035
+execute if score @s museq.tick matches 1092..1092 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1036
+execute if score @s museq.tick matches 1094..1094 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1037
+execute if score @s museq.tick matches 1096..1096 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1038
+execute if score @s museq.tick matches 1096..1096 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1039
+execute if score @s museq.tick matches 1096..1096 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1040
+execute if score @s museq.tick matches 1096..1096 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1041
+execute if score @s museq.tick matches 1096..1096 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1042
+execute if score @s museq.tick matches 1098..1100 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_999_1033_1043

@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 252..256 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_23
+execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_24
+execute if score @s museq.tick matches 260..264 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_25
+execute if score @s museq.tick matches 264..268 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_26
+execute if score @s museq.tick matches 268..272 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_27
+execute if score @s museq.tick matches 272..276 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_28
+execute if score @s museq.tick matches 280..284 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_29
+execute if score @s museq.tick matches 284..288 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_30
+execute if score @s museq.tick matches 288..292 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_31
+execute if score @s museq.tick matches 292..300 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_22_32

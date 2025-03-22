@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 156..160 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_12
+execute if score @s museq.tick matches 160..168 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_13
+execute if score @s museq.tick matches 172..176 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_14
+execute if score @s museq.tick matches 180..192 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_15
+execute if score @s museq.tick matches 192..200 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_16
+execute if score @s museq.tick matches 200..208 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_17
+execute if score @s museq.tick matches 208..220 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_18
+execute if score @s museq.tick matches 220..224 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_19
+execute if score @s museq.tick matches 228..236 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_20
+execute if score @s museq.tick matches 236..248 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_11_21

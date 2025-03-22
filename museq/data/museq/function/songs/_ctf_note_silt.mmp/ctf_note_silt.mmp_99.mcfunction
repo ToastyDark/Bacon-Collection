@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 672..676 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_100
+execute if score @s museq.tick matches 680..684 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_101
+execute if score @s museq.tick matches 684..692 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_102
+execute if score @s museq.tick matches 696..704 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_103
+execute if score @s museq.tick matches 704..712 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_104
+execute if score @s museq.tick matches 716..720 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_105
+execute if score @s museq.tick matches 720..732 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_106
+execute if score @s museq.tick matches 732..736 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_107
+execute if score @s museq.tick matches 740..748 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_108
+execute if score @s museq.tick matches 748..766 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_99_109

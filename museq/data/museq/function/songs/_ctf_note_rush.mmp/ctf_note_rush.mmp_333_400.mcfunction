@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_401
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_402
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_403
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_404
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_405
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_406
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_407
+execute if score @s museq.tick matches 384..384 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_408
+execute if score @s museq.tick matches 386..386 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_409
+execute if score @s museq.tick matches 388..388 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_333_400_410
