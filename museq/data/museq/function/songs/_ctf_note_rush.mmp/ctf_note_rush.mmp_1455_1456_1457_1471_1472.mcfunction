@@ -1,0 +1,3 @@
+execute if score @s museq.tick matches 12..12 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_1455_1456_1457_1471_1472_1473
+execute if score @s museq.tick matches 16..16 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_1455_1456_1457_1471_1472_1474
+execute if score @s museq.tick matches 16..16 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_1455_1456_1457_1471_1472_1475
