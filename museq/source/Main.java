@@ -18,6 +18,9 @@ public class Main {
 	public static final int 	UNITS_PER_32ND 		= 192/(4*8);
 	public static final int MAX_LINES_PER_FUNCTION 	= 3;
 	
+	static int unique_number = 0;
+	static int uniqueNumber() { return unique_number++; }
+	
 	public static void main(String[] args) throws IOException, ParseException {
 		
 		print_possible_BPMs();
@@ -219,14 +222,16 @@ public class Main {
 				}
 				
 				// Recursive split
-				String append_name = "_"+ new Object().hashCode();
+				String append_name = "_"+ uniqueNumber();
 						
 				String str_function = splitSave(current_function, dir, namespace, function_name + append_name);
 				
 				// Save to disk
 				saveFunction(dir + function_name + append_name + ".mcfunction", str_function);
 				
-				return_function += "function " + namespace + function_name + append_name + "\n";
+				String range 	 = current_function.getFirst().number + ".." + current_function.getLast().number;
+				String condition = "execute if score @s museq.tick matches " + range + " run ";
+				return_function += condition + "function " + namespace + function_name + append_name + "\n";
 			}
 			
 		}
