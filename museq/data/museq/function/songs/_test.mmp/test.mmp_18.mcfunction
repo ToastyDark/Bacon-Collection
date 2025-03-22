@@ -1,5 +1,2 @@
-execute if score @s museq.tick matches 72..72 run function museq:songs/_test.mmp/test.mmp_18_19
-execute if score @s museq.tick matches 76..76 run function museq:songs/_test.mmp/test.mmp_18_20
-execute if score @s museq.tick matches 76..76 run function museq:songs/_test.mmp/test.mmp_18_21
-execute if score @s museq.tick matches 80..80 run function museq:songs/_test.mmp/test.mmp_18_22
-execute if score @s museq.tick matches 84..96 run function museq:songs/_test.mmp/test.mmp_18_23
+execute if score @s museq.tick matches 112 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 1.14 0.595
+execute if score @s museq.tick matches 116 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.38 0.595
