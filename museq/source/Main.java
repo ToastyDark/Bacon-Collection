@@ -9,6 +9,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Comparator;
 
 public class Main {
 
@@ -171,12 +172,14 @@ public class Main {
 			}
 		}
 		
-		// Loop
-		function.add(new IntStringPair(length, "execute if score @s museq.tick matches " + length + ".. run scoreboard players set @s museq.tick 0"));
-				
+		sort(function);
+						
 		// Split the function into sub-functions. 
 		String str_function = splitSave(function, export_directory + "/_"+function_name+"/", namespace + "_"+function_name+"/", function_name);
 		
+		// Loop
+		str_function += "execute if score @s museq.tick matches " + length + ".. run scoreboard players set @s museq.tick 0" + "\n"; 
+
 		// Add the increment counter
 		str_function += "scoreboard players add @s museq.tick 1" + "\n"; 
 		
@@ -320,7 +323,15 @@ public class Main {
 			   }
 			});
 	}
-
+	
+	private static void sort(ArrayList<Main.IntStringPair> function) {
+		function.sort(new FunctionComparator());
+	}
+	public static class FunctionComparator implements Comparator<IntStringPair> {@Override
+		public int compare(Main.IntStringPair o1, Main.IntStringPair o2) {
+			return Integer.compare(o1.number, o2.number);
+		}
+	}
 	
 	public record IntStringPair(int number, String str) { }
 
