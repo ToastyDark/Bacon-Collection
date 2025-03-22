@@ -16,7 +16,7 @@ public class Main {
 	public static final double SECONDS_PER_TICK 	= 1d/20d;
 	public static final int 	UNITS_PER_BEAT 		= 192/4;
 	public static final int 	UNITS_PER_32ND 		= 192/(4*8);
-	public static final int MAX_LINES_PER_FUNCTION 	= 3;
+	public static final int MAX_LINES_PER_FUNCTION 	= 2;
 	
 	static int unique_number = 0;
 	static int uniqueNumber() { return unique_number++; }
@@ -197,6 +197,7 @@ public class Main {
 		if (function.size() <= MAX_LINES_PER_FUNCTION) {
 			for (IntStringPair p : function) return_function += p.str + "\n";
 		} else {
+			// TODO: reword this lol
 			// Each function should have <max> lines in it, or at least close to <max>
 			// Split each function into 3 sub-functions of <length>/<max>
 			// If there's leftover lines after the last sub-function, append them to the end.

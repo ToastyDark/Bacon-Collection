@@ -1,0 +1,2 @@
+execute if score @s museq.tick matches 996..996 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_2849_2850_3054_3156_3206_3207_3208_3214_3216_3217
+execute if score @s museq.tick matches 998..998 run function museq:songs/_ctf_note_rush.mmp/ctf_note_rush.mmp_2849_2850_3054_3156_3206_3207_3208_3214_3216_3218

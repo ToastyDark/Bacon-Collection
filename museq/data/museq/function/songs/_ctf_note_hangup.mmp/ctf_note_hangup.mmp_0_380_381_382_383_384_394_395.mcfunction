@@ -1,0 +1,2 @@
+execute if score @s museq.tick matches 446..446 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_380_381_382_383_384_394_395_396
+execute if score @s museq.tick matches 446..448 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_380_381_382_383_384_394_395_397

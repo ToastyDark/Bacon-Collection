@@ -1,3 +1,0 @@
-execute if score @s museq.tick matches 548..550 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_364_365_406_433_434
-execute if score @s museq.tick matches 550..552 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_364_365_406_433_438
-execute if score @s museq.tick matches 552..556 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_364_365_406_433_442
