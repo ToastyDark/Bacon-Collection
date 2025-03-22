@@ -1,10 +1,5 @@
-execute if score @s museq.tick matches 0..0 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_2
-execute if score @s museq.tick matches 12..12 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_3
-execute if score @s museq.tick matches 20..20 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_4
-execute if score @s museq.tick matches 24..24 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_5
-execute if score @s museq.tick matches 28..28 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_6
-execute if score @s museq.tick matches 32..32 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_7
-execute if score @s museq.tick matches 38..38 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_8
-execute if score @s museq.tick matches 44..44 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_9
-execute if score @s museq.tick matches 52..52 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_10
-execute if score @s museq.tick matches 56..64 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_11
+execute if score @s museq.tick matches 0..56 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_2
+execute if score @s museq.tick matches 60..116 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_8
+execute if score @s museq.tick matches 120..140 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_14
+execute if score @s museq.tick matches 140..158 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_20
+execute if score @s museq.tick matches 160..180 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_0_1_26

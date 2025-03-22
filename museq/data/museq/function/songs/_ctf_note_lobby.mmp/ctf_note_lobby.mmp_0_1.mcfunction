@@ -1,4 +1,5 @@
-execute if score @s museq.tick matches 0 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 1.0 0.595
-execute if score @s museq.tick matches 0 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.19 0.595
-execute if score @s museq.tick matches 0 run playsound minecraft:block.note_block.harp2 record @s ~ ~ ~ 0.36 1.189
-execute if score @s museq.tick matches 8 run playsound minecraft:block.note_block.harp2 record @s ~ ~ ~ 0.36 0.707
+execute if score @s museq.tick matches 0..0 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_0_1_2
+execute if score @s museq.tick matches 8..20 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_0_1_3
+execute if score @s museq.tick matches 24..24 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_0_1_4
+execute if score @s museq.tick matches 28..40 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_0_1_5
+execute if score @s museq.tick matches 44..56 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_0_1_6
