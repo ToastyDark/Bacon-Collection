@@ -44,7 +44,7 @@ public class Main {
 		
 		String data_path = root_directory.getPath() + "/data\\museq\\function\\";
 		
-		deleteDirectory(data_path + "songs\\");
+		if (new File(data_path + "songs\\").exists()) deleteDirectory(data_path + "songs\\");
 		
 		File songs = new File("songs/");
 		for (File song : songs.listFiles()) {
@@ -166,11 +166,13 @@ public class Main {
 					
 					if (instrument_name.equals("xylobone")) instrument_name = "xylophone";
 					if (instrument_name.equals("bd")) 		instrument_name = "basedrum";
+					
+					int int_tick = (int) Math.round(tick);
 
 					String cmd = "playsound minecraft:block.note_block." + instrument_name + " record @s ~ ~ ~ " + round(volume) + " " + round(pitch);
-					String condition = "execute if score @s museq.tick matches " + Math.round(tick) + " run ";
+					String condition = "execute if score @s museq.tick matches " + int_tick + " run ";
 					
-					function.add(new IntStringPair((int) Math.round(tick), condition + cmd));
+					function.add(new IntStringPair(int_tick, int_tick, condition + cmd));
 					
 				}
 			}
@@ -179,7 +181,8 @@ public class Main {
 		sort(function);
 						
 		// Split the function into sub-functions. 
-		String str_function = splitSave(function, export_directory + "/_"+function_name+"/", namespace + "_"+function_name+"/", function_name);
+		ArrayList<Main.IntStringPair> ret_function = splitSave(function, export_directory + "/_"+function_name+"/", namespace + "_"+function_name+"/", function_name);
+		String str_function = toString(ret_function);
 		
 		// Loop
 		str_function += "execute if score @s museq.tick matches " + length + ".. run scoreboard players set @s museq.tick 0" + "\n"; 
@@ -191,55 +194,54 @@ public class Main {
 		saveFunction(filename_out, str_function);
 	}
 
-	private static String splitSave(ArrayList<IntStringPair> function, String dir, String namespace, String function_name) throws IOException {
-		String return_function = "";
+	private static ArrayList<IntStringPair> splitSave(ArrayList<IntStringPair> function, String dir, String namespace, String function_name) throws IOException {
 		
-		// Save function as-is
-		if (function.size() <= MAX_LINES_PER_FUNCTION) {
-			for (IntStringPair p : function) return_function += p.str + "\n";
-		} else {
-			// TODO: reword this lol
-			// Each function should have <max> lines in it, or at least close to <max>
-			// Split each function into 3 sub-functions of <length>/<max>
-			// If there's leftover lines after the last sub-function, append them to the end.
-			// So, a 10-line function with a max of 3 lines per function
-			// would actually turn into 3 functions with 3, 3, and 4 lines respectively
-			// Those sub-functions should be passed in recursively, so:
-			// A 28 line function would become 3 functions of 9, 9, and 10, and then those would be all 3s and one 4.
+		ArrayList<IntStringPair> final_function = new ArrayList<IntStringPair>();
+		
+		// Split the function into <max>-line chunks, save them, then call them in a new function, the 'final_function' variable
+		int i = 0;
+		while (i < function.size()) {
 			
-			int function_length = function.size();
-			int target_length = function_length / MAX_LINES_PER_FUNCTION;
-
-			for (int j = 0; j < MAX_LINES_PER_FUNCTION; j++) {
-				ArrayList<Main.IntStringPair> current_function = new ArrayList<Main.IntStringPair>();
-				
-				int first_index = (j*target_length);
-				
-				// The last created function should include the entire rest of the initial function.
-				// This only runs once so I think incrementing is ok....
-				if (j == MAX_LINES_PER_FUNCTION-1) target_length += function_length % MAX_LINES_PER_FUNCTION;
-
-				for (int i = 0; i < target_length; i++) {
-					current_function.add(function.get(first_index+i));
-				}
-				
-				// Recursive split
-				String append_name = "_"+ uniqueNumber();
-						
-				String str_function = splitSave(current_function, dir, namespace, function_name + append_name);
-				
-				// Save to disk
-				saveFunction(dir + function_name + append_name + ".mcfunction", str_function);
-				
-				String range 	 = current_function.getFirst().number + ".." + current_function.getLast().number;
-				String condition = "execute if score @s museq.tick matches " + range + " run ";
-				return_function += condition + "function " + namespace + function_name + append_name + "\n";
+			int start = function.get(i).start;
+			int end = function.get(i).end;
+			
+			// Make a function consisting of <max> lines or less of the original function, 
+			String save_function = "";
+			for (int j = 0; j < MAX_LINES_PER_FUNCTION && i < function.size(); j++) {
+				save_function += function.get(i).str + "\n";				
+				if (start > function.get(i).start) start = function.get(i).start;
+				if (end   < function.get(i).  end) end   = function.get(i).  end;
+				i++;
 			}
+			
+			// Save to disk
+			String append_name = "_"+ uniqueNumber();
+			saveFunction(dir + function_name + append_name + ".mcfunction", save_function);
+			
+			// Call it in final_function
+			String func = namespace + function_name + append_name;
+			String cmd = "execute if score @s museq.tick matches " + start + ".." + end + " run function " + func;
+			final_function.add(new IntStringPair(start, end, cmd));
 			
 		}
 		
+		// Recursively split
+		if (final_function.size() > MAX_LINES_PER_FUNCTION) {
+			final_function = splitSave(final_function, dir, namespace, function_name + "_split_" + + uniqueNumber());
+		}
 		
+		return final_function;
+	}
+	
+	public static String toString(ArrayList<IntStringPair> list) {
+		
+		// Convert final function to string
+		String return_function = "";
+		for (IntStringPair pair : list) {
+			return_function += pair.str;
+		}
 		return return_function;
+		
 	}
 
 	public static void print_possible_BPMs() {
@@ -336,10 +338,10 @@ public class Main {
 	}
 	public static class FunctionComparator implements Comparator<IntStringPair> {@Override
 		public int compare(Main.IntStringPair o1, Main.IntStringPair o2) {
-			return Integer.compare(o1.number, o2.number);
+			return Integer.compare(o1.start, o2.start);
 		}
 	}
 	
-	public record IntStringPair(int number, String str) { }
+	public record IntStringPair(int start, int end, String str) { }
 
 }
