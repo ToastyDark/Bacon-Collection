@@ -16,7 +16,7 @@ public class Main {
 	public static final double SECONDS_PER_TICK 	= 1d/20d;
 	public static final int 	UNITS_PER_BEAT 		= 192/4;
 	public static final int 	UNITS_PER_32ND 		= 192/(4*8);
-	public static final int MAX_LINES_PER_FUNCTION 	= 20;
+	public static final int MAX_LINES_PER_FUNCTION 	= 10;
 	
 	static int unique_number = 0;
 	static int uniqueNumber() { return unique_number++; }

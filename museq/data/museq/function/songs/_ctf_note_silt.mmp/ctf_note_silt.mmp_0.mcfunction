@@ -8,13 +8,3 @@ execute if score @s museq.tick matches 16 run playsound minecraft:block.note_blo
 execute if score @s museq.tick matches 20 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 0.97 1.059
 execute if score @s museq.tick matches 28 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 0.97 1.189
 execute if score @s museq.tick matches 28 run playsound minecraft:block.note_block.basedrum record @s ~ ~ ~ 0.97 1.189
-execute if score @s museq.tick matches 32 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 0.891
-execute if score @s museq.tick matches 32 run playsound minecraft:block.note_block.basedrum record @s ~ ~ ~ 0.97 1.189
-execute if score @s museq.tick matches 36 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 0.51 0.891
-execute if score @s museq.tick matches 40 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 0.891
-execute if score @s museq.tick matches 44 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 0.97 0.944
-execute if score @s museq.tick matches 44 run playsound minecraft:block.note_block.basedrum record @s ~ ~ ~ 0.97 1.189
-execute if score @s museq.tick matches 48 run playsound minecraft:block.note_block.hat record @s ~ ~ ~ 0.97 1.189
-execute if score @s museq.tick matches 60 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 0.97 0.841
-execute if score @s museq.tick matches 64 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 0.891
-execute if score @s museq.tick matches 64 run playsound minecraft:block.note_block.basedrum record @s ~ ~ ~ 0.97 1.189

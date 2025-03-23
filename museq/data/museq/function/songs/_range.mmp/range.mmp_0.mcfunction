@@ -8,13 +8,3 @@ execute if score @s museq.tick matches 48 run playsound minecraft:block.note_blo
 execute if score @s museq.tick matches 52 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 0.749
 execute if score @s museq.tick matches 56 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 0.794
 execute if score @s museq.tick matches 60 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 0.841
-execute if score @s museq.tick matches 64 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 0.891
-execute if score @s museq.tick matches 68 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 0.944
-execute if score @s museq.tick matches 72 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.0
-execute if score @s museq.tick matches 76 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.059
-execute if score @s museq.tick matches 80 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.122
-execute if score @s museq.tick matches 84 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 88 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.26
-execute if score @s museq.tick matches 92 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.335
-execute if score @s museq.tick matches 96 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.414
-execute if score @s museq.tick matches 100 run playsound minecraft:block.note_block.bell record @s ~ ~ ~ 1.0 1.498

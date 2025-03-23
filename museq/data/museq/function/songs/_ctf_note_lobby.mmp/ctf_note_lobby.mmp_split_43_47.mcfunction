@@ -1,0 +1,10 @@
+execute if score @s museq.tick matches 744..768 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_30
+execute if score @s museq.tick matches 768..792 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_31
+execute if score @s museq.tick matches 796..824 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_32
+execute if score @s museq.tick matches 824..848 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_33
+execute if score @s museq.tick matches 852..872 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_34
+execute if score @s museq.tick matches 876..892 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_35
+execute if score @s museq.tick matches 892..916 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_36
+execute if score @s museq.tick matches 920..928 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_37
+execute if score @s museq.tick matches 928..952 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_38
+execute if score @s museq.tick matches 956..980 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_39
