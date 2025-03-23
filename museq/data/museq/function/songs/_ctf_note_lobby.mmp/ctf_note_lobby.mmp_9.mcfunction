@@ -1,10 +1,2 @@
-execute if score @s museq.tick matches 284 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.08 0.794
-execute if score @s museq.tick matches 288 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 1.0 0.794
-execute if score @s museq.tick matches 288 run playsound minecraft:block.note_block.hat record @s ~ ~ ~ 0.59 1.0
-execute if score @s museq.tick matches 288 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 0.53 0.794
-execute if score @s museq.tick matches 296 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.53 0.794
-execute if score @s museq.tick matches 300 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.08 0.891
-execute if score @s museq.tick matches 304 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.19 0.794
-execute if score @s museq.tick matches 304 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 0.53 0.891
-execute if score @s museq.tick matches 308 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.25 0.944
-execute if score @s museq.tick matches 312 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.68 0.794
+execute if score @s museq.tick matches 64 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.19 0.891
+execute if score @s museq.tick matches 64 run playsound minecraft:block.note_block.harp2 record @s ~ ~ ~ 0.36 0.891

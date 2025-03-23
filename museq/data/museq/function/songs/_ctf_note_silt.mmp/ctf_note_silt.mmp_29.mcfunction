@@ -1,10 +1,2 @@
-execute if score @s museq.tick matches 432 run playsound minecraft:block.note_block.cow_bell record @s ~ ~ ~ 0.63 0.5
-execute if score @s museq.tick matches 432 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 1.14 1.414
-execute if score @s museq.tick matches 436 run playsound minecraft:block.note_block.cow_bell record @s ~ ~ ~ 0.59 0.5
-execute if score @s museq.tick matches 436 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 0.57 1.414
-execute if score @s museq.tick matches 440 run playsound minecraft:block.note_block.cow_bell record @s ~ ~ ~ 0.21 0.5
-execute if score @s museq.tick matches 440 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 0.65 1.414
-execute if score @s museq.tick matches 444 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 0.97 0.841
-execute if score @s museq.tick matches 444 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 0.46 1.189
-execute if score @s museq.tick matches 444 run playsound minecraft:block.note_block.cow_bell record @s ~ ~ ~ 0.21 0.5
-execute if score @s museq.tick matches 444 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 0.57 1.414
+execute if score @s museq.tick matches 164 run playsound minecraft:block.note_block.bit record @s ~ ~ ~ 0.57 1.189
+execute if score @s museq.tick matches 168 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 0.891

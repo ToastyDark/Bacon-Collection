@@ -1,10 +1,2 @@
-execute if score @s museq.tick matches 180 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.059
-execute if score @s museq.tick matches 184 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 1.059
-execute if score @s museq.tick matches 184 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.587
-execute if score @s museq.tick matches 186 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.782
-execute if score @s museq.tick matches 188 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 0.891
-execute if score @s museq.tick matches 188 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.587
-execute if score @s museq.tick matches 190 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.414
-execute if score @s museq.tick matches 192 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 192 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.189
-execute if score @s museq.tick matches 196 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 0.891
+execute if score @s museq.tick matches 60 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 0.891
+execute if score @s museq.tick matches 64 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 1.189
