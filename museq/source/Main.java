@@ -238,7 +238,7 @@ public class Main {
 		// Convert final function to string
 		String return_function = "";
 		for (IntStringPair pair : list) {
-			return_function += pair.str;
+			return_function += pair.str +"\n";
 		}
 		return return_function;
 		
