@@ -1,20 +1,20 @@
-execute if score @s museq.tick matches 84..84 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_22
-execute if score @s museq.tick matches 92..92 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_23
-execute if score @s museq.tick matches 92..92 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_24
-execute if score @s museq.tick matches 96..96 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_25
-execute if score @s museq.tick matches 96..96 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_26
-execute if score @s museq.tick matches 100..100 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_27
-execute if score @s museq.tick matches 104..104 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_28
-execute if score @s museq.tick matches 108..108 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_29
-execute if score @s museq.tick matches 108..108 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_30
-execute if score @s museq.tick matches 112..112 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_31
-execute if score @s museq.tick matches 124..124 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_32
-execute if score @s museq.tick matches 128..128 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_33
-execute if score @s museq.tick matches 128..128 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_34
-execute if score @s museq.tick matches 128..128 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_35
-execute if score @s museq.tick matches 132..132 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_36
-execute if score @s museq.tick matches 132..132 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_37
-execute if score @s museq.tick matches 136..136 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_38
-execute if score @s museq.tick matches 136..136 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_39
-execute if score @s museq.tick matches 140..140 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_40
-execute if score @s museq.tick matches 140..148 run function museq:songs/_ctf_note_silt.mmp/ctf_note_silt.mmp_21_41
+execute if score @s museq.tick matches 608 run playsound minecraft:block.note_block.basedrum record @s ~ ~ ~ 0.97 1.189
+execute if score @s museq.tick matches 608 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.14 1.189
+execute if score @s museq.tick matches 608 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.14 0.891
+execute if score @s museq.tick matches 608 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 1.14 1.189
+execute if score @s museq.tick matches 612 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.57 1.189
+execute if score @s museq.tick matches 616 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.65 1.189
+execute if score @s museq.tick matches 620 run playsound minecraft:block.note_block.basedrum record @s ~ ~ ~ 0.97 1.189
+execute if score @s museq.tick matches 620 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.14 1.414
+execute if score @s museq.tick matches 620 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.14 1.059
+execute if score @s museq.tick matches 620 run playsound minecraft:block.note_block.guitar record @s ~ ~ ~ 1.14 0.707
+execute if score @s museq.tick matches 620 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.57 1.189
+execute if score @s museq.tick matches 624 run playsound minecraft:block.note_block.hat record @s ~ ~ ~ 0.97 1.189
+execute if score @s museq.tick matches 624 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 0.97 1.189
+execute if score @s museq.tick matches 624 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 1.14 1.189
+execute if score @s museq.tick matches 628 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.57 1.189
+execute if score @s museq.tick matches 632 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.65 1.189
+execute if score @s museq.tick matches 636 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 0.46 1.189
+execute if score @s museq.tick matches 636 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 0.57 1.189
+execute if score @s museq.tick matches 638 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 0.95 1.189
+execute if score @s museq.tick matches 640 run playsound minecraft:block.note_block.basedrum record @s ~ ~ ~ 0.97 1.189

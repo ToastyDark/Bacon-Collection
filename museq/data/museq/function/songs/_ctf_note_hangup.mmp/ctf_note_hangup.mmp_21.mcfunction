@@ -1,20 +1,20 @@
-execute if score @s museq.tick matches 206..212 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_22
-execute if score @s museq.tick matches 212..216 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_23
-execute if score @s museq.tick matches 218..222 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_24
-execute if score @s museq.tick matches 224..228 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_25
-execute if score @s museq.tick matches 230..236 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_26
-execute if score @s museq.tick matches 236..242 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_27
-execute if score @s museq.tick matches 244..248 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_28
-execute if score @s museq.tick matches 248..252 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_29
-execute if score @s museq.tick matches 252..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_30
-execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_31
-execute if score @s museq.tick matches 256..256 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_32
-execute if score @s museq.tick matches 256..264 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_33
-execute if score @s museq.tick matches 264..264 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_34
-execute if score @s museq.tick matches 268..270 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_35
-execute if score @s museq.tick matches 272..272 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_36
-execute if score @s museq.tick matches 274..276 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_37
-execute if score @s museq.tick matches 278..278 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_38
-execute if score @s museq.tick matches 280..282 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_39
-execute if score @s museq.tick matches 282..284 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_40
-execute if score @s museq.tick matches 286..288 run function museq:songs/_ctf_note_hangup.mmp/ctf_note_hangup.mmp_21_41
+execute if score @s museq.tick matches 502 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.93 1.414
+execute if score @s museq.tick matches 502 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.93 1.189
+execute if score @s museq.tick matches 502 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.93 0.595
+execute if score @s museq.tick matches 504 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 1.059
+execute if score @s museq.tick matches 504 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.587
+execute if score @s museq.tick matches 504 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.25 1.414
+execute if score @s museq.tick matches 504 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.25 1.189
+execute if score @s museq.tick matches 504 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.25 0.595
+execute if score @s museq.tick matches 504 run playsound minecraft:block.note_block.snare record @s ~ ~ ~ 0.85 0.595
+execute if score @s museq.tick matches 506 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.782
+execute if score @s museq.tick matches 506 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.93 0.794
+execute if score @s museq.tick matches 508 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 0.891
+execute if score @s museq.tick matches 508 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.587
+execute if score @s museq.tick matches 508 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.93 0.841
+execute if score @s museq.tick matches 508 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.25 0.794
+execute if score @s museq.tick matches 510 run playsound minecraft:block.note_block.iron_xylophone record @s ~ ~ ~ 1.0 1.414
+execute if score @s museq.tick matches 510 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.93 0.891
+execute if score @s museq.tick matches 510 run playsound minecraft:block.note_block.xylophone record @s ~ ~ ~ 0.25 0.841
+execute if score @s museq.tick matches 512 run playsound minecraft:block.note_block.bass record @s ~ ~ ~ 1.0 1.189
+execute if score @s museq.tick matches 512 run playsound minecraft:block.note_block.pling record @s ~ ~ ~ 1.0 1.782
