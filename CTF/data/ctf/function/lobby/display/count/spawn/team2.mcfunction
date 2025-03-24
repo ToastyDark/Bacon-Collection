@@ -1,0 +1,1 @@
+execute at @s run summon text_display ~ ~ ~ {Tags:["ctf_display_queue_team2"],billboard:"center"}
