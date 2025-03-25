@@ -1,1 +1,1 @@
-execute at @s run summon text_display ~ ~ ~ {Tags:["ctf_display_queue_team1"],billboard:"center"}
+execute in void positioned 32 80 -116 run summon text_display ~ ~ ~ {Tags:["ctf_display_queue_team1"],billboard:"center"}
