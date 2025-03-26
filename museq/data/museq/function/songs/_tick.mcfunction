@@ -4,7 +4,7 @@
 execute as @a[tag=museq.ctf_note_hangup.mmp] at @s run function museq:songs/ctf_note_hangup.mmp
 
 # ctf_note_lobby.mmp
-execute as @a[tag=museq.ctf_note_lobby.mmp] at @s run say e
+execute as @a[tag=museq.ctf_note_lobby.mmp] at @s run function museq:songs/ctf_note_lobby.mmp
 
 # ctf_note_rush.mmp
 execute as @a[tag=museq.ctf_note_rush.mmp] at @s run function museq:songs/ctf_note_rush.mmp
