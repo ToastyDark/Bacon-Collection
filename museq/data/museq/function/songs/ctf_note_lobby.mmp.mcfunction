@@ -8,4 +8,4 @@ execute if score @s museq.tick matches 744..872 run function museq:songs/_ctf_no
 execute if score @s museq.tick matches 876..980 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_7
 execute if score @s museq.tick matches 984..1020 run function museq:songs/_ctf_note_lobby.mmp/ctf_note_lobby.mmp_8
 execute if score @s museq.tick matches 1024.. run scoreboard players set @s museq.tick 0
-#scoreboard players add @s museq.tick 1
+scoreboard players add @s museq.tick 1
