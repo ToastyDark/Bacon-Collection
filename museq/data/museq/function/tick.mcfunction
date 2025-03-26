@@ -2,4 +2,4 @@
 function museq:songs/_tick
 
 # Tick the triggers
-function museq:trigger/trigger_tick
+execute as @a run function museq:trigger/trigger_tick
