@@ -27,7 +27,7 @@ $execute unless data storage ctf:map desert_maze.points_to_win run data modify s
 
 
 # Team 1 Data
-data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":"\\n","interpret":true},{"text":"Team 1 Map Data: ","bold":true,"underlined":true,"color":"aqua"}]'
+data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":"\\n","interpret":true},{"text":"Team 1 Map Data","bold":true,"underlined":true,"color":"red"}]'
 
     # Colors
     execute if data storage ctf:map desert_maze.team1.color run data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":" Team Color: ","bold":true,"color":"gray"},{"nbt":"desert_maze.team1.color","storage":"ctf:map","interpret":false,"color":"white"}]'
