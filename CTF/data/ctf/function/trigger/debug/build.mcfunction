@@ -35,10 +35,10 @@ $execute unless data storage ctf:map desert_maze.points_to_win run data modify s
 
 
     # Spawn Point
-        data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":"Spawn Point","bold":true,"underlined":true,"color":"gray"}]'
+        data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":" Spawn Point","bold":false,"color":"gray"}]'
 
         #x
-        execute if data storage ctf:map desert_maze.team1.spawn.x run data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":" x: ","bold":false,"color":"gray"},{"nbt":"desert_maze.team1.spawn.x","storage":"ctf:map","interpret":false,"color":"white"}]'
+        execute if data storage ctf:map desert_maze.team1.spawn.x run data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":" x: ","bold":false,"color":"white"},{"nbt":"desert_maze.team1.spawn.x","storage":"ctf:map","interpret":false,"color":"white"}]'
         $execute unless data storage ctf:map desert_maze.team1.spawn.x run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":" x: ","bold":false,"color":"gray"},$(missing)]'
 
 
