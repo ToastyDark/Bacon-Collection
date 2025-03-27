@@ -26,5 +26,15 @@ $execute unless data storage ctf:map desert_maze.points_to_win run data modify s
 
 
 
+# Team 1 Data
+data modify storage ctf:temp debug_msg append value '[{"text":"\\n","text":"\\n","interpret":true},{"text":"Team 1 Map Data: ","bold":true,"color":"aqua"}]'
+
+    # Points to Win
+    execute if data storage ctf:map desert_maze.points_to_win run data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":"Points to Win: ","bold":true,"color":"gray"},{"nbt":"desert_maze.points_to_win","storage":"ctf:map","interpret":false,"color":"green"}]'
+    $execute unless data storage ctf:map desert_maze.points_to_win run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"Points to Win: ","bold":true,"color":"gray"},$(missing)]'
+
+
+
+
 # Display
 tellraw @s {"nbt":"debug_msg[]","storage":"ctf:temp","interpret":true}
