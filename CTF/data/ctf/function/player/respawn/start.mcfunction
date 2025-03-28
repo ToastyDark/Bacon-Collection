@@ -7,4 +7,4 @@ execute unless entity @s[tag=ctf_player] run return fail
 
 
 # Start Respawn Timer
-function ctf:player/respawn/timer/start
+execute at @s run function ctf:player/respawn/timer/start

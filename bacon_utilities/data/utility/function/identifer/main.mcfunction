@@ -1,0 +1,1 @@
+execute as @a unless entity @s[scores={id=0..}] run function utility:identifer/give
