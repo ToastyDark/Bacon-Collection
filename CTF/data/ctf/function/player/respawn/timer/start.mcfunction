@@ -1,0 +1,1 @@
+scoreboard players set @s ctf_respawn_cd 81

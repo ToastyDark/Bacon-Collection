@@ -13,6 +13,7 @@ function ctf:player/crouch/tick
 
 # Check if player died
 execute if entity @s[scores={ctf_died=1..}] at @s run function ctf:player/respawn/start
+execute if entity @s[scores={ctf_respawn_cd=0..}] at @s run function ctf:player/respawn/timer/main
 
 # Swap Kit
 execute if entity @s[scores={ctf_crouch_time=1},nbt={OnGround:true}] run function ctf:player/kit/swap/get_map with storage ctf:game
