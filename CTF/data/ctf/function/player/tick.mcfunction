@@ -58,3 +58,6 @@ execute if entity @s[scores={ctf_kit_swap_cd=1..}] run function ctf:player/kit/c
 
 # Feed player
 execute if entity @s[scores={ctf_hunger=..16}] run effect give @s minecraft:saturation 1 1 true
+
+# Stop Fall Damage
+execute if entity @s[tag=ctf_stop_fall_dmg] run function ctf:player/respawn/stop_fall_dmg/main
