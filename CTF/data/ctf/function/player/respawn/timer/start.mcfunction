@@ -13,6 +13,6 @@ execute as @e[distance=..2,type=area_effect_cloud,tag=ctf_new_freeze] run tag @s
 clear @s
 
 # Spectator
-rotate @s ~ 30
+#rotate @s ~ 30
 gamemode spectator
 spectate @n[distance=..2,type=area_effect_cloud,tag=ctf_freeze] @s
