@@ -1,7 +1,7 @@
 scoreboard players set @s ctf_respawn_cd 70
 
 # Freeze
-summon area_effect_cloud ~ ~1 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"]}
+summon area_effect_cloud ~ ~2 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"]}
 execute as @e[distance=..2,type=area_effect_cloud,tag=ctf_new_freeze] run rotate @s ~ 30
 
 # Set ID
@@ -14,4 +14,4 @@ clear @s
 
 # Spectator
 gamemode spectator
-spectate @n[type=area_effect_cloud] @s
+spectate @n[distance=..2,type=area_effect_cloud,tag=ctf_freeze] @s
