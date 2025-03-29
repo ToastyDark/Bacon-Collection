@@ -1,2 +1,2 @@
 tp @p @s
-rotate @p ~ 30
+#rotate @p ~ 30
