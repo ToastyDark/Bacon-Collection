@@ -1,2 +1,2 @@
-tp @p @s
+#tp @p @s
 spectate @s @p
