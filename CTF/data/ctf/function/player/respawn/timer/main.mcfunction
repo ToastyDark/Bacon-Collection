@@ -2,7 +2,7 @@
 scoreboard players remove @s ctf_respawn_cd 1
 
 # TP to Armor Stand
-execute at @s as @e[type=armor_stand,tag=ctf_new_freeze] if score @s id = @p id run function ctf:player/respawn/timer/freeze_tp
+execute at @s as @e[type=armor_stand,tag=ctf_freeze] if score @s id = @p id run function ctf:player/respawn/timer/freeze_tp
 
 
 
