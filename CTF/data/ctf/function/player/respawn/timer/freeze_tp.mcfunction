@@ -1,2 +1,2 @@
 tp @p @s
-rotate @p facing entity @s feet
+rotate @p ~ 30
