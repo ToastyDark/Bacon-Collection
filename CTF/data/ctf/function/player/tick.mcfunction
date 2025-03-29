@@ -53,3 +53,6 @@ execute if entity @s[scores={ctf_flag_capture_cd=1..}] run function ctf:game/fla
 
 # Kit Swap Cooldown
 execute if entity @s[scores={ctf_kit_swap_cd=1..}] run function ctf:player/kit/cooldown/update
+
+# Feed player
+execute if entity @s[scores={ctf_hunger=..16}] run effect give @s minecraft:saturation 1 1 true

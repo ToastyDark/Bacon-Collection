@@ -19,6 +19,7 @@ scoreboard objectives add ctf_in_ops_spawn_prev dummy
 scoreboard objectives add ctf_flag_capture_cd dummy
 scoreboard objectives add ctf_session dummy
 scoreboard objectives add ctf_leave_game minecraft.custom:leave_game
+scoreboard objectives add ctf_hunger food
 
 scoreboard objectives add ctf_crouch_time dummy
 scoreboard objectives add ctf_crouch_time_prev dummy
