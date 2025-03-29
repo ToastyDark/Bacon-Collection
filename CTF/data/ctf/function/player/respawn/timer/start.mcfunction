@@ -13,3 +13,4 @@ clear @s
 
 # Spectator
 gamemode spectator
+spectate @n[type=area_effect_cloud] @s
