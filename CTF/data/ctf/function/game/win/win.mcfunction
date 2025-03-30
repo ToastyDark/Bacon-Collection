@@ -1,6 +1,9 @@
 # Stop Game
 data modify storage ctf:game started set value false
 
+# Prep Announcement
+title @a[tag=ctf_player] times 10t 5s 10t
+
 # Winners Announcement
 $title @a[team=ctf_team$(team_num)] title {"text":"Victory!","color":"green","bold":true}
 $title @a[team=ctf_team$(team_num)] subtitle {"text":"Your team has won!","bold": true, "color": "dark_green"}
