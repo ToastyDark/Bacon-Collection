@@ -17,3 +17,6 @@ execute if entity @s[team=ctf_team2] run schedule function ctf:game/flag/steal/d
 
 # Stolen Commands
 function ctf:game/flag/stolen with storage ctf:game temp
+
+# Msg
+title @s actionbar {"text":"You have stolen the flag!","bold":true,"color":"green"}
