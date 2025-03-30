@@ -1,9 +1,9 @@
 # Announce to teammates
-title @s actionbar {"text":"You have captured the flag!","bold": true, "color": "green"}
-$execute as @a[tag=ctf_player,team=ctf_team$(team_ops),tag=!ctf_has_flag] run title @s actionbar {"text":"You have captured the flag!","bold": true, "color": "green"}
+$execute as @a[tag=ctf_player,team=ctf_team$(team_ops)] run function ctf:game/flag/capture/team_msg with team$(team_ops)
 
 # Announce to ops
-$execute as @a[tag=ctf_player,team=!ctf_team$(team_num)] run title @s actionbar {"text":"Your flag was captured","bold": true, "color": "red"}
+$execute as @a[tag=ctf_player,team=ctf_team$(team_num)] at @s run function ctf:game/flag/capture/op_msg
+
 
 # Add to Points
 $scoreboard players add ctf_team$(team_num) ctf_points 1
@@ -18,7 +18,10 @@ scoreboard players add @s ctf_flag_capture_cd 1
 # Respawn
 function ctf:player/respawn/respawn
 
+# Tell player they captured flag
+title @s actionbar {"text":"You have captured the flag!","bold": true, "color": "green"}
+execute at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 1 1.3 1
+
 
 # Replace Flag
-#$function ctf:game/flag/place/team$(team_ops) with storage ctf:game
 $function ctf:game/flag/place/timer/start with storage ctf:game team$(team_num)
