@@ -1,8 +1,8 @@
 # Announce to teammates
-$execute as @a[tag=ctf_player,team=ctf_team$(team_ops)] run function ctf:game/flag/capture/team_msg with storage ctf:game team$(team_ops)
+$execute as @a[tag=ctf_player,team=ctf_team$(team_num)] run function ctf:game/flag/capture/team_msg with storage ctf:game team$(team_num)
 
 # Announce to ops
-$execute as @a[tag=ctf_player,team=ctf_team$(team_num)] at @s run function ctf:game/flag/capture/op_msg
+$execute as @a[tag=ctf_player,team=ctf_team$(team_ops)] at @s run function ctf:game/flag/capture/op_msg
 
 
 # Add to Points
