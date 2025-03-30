@@ -19,7 +19,7 @@ scoreboard players add @s ctf_flag_capture_cd 1
 function ctf:player/respawn/respawn
 
 # Tell player they captured flag
-title @s actionbar {"text":"You have captured the flag!","bold": true, "color": "green"}
+#title @s actionbar {"text":"You have captured the flag!","bold": true, "color": "green"}
 execute at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 1 1.3 1
 
 
