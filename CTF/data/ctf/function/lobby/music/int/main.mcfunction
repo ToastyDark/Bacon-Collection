@@ -4,3 +4,6 @@ execute as @a unless entity @s[scores={ctf_music=0..}] run scoreboard players se
 
 # Check if music interaction clicked
 execute as @e[type=interaction,tag=ctf_music_int] run function ctf:lobby/music/int/click
+
+# Update Text
+function ctf:lobby/music/int/update_text

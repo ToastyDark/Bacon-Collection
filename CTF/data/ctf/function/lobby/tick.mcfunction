@@ -4,7 +4,7 @@ execute if data storage ctf:game {started:false} as @a if entity @s[scores={ctf_
 
 # Update Map Names
 function ctf:lobby/display/map/update_display_name with storage ctf:game
-function ctf:lobby/music/int/update_text
+function ctf:lobby/music/int/main
 
 
 # Update if in lobby to true
