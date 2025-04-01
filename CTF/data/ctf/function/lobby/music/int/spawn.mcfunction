@@ -1,0 +1,1 @@
+execute in void run summon minecraft:interaction 33 79 -105 {Tags:["ctf_music_int"],width:1.1,height:1.1}
