@@ -7,3 +7,6 @@ execute at @s run playsound minecraft:block.enchantment_table.use master @s ~ ~ 
 execute at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.2 0.8 0.2
 # To Others
 execute at @s run playsound minecraft:entity.item.pickup master @a ~ ~ ~ 0.2 0.7 0.2
+
+#scoreboard players set @s actionbar_cd 1
+#title @s actionbar {"text":"Warped to CTF","bold":true,"color":"dark_aqua"}a
