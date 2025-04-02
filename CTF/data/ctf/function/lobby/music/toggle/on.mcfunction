@@ -4,3 +4,4 @@ playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 0.7 0.1
 
 # Toggle
 scoreboard players set @s ctf_music 1
+execute if entity @s[tag=ctf_player] run function ctf:game/music/start with storage ctf:game

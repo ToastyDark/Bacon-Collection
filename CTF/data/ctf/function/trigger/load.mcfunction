@@ -11,6 +11,7 @@ scoreboard objectives add ctf.invite trigger
 scoreboard objectives add ctf.debug trigger
 
 # Settings
+scoreboard objectives add ctf.music trigger
 scoreboard objectives add ctf.map trigger
 scoreboard objectives add ctf.maps trigger
 scoreboard objectives add ctf.map.desert_maze trigger
