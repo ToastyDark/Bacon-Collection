@@ -9,8 +9,8 @@ bossbar set ctf:lobby_timer players @a[tag=ctf_lobby]
 
 
 # Title Countdown
-execute if score $ctf_lobby_time value matches 1..5 run title @s times 5 10 5
-execute if score $ctf_lobby_time value matches 1..5 run title @s title {"text":""}
+execute if score $ctf_lobby_time value matches 1..5 run title @a times 5 10 5
+execute if score $ctf_lobby_time value matches 1..5 run title @a title {"text":""}
 execute if score $ctf_lobby_time value matches 5 run title @a subtitle {"text":"5","bold":true,"color":"gold"}
 execute if score $ctf_lobby_time value matches 4 run title @a subtitle {"text":"4","bold":true,"color":"gold"}
 execute if score $ctf_lobby_time value matches 3 run title @a subtitle {"text":"3","bold":true,"color":"gold"}
