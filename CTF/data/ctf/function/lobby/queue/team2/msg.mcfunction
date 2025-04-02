@@ -2,4 +2,4 @@
 execute if entity @s[scores={ctf_crouch_time=1..}] run return fail
 
 # Msg
-title @s actionbar ["",{"text":"Team Selection: ","bold": true,"color": "gray"},{"text":"Blue","bold":true,"color":"blue"}]
+execute unless entity @s[scores={actionbar_cd=1..}] run title @s actionbar ["",{"text":"Team Selection: ","bold": true,"color": "gray"},{"text":"Blue","bold":true,"color":"blue"}]
