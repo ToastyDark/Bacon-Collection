@@ -14,8 +14,8 @@ execute if data storage ctf:game {started:true} unless score $ctf_in_lobby value
 
 
 # Check if player is in lobby
-execute in void positioned 22 58 -135 as @a[tag=!ctf_lobby,dx=38,dy=38,dz=38] run tag @s add ctf_lobby
-execute in void positioned 22 58 -135 as @a unless entity @s[tag=ctf_lobby,dx=38,dy=38,dz=38] run tag @s remove ctf_lobby
+execute in void positioned 22 58 -135 as @a[tag=!ctf_lobby,dx=38,dy=38,dz=38] run function ctf:lobby/lobby/enter
+execute in void positioned 22 58 -135 as @a unless entity @s[tag=ctf_lobby,dx=38,dy=38,dz=38] run function ctf:lobby/lobby/leave
 
 # Play Music for players in lobby
 execute as @a[tag=ctf_lobby,tag=!museq.ctf_note_lobby.mmp,scores={ctf_music=2}] run tag @s add museq.ctf_note_lobby.mmp
