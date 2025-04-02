@@ -1,1 +1,1 @@
-$execute as @a[tag=ctf_player,scores={ctf_music=1..}] run function ctf:map/$(map)/music
+execute as @a[tag=ctf_player,scores={ctf_music=1..}] run function ctf:game/music/start with storage ctf:game
