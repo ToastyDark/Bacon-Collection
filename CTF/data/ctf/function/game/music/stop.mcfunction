@@ -1,0 +1,1 @@
+function museq:meta/stopall
