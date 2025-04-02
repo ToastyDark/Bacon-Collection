@@ -16,3 +16,7 @@ execute if score $ctf_lobby_time value matches 4 run title @a subtitle {"text":"
 execute if score $ctf_lobby_time value matches 3 run title @a subtitle {"text":"3","bold":true,"color":"gold"}
 execute if score $ctf_lobby_time value matches 2 run title @a subtitle {"text":"2","bold":true,"color":"gold"}
 execute if score $ctf_lobby_time value matches 1 run title @a subtitle {"text":"1","bold":true,"color":"gold"}
+
+
+# Start Game
+execute if score $ctf_lobby_time value matches 0 run function ctf:game/start
