@@ -6,6 +6,11 @@ bossbar set ctf:lobby_timer name ["",{"text":"CTF Starts in ","bold":true,"color
 bossbar set ctf:lobby_timer players @a[tag=ctf_lobby]
 
 
+# Check if have enough players
+function ctf:lobby/queue/empty/check
+#execute unless score $ctf_players_queued_count value matches 2.. run
+
+
 
 
 # Title Countdown
