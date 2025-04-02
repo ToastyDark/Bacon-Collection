@@ -3,3 +3,4 @@ playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.5 0.4 0.1
 
 # Toggle
 scoreboard players set @s ctf_music 0
+function museq:meta/stopall
