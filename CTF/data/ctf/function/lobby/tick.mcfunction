@@ -18,4 +18,4 @@ execute in void positioned 22 58 -135 as @a[tag=!ctf_lobby,dx=38,dy=38,dz=38] ru
 execute in void positioned 22 58 -135 as @a unless entity @s[tag=ctf_lobby,dx=38,dy=38,dz=38] run tag @s remove ctf_lobby
 
 # Play Music for players in lobby
-execute as @a[tag=ctf_lobby,tag=!museq.ctf_note_lobby.mmp,scores={ctf_music=1}] run tag @s add museq.ctf_note_lobby.mmp
+execute as @a[tag=ctf_lobby,tag=!museq.ctf_note_lobby.mmp,scores={ctf_music=2}] run tag @s add museq.ctf_note_lobby.mmp
