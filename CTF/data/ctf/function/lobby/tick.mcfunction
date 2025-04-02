@@ -21,5 +21,5 @@ execute in void positioned 22 58 -135 as @a unless entity @s[tag=ctf_lobby,dx=38
 execute as @a[tag=ctf_lobby,tag=!museq.ctf_note_lobby.mmp,scores={ctf_music=2}] run tag @s add museq.ctf_note_lobby.mmp
 
 # Update Bossbar Timer
-function ctf:lobby/timer/update
+#function ctf:lobby/timer/update
 function ctf:lobby/timer/bossbar/toggle
