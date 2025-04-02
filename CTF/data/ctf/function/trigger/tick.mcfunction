@@ -6,6 +6,10 @@ execute as @a[scores={ctf.start=1..}] run function ctf:trigger/start/start
 scoreboard players enable ToastyDark ctf.stop
 execute as @a[scores={ctf.stop=1..}] run function ctf:trigger/stop/stop
 
+# Pause
+scoreboard players enable ToastyDark ctf.pause
+execute as @a[scores={ctf.pause=1..}] run function ctf:trigger/pause/toggle
+
 # Queue
 scoreboard players enable @a ctf.queue
 execute as @a[scores={ctf.queue=1..}] run function ctf:trigger/lobby_tp/tp
