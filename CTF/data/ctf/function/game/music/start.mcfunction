@@ -1,1 +1,1 @@
-$function ctf:map/$(map)/start_music
+$function ctf:map/$(map)/music
