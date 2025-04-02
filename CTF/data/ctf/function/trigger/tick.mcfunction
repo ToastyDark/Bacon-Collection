@@ -28,7 +28,7 @@ execute as @a[scores={ctf.invite=1..}] run function ctf:trigger/invite/start
 
 # Music
 scoreboard players enable @a ctf.music
-execute as @a[scores={ctf.music=1..}] run function ctf:lobby/music/toggle/run
+execute as @a[scores={ctf.music=1..}] at @s run function ctf:lobby/music/toggle/run
 
 # Debug
 scoreboard players enable @a ctf.debug
