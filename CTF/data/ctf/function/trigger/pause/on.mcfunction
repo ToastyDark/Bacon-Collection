@@ -1,4 +1,4 @@
-scoreboard players set $ctf_lobby_timer_enabled value 1
+scoreboard players set $ctf_lobby_timer_enabled value 0
 
 # Msg
 scoreboard players set @s actionbar_cd 1
