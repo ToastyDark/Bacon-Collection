@@ -1,7 +1,7 @@
 scoreboard players reset @s ctf.invite
 
 # Start Timer
-scoreboard players set $ctf_lobby_time value 50
+scoreboard players set $ctf_lobby_time value 60
 function ctf:lobby/timer/update
 schedule function ctf:lobby/timer/remove 1s replace
 scoreboard players set $ctf_lobby_timer_enabled value 1
