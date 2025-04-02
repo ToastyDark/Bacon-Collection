@@ -1,2 +1,2 @@
 tag @s remove ctf_lobby
-function museq:meta/stopall
+execute unless entity @s[tag=ctf_player] run function museq:meta/stopall
