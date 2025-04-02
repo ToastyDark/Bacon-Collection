@@ -1,0 +1,1 @@
+execute as @a[tag=ctf_player] run function museq:meta/stopall
