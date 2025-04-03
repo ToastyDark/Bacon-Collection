@@ -41,10 +41,10 @@ $data modify storage ctf:game time set from storage ctf:map $(map).time
 $data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
 execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
 
-# Flag Respwn Delay
+# Flag Respawn Delay
 $data modify storage ctf:game flag_respawn_delay set from storage ctf:map $(map).flag_respawn_delay
 
-# Bomb rRespawn Delay
+# Bomb Respawn Delay
 $data modify storage ctf:game bomb_respawn_delay set from storage ctf:map $(map).bomb_respawn_delay
 
 # ---------------COLORS---------------

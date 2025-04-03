@@ -10,6 +10,7 @@ scoreboard objectives add ctf.pause trigger
 
 # Map Making
 scoreboard objectives add ctf.debug trigger
+scoreboard objectives add ctf.data trigger
 
 # Settings
 scoreboard objectives add ctf.music trigger

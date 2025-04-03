@@ -34,9 +34,13 @@ execute as @a[scores={ctf.invite=1..}] run function ctf:trigger/invite/start
 scoreboard players enable @a ctf.music
 execute as @a[scores={ctf.music=1..}] at @s run function ctf:lobby/music/toggle/run
 
+# Data (Map Data)
+scoreboard players enable @a ctf.data
+execute as @a[scores={ctf.data=1..}] run function ctf:trigger/data/main
+
 # Debug
 scoreboard players enable @a ctf.debug
-execute as @a[scores={ctf.debug=1..}] run function ctf:trigger/debug/main
+execute as @a[scores={ctf.debug=1..}] run function ctf:trigger/debug/toggle
 
 
 # Random Teams
