@@ -58,6 +58,22 @@ $execute unless data storage ctf:map desert_maze.points_to_win run data modify s
         $execute unless data storage ctf:map desert_maze.team1.spawn.ry run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"ry: ","color":"gray"},$(m),{"text":")","color":"gray"}]'
 
 
+    # Flag Data
+        data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":" Flag Coords: (","bold":false,"color":"gray"}]'
+
+        #x
+        execute if data storage ctf:map desert_maze.team1.flag.x run data modify storage ctf:temp debug_msg append value '[{"text":"x: ","bold":false,"color":"white"},{"nbt":"desert_maze.team1.flag.x","storage":"ctf:map","interpret":false,"color":"gold"}]'
+        $execute unless data storage ctf:map desert_maze.team1.flag.x run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"x: ","color":"gray"},$(m)]'
+
+        #y
+        execute if data storage ctf:map desert_maze.team1.flag.y run data modify storage ctf:temp debug_msg append value '[{"text":" y: ","bold":false,"color":"white"},{"nbt":"desert_maze.team1.flag.y","storage":"ctf:map","interpret":false,"color":"gold"}]'
+        $execute unless data storage ctf:map desert_maze.team1.flag.y run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"y: ","color":"gray"},$(m)]'
+
+        #z
+        execute if data storage ctf:map desert_maze.team1.flag.z run data modify storage ctf:temp debug_msg append value '[{"text":" z: ","bold":false,"color":"white"},{"nbt":"desert_maze.team1.flag.z","storage":"ctf:map","interpret":false,"color":"gold"}]'
+        $execute unless data storage ctf:map desert_maze.team1.flag.z run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"z: ","color":"gray"},$(m)]'
+
+
 
 
 # Display
