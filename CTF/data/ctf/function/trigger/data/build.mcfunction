@@ -75,8 +75,8 @@ $execute unless data storage ctf:map desert_maze.points_to_win run data modify s
 
 
     # Flag Respawn Timer
-    execute if data storage ctf:map desert_maze.flag_respawn_delay run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"Flag Respawn Delay: ","bold":false,"color":"gray"},{"nbt":"desert_maze.flag_respawn_delay","storage":"ctf:map","interpret":true,"color":"green"}]'
-    $execute unless data storage ctf:map desert_maze.flag_respawn_delay run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"Flag Respawn Delay: ","bold":false,"color":"gray"},$(missing)]'
+    execute if data storage ctf:map desert_maze.flag_respawn_delay run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":" Flag Respawn Delay: ","bold":false,"color":"gray"},{"nbt":"desert_maze.flag_respawn_delay","storage":"ctf:map","interpret":false,"color":"gold"}]'
+    $execute unless data storage ctf:map desert_maze.flag_respawn_delay run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":" Flag Respawn Delay: ","bold":false,"color":"gray"},$(missing)]'
 
 
 
