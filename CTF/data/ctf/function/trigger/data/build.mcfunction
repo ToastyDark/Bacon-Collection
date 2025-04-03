@@ -59,7 +59,7 @@ $execute unless data storage ctf:map desert_maze.points_to_win run data modify s
 
 
     # Flag Data
-        data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":" Flag Coords: (","bold":false,"color":"gray"}]'
+        data modify storage ctf:temp debug_msg append value '[{"text":"\\n","interpret":true},{"text":" Flag Pos: (","bold":false,"color":"gray"}]'
 
         #x
         execute if data storage ctf:map desert_maze.team1.flag.x run data modify storage ctf:temp debug_msg append value '[{"text":"x: ","bold":false,"color":"white"},{"nbt":"desert_maze.team1.flag.x","storage":"ctf:map","interpret":false,"color":"gold"}]'
@@ -72,6 +72,11 @@ $execute unless data storage ctf:map desert_maze.points_to_win run data modify s
         #z
         execute if data storage ctf:map desert_maze.team1.flag.z run data modify storage ctf:temp debug_msg append value '[{"text":" z: ","bold":false,"color":"white"},{"nbt":"desert_maze.team1.flag.z","storage":"ctf:map","interpret":false,"color":"gold"}]'
         $execute unless data storage ctf:map desert_maze.team1.flag.z run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"z: ","color":"gray"},$(m)]'
+
+
+    # Flag Respawn Timer
+    execute if data storage ctf:map desert_maze.flag_respawn_delay run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"Flag Respawn Delay: ","bold":false,"color":"gray"},{"nbt":"desert_maze.flag_respawn_delay","storage":"ctf:map","interpret":true,"color":"green"}]'
+    $execute unless data storage ctf:map desert_maze.flag_respawn_delay run data modify storage ctf:temp debug_msg append value '[{"text":"\\n"},{"text":"Flag Respawn Delay: ","bold":false,"color":"gray"},$(missing)]'
 
 
 
