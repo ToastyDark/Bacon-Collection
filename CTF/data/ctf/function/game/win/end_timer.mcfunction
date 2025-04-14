@@ -1,5 +1,5 @@
 # Stop if Timer is Done
-execute unless score $ctf_timer_end value matches -1 run return fail
+execute if score $ctf_timer_end value matches ..-1 run return fail
 
 # Actionbar
 execute if score $ctf_timer_end value matches 1..5 run title @a[tag=ctf_player] actionbar ["",{"text":"Returning to Lobby in: ","color": "gold","bold": true},{"score":{"objective":"value","name":"$ctf_timer_end"},"color":"yellow","bold": true}]
