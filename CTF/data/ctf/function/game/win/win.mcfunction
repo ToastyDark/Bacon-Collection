@@ -18,4 +18,5 @@ $execute as @a[team=ctf_team$(team_ops)] at @s run playsound minecraft:entity.wa
 # Set Winner
 
 # Schedule end
-schedule function ctf:game/end 5s append
+scoreboard players set $ctf_timer_end value 8
+function ctf:game/win/end_timer
