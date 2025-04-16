@@ -15,7 +15,9 @@ $title @a[team=ctf_team$(team_ops)] subtitle {"text":"Your team has lost!","bold
 $execute as @a[team=ctf_team$(team_ops)] at @s run playsound minecraft:entity.blaze.death master @s ~ ~ ~ 0.2 0.7 0.1
 $execute as @a[team=ctf_team$(team_ops)] at @s run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.2 0.6 0.1
 
-# Set Winner
+# Set Winner and Loser
+$data modify storage ctf:game winning_team set value team$(team_num)
+$data modify storage ctf:game losing_team set value team$(team_ops)
 
 # Schedule end
 scoreboard players set $ctf_timer_end value 8

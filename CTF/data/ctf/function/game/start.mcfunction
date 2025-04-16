@@ -36,6 +36,10 @@ schedule function ctf:game/bomb/place/start 10t append
 scoreboard players add $ctf_session value 1
 
 
+data remove storage ctf:game winning_team
+data remove storage ctf:game losing_team
+
+
 # ------------------------Players------------------------
 scoreboard players set $ctf_team1_count value 0
 scoreboard players set $ctf_team2_count value 0
