@@ -1,0 +1,1 @@
+data modify storage ctf:stats 17.1.flags_captured set value 10
