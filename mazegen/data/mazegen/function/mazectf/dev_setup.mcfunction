@@ -1,0 +1,3 @@
+function mazegen:mazectf/dev_clear
+function mazegen:mazectf/create_layout
+function mazegen:mazectf/dev_start_generation
