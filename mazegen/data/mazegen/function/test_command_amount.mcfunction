@@ -1,0 +1,54 @@
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+summon pig 0 1000 0
+
+say running start_maze_ctf, 
+function mazegen:mazectf/start_maze_ctf
+say finished running it
