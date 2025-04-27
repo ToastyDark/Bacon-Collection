@@ -1,0 +1,1 @@
+$say Removed mail #$(index) temporary code /j
