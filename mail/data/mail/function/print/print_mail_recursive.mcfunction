@@ -13,8 +13,8 @@ execute if score $mail_index mail.misc >= $mail_amount_total mail.misc run retur
 # store current index
 execute store result storage mail:temporary_print index int 1 run scoreboard players get $mail_index mail.misc
 # print mail
-function mail:player/print_single_mail with storage mail:temporary_print
+function mail:print/print_single_mail with storage mail:temporary_print
 # recursive part
 scoreboard players add $mail_index mail.misc 1
 scoreboard players remove $mail_amount_display mail.misc 1
-function mail:player/print_mail_recursive
+function mail:print/print_mail_recursive

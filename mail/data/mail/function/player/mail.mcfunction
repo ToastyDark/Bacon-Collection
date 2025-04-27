@@ -11,7 +11,7 @@ execute if score $mail_amount_total mail.misc matches 2.. run tellraw @s [{"text
 scoreboard players operation $mail_amount_display mail.misc = @s mail.settings.mail_per_page
 $scoreboard players set $mail_index mail.misc $(index)
 
-function mail:player/print_mail_recursive
+function mail:print/print_mail_recursive
 
 # -- stop since there's no more mail
 execute if score $mail_index mail.misc >= $mail_amount_total mail.misc run return 2
