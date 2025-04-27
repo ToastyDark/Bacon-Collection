@@ -2,5 +2,5 @@
 
 # Given the display count (settings) and page number
 
-scoreboard players set $mail_amount_display mail.misc 5
-scoreboard players set $mail_index 0
+scoreboard players operation $mail_amount_display mail.misc = @s mail.settings.mail_per_page
+$scoreboard players set $mail_index mail.misc $(index)
