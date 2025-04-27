@@ -15,7 +15,7 @@ $scoreboard players set $mail_index mail.misc $(index)
 function mail:print/print_mail_recursive
 
 # -- stop since there's no more mail
-execute if score $mail_index mail.misc >= $mail_amount_total mail.misc run return 2
+execute if score $mail_index mail.misc >= $mail_amount_total mail.misc run return 0
 
 # Next page
 execute store result storage mail:temporary_print index int 1 run scoreboard players get $mail_index mail.misc
