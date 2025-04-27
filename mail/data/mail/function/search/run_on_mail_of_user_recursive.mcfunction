@@ -14,3 +14,5 @@ execute if score $check_mail_index mail.misc matches -1 run return 1
 # Otherwise, continue
 scoreboard players add $check_mail_index mail.misc 1
 execute store result storage mail:temporary_check index int 1 run scoreboard players get $check_mail_index mail.misc
+
+function mail:search/run_on_mail_of_user_recursive
