@@ -1,1 +1,1 @@
-$data modify storage mail:temporary_mail Mail set from storage mail:all_mail all_mail[$(index)]
+$data modify storage mail:temporary_mail Mail set from storage mail:all_mail all_mail[$(index)].Mail
