@@ -1,4 +1,5 @@
-# Store this player's mail and mail settings into mail:temporary_mail
+# Store this player's mail into mail:temporary_mail
+function mail:player/storage_get_mail
 
 # Store mail list count
 execute store result score $mail_amount_total mail.misc run data get storage mail:temporary_mail Mail
