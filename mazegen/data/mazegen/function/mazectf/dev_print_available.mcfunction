@@ -1,0 +1,1 @@
+execute if entity @e[tag=mazegen_available_to_pick] run say There are tiles available to pick

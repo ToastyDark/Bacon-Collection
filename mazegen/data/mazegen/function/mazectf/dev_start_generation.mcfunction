@@ -1,0 +1,1 @@
+execute positioned -350 64 -214 run function mazegen:generate/generate
