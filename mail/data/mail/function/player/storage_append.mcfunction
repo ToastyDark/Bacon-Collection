@@ -1,0 +1,1 @@
+$data modify storage mail:all_mail all_mail[$(index)].Mail append value $(message)
