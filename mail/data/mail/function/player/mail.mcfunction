@@ -13,6 +13,9 @@ $scoreboard players set $mail_index mail.misc $(index)
 
 function mail:player/print_mail_recursive
 
+# -- stop since there's no more mail
+execute if score $mail_index mail.misc >= $mail_amount_total mail.misc run return 2
+
 # Next page
 execute store result storage mail:temporary_print index int 1 run scoreboard players get $mail_index mail.misc
 tellraw @s [{"text":">>> Next Page","color":"red", "clickEvent":{"action":"run_command","value":"/function mail:player/mail with storage mail:temporary_print"}}]
