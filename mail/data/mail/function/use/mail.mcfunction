@@ -1,0 +1,1 @@
+function mail:player/mail {"index":"0"}
