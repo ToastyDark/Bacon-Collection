@@ -1,1 +1,1 @@
-tellraw @s [{"text":"[Disable displaying new mail on startup] ", "color":"blue", "clickEvent":{"action":"run_command","value":"/function mail:use/toggle_auto_mail"}}]
+tellraw @s [{"text":"[Toggle displaying new mail on startup] ", "color":"blue", "clickEvent":{"action":"run_command","value":"/function mail:use/toggle_auto_mail"}}, {"text":" Currently: [", "color":"white"}, {"score":{"name":"@s","objective":"mail.settings.join_message"}, "color":"blue"}, {"text":"]", "color":"white"}]
