@@ -1,0 +1,1 @@
+execute as @a if score @s mail.login matches 1.. run function mail:join
