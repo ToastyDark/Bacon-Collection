@@ -5,6 +5,7 @@ execute store result score $mail_amount_total mail.misc run data get storage mai
 execute if score $check_mail_index mail.misc >= $mail_amount_total mail.misc run return 2
 
 # Check if this is the correct mail
+execute store result storage mail:temporary_check index int 1 run scoreboard players get $check_mail_index mail.misc
 function mail:search/check_single_mail with storage mail:temporary_check
 
 # if mail was found
