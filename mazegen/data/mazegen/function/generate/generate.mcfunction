@@ -11,3 +11,5 @@ function mazegen:util/run_over_grid {size:"7", function:"summon minecraft:marker
 # Avoid overwriting existing blocks
 execute as @e[type=minecraft:marker,tag=mazegen_outstanding_tile] at @s unless block ~ ~ ~ air run particle minecraft:cherry_leaves ~ ~2 ~ 0 1 0 0 10
 execute as @e[type=minecraft:marker,tag=mazegen_outstanding_tile] at @s unless block ~ ~ ~ air run kill @s
+
+scoreboard players set $generating mazegen 1
