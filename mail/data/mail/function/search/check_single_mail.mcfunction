@@ -8,7 +8,7 @@ $execute store success storage mail:comparison_success success int 1 run data mo
 
 # If the value in "mail:comparison_success success" is 0, the values were the same, and so this is the correct mail.
 #execute if data storage mail:comparison_success {success:0} run say Found mail at $(index)
-$execute if data storage mail:comparison_success {success:0} run function $(function) {"index":"$(index)"}
+$execute if data storage mail:comparison_success {success:0} run function $(function) with storage mail:temporary_check
 execute if data storage mail:comparison_success {success:0} run scoreboard players set $check_mail_index mail.misc -1
 
 # NOTE!!! if the function is malformed it doesnt show an erorr...
