@@ -23,3 +23,8 @@ execute as @a[tag=ctf_lobby,tag=!museq.ctf_note_lobby.mmp,scores={ctf_music=2}] 
 # Update Bossbar Timer
 #function ctf:lobby/timer/update
 function ctf:lobby/timer/bossbar/toggle
+
+
+
+# Map Loading
+execute if data storage ctf:temp {loading_map:active}

@@ -1,5 +1,5 @@
 # ---------------Load Literal Map Data---------------
-$function ctf:map/$(map)/load
+$function ctf:map/$(map)/on_start
 
 
 # --------------- Set Map Dimension ---------------
