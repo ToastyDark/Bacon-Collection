@@ -1,6 +1,6 @@
 # Bossbar Update
 execute store result bossbar ctf:lobby_timer value run scoreboard players get $ctf_lobby_time value
-bossbar set ctf:lobby_timer name ["",{"text":"CTF Starts in ","bold":true,"color":"#d58a09"},{"score":{"name":"$ctf_lobby_time","objective":"value"},"bold":true,"color":"#e0a308"}]
+execute unless data storage ctf:temp {loading_map:active} run bossbar set ctf:lobby_timer name ["",{"text":"CTF Starts in ","bold":true,"color":"#d58a09"},{"score":{"name":"$ctf_lobby_time","objective":"value"},"bold":true,"color":"#e0a308"}]
 
 # Playres
 bossbar set ctf:lobby_timer players @a[tag=ctf_lobby]
