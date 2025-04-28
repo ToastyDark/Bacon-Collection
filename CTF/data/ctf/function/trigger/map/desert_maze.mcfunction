@@ -4,6 +4,7 @@ scoreboard players reset @s ctf.map.desert_maze
 execute if data storage ctf:game {started:true} run return run title @s actionbar {"text":"Cannot switch Map while game in session","bold": true,"color": "red"}
 
 # Stop if map is currently initalizing
+execute if data storage ctf:temp {loading_map:active} run return run title @s actionbar {"text":"A map is already being loaded","bold": true,"color": "red"}
 
 
 
