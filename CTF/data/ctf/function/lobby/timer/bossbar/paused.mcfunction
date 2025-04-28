@@ -1,0 +1,1 @@
+bossbar set ctf:lobby_timer name ["",{"text":"Timer Paused at: ","bold":true,"color":"#f32f08"},{"score":{"name":"$ctf_lobby_time","objective":"value"},"bold":true,"color":"#e0a308"}]
