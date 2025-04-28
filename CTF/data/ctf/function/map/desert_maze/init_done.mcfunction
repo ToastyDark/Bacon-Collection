@@ -9,3 +9,6 @@ execute unless score $generating mazegen matches 1 run return fail
 
 # All checks succeded, so initalizing process is done
 data modify storage ctf:temp loading_map set value done
+
+# Remove Forceloads
+execute in void run forceload remove -358 -77 -300 -275

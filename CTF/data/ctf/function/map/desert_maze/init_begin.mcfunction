@@ -1,5 +1,9 @@
 # Start the process of reseting the map to playable state
 
+# Forceload chunks to start maze gen
+execute in void run forceload add -358 -77 -300 -275
+
+
 # Begin generating the maze
 # -jake
 schedule function mazegen:mazectf/start_maze_ctf 1t replace
