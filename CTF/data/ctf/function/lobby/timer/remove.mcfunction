@@ -1,8 +1,8 @@
 # Stop if Timer Paused
 execute if score $ctf_lobby_timer_paused value matches 1 run return fail
 
-# Stop if map is currently being loaded and game is about to start
-execute if data storage ctf:temp {loading_map:active} if score $ctf_lobby_time value matches ..10 run return fail
+# Stop if map is currently being loaded
+execute if data storage ctf:temp {loading_map:active} run return fail
 
 
 # Remove Time
