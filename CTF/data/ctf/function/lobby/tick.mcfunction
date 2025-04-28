@@ -18,7 +18,7 @@ execute in void positioned 22 58 -135 as @a[tag=!ctf_lobby,dx=38,dy=38,dz=38] ru
 execute in void positioned 22 58 -135 as @a unless entity @s[tag=ctf_lobby,dx=38,dy=38,dz=38] run function ctf:lobby/lobby/leave
 
 # Play Music for players in lobby
-execute as @a[tag=ctf_lobby,tag=!museq.ctf_note_lobby.mmp,scores={ctf_music=2}] run tag @s add museq.ctf_note_lobby.mmp
+execute as @a[tag=ctf_lobby, tag=!museq.ctf_note_lobby.mmp, scores={ctf_music=2}] run tag @s add museq.ctf_note_lobby.mmp
 
 # Update Bossbar Timer
 #function ctf:lobby/timer/update
@@ -26,5 +26,7 @@ function ctf:lobby/timer/bossbar/toggle
 
 
 
-# Map Loading
-execute if data storage ctf:temp {loading_map:active}
+# Functions ran to continue the process of map loading
+# Check if the loading process is currently active or done
+execute if data storage ctf:temp {loading_map:active} run function ctf:lobby/load_map/check_progress with storage ctf:game
+execute if data storage ctf:temp {loading_map:done} run function ctf:lobby/load_map/done with storage ctf:game

@@ -1,7 +1,7 @@
 scoreboard players reset @s ctf.pause
 
-# Toggle Off
-execute if score $ctf_lobby_timer_enabled value matches 1 run return run function ctf:trigger/pause/off
+# Unpause
+execute if score $ctf_lobby_timer_paused value matches 1 run return run function ctf:trigger/pause/off
 
-# Toggle On
+# Pause
 function ctf:trigger/pause/on

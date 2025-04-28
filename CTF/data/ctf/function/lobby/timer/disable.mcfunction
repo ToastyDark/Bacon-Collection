@@ -1,1 +1,0 @@
-scoreboard players reset $ctf_lobby_timer_enabled value
