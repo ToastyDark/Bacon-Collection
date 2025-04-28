@@ -6,4 +6,5 @@ execute in void run forceload add -358 -77 -300 -275
 
 # Begin generating the maze
 # -jake
-schedule function mazegen:mazectf/start_maze_ctf 1t replace
+#schedule function mazegen:mazectf/start_maze_ctf 1t replace
+function mazegen:mazectf/start_maze_ctf
