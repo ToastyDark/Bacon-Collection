@@ -1,8 +1,8 @@
 # Play Sound
 execute as @a[tag=ctf_lobby] at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.3 1 0.3
 
-#
-execute if data storage ctf:temp {loading_map:false}
+# Mark as done
+data modify storage ctf:temp loading_map set value false
 
 
 # Update Bossbar, Resume Timer
