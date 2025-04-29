@@ -53,3 +53,5 @@ scoreboard players operation $complete_tiles mazegen *= $one_hundred mazegen
 # completion percent = complete tiles / total tiles
 scoreboard players operation $completion_percent mazegen = $complete_tiles mazegen
 scoreboard players operation $completion_percent mazegen /= $total_tiles mazegen
+
+scoreboard players operation $progress api.mazegen = $completion_percent mazegen
