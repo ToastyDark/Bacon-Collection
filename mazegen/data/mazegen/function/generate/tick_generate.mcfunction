@@ -47,7 +47,7 @@ execute as @e[tag=mazegen_outstanding_tile] run scoreboard players add $current_
 # complete tiles = total tiles - current tiles
 scoreboard players operation $complete_tiles mazegen = $total_tiles mazegen
 scoreboard players operation $complete_tiles mazegen -= $current_tiles mazegen
-scoreboard players operation $complete_tiles mazegen %= $one_hundred mazegen
+scoreboard players operation $complete_tiles mazegen *= $one_hundred mazegen
 
 
 # completion percent = complete tiles / total tiles
