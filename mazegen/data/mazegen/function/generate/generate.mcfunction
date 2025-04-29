@@ -13,3 +13,6 @@ execute as @e[type=minecraft:marker,tag=mazegen_outstanding_tile] at @s unless b
 execute as @e[type=minecraft:marker,tag=mazegen_outstanding_tile] at @s unless block ~ ~ ~ air run kill @s
 
 scoreboard players set $generating mazegen 1
+
+scoreboard players reset $total_tiles mazegen
+execute as @e[tag=mazegen_outstanding_tile] run scoreboard players add $total_tiles mazegen 1
