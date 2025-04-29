@@ -30,7 +30,7 @@ function ctf:setup/scoreboard/start with storage ctf:game
 schedule function ctf:game/flag/place/start 10t append
 
 # Replace Bomb
-schedule function ctf:game/bomb/place/start 10t append
+schedule function ctf:game/_bomb/place/start 10t append
 
 # Set Game ID
 scoreboard players add $ctf_session value 1

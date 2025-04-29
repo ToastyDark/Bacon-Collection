@@ -25,7 +25,7 @@ execute if entity @s[scores={ctf_crouch_time=1},nbt={OnGround:true}] run functio
 function ctf:player/break_wool/check
 
 # Check if player takes bomb
-execute if entity @s[scores={ctf_mined_tnt=1..}] run function ctf:game/bomb/take/start
+execute if entity @s[scores={ctf_mined_tnt=1..}] run function ctf:game/_bomb/take/start
 
 # Check if player steals flag
 execute if entity @s[scores={ctf_mined_wool_any=1..}] run function ctf:game/flag/steal/start

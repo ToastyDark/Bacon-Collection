@@ -1,0 +1,2 @@
+$execute in $(dimension) run setblock $(bomb_x) $(bomb_y) $(bomb_z) tnt
+$execute in $(dimension) positioned $(bomb_x) $(bomb_y) $(bomb_z) run playsound minecraft:entity.item.pickup master @a ~ ~ ~ 1 1.5 1
