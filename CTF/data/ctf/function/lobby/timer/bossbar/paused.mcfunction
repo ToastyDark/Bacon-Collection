@@ -1,1 +1,4 @@
+# Stop is mazgen is active
+execute if data storage ctf:temp {loading_map:active} run return fail
+
 bossbar set ctf:lobby_timer name ["",{"text":"Timer Paused at: ","bold":true,"color":"#f32f08"},{"score":{"name":"$ctf_lobby_time","objective":"value"},"bold":true,"color":"#e0a308"}]
