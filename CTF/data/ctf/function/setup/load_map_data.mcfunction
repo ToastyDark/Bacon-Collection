@@ -86,3 +86,45 @@ $data modify storage ctf:game kit_dimension set from storage ctf:map $(map).kit.
 $data modify storage ctf:game kit_x set from storage ctf:map $(map).kit.x
 $data modify storage ctf:game kit_y set from storage ctf:map $(map).kit.y
 $data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
+
+
+
+# --------------- Bomb Site Data ---------------
+$data modify storage ctf:game bsite_count set from storage ctf:map $(map).bsite_count
+
+# Team 1 - 1st Bomb Site
+data modify storage ctf:game bsite_team1.bsite.1.team_num set value 1
+$data modify storage ctf:game bsite_team1.bsite.1.x set from storage ctf:map $(map).team1.bsite_1_x
+$data modify storage ctf:game bsite_team1.bsite.1.y set from storage ctf:map $(map).team1.bsite_1_y
+$data modify storage ctf:game bsite_team1.bsite.1.z set from storage ctf:map $(map).team1.bsite_1_z
+
+# Team 1 - 2nd Bomb Site
+data modify storage ctf:game bsite_team1.bsite.2.team_num set value 1
+$data modify storage ctf:game bsite_team1.bsite.2.x set from storage ctf:map $(map).team1.bsite_2_x
+$data modify storage ctf:game bsite_team1.bsite.2.y set from storage ctf:map $(map).team1.bsite_2_y
+$data modify storage ctf:game bsite_team1.bsite.2.z set from storage ctf:map $(map).team1.bsite_2_z
+
+# Team 1 - 3rd Bomb Site
+data modify storage ctf:game bsite_team1.bsite.3.team_num set value 1
+$data modify storage ctf:game bsite_team1.bsite.3.x set from storage ctf:map $(map).team1.bsite_3_x
+$data modify storage ctf:game bsite_team1.bsite.3.y set from storage ctf:map $(map).team1.bsite_3_y
+$data modify storage ctf:game bsite_team1.bsite.3.z set from storage ctf:map $(map).team1.bsite_3_z
+
+
+# Team 2 - 1st Bomb Site
+data modify storage ctf:game bsite_team2.bsite.1.team_num set value 2
+$data modify storage ctf:game bsite_team2.bsite.1.x set from storage ctf:map $(map).team2.bsite_1_x
+$data modify storage ctf:game bsite_team2.bsite.1.y set from storage ctf:map $(map).team2.bsite_1_y
+$data modify storage ctf:game bsite_team2.bsite.1.z set from storage ctf:map $(map).team2.bsite_1_z
+
+# Team 2 - 2nd Bomb Site
+data modify storage ctf:game bsite_team2.bsite.2.team_num set value 2
+$data modify storage ctf:game bsite_team2.bsite.2.x set from storage ctf:map $(map).team2.bsite_2_x
+$data modify storage ctf:game bsite_team2.bsite.2.y set from storage ctf:map $(map).team2.bsite_2_y
+$data modify storage ctf:game bsite_team2.bsite.2.z set from storage ctf:map $(map).team2.bsite_2_z
+
+# Team 2 - 3rd Bomb Site
+data modify storage ctf:game bsite_team2.bsite.3.team_num set value 2
+$data modify storage ctf:game bsite_team2.bsite.3.x set from storage ctf:map $(map).team2.bsite_3_x
+$data modify storage ctf:game bsite_team2.bsite.3.y set from storage ctf:map $(map).team2.bsite_3_y
+$data modify storage ctf:game bsite_team2.bsite.3.z set from storage ctf:map $(map).team2.bsite_3_z
