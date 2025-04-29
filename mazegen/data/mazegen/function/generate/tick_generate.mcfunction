@@ -42,13 +42,16 @@ execute at @e[type=marker, tag=mazegen_currently_generating_tile] run particle m
 
 # Update progress
 scoreboard players reset $current_tiles mazegen
+tick rate 1
+
+# count current tile amount
 execute as @e[tag=mazegen_outstanding_tile] run scoreboard players add $current_tiles mazegen 1
 
 # complete tiles = total tiles - current tiles
 scoreboard players operation $complete_tiles mazegen = $total_tiles mazegen
 scoreboard players operation $complete_tiles mazegen -= $current_tiles mazegen
-scoreboard players operation $complete_tiles mazegen *= $one_hundred mazegen
 
+scoreboard players operation $complete_tiles mazegen *= $one_hundred mazegen
 
 # completion percent = complete tiles / total tiles
 scoreboard players operation $completion_percent mazegen = $complete_tiles mazegen
