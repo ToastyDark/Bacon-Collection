@@ -42,7 +42,7 @@ execute at @e[type=marker, tag=mazegen_currently_generating_tile] run particle m
 
 # Update progress
 scoreboard players reset $current_tiles mazegen
-tick rate 1
+#tick rate 1
 
 # count current tile amount
 execute as @e[tag=mazegen_outstanding_tile] run scoreboard players add $current_tiles mazegen 1
