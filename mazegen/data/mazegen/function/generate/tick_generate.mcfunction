@@ -39,3 +39,17 @@ execute if score $rotate mazegen matches 4 run setblock -405 78 -113 air
 
 # Debug
 execute at @e[type=marker, tag=mazegen_currently_generating_tile] run particle minecraft:flame ~ ~6 ~ 0 10 0 0 20
+
+# Update progress
+scoreboard players reset $current_tiles mazegen
+execute as @e[tag=mazegen_outstanding_tile] run scoreboard players add $current_tiles mazegen 1
+
+# complete tiles = total tiles - current tiles
+scoreboard players operation $complete_tiles mazegen = $total_tiles mazegen
+scoreboard players operation $complete_tiles mazegen -= $current_tiles mazegen
+scoreboard players operation $complete_tiles mazegen %= $one_hundred mazegen
+
+
+# completion percent = complete tiles / total tiles
+scoreboard players operation $completion_percent mazegen = $complete_tiles mazegen
+scoreboard players operation $completion_percent mazegen /= $total_tiles mazegen
