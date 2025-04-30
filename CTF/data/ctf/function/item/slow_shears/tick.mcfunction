@@ -1,1 +1,1 @@
-effect give @s minecraft:mining_fatigue 1 2
+effect give @s minecraft:mining_fatigue 1 0
