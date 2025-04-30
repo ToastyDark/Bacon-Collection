@@ -93,7 +93,14 @@ $data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
 $data modify storage ctf:game bsite_count set from storage ctf:map $(map).bsite_count
 $data modify storage ctf:game bomb_time_to_explode set from storage ctf:map $(map).bomb_time_to_explode
 
-# Team 1 - 1st Bomb Site
+# Get TNT Explode Time in Ticks
+$execute store result score $ctf_bomb_time_to_explode_ticks value run data get storage ctf:map $(map).bomb_time_to_explode
+scoreboard players set $20 value 20
+scoreboard players operation $bomb_time_to_explode_tick value *= $20 value
+execute store result storage ctf:game bomb_time_to_explode_tick int 1 run scoreboard players get $bomb_time_to_explode_tick value
+
+
+# ---- Team 1 - 1st Bomb Site -----
 data modify storage ctf:game bsite_team1.bsite.1.team_num set value 1
 $data modify storage ctf:game bsite_team1.bsite.1.x set from storage ctf:map $(map).team1.bsite_1_x
 $data modify storage ctf:game bsite_team1.bsite.1.y set from storage ctf:map $(map).team1.bsite_1_y

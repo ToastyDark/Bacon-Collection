@@ -3,7 +3,7 @@ tag @s add ctf_bomb_planted
 
 
 # Spawn TNT
-summon tnt ~ ~ ~ {fuse:300,explosion_power:0}
+$summon tnt ~ ~ ~ {fuse:$(bomb_time_to_explode_tick),explosion_power:0}
 ride @n[type=tnt] mount @s
 
 # Prepare new time
