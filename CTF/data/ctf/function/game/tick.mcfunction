@@ -16,7 +16,6 @@ execute if data storage ctf:game bomb{stolen:true} if data storage ctf:game bomb
 
 # Check Bombsite tick
 execute as @e[type=interaction,tag=ctf_bombsite] run function ctf:game/_bomb/site/tick
-execute as @e[type=armadillo,tag=ctf_bombsite] on target if entity ToastyDark run say hi
 
 
 # Replace Timers
