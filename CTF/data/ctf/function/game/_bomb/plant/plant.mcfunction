@@ -17,5 +17,5 @@ execute as @n[type=interaction, tag=ctf_bombsite ] run tag @s add ctf_bomb_plant
 
 
 # Message
-$execute as @a[tag=team$(team_num)] run function ctf:game/_bomb/plant/msg/team with storage ctf:game team$(team_num)
-$execute as @a[tag=team$(team_ops)] run function ctf:game/_bomb/plant/msg/ops with storage ctf:game team$(team_ops)
+$execute as @a[team=team$(team_num)] run function ctf:game/_bomb/plant/msg/team with storage ctf:game team$(team_num)
+$execute as @a[team=team$(team_ops)] run function ctf:game/_bomb/plant/msg/ops with storage ctf:game team$(team_ops)
