@@ -7,3 +7,7 @@ execute as @e[type=arrow,nbt={inGround:1b,item:{components:{"minecraft:custom_da
 
 # Resistance Armor (cactus kit)
 execute as @a if items entity @s armor.* *[minecraft:custom_data={ctf_resistance_armor:true}] at @s run function ctf:item/resistance_armor/tick
+
+# Slow Shears (cactus kit)
+execute as @a if items entity @s weapon.mainhand *[minecraft:custom_data={ctf_slow_shears:true}] at @s run function ctf:item/slow_shears/tick
+execute as @a if items entity @s weapon.offhand *[minecraft:custom_data={ctf_slow_shears:true}] at @s run function ctf:item/slow_shears/tick
