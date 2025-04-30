@@ -1,5 +1,5 @@
 # TP Interact to Armadillo
-execute at @e[type=interaction,tag=ctf_bombsite] run function ctf:game/_bomb/site/tp
+execute at @e[type=armadillo,tag=ctf_bombsite] run function ctf:game/_bomb/site/tp
 
 
 
