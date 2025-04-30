@@ -3,7 +3,7 @@ tag @s add ctf_bomb_planted
 
 
 # Spawn TNT
-$summon tnt ~ ~ ~ {fuse:$(bomb_time_to_explode_tick),explosion_power:0}
+function ctf:game/_bomb/plant/misc/spawn_tnt with storage ctf:game
 ride @n[type=tnt] mount @s
 
 # Prepare new time

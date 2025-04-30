@@ -1,0 +1,1 @@
+$summon tnt ~ ~ ~ {fuse:$(bomb_time_to_explode_tick),explosion_power:0}
