@@ -27,6 +27,11 @@ scoreboard objectives add ctf_crouch_time_prev dummy
 
 scoreboard objectives add ctf_mined_tnt minecraft.mined:tnt
 
+# New Bomb Stuff
+scoreboard objectives add ctf_bomb_time dummy
+scoreboard objectives add ctf_bomb_time_prev dummy
+
+
 
 # Break Wool
 scoreboard objectives add ctf_mined_wool_any dummy
