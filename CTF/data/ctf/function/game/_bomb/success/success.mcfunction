@@ -1,5 +1,5 @@
 # Announce to teammates
-title @s actionbar {"text":"You have delivered the bomb!","bold": true, "color": "green"}
+title @a[tag=ctf_has_bomb] actionbar {"text":"You have delivered the bomb!","bold": true, "color": "green"}
 $execute as @a[tag=ctf_player,team=ctf_team$(team_ops),tag=!ctf_has_bomb] run title @s actionbar {"text":"A teammate delivered the bomb","bold": true, "color": "green"}
 $execute at @s as @a[tag=ctf_player,team=ctf_team$(team_ops)] run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 20 1 0.1
 
@@ -18,7 +18,7 @@ data modify storage ctf:game bomb.stolen set value false
 data modify storage ctf:game bomb.team_has set value 0
 
 # Add Capture Cooldown to Player
-scoreboard players add @s ctf_flag_capture_cd 1
+scoreboard players add @a[tag=ctf_has_bomb] ctf_flag_capture_cd 1
 
 
 # Respawn
