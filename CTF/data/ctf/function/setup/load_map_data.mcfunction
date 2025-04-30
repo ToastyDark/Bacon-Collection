@@ -91,6 +91,7 @@ $data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
 
 # --------------- Bomb Site Data ---------------
 $data modify storage ctf:game bsite_count set from storage ctf:map $(map).bsite_count
+$data modify storage ctf:game bomb_time_to_explode set from storage ctf:map $(map).bomb_time_to_explode
 
 # Team 1 - 1st Bomb Site
 data modify storage ctf:game bsite_team1.bsite.1.team_num set value 1

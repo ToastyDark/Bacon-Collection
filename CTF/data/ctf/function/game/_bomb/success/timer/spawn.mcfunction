@@ -1,0 +1,1 @@
+summon text_display ~ ~2 ~ {Tags:["ctf_bomb_planted_time"],billboard:"center"}

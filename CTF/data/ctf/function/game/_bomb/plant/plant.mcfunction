@@ -15,6 +15,10 @@ execute as @n[type=interaction, tag=ctf_bombsite ] run scoreboard players reset 
 execute as @n[type=interaction, tag=ctf_bombsite ] run tag @s add ctf_bomb_planted
 
 
+# Spawn Text Display Timer
+function ctf:game/_bomb/success/timer/start
+
+
 
 # Message
 $execute as @a[team=ctf_team$(team_num)] run function ctf:game/_bomb/plant/msg/team with storage ctf:game team$(team_num)
