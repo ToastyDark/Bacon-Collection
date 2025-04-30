@@ -12,6 +12,7 @@ execute if entity @s[tag=ctf_bomb_planted] run function ctf:game/_bomb/diffuse/t
 
 
 # ---------- Time ran out and Bomb explodes ----------
+execute if entity @s[tag=ctf_bomb_planted] if score $bomb_explode_timer value matches 0.. run function ctf:game/_bomb/success/timer/update
 
 
 

@@ -1,10 +1,10 @@
 # Reset Values
-scoreboard players reset $bomb_respawn_cd value
-scoreboard players reset $bomb_respawn_cd_d value
-scoreboard players reset $bomb_respawn_cd_tick value
+scoreboard players reset $bomb_explode_timer value
+scoreboard players reset $bomb_explode_timer_d value
+scoreboard players reset $bomb_explode_timer_tick value
 
-# Place Bomb
-function ctf:game/bomb/place/replace with storage ctf:game
+# Go Boom
+function ctf:game/_bomb/success/success
 
 # Kill Display
-kill @e[type=text_display,tag=ctf_bomb_timer]
+#kill @e[type=text_display,tag=ctf_bomb_timer]
