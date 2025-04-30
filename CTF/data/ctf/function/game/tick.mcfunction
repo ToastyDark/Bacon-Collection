@@ -16,6 +16,7 @@ execute if data storage ctf:game bomb{stolen:true} if data storage ctf:game bomb
 
 # Check Bombsite tick
 execute as @e[type=interaction,tag=ctf_bombsite] run function ctf:game/_bomb/site/tick
+execute as @e[type=armadillo,tag=ctf_bombsite] on target run scoreboard players add @s ctf_bomb_time 1
 
 
 # Replace Timers
