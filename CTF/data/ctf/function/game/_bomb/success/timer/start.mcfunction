@@ -5,4 +5,4 @@ scoreboard players set $bomb_explode_timer_d value 9
 scoreboard players set $bomb_explode_timer_tick value 0
 
 # Spawn Display
-function ctf:game/_bomb/place/timer/spawn with storage ctf:game
+function ctf:game/_bomb/success/timer/spawn with storage ctf:game
