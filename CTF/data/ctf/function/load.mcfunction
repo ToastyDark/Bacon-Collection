@@ -60,3 +60,7 @@ scoreboard objectives add ctf_time_sec dummy
 scoreboard objectives add ctf_time_min dummy
 scoreboard objectives add ctf_time_hour dummy
 scoreboard objectives add ctf_time_day dummy
+
+# Item stuff -jake
+scoreboard objectives add ctf.item.crossbow_used minecraft.used:minecraft.crossbow
+scoreboard objectives add ctf.item.automatic_crossbow dummy
