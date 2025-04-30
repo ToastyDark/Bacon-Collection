@@ -7,4 +7,4 @@ scoreboard players reset $bomb_explode_timer_tick value
 function ctf:game/_bomb/success/success
 
 # Kill Display
-#kill @e[type=text_display,tag=ctf_bomb_timer]
+kill @e[type=text_display,tag=ctf_bombsite_timer]
