@@ -1,1 +1,1 @@
-bossbar set ctf:lobby_timer name ["",{"text":"Timer Paused: ","bold":true,"color":"#f32f08"},{"text":"Building Map...","bold":true,"color":"red"}]
+bossbar set ctf:lobby_timer name ["",{"text":"Paused: ","bold":true,"color":"#f32f08"},{"text":"Building Map: ","bold":true,"color":"red"},{"score":{"name":"$progress","objective":"api.mazegen"},"bold":true,"color":"#e0a308"}]
