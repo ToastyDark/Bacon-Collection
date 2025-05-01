@@ -31,4 +31,4 @@ execute if score $ctf_lobby_timer_paused value matches 1 run function ctf:lobby/
 # Functions ran to continue the process of map loading
 # Check if the loading process is currently active or done
 execute if data storage ctf:temp {loading_map:active} run function ctf:lobby/load_map/check_progress with storage ctf:game
-execute if data storage ctf:temp {loading_map:done} unless data storage ctf:temp {loading_map_done:true} run schedule function ctf:lobby/load_map/done 5t replace
+execute if data storage ctf:temp {loading_map:done} unless data storage ctf:temp {loading_map_done:true} run schedule function ctf:lobby/load_map/done 2t replace
