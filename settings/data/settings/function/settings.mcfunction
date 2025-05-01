@@ -1,1 +1,1 @@
-function #settings:settings
+function #settings:all
