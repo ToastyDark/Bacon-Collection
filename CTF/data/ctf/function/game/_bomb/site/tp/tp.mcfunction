@@ -1,0 +1,1 @@
+$tp @e[type=interaction,tag=ctf_bombsite_team$(team_num),tag=ctf_bombsite_$(bombsite_num),limit=1] @e[type=armadillo,tag=ctf_bombsite_team$(team_num),tag=ctf_bombsite_$(bombsite_num),limit=1]
