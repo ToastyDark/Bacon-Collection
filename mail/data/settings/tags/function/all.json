@@ -1,5 +1,5 @@
 {
     "values": [
-        "mail:use/settings"
+        "settings:mail_settings"
     ]
 }
