@@ -12,7 +12,7 @@ execute unless entity @s[tag=ctf_bomb_planted] run function ctf:game/_bomb/plant
 
 
 # ---------- Run diffuse bomb check ----------
-execute if entity @s[tag=ctf_bomb_planted] run function ctf:game/_bomb/diffuse/tick
+#execute if entity @s[tag=ctf_bomb_planted] run function ctf:game/_bomb/diffuse/tick
 
 
 # ---------- Time ran out and Bomb explodes ----------
