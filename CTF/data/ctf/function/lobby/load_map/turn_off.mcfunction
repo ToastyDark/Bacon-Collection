@@ -1,1 +1,1 @@
-#data modify storage ctf:temp loading_map_done set value false
+data modify storage ctf:temp loading_map_done set value false
