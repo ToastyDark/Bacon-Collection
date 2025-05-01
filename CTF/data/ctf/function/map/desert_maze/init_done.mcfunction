@@ -13,11 +13,11 @@ data modify storage ctf:temp loading_map set value done
 # ------ Remove Forceloads ------
 
 # Tile Copies
-#execute in void run forceload remove -451 -255 -389 -193
+execute in void run forceload remove -451 -255 -389 -193
 
 # Rotating Force load
-#execute in void run forceload remove -411 -113 -405 -107
+execute in void run forceload remove -411 -113 -405 -107
 
 
 # Map
-#execute in void run forceload remove -358 -77 -300 -275
+execute in void run forceload remove -358 -77 -300 -275
