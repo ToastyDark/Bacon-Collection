@@ -1,0 +1,1 @@
+$tellraw @s [{"text":" [","color":"dark_red"},{"score":{"name":"$(setting_selector)","objective":"$(setting_objective)"},"color":"red"},{"text":"]","color":"dark_red"},{"text":"[$(setting_name)] ","color":"white","clickEvent":{"action":"run_command","value":"/function settings:util/toggle {selector:\"$(setting_selector)\", objective:\"$(setting_objective)\"}"}}]
