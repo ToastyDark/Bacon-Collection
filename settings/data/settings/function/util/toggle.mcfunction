@@ -1,5 +1,5 @@
-$execute if score $(setting_selector) $(setting_objective) matches 1 run scoreboard players set $new_setting $(setting_objective) 0
-$execute if score $(setting_selector) $(setting_objective) matches 0 run scoreboard players set $new_setting $(setting_objective) 1
-$scoreboard players operation $(setting_selector) $(setting_objective) = $new_setting $(setting_objective)
+$execute if score $(selector) $(objective) matches 1 run scoreboard players set $new_setting $(objective) 0
+$execute if score $(selector) $(objective) matches 0 run scoreboard players set $new_setting $(objective) 1
+$scoreboard players operation $(selector) $(objective) = $new_setting $(objective)
 
 function settings:settings
