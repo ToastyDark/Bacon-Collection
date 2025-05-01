@@ -6,6 +6,7 @@ execute if data storage ctf:temp {loading_map:active} run return fail
 bossbar set ctf:lobby_timer max 60
 
 
+
 # Remove Time
 scoreboard players remove $ctf_lobby_time value 1
 
