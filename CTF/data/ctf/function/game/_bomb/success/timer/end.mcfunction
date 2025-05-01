@@ -9,3 +9,7 @@ execute as @e[type=armadillo,tag=ctf_bomb_planted,limit=1] if entity @s[tag=ctf_
 
 # Kill Display
 kill @e[type=text_display,tag=ctf_bombsite_timer]
+
+
+# Remove Bombsites
+execute as @e[type=armadillo,tag=ctf_bomb_planted] at @s run function ctf:game/_bomb/site/kill

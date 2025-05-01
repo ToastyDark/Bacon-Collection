@@ -1,6 +1,9 @@
 # TP Interact to Armadillo
 execute at @e[type=armadillo,tag=ctf_bombsite] run function ctf:game/_bomb/site/tp
 
+# Stop Scute Dropping
+execute as @n[type=armadillo,tag=ctf_bombsite,distance=..2] run data modify entity @s scute_time set value 100
+
 
 
 # ---------- Run plant bomb check ----------
