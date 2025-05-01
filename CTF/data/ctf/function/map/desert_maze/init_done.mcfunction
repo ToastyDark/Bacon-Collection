@@ -8,7 +8,7 @@ execute unless score $progress api.mazegen matches 100 run return fail
 
 
 # All checks succeded, so initalizing process is done
-data modify storage ctf:temp loading_map set value done
+schedule function ctf:lobby/load_map/turn_on 2t replace
 
 # ------ Remove Forceloads ------
 
