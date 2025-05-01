@@ -8,7 +8,7 @@ execute unless score $progress api.mazegen matches 100 run return fail
 
 
 # All checks succeded, so initalizing process is done
-schedule function ctf:lobby/load_map/turn_on 5t append
+schedule function ctf:lobby/load_map/turn_on 1t append
 
 # ------ Remove Forceloads ------
 
