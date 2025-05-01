@@ -1,5 +1,6 @@
 # TP Interact to Armadillo
-execute at @s as @e[type=armadillo,tag=ctf_bombsite] run function ctf:game/_bomb/site/tp/start
+execute if entity @s[tag=ctf_bombsite_team1] run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
+execute if entity @s[tag=ctf_bombsite_team2] run function ctf:game/_bomb/site/tp/start with storage ctf:game team2
 
 # Stop Scute Dropping
 execute as @n[type=armadillo,tag=ctf_bombsite,distance=..2] run data modify entity @s scute_time set value 100
