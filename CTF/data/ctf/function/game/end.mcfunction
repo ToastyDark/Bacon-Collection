@@ -9,6 +9,11 @@ data modify storage ctf:game team2.flag_stolen set value false
 # Back to Spawn
 #execute in void run spreadplayers -1 -109 3 10 under 64 false @a[tag=ctf_player]
 
+
+# Remove Bombsites
+execute as @e[type=armadillo,tag=ctf_bombsite] at @s run function ctf:game/_bomb/site/kill
+
+
 # Restore World Time
 function ctf:setup/time/restore with storage ctf:game temp
 

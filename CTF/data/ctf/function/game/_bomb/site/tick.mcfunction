@@ -1,5 +1,9 @@
 # TP Interact to Armadillo
-execute at @e[type=armadillo,tag=ctf_bombsite] run function ctf:game/_bomb/site/tp
+execute if entity @s[tag=ctf_bombsite_team1] run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
+execute if entity @s[tag=ctf_bombsite_team2] run function ctf:game/_bomb/site/tp/start with storage ctf:game team2
+
+# Stop Scute Dropping
+execute as @n[type=armadillo,tag=ctf_bombsite,distance=..2] run data modify entity @s scute_time set value 100
 
 
 
@@ -19,5 +23,4 @@ execute if entity @s[tag=ctf_bomb_planted] if score $bomb_explode_timer value ma
 
 
 # Reset Clicks
-data merge entity @s {attack:{player:[I;0,0,0,0],timestamp:0L}}
 data merge entity @s {interaction:{player:[I;0,0,0,0],timestamp:0L}}

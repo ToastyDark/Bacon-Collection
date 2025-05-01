@@ -25,3 +25,10 @@ execute if score $ctf_lobby_time value matches 1 run title @a subtitle {"text":"
 
 # Start Game
 execute if score $ctf_lobby_time value matches 0 run function ctf:game/start
+
+
+
+
+
+# Turn this off if needed
+execute if data storage ctf:temp {loading_map_done:true} run data modify storage ctf:temp loading_map_done set value false

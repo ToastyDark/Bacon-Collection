@@ -3,7 +3,7 @@
 # Checks are map specific
 
 # Check if maze is done generating
-execute unless score $generating mazegen matches 1 run return fail
+execute unless score $progress api.mazegen matches 100 run return fail
 
 
 
