@@ -1,0 +1,1 @@
+tellraw @s [{"text":"[Mail Settings] ","color":"aqua","clickEvent":{"action":"run_command","value":"/function mail:use/settings"}}]
