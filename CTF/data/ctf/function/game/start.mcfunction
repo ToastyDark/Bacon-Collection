@@ -19,7 +19,8 @@ function ctf:setup/team/modify with storage ctf:game team2
 
 
 # Load Map Specific Data
-function ctf:setup/map/start
+#function ctf:setup/map/start
+function ctf:setup/map/load_data with storage ctf:game
 
 
 # Time of Day

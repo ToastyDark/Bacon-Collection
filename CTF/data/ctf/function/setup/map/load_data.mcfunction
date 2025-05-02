@@ -115,39 +115,51 @@ $data modify storage ctf:game team2.bsite.3.z set from storage ctf:map $(map).te
 
 # ----------------------- Data w- Default Parameters -----------------------
 # Time of Day
+data remove storage ctf:game time
 $data modify storage ctf:game time set from storage ctf:map $(map).time
+execute unless data storage ctf:game time run data modify storage ctf:game time set value random
 
 
 # Points to Win
+data remove storage ctf:game points_to_win
 $data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
+execute unless data storage ctf:game points_to_win run data modify storage ctf:game time set value 5
 execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
 
 
 # Flag Respawn Delay
+data remove storage ctf:game flag_respawn_delay
 $data modify storage ctf:game flag_respawn_delay set from storage ctf:map $(map).flag_respawn_delay
+execute unless data storage ctf:game flag_respawn_delay run data modify storage ctf:game flag_respawn_delay set value 10
+
 
 # Bomb Respawn Delay
+data remove storage ctf:game bomb_respawn_delay
 $data modify storage ctf:game bomb_respawn_delay set from storage ctf:map $(map).bomb_respawn_delay
+execute unless data storage ctf:game bomb_respawn_delay run data modify storage ctf:game bomb_respawn_delay set value 15
 
 
 
-
-
-
-
-
-
-
-# ---------------COLORS---------------
-# Team Colors
+# -------- COLORS --------
+# Team 1 Colors
+data remove storage ctf:game team1.color
 $data modify storage ctf:game team1.color set from storage ctf:map $(map).team1.color
-$data modify storage ctf:game team2.color set from storage ctf:map $(map).team2.color
+execute unless data storage ctf:game team1.color run data modify storage ctf:game team1.color set value red
 function ctf:setup/team/color with storage ctf:game team1
+
+
+# Team 2 Colors
+data remove storage ctf:game team2.color
+$data modify storage ctf:game team2.color set from storage ctf:map $(map).team2.color
+execute unless data storage ctf:game team2.color run data modify storage ctf:game team2.color set value blue
 function ctf:setup/team/color with storage ctf:game team2
 
-# ---- Flag Team Colors ----
+# Flag Team Colors
 $data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color
 $data modify storage ctf:game team2.flag_color set from storage ctf:map $(map).team2.color
+
+
+
 
 # Ops Flag
 data modify storage ctf:game team1.ops_flag_color set from storage ctf:game team2.flag_color
