@@ -20,6 +20,8 @@ execute if entity @s[tag=ctf_bomb_planted] if score $bomb_explode_timer value ma
 
 
 
+# Flashing Bomb
+execute if entity @s[tag=ctf_bomb_planted] run function ctf:game/_bomb/site/flash/tick
 
 
 # Reset Clicks

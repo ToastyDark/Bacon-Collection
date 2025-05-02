@@ -2,7 +2,7 @@
 $function ctf:map/$(map)/on_start
 
 
-# --------------- Set Map Dimension ---------------
+# ----------------------- Required Data -----------------------
 $data modify storage ctf:game dimension set from storage ctf:map $(map).dimension
 $data modify storage ctf:game team1.dimension set from storage ctf:map $(map).dimension
 $data modify storage ctf:game team2.dimension set from storage ctf:map $(map).dimension
@@ -34,45 +34,10 @@ $data modify storage ctf:game bomb_x set from storage ctf:map $(map).bomb.x
 $data modify storage ctf:game bomb_y set from storage ctf:map $(map).bomb.y
 $data modify storage ctf:game bomb_z set from storage ctf:map $(map).bomb.z
 
-# Time of Day
-$data modify storage ctf:game time set from storage ctf:map $(map).time
-
-# Points to Win
-$data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
-execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
-
-# Flag Respawn Delay
-$data modify storage ctf:game flag_respawn_delay set from storage ctf:map $(map).flag_respawn_delay
-
-# Bomb Respawn Delay
-$data modify storage ctf:game bomb_respawn_delay set from storage ctf:map $(map).bomb_respawn_delay
-
-# ---------------COLORS---------------
-# Team Colors
-$data modify storage ctf:game team1.color set from storage ctf:map $(map).team1.color
-$data modify storage ctf:game team2.color set from storage ctf:map $(map).team2.color
-function ctf:setup/team/color with storage ctf:game team1
-function ctf:setup/team/color with storage ctf:game team2
-
-# ---- Flag Team Colors ----
-$data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color
-$data modify storage ctf:game team2.flag_color set from storage ctf:map $(map).team2.color
-
-# Ops Flag
-data modify storage ctf:game team1.ops_flag_color set from storage ctf:game team2.flag_color
-data modify storage ctf:game team2.ops_flag_color set from storage ctf:game team1.flag_color
-
-# Flag Color Fixes
-function ctf:setup/team/color_fixes with storage ctf:game team1
-function ctf:setup/team/color_fixes with storage ctf:game team2
-
-# Team Color Decimal
-function ctf:setup/team/color_dec with storage ctf:game team1
-function ctf:setup/team/color_dec with storage ctf:game team2
 
 
 
-# ---------------Spectator Data---------------
+# ----- Spectator Data -----
 data modify storage ctf:game spectator.dimension set from storage ctf:game dimension
 $data modify storage ctf:game spectator.spawn_x set from storage ctf:map $(map).spectator.spawn_x
 $data modify storage ctf:game spectator.spawn_y set from storage ctf:map $(map).spectator.spawn_y
@@ -81,7 +46,7 @@ $data modify storage ctf:game spectator.spawn_rx set from storage ctf:map $(map)
 $data modify storage ctf:game spectator.spawn_ry set from storage ctf:map $(map).spectator.spawn_ry
 
 
-# ---------------Kit Data---------------
+# ----- Kit Data -----
 $data modify storage ctf:game kit_dimension set from storage ctf:map $(map).kit.dimension
 $data modify storage ctf:game kit_x set from storage ctf:map $(map).kit.x
 $data modify storage ctf:game kit_y set from storage ctf:map $(map).kit.y
@@ -89,7 +54,8 @@ $data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
 
 
 
-# --------------- Bomb Site Data ---------------
+
+# -------- Bomb Site Data --------
 $data modify storage ctf:game bsite_count set from storage ctf:map $(map).bsite_count
 $data modify storage ctf:game bomb_time_to_explode set from storage ctf:map $(map).bomb_time_to_explode
 
@@ -142,3 +108,62 @@ data modify storage ctf:game team2.bsite.3.team_num set value 2
 $data modify storage ctf:game team2.bsite.3.x set from storage ctf:map $(map).team2.bsite_3_x
 $data modify storage ctf:game team2.bsite.3.y set from storage ctf:map $(map).team2.bsite_3_y
 $data modify storage ctf:game team2.bsite.3.z set from storage ctf:map $(map).team2.bsite_3_z
+
+
+
+
+
+# ----------------------- Data w- Default Parameters -----------------------
+# Time of Day
+$data modify storage ctf:game time set from storage ctf:map $(map).time
+
+
+# Points to Win
+$data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
+execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
+
+
+# Flag Respawn Delay
+$data modify storage ctf:game flag_respawn_delay set from storage ctf:map $(map).flag_respawn_delay
+
+# Bomb Respawn Delay
+$data modify storage ctf:game bomb_respawn_delay set from storage ctf:map $(map).bomb_respawn_delay
+
+
+
+
+
+
+
+
+
+
+# ---------------COLORS---------------
+# Team Colors
+$data modify storage ctf:game team1.color set from storage ctf:map $(map).team1.color
+$data modify storage ctf:game team2.color set from storage ctf:map $(map).team2.color
+function ctf:setup/team/color with storage ctf:game team1
+function ctf:setup/team/color with storage ctf:game team2
+
+# ---- Flag Team Colors ----
+$data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color
+$data modify storage ctf:game team2.flag_color set from storage ctf:map $(map).team2.color
+
+# Ops Flag
+data modify storage ctf:game team1.ops_flag_color set from storage ctf:game team2.flag_color
+data modify storage ctf:game team2.ops_flag_color set from storage ctf:game team1.flag_color
+
+# Flag Color Fixes
+function ctf:setup/team/color_fixes with storage ctf:game team1
+function ctf:setup/team/color_fixes with storage ctf:game team2
+
+# Team Color Decimal
+function ctf:setup/team/color_dec with storage ctf:game team1
+function ctf:setup/team/color_dec with storage ctf:game team2
+
+
+
+
+
+
+
