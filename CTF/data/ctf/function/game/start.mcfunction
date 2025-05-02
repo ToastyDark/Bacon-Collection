@@ -37,7 +37,7 @@ schedule function ctf:game/flag/place/start 10t append
 schedule function ctf:game/_bomb/place/start 10t append
 
 # Place Bomb Sites
-schedule function ctf:game/_bomb/site/place/start 10t append
+execute if data storage ctf:game {bomb_method:new} run schedule function ctf:game/_bomb/site/place/start 10t append
 
 # Set Game ID
 scoreboard players add $ctf_session value 1

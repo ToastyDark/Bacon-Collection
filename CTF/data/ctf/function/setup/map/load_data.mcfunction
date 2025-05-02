@@ -176,6 +176,12 @@ function ctf:setup/team/color_dec with storage ctf:game team2
 
 
 
+# Bomb Method Default (Old)
+data remove storage ctf:game bomb_method
+$data modify storage ctf:game bomb_method set from storage ctf:map $(map).bomb_method
+execute unless data storage ctf:game bomb_method run data modify storage ctf:game bomb_method set value old
+
+
 
 
 
