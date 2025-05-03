@@ -1,1 +1,1 @@
-say hi
+scoreboard players add @s ctf_bombsite_click 1
