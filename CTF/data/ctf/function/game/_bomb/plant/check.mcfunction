@@ -1,0 +1,2 @@
+$execute if entity @s[team=ctf_team$(team_ops)] as @e[type=armadillo,tag=ctf_bomsite,scores={ctf_bombsite_click=50..}] run function ctf:game/_bomb/plant/plant with storage ctf:game team$(team_num)
+$execute if entity @s[team=ctf_team$(team_num)] run return run function ctf:game/_bomb/site/msg/bomb_own
