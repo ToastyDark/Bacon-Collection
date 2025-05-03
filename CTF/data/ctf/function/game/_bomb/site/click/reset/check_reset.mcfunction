@@ -1,5 +1,5 @@
 #Reset EXP Bar if scores are the same
-execute if score @s ctf_bombsite_click = @s ctf_bombsite_click_prev run experience set @s 0 points
+#execute if score @s ctf_bombsite_click = @s ctf_bombsite_click_prev run experience set @s 0 points
 
 # Reset if scores are the same
 execute if score @s ctf_bombsite_click = @s ctf_bombsite_click_prev run scoreboard players reset @s ctf_bombsite_click
