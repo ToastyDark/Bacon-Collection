@@ -1,0 +1,1 @@
+execute as @a[scores={rclick=1..}] run scoreboard players reset @s rclick

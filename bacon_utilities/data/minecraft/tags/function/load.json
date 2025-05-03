@@ -1,5 +1,5 @@
 {
     "values": [
-        "utility:load"
+        "utility:load", "rclick:load"
     ]
 }

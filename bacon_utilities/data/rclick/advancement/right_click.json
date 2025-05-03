@@ -1,0 +1,21 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "components": {
+              "minecraft:consumable": {
+                "consume_seconds": 1000000,
+                "has_consume_particles": false
+              }
+            }
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "j"
+    }
+  }
+  

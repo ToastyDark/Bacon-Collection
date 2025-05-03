@@ -1,5 +1,5 @@
 {
     "values": [
-        "utility:tick"
+        "utility:tick" , "rclick:tick"
     ]
 }
