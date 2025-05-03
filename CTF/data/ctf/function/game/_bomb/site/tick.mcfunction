@@ -6,6 +6,10 @@
 execute as @s run data modify entity @s scute_time set value 100
 
 
+# ---------- Process Bombsite being Clicked ----------
+execute if entity @s[scores={ctf_bombsite_click=1..}] run function ctf:game/_bomb/site/click/tick
+
+
 
 # ---------- Run plant bomb check ----------
 execute unless entity @s[tag=ctf_bomb_planted] run function ctf:game/_bomb/plant/tick
