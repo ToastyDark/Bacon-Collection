@@ -61,3 +61,7 @@ execute if entity @s[scores={ctf_hunger=..16}] run effect give @s minecraft:satu
 
 # Stop Fall Damage
 execute if entity @s[tag=ctf_stop_fall_dmg] run function ctf:player/respawn/stop_fall_dmg/main
+
+
+# Right Click Bombsite
+execute if entity @s[scores={rclick=1}] run function ctf:player/click/click
