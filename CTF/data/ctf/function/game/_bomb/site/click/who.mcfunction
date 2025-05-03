@@ -1,5 +1,5 @@
 # Check team of player planting bomb
-execute at @a if score @p id = @s id if entity @s[tag=ctf_has_bomb] run function ctf:game/_bomb/site/click/plant
+execute at @a if score @p id = @s id if entity @p[tag=ctf_has_bomb] run function ctf:game/_bomb/site/click/plant
 
 
 # Check if player diffusing bomb
