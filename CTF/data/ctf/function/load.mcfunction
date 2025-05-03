@@ -31,6 +31,7 @@ scoreboard objectives add ctf_mined_tnt minecraft.mined:tnt
 scoreboard objectives add ctf_bomb_time dummy
 scoreboard objectives add ctf_bomb_time_prev dummy
 scoreboard objectives add ctf_bombsite_click dummy
+scoreboard objectives add ctf_bombsite_click_prev dummy
 
 
 

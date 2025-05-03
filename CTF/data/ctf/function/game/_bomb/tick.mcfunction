@@ -11,3 +11,4 @@ execute if data storage ctf:game {bomb_method:new} if data storage ctf:game bomb
 
 # ------------------ Check Bombsite tick ------------------
 execute if data storage ctf:game {bomb_method:new} as @e[type=armadillo,tag=ctf_bombsite] at @s run function ctf:game/_bomb/site/tick
+execute if data storage ctf:game {bomb_method:new} run function ctf:game/_bomb/site/click/check_reset
