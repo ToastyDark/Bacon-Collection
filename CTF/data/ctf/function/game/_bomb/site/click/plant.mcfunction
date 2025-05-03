@@ -1,0 +1,1 @@
+scoreboard players add @n[type=armadillo,tag=ctf_bombsite] ctf_bombsite_click 1

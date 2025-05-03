@@ -1,5 +1,5 @@
 # Initialize steps (moves every half a block)
-scoreboard players set @s steps 12
+scoreboard players set @s steps 8
 
 # Move the ray
 execute at @s run function ctf:player/click/ray/move
