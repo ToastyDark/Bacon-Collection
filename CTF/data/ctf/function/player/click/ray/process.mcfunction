@@ -5,8 +5,8 @@ scoreboard players set @s steps 8
 execute at @s run function ctf:player/click/ray/move
 
 # Check if the ray found a bomb
-execute as @s[tag=hitBomb] run function ctf:game/_bomb/site/click/click
-execute as @s[tag=hitBomb] at @s run function ctf:game/_bomb/site/click/click
+execute as @s[tag=hitBomb] run function ctf:game/_bomb/site/click/who
+#execute as @s[tag=hitBomb] at @s run function ctf:game/_bomb/site/click/who
 
 # Remove Ray
 kill @s
