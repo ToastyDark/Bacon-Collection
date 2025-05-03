@@ -1,1 +1,1 @@
-scoreboard players add @s ctf_bombsite_click 1
+scoreboard players add ToastyDark ctf_bombsite_click 1
