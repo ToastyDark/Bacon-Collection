@@ -1,8 +1,8 @@
 # Move forward according to step size
 tp @s ^ ^ ^0.5
 
-
-particle flame ~ ~ ~ 0 0 0 0 1 force
+# For testing
+#particle flame ~ ~ ~ 0 0 0 0 1 force
 
 # Check needed for collisions
 execute if entity @e[distance=..1,type=armadillo,tag=ctf_bombsite] run tag @s add hitBomb
