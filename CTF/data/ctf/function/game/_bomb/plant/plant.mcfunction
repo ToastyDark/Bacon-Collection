@@ -19,6 +19,7 @@ function ctf:game/_bomb/success/timer/start
 
 
 # Remove Bomb from Player
+execute as @a[tag=ctf_has_bomb] run function invsave:restore {path:ctf_bomber}
 execute as @a[tag=ctf_has_bomb] run tag @s remove ctf_has_bomb
 
 
