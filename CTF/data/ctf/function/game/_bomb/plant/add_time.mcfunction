@@ -1,4 +1,0 @@
-scoreboard players add @n[type=armadillo, tag=ctf_bombsite ] ctf_bombsite_click 1
-
-# If plant time reached, plant bomb
-$execute if score @n[type=armadillo, tag=ctf_bombsite ] ctf_bomb_time matches 10.. run function ctf:game/_bomb/plant/plant with storage ctf:game team$(team_num)

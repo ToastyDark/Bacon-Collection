@@ -1,11 +1,3 @@
-# TP Interact to Armadillo
-#execute if entity @s[tag=ctf_bombsite_team1] run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
-#execute if entity @s[tag=ctf_bombsite_team2] run function ctf:game/_bomb/site/tp/start with storage ctf:game team2
-
-# Stop Scute Dropping
-execute as @s run data modify entity @s scute_time set value 100
-
-
 # ---------- Process Bombsite being Clicked ----------
 execute if entity @s[scores={ctf_bombsite_click=1..}] run function ctf:game/_bomb/site/click/tick
 
@@ -28,5 +20,16 @@ execute if entity @s[tag=ctf_bomb_planted] if score $bomb_explode_timer value ma
 execute if entity @s[tag=ctf_bomb_planted] run function ctf:game/_bomb/site/flash/tick
 
 
-# Reset Clicks
-#data merge entity @s {interaction:{player:[I;0,0,0,0],timestamp:0L}}
+
+
+
+
+
+# ---------- Other Things to Protect THem ----------
+# Stop Scute Dropping
+execute as @s run data modify entity @s scute_time set value 100
+
+
+# Stop from being moved
+execute if entity @s[tag=ctf_bombsite_team1] run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
+execute if entity @s[tag=ctf_bombsite_team2] run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
