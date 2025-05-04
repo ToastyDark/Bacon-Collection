@@ -21,3 +21,7 @@ $function invsave:restore/type/armor with storage invsave $(path)
 $function invsave:reset/slot with storage invsave $(path)
 $function invsave:restore/type/offhand with storage invsave $(path)
 
+
+# ----------- Remove Storage Once Items Restored -----------
+$data remove storage invsave $(path).$(id)
+
