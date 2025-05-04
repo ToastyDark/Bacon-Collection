@@ -6,6 +6,6 @@ function ctf:player/respawn/add_tag
 
 
 # Set to 1st Kit
-function invsave:clear
+function invsave:clear {"path":"main"}
 scoreboard players set @s ctf_kit 0
 function ctf:player/kit/update with storage ctf:game

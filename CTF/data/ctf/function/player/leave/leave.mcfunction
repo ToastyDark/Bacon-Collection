@@ -7,7 +7,7 @@ execute if entity @s[team=ctf_team2] run scoreboard players remove $ctf_team2_co
 function museq:meta/stopall
 
 # Restore Inventory
-function invsave:restore
+function invsave:restore {"path":"main"}
 
 
 # Reset Players
