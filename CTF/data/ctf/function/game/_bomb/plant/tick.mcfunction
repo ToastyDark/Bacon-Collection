@@ -4,7 +4,5 @@ execute if entity @s[tag=ctf_bombsite_team2] at @a if score @s ctf_bombsite_clic
 
 
 
-
-
 # Check if player is still planting bomb
-#execute if entity @s[scores={ctf_bomb_time=1..}] run function ctf:game/_bomb/plant/compare_time
+#
