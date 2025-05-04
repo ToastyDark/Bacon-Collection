@@ -1,5 +1,7 @@
+# Reset Clicks
+function ctf:game/_bomb/site/click/reset/reset
+
 # Mark guy as planted
-scoreboard players reset @s ctf_bomb_time
 tag @s add ctf_bomb_planted
 
 
