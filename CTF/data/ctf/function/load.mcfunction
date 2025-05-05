@@ -63,6 +63,11 @@ scoreboard objectives add ctf_time_min dummy
 scoreboard objectives add ctf_time_hour dummy
 scoreboard objectives add ctf_time_day dummy
 
-# Item stuff -jake
+# ------------------ Item Stuff ------------------
+
+# crossbow -jake
 scoreboard objectives add ctf.item.crossbow_used minecraft.used:minecraft.crossbow
 scoreboard objectives add ctf.item.automatic_crossbow dummy
+
+# camel pet (for camel kit) -toasty
+scoreboard objectives add ctf.item.camel_egg_used minecraft.used:minecraft.camel_spawn_egg
