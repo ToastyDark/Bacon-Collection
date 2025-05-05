@@ -70,4 +70,4 @@ scoreboard objectives add ctf.item.crossbow_used minecraft.used:minecraft.crossb
 scoreboard objectives add ctf.item.automatic_crossbow dummy
 
 # camel pet (for camel kit) -toasty
-scoreboard objectives add ctf.item.camel_egg_used minecraft.used:minecraft.camel_spawn_egg
+scoreboard objectives add ctf.item.camel_egg_used minecraft.used:minecraft.wandering_trader_spawn_egg
