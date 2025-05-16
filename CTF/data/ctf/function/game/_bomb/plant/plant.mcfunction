@@ -29,4 +29,5 @@ $execute as @a[team=ctf_team$(team_num)] run function ctf:game/_bomb/plant/msg/t
 $execute as @a[team=ctf_team$(team_ops)] run function ctf:game/_bomb/plant/msg/ops with storage ctf:game team$(team_ops)
 
 # Plant Sound
-execute as @a[tag=ctf_has_bomb] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
+execute as @a[tag=ctf_has_bomb_team1] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
+execute as @a[tag=ctf_has_bomb_team2] at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 1
