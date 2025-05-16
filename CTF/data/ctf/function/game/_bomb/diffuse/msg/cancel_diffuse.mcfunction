@@ -1,0 +1,1 @@
+title @s actionbar {"text":"Plant Cancelled","bold": true, "color": "red"}

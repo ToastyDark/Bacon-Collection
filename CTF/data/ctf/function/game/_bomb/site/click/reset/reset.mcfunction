@@ -4,3 +4,7 @@ experience set @s 0 points
 # Reset if scores are the same
 scoreboard players reset @s ctf_bombsite_click
 scoreboard players reset @s ctf_bombsite_click_prev
+
+
+# Cancel Msg
+function ctf:game/_bomb/plant/msg/cancel_planting
