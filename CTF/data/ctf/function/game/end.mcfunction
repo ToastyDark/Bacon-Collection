@@ -24,9 +24,6 @@ function ctf:setup/time/restore with storage ctf:game temp
 # Hide Scoreboard
 scoreboard objectives setdisplay sidebar
 
-# Tally Player Count in Lobby
-function ctf:lobby/display/count/main
-
 
 
 # Give player old Inventory Back
