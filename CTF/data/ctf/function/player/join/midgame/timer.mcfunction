@@ -17,5 +17,4 @@ execute if score @s ctf_join_time matches 37 run playsound minecraft:block.note_
 execute if score @s ctf_join_time matches 45 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 1.1 1
 
 # TP Sound
-execute if score @s ctf_join_time matches 45 run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 1 1.7 1
-execute if score @s ctf_join_time matches 45 run playsound minecraft:entity.warden.attack_impact master @s ~ ~ ~ 1 0.5 1
+execute if score @s ctf_join_time matches 45 run schedule function ctf:player/join/midgame/sound 2t append
