@@ -4,6 +4,9 @@ function ctf:game/_bomb/site/click/reset/reset
 # Mark guy as planted
 tag @s add ctf_bomb_planted
 
+# Mark Bomb as Planted
+$data modify storage ctf:game bomb_planted set value team$(team_num)
+
 
 # Spawn TNT
 function ctf:game/_bomb/plant/misc/spawn_tnt with storage ctf:game
