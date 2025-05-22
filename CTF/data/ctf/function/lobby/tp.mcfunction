@@ -8,7 +8,7 @@ execute unless entity @s[tag=ctf_lobby_save] at @s run playsound minecraft:entit
 # To Others
 execute unless entity @s[tag=ctf_lobby_save] at @s run playsound minecraft:entity.item.pickup master @a ~ ~ ~ 0.2 0.7 0.2
 
-schedule function ctf:lobby/fall_check/remove_effect 1t append
+schedule function ctf:lobby/fall_check/remove_effect 2t append
 
 #scoreboard players set @s actionbar_cd 1
 #title @s actionbar {"text":"Warped to CTF","bold":true,"color":"dark_aqua"}a
