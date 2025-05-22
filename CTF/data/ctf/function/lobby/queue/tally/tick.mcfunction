@@ -11,4 +11,4 @@ execute if score %ctf_queue_tally_all value = %ctf_queue_tally_all_prev value ru
 scoreboard players operation %ctf_queue_tally_all_prev value = %ctf_queue_tally_all value
 
 # Re-tally
-#function ctf:lobby/display/count/main
+function ctf:lobby/display/count/main
