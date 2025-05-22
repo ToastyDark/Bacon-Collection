@@ -37,3 +37,7 @@ execute if data storage ctf:temp {loading_map:done} unless data storage ctf:temp
 
 # Tally Lobby Player Counts
 function ctf:lobby/display/tally/tick
+
+
+# Platform Checking (Queue Spots)
+function ctf:lobby/platform/tick
