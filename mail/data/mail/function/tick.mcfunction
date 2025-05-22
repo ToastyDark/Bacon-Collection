@@ -9,4 +9,4 @@
 #execute as @a unless score @s mail.settings.notify_of_mail = @s mail.settings.notify_of_mail run scoreboard players set @s mail.settings.notify_of_mail 1
 
 
-execute as @a if score @s mail.login matches 1.. run function mail:join
+#execute as @a if score @s mail.login matches 1.. run function mail:join
