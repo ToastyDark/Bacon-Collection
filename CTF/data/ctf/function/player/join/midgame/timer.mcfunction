@@ -14,4 +14,4 @@ execute if score @s ctf_join_time matches 13 run playsound minecraft:block.note_
 execute if score @s ctf_join_time matches 21 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.8 1
 execute if score @s ctf_join_time matches 29 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.9 1
 execute if score @s ctf_join_time matches 37 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 1 1
-execute if score @s ctf_join_time matches 42 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 1.1 1
+execute if score @s ctf_join_time matches 45 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 1.1 1
