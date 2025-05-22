@@ -6,6 +6,7 @@ execute unless entity @s[scores={y=..55}] run return fail
 
 # Tag player so sound doesn't play
 tag @s add ctf_lobby_save
+gamemode spectator @s
 
 # TP
 function ctf:lobby/tp

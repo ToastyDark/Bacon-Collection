@@ -9,6 +9,7 @@ execute unless entity @s[tag=ctf_lobby_save] at @s run playsound minecraft:entit
 execute unless entity @s[tag=ctf_lobby_save] at @s run playsound minecraft:entity.item.pickup master @a ~ ~ ~ 0.2 0.7 0.2
 
 tag @s remove ctf_lobby_save
+execute if entity @s[gamemode=spectator] run gamemode adventure @s
 
 #scoreboard players set @s actionbar_cd 1
 #title @s actionbar {"text":"Warped to CTF","bold":true,"color":"dark_aqua"}a
