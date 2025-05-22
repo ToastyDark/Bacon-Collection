@@ -1,7 +1,7 @@
 # ------------------ Lobby ------------------
 
 # Check if player is on lobby platforms
-function ctf:lobby/platform/tick
+function ctf:lobby/platform/player
 
 
 # Check if fall from lobby island
