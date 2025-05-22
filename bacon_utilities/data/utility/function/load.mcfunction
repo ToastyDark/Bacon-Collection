@@ -8,3 +8,9 @@ scoreboard objectives add actionbar_cd dummy
 scoreboard objectives add steps dummy
 
 # Global "Leave Game"
+
+
+# Global Player Coordinate Getters
+scoreboard objectives add x dummy
+scoreboard objectives add y dummy
+scoreboard objectives add z dummy

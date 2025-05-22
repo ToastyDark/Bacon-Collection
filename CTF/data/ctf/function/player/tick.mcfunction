@@ -3,6 +3,9 @@
 # Check Queue
 function ctf:lobby/queue/check
 
+# Check if Fall
+function ctf:lobby/fall_check/tick
+
 
 # ---------------- Base Game ----------------
 # Check if player leaves game
