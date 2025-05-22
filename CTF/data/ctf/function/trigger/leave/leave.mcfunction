@@ -5,4 +5,3 @@ execute unless entity @s[tag=ctf_player] run return run title @s actionbar {"tex
 
 # Leave
 function ctf:player/leave/leave
-execute in void run tp @s -1 64 -110
