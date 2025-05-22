@@ -1,9 +1,10 @@
 # ------------------ Lobby ------------------
 
-# Check Queue
-function ctf:lobby/queue/check
+# Check if player is on lobby platforms
+function ctf:lobby/platform/tick
 
-# Check if Fall
+
+# Check if fall from lobby island
 function ctf:lobby/fall_check/tick
 
 
