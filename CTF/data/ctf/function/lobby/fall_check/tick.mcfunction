@@ -2,4 +2,10 @@
 execute unless entity @s[tag=ctf_lobby] run return fail
 
 # If player below Y level, tp
-execute if entity @s[scores={y=..55}] run function ctf:lobby/tp
+execute unless entity @s[scores={y=..55}] run return fail
+
+# Tag player so sound doesn't play
+tag @s add ctf_lobby_save
+
+# TP
+function ctf:lobby/tp
