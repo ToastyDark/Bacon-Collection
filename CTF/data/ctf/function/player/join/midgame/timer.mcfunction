@@ -1,8 +1,5 @@
 scoreboard players add @s ctf_join_time 1
 
-# Join Game
-$execute if entity @s[scores={ctf_join_time=45..}] run function ctf:player/join/midgame/start with storage ctf:game team$(team_num)
-
 # Actionbar
 execute if entity @s[scores={ctf_join_time=5}] run title @s actionbar ["",{"text":"Joining Team: ","bold":true,"color":"#DA9201"},{"text":"2s","bold":true,"color":"#FBAC0E"}]
 execute if entity @s[scores={ctf_join_time=25}] run title @s actionbar ["",{"text":"Joining Team: ","bold":true,"color":"#DA9201"},{"text":"1s","bold":true,"color":"#FBAC0E"}]
@@ -18,3 +15,7 @@ execute if score @s ctf_join_time matches 45 run playsound minecraft:block.note_
 
 # TP Sound
 execute if score @s ctf_join_time matches 45 run schedule function ctf:player/join/midgame/sound 2t append
+
+
+# Join Game
+$execute if entity @s[scores={ctf_join_time=45..}] run function ctf:player/join/midgame/start with storage ctf:game team$(team_num)
