@@ -8,6 +8,10 @@ execute as @n[type=interaction] run scoreboard players reset $bomb_explode_timer
 # Remove TNT
 execute on passengers run kill @s
 
+# Remove Tags
+tag @s remove ctf_bomb_planted
+
+
 # Reset Position
 $execute if entity @s[tag=ctf_bombsite_1] run function ctf:game/_bomb/site/reset_pos with storage ctf:game team$(team_num).bsite.1
 $execute if entity @s[tag=ctf_bombsite_2] run function ctf:game/_bomb/site/reset_pos with storage ctf:game team$(team_num).bsite.2
