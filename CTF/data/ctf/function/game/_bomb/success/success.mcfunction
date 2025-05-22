@@ -10,6 +10,9 @@ $execute as @a[tag=ctf_player,team=ctf_team$(team_num)] run title @s actionbar {
 $execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num)] run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 20 1 0.1
 execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a
 
+# Other Sound
+execute as @a[tag=ctf_player] run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 4 1.5 1
+
 
 # Add to Points
 $scoreboard players add ctf_team$(team_ops) ctf_points 1

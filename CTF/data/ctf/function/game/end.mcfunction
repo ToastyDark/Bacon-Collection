@@ -7,6 +7,7 @@ data modify storage ctf:game team2.flag_stolen set value false
 # Set bomb as not stolen
 data modify storage ctf:game bomb.stolen set value false
 data modify storage ctf:game bomb.team_has set value none
+data modify storage ctf:game bomb_planted set value false
 
 
 

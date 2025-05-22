@@ -14,7 +14,7 @@ execute if score @s ctf_join_time matches 37 run playsound minecraft:block.note_
 execute if score @s ctf_join_time matches 45 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 1.1 1
 
 # TP Sound
-execute if score @s ctf_join_time matches 45 run schedule function ctf:player/join/midgame/sound 2t append
+#execute if score @s ctf_join_time matches 45 run schedule function ctf:player/join/midgame/sound 2t append
 
 
 # Join Game
