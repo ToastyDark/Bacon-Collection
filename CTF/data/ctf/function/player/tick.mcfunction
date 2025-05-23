@@ -1,4 +1,7 @@
 # ------------------ Lobby ------------------
+# Check if player is in lobby
+function ctf:lobby/area/check
+
 
 # Check if player is on lobby platforms
 function ctf:lobby/platform/player
