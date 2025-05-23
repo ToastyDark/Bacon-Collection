@@ -31,4 +31,5 @@ function ctf:player/respawn/respawn
 
 
 # Replace Bomb
-function ctf:game/_bomb/place/place with storage ctf:game
+#function ctf:game/_bomb/place/place with storage ctf:game
+function ctf:game/_bomb/place/timer/start with storage ctf:game
