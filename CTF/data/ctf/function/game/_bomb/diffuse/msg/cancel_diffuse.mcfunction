@@ -1,1 +1,1 @@
-title @s actionbar {"text":"Plant Cancelled","bold": true, "color": "red"}
+title @s actionbar {"text":"Diffuse Cancelled","bold": true, "color": "red"}
