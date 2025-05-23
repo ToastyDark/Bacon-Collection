@@ -6,5 +6,5 @@ scoreboard players reset @s ctf_bombsite_click
 scoreboard players reset @s ctf_bombsite_click_prev
 
 
-# Cancel Msg
-execute if data storage ctf:game {bomb_planted:false} run function ctf:game/_bomb/plant/msg/cancel_planting
+# Cancel Msg (if planting)
+function ctf:game/_bomb/plant/msg/cancel_planting
