@@ -1,3 +1,6 @@
+# Reset Clicks
+function ctf:game/_bomb/site/click/reset/reset
+
 # Playsound
 execute at @n[type=armadillo, tag=ctf_bombsite ] run playsound minecraft:entity.sheep.shear master @a ~ ~ ~ 1 1.5 1
 
