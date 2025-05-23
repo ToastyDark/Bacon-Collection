@@ -1,5 +1,5 @@
 # Loop
-schedule function ctf:lobby/timer/remove 1s replace
+schedule function ctf:lobby/timer/remove 1s append
 
 # Stop if Timer isn't above 0
 execute unless score ctf_lobby_timer_paused value matches 0.. run return fail
