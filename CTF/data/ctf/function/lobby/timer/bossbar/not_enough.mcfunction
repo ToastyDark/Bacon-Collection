@@ -1,0 +1,1 @@
+bossbar set ctf:lobby_timer name ["",{"text":"Timer Paused: ","bold":true,"color":"#f32f08"},{"text":"Not Enough Players","bold":true,"color":"#e0a308"}]

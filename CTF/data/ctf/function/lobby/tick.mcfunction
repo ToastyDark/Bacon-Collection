@@ -23,6 +23,9 @@ function ctf:lobby/timer/bossbar/toggle
 # Paused Bossbars
 execute if score $ctf_lobby_timer_paused value matches 1 run function ctf:lobby/timer/bossbar/paused
 
+# Not Enough Players Bossbar
+execute if data storage ctf:lobby {not_enough:true} run function ctf:lobby/timer/bossbar/not_enough
+
 
 
 # Functions ran to continue the process of map loading
