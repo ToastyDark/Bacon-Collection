@@ -16,7 +16,6 @@ ride @n[type=tnt] mount @s
 scoreboard players set @s ctf_bomb_time 15
 
 
-
 # Spawn Text Display Timer
 function ctf:game/_bomb/success/timer/start
 
@@ -25,6 +24,8 @@ function ctf:game/_bomb/success/timer/start
 execute as @a[tag=ctf_has_bomb] run function invsave:restore {path:ctf_bomber}
 execute as @a[tag=ctf_has_bomb] run tag @s remove ctf_has_bomb
 
+# Add Bomb Cooldown to Bomber
+execute as @a[tag=ctf_has_bomb] run scoreboard players add @s ctf_bomb_plant_cd 1
 
 
 # Message

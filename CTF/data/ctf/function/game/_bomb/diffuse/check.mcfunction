@@ -5,4 +5,4 @@ $execute if entity @s[team=ctf_team$(team_ops)] run execute if entity @s[type=pl
 
 
 # Wrong Team
-$execute if entity @s[team=ctf_team$(team_num)] if entity @s[scores={ctf_bombsite_click=2}] run return run function ctf:game/_bomb/site/msg/defend
+$execute if entity @s[team=ctf_team$(team_num)] if entity @s[scores={ctf_bombsite_click=2}] unless entity @s[scores={ctf_bomb_plant_cd=1..}] run return run function ctf:game/_bomb/site/msg/defend

@@ -72,3 +72,6 @@ execute if entity @s[tag=ctf_stop_fall_dmg] run function ctf:player/respawn/stop
 
 # Right Click Bombsite
 execute if entity @s[scores={rclick=1}] at @s run function ctf:player/click/click
+
+# Bomb Planting Cooldown Timer
+execute if entity @s[scores={ctf_bomb_plant_cd=1..}] run function ctf:player/timer/plant_cd
