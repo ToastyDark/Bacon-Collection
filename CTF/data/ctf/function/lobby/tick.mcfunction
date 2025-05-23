@@ -24,7 +24,7 @@ function ctf:lobby/timer/bossbar/toggle
 execute if score $ctf_lobby_timer_paused value matches 1 run function ctf:lobby/timer/bossbar/paused
 
 # Not Enough Players Bossbar
-execute if data storage ctf:lobby {enough_players:true} run function ctf:lobby/timer/bossbar/not_enough
+execute if data storage ctf:lobby {enough_players:false} run function ctf:lobby/timer/bossbar/not_enough
 
 
 
