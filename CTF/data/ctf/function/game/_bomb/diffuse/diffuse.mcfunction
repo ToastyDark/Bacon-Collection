@@ -14,8 +14,8 @@ data modify storage ctf:game bomb.team_has set value 0
 data modify storage ctf:game bomb_planted set value false
 
 # Return Message
-$execute as @a[team=ctf_team$(team_num)] at @s run function ctf:game/_bomb/diffuse/msg/team
-$execute as @a[team=ctf_team$(team_ops)] at @s run function ctf:game/_bomb/diffuse/msg/ops
+$execute as @a[team=ctf_team$(team_ops)] at @s run function ctf:game/_bomb/diffuse/msg/team
+$execute as @a[team=ctf_team$(team_num)] at @s run function ctf:game/_bomb/diffuse/msg/ops
 
 # Reset Time on Player and Bombsite
 scoreboard players reset @n[type=armadillo, tag=ctf_bombsite ] ctf_bombsite_click
