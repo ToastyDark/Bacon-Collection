@@ -1,3 +1,6 @@
+# Placeholder Missing Map Name
+data modify storage ctf:game display_name set value '["",{"text":"Map Name Missing","color":"red","bold":true}]'
+
 # Set Current Game's Map Display Name
 $data modify storage ctf:game display_name set from storage ctf:map $(map).display_name
 
