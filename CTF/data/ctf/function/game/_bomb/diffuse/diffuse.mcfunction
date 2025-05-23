@@ -2,7 +2,7 @@
 function ctf:game/_bomb/place/timer/start with storage ctf:game
 
 # Kill Timer Display
-kill @e[type=text_display,tag=ctf_bomb_timer]
+kill @e[type=text_display,tag=ctf_bombsite_timer]
 
 
 # Set bomb as returned
