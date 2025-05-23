@@ -2,7 +2,7 @@
 schedule function ctf:lobby/timer/remove 1s replace
 
 # Stop if Timer isn't above 0
-execute unless score $ctf_lobby_timer_paused value matches 0.. run return fail
+execute unless score $ctf_lobby_time value matches 0.. run return fail
 
 # Stop if Timer Paused
 execute if score $ctf_lobby_timer_paused value matches 1 run return fail
