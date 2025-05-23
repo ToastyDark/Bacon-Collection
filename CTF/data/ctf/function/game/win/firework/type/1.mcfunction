@@ -1,0 +1,1 @@
+summon firework_rocket ~ ~6 ~ {Life:0,LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"small_ball"}]}}}}

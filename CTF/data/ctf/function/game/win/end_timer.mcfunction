@@ -1,6 +1,11 @@
 # Stop if Timer is Done
 execute if score $ctf_timer_end value matches ..-1 run return fail
 
+# Summon Fireworks
+function ctf:game/win/firework/main
+
+
+
 # Actionbar
 execute if score $ctf_timer_end value matches 1..5 run title @a[tag=ctf_player] actionbar ["",{"text":"Returning to Lobby in: ","color": "gold","bold": true},{"score":{"objective":"value","name":"$ctf_timer_end"},"color":"yellow","bold": true}]
 
