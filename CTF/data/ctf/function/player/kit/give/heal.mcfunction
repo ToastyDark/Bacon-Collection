@@ -1,0 +1,1 @@
+effect give @a[tag=ctf_respawned] minecraft:instant_health 1 50 true

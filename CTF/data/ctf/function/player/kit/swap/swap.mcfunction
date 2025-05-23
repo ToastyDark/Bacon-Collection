@@ -8,7 +8,7 @@ forceload add ~ ~
 $function ctf:player/kit/give/start with storage ctf:game team$(team_num)
 
 # Insta Heal (For kits that change your max health
-effect give @s minecraft:instant_health 1 50 true
+schedule function ctf:player/kit/give/heal 1t append
 
 
 # Display
