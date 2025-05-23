@@ -1,5 +1,5 @@
 # Stop if not right time
-execute if score $ctf_lobby_time value matches 20.. run return fail
+execute if score $ctf_lobby_time value matches 21.. run return fail
 
 # Stop if debug is enabled
 execute if data storage ctf:game {debug:true} run return fail
