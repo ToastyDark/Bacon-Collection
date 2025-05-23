@@ -20,6 +20,7 @@ $scoreboard players add ctf_team$(team_ops) ctf_points 1
 # Mark bomb as not stolen
 data modify storage ctf:game bomb.stolen set value false
 data modify storage ctf:game bomb.team_has set value 0
+data modify storage ctf:game bomb_planted set value false
 
 # Add Capture Cooldown to Player
 scoreboard players add @a[tag=ctf_has_bomb] ctf_flag_capture_cd 1
