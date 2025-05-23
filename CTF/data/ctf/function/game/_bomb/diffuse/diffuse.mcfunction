@@ -1,6 +1,10 @@
 # Replace Bomb
 function ctf:game/_bomb/place/timer/start with storage ctf:game
 
+# Kill Timer Display
+kill @e[type=text_display,tag=ctf_bomb_timer]
+
+
 # Set bomb as returned
 data modify storage ctf:game bomb.stolen set value false
 data modify storage ctf:game bomb.team_has set value 0
