@@ -1,0 +1,2 @@
+$title @a[team=ctf_team$(team_num)] actionbar run title @s actionbar ["",{"selector":"@s","bold":true,"color":"red"},{"text":" has joined the enemy","bold":true,"color":"red"}]
+$execute as @a[team=ctf_team$(team_num)] at @s run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 0.3 0.6 0.3
