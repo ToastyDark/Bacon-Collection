@@ -1,2 +1,2 @@
-execute as @a[scores={ctf_join_time=47}] run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 1 1.7 1
-execute as @a[scores={ctf_join_time=47}] run playsound minecraft:entity.warden.attack_impact master @s ~ ~ ~ 1 0.5 1
+execute as @a[scores={ctf_join_time=47}] at @s run playsound minecraft:block.beacon.power_select master @s ~ ~ ~ 1 1.7 1
+execute as @a[scores={ctf_join_time=47}] at @s run playsound minecraft:entity.warden.attack_impact master @s ~ ~ ~ 1 0.5 1
