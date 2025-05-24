@@ -19,4 +19,4 @@ execute if data storage ctf:game {started:true} if score $ctf_queue_count_random
 
 
 #------ Display OFF ------
-execute if data storage ctf:game {started:true} run data modify entity @e[type=text_display,tag=ctf_display_queue_random,limit=1] text set value '[""]'
+#execute if data storage ctf:game {started:true} run data modify entity @e[type=text_display,tag=ctf_display_queue_random,limit=1] text set value '[""]'
