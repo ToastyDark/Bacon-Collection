@@ -3,7 +3,6 @@
 execute store result storage ctf:temp kit.id int 1 run scoreboard players get @s id
 $data modify storage ctf:temp kit.map set value $(map)
 $data modify storage ctf:temp kit.kit_num set value $(kit_num)
-$data modify storage ctf:temp kit.storage_namespace set value $(storage_namespace)
-$data modify storage ctf:temp kit.storage_path set value $(storage_path)
+$data modify storage ctf:temp kit.storage set value "$(storage)"
 
 function ctf:player/kit/rearrange/copy_current_layout_to_storage with storage ctf:temp kit
