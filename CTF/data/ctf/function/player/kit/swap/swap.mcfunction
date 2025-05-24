@@ -5,7 +5,10 @@ execute at @s run playsound minecraft:entity.armadillo.scute_drop
 # Give Items
 clear @s
 forceload add ~ ~
-$function ctf:player/kit/give/start with storage ctf:game team$(team_num)
+
+# Start giving kid with the data passed to ctf:temp kit_swap
+function ctf:player/kit/give/start with storage ctf:temp kit_swap
+
 
 # Insta Heal (For kits that change your max health
 schedule function ctf:player/kit/give/heal 2t append
