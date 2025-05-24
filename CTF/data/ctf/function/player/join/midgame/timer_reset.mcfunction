@@ -1,0 +1,1 @@
+scoreboard players reset @a[scores={ctf_join_time=45..}] ctf_join_time
