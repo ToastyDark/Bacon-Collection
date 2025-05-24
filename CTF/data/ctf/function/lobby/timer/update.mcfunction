@@ -12,42 +12,11 @@ function ctf:lobby/queue/empty/check
 
 
 
-
-# Title Countdown
-execute if score $ctf_lobby_time value matches 1..5 run title @a times 5 10 5
-execute if score $ctf_lobby_time value matches 1..5 run title @a title {"text":""}
-
-# 5
-execute if score $ctf_lobby_time value matches 5 run title @a subtitle {"text":"5","bold":true,"color":"gold"}
-execute if score $ctf_lobby_time value matches 5 as @a at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.5 1
-execute if score $ctf_lobby_time value matches 5 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.1 0.5 0.1
-
-# 4
-execute if score $ctf_lobby_time value matches 4 run title @a subtitle {"text":"4","bold":true,"color":"gold"}
-execute if score $ctf_lobby_time value matches 4 as @a at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.6 1
-execute if score $ctf_lobby_time value matches 4 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.1 0.6 0.1
-
-# 3
-execute if score $ctf_lobby_time value matches 3 run title @a subtitle {"text":"3","bold":true,"color":"gold"}
-execute if score $ctf_lobby_time value matches 3 as @a at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.7 1
-execute if score $ctf_lobby_time value matches 3 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.1 0.7 0.1
-execute if score $ctf_lobby_time value matches 3 as @a at @s run playsound minecraft:block.bell.resonate master @s ~ ~ ~ 1 0.7 1
-
-# 2
-execute if score $ctf_lobby_time value matches 2 run title @a subtitle {"text":"2","bold":true,"color":"gold"}
-execute if score $ctf_lobby_time value matches 2 as @a at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.8 1
-execute if score $ctf_lobby_time value matches 2 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.1 0.8 0.1
-
-# 1
-execute if score $ctf_lobby_time value matches 1 run title @a subtitle {"text":"1","bold":true,"color":"gold"}
-execute if score $ctf_lobby_time value matches 1 as @a at @s run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.9 1
-execute if score $ctf_lobby_time value matches 1 as @a at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.1 0.9 0.1
-
+# Countdown Text and Sounds
+execute as @a[tag=ctf_lobby] at @s run function ctf:lobby/timer/cd_sound
 
 # Start Game
 execute if score $ctf_lobby_time value matches 0 run function ctf:game/start
-
-
 
 
 
