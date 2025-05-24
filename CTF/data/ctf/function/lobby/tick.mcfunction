@@ -35,7 +35,7 @@ execute if data storage ctf:temp {loading_map:done} unless data storage ctf:temp
 
 
 # Tally Lobby Player Counts
-function ctf:lobby/display/tally/tick
+#function ctf:lobby/display/tally/tick
 
 # Unpause timer if game can start
 #execute if data storage ctf:lobby {enough_players:true} 

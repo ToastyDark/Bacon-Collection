@@ -25,4 +25,4 @@ execute if entity @s[tag=ctf_queue2] run function ctf:lobby/queue/team2/msg
 
 
 # Tally
-function ctf:lobby/display/tally/tick
+function ctf:lobby/display/count/tick

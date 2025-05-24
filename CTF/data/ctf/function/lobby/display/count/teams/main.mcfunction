@@ -10,10 +10,10 @@ execute as @a[tag=ctf_players] run scoreboard players add %ctf_pcount_all value 
 
 
 # Check if tally is different then prev
-#execute if score %ctf_pcount_team1 value = %ctf_pcount_team1_prev value run return fail
+execute if score %ctf_pcount_all value = %ctf_pcount_all_prev value run return fail
 
 # If not equal, continue
-#scoreboard players operation %ctf_queue_tally_all_prev value = %ctf_queue_tally_all value
+scoreboard players operation %ctf_pcount_all_prev value = %ctf_pcount_all value
 
 # Re-tally
 function ctf:lobby/display/count/teams/count
