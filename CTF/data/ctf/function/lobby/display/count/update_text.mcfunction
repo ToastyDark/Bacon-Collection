@@ -14,8 +14,8 @@ execute unless data storage ctf:game {started:true} unless score $ctf_queue_coun
 execute unless data storage ctf:game {started:true} if score $ctf_queue_count_random value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_random,limit=1] text set value '["",{"score":{"objective":"value","name":"$ctf_queue_count_random"},"bold": true, "color": "gray"},{"text":" Player","color":"gold","bold": true}]'
 
 # ------ Players Ingame ------
-execute if data storage ctf:game {started:true} unless score $ctf_queue_count_random value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_random,limit=1] text set value '["",{"score":{"objective":"value","name":"%ctf_pcount_all"},"bold": true, "color": "gray"},{"text":" Players","color":"gold","bold": true}]'
-execute if data storage ctf:game {started:true} if score $ctf_queue_count_random value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_random,limit=1] text set value '["",{"score":{"objective":"value","name":"%ctf_pcount_all"},"bold": true, "color": "gray"},{"text":" Player","color":"gold","bold": true}]'
+execute if data storage ctf:game {started:true} unless score $ctf_queue_count_random value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_random,limit=1] text set value '["",{"score":{"objective":"value","name":"%ctf_pcount_all"},"bold": true, "color": "gray"},{"text":" Players Total","color":"gold","bold": true}]'
+execute if data storage ctf:game {started:true} if score $ctf_queue_count_random value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_random,limit=1] text set value '["",{"score":{"objective":"value","name":"%ctf_pcount_all"},"bold": true, "color": "gray"},{"text":" Player Total","color":"gold","bold": true}]'
 
 
 #------ Display OFF ------
