@@ -11,3 +11,6 @@ effect give @s minecraft:regeneration 1 255 true
 # XP set
 experience set @s 40 levels
 experience set @s 0 points
+
+# Move Cooldown
+scoreboard players set @s ctf_respawn_cd 1
