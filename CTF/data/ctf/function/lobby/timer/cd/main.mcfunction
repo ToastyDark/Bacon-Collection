@@ -30,4 +30,4 @@ execute if score $ctf_lobby_time value matches 1 run playsound minecraft:block.n
 
 
 # Start Sound
-execute if score $ctf_lobby_time value matches 0 run playsound minecraft:item.totem.use master @s ~ ~ ~ 0.2 1.5 0.1
+execute if score $ctf_lobby_time value matches 0 run schedule function ctf:lobby/timer/cd/start_sound 3t replace

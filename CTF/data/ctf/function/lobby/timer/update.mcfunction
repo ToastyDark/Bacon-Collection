@@ -13,7 +13,7 @@ function ctf:lobby/queue/empty/check
 
 
 # Countdown Text and Sounds
-execute as @a[tag=ctf_lobby] at @s run function ctf:lobby/timer/cd_sound
+execute as @a[tag=ctf_lobby] at @s run function ctf:lobby/timer/cd/main
 
 # Start Game
 execute if score $ctf_lobby_time value matches 0 run function ctf:game/start
