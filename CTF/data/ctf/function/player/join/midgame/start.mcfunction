@@ -1,4 +1,4 @@
-schedule function ctf:player/join/midgame/timer_reset 2t append
+schedule function ctf:player/join/midgame/timer_reset 3t append
 
 # Join Team
 $function ctf:setup/team/join with storage ctf:game team$(team_num)
