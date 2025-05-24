@@ -15,6 +15,11 @@ scoreboard players add $plus_1 value 1
 $execute store result storage ctf:game team$(team_num).kit_num int 1 run scoreboard players get @s ctf_kit
 $execute store result storage ctf:game team$(team_num).kit_num_1 int 1 run scoreboard players get $plus_1 value
 
+# Store Kit Number and +1
+execute store result storage ctf:temp kit_swap.kit_num int 1 run scoreboard players get @s ctf_kit
+execute store result storage ctf:temp kit_swap.kit_num_1 int 1 run scoreboard players get $plus_1 value
+data modify storage ctf:temp kit_swap.map set from storage ctf:game map
+
 
 
 # Swap to Next
