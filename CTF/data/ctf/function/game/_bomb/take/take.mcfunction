@@ -15,4 +15,4 @@ execute if entity @s[team=ctf_team1] run function ctf:game/_bomb/take/msg/displa
 execute if entity @s[team=ctf_team2] run function ctf:game/_bomb/take/msg/display with storage ctf:game team2
 
 # Playsound
-execute as @a[tag=ctf_player] at @s run playsound minecraft:block.nether_wart.break master @s ~ ~ ~ 1.6 0.6 1
+execute as @a[tag=ctf_player] at @s run playsound minecraft:entity.creeper.primed master @s ~ ~ ~ 2 1.6 1
