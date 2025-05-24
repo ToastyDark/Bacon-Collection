@@ -70,6 +70,9 @@ function ctf:setup/spawn/start with storage ctf:game team2
 execute as @a[tag=ctf_player] run function ctf:player/join/setup
 
 
-
 # Start Game
 data modify storage ctf:game started set value true
+
+
+# Update lobby player count display
+function ctf:lobby/display/count/teams/count
