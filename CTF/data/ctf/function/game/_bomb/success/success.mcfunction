@@ -7,11 +7,11 @@ $execute at @s as @a[tag=ctf_player,team=ctf_team$(team_ops)] run playsound mine
 
 # Announce to ops
 $execute as @a[tag=ctf_player,team=ctf_team$(team_num)] run title @s actionbar {"text":"Your spawn was blown up","bold": true, "color": "red"}
-$execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num),distance=16..] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 0.2 1 0.1
+$execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num),distance=55..] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 0.2 1 0.1
 execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a
 
 # Other Sound
-execute as @a[tag=ctf_player] run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.3 1.5 0.1
+execute as @a run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.3 1.5 0.1
 
 
 # Add to Points
