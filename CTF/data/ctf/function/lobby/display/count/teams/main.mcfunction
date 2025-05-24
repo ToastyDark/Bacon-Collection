@@ -6,7 +6,7 @@ scoreboard players reset %ctf_pcount_all value
 # Count Players
 execute as @a[team=ctf_team1] run scoreboard players add %ctf_pcount_team1 value 1
 execute as @a[team=ctf_team2] run scoreboard players add %ctf_pcount_team2 value 1
-execute as @a[tag=ctf_players] run scoreboard players add %ctf_pcount_all value 1
+execute as @a[tag=ctf_player] run scoreboard players add %ctf_pcount_all value 1
 
 
 # Check if tally is different then prev
