@@ -11,7 +11,7 @@ $execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num),distance=16..] at @
 execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a
 
 # Other Sound
-execute as @a[tag=ctf_player] run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 4 1.5 1
+execute as @a[tag=ctf_player] run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.3 1.5 0.1
 
 
 # Add to Points
