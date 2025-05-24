@@ -2,6 +2,10 @@
 execute if score $ctf_lobby_time value matches 1..5 run title @s times 5 10 5
 execute if score $ctf_lobby_time value matches 1..5 run title @s title {"text":""}
 
+# 6...
+execute if score $ctf_lobby_time value matches 6..10 run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.1 0.5 0.1
+
+
 # 5
 execute if score $ctf_lobby_time value matches 5 run title @s subtitle {"text":"5","bold":true,"color":"gold"}
 execute if score $ctf_lobby_time value matches 5 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.5 1
@@ -30,4 +34,4 @@ execute if score $ctf_lobby_time value matches 1 run playsound minecraft:block.n
 
 
 # Start Sound
-execute if score $ctf_lobby_time value matches 0 run schedule function ctf:lobby/timer/cd/start_sound 3t replace
+execute if score $ctf_lobby_time value matches 0 run schedule function ctf:lobby/timer/cd/start_sound 2t replace
