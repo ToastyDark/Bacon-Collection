@@ -77,4 +77,4 @@ execute if entity @s[scores={rclick=1}] at @s run function ctf:player/click/clic
 execute if entity @s[scores={ctf_bomb_plant_cd=1..}] run function ctf:player/timer/plant_cd
 
 # Freeze player after respawn
-execute if entity @s[scores={ctf_respawn_cd=1..}] run function ctf:player/respawn/freeze/main
+execute if entity @s[scores={ctf_respawn_freeze_cd=1..}] run function ctf:player/respawn/freeze/main

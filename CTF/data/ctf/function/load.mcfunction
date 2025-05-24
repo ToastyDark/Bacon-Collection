@@ -22,7 +22,7 @@ scoreboard objectives add ctf_leave_game minecraft.custom:leave_game
 scoreboard objectives add ctf_hunger food
 scoreboard objectives add ctf_music dummy
 scoreboard objectives add ctf_join_time dummy
-scoreboard objectives add ctf_respawn_cd dummy
+scoreboard objectives add ctf_respawn_freeze_cd dummy
 
 scoreboard objectives add ctf_crouch_time dummy
 scoreboard objectives add ctf_crouch_time_prev dummy
