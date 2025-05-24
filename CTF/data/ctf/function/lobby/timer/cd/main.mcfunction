@@ -20,7 +20,7 @@ execute if score $ctf_lobby_time value matches 4 run playsound minecraft:block.n
 execute if score $ctf_lobby_time value matches 3 run title @s subtitle {"text":"3","bold":true,"color":"gold"}
 execute if score $ctf_lobby_time value matches 3 run playsound minecraft:block.note_block.xylophone master @s ~ ~ ~ 1 0.7 1
 execute if score $ctf_lobby_time value matches 3 run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.2 0.7 0.1
-execute if score $ctf_lobby_time value matches 4 run playsound minecraft:block.bell.resonate master @s ~ ~ ~ 1 0.7 1
+execute if score $ctf_lobby_time value matches 3 run playsound minecraft:block.bell.resonate master @s ~ ~ ~ 1 0.7 1
 
 # 2
 execute if score $ctf_lobby_time value matches 2 run title @s subtitle {"text":"2","bold":true,"color":"gold"}
