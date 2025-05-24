@@ -1,13 +1,13 @@
 
-# Copy current kit layout to storage "ctf:temp kit_swap"
+# Copy current kit layout to storage "ctf:temp kit_slots"
 $data modify storage ctf:temp give_kit.kit_num set value $(kit_num)
 $data modify storage ctf:temp give_kit.map set value $(map)
-data modify storage ctf:temp give_kit.storage set value "ctf:temp kit_swap"
+data modify storage ctf:temp give_kit.storage set value "ctf:temp kit_slots"
 # -- ... actually copy
 function ctf:player/kit/rearrange/wrapper_copy_current_layout_to_storage with storage ctf:temp give_kit
 
 # Using the current kit layout, set the Hotbar, Offhand and Inventory items
-$execute positioned ~$(kit_num) ~ ~ run function ctf:player/kit/give/give_slots with ctf:temp kit_swap
+$execute positioned ~$(kit_num) ~ ~ run function ctf:player/kit/give/give_slots with ctf:temp kit_slots
 
 # Armor
 $item replace entity @s armor.head with leather_helmet[dyed_color=$(color_dec)]
