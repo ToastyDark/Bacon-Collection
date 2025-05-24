@@ -1,2 +1,2 @@
-execute as @a[tag=ctf_lobby] at @s run playsound minecraft:item.totem.use master @s ~ ~ ~ 0.2 1.2 0.1
-execute as @a[tag=ctf_player] at @s run playsound minecraft:item.totem.use master @s ~ ~ ~ 0.2 1.2 0.1
+execute as @a[tag=ctf_lobby] at @s run playsound minecraft:item.totem.use master @s ~ ~ ~ 0.3 1.2 0.3
+execute as @a[tag=ctf_player] at @s run playsound minecraft:item.totem.use master @s ~ ~ ~ 0.3 1.2 0.3
