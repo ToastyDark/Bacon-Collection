@@ -33,7 +33,7 @@ data modify storage ctf:temp echest_layout.25 set from entity @s EnderItems[25].
 data modify storage ctf:temp echest_layout.26 set from entity @s EnderItems[26].components."minecraft:custom_data".original_slot
 
 # Remove light gray stained glass panes
-function ctf:player/kit/rearrange/echest_remove_glass
+# function ctf:player/kit/rearrange/echest_remove_glass
 
 # Copy saved layout to player for map
 $data modify storage ctf:kit $(id).$(map).$(kit_num) set from storage ctf:temp echest_layout
