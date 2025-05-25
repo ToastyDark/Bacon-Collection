@@ -1,0 +1,1 @@
+function ctf:player/kit/rearrange/echest_load_layout_internal with storage ctf:map desert_maze.kit

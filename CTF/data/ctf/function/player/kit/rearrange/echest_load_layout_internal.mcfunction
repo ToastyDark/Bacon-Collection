@@ -1,0 +1,1 @@
+$execute in $(dimension) positioned $(x) $(y) $(z) run function ctf:player/kit/rearrange/echest_load_layout_positioned
