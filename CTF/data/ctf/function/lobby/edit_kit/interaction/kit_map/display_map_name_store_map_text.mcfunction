@@ -1,0 +1,1 @@
+$data modify storage ctf:temp kit_editor.display_text set from storage ctf:map $(map_name).display_name

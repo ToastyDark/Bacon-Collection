@@ -1,1 +1,1 @@
-$title @s actionbar ["",{"text":"Map: ","bold":true,"color":"gold"},{"storage":"ctf:map","nbt":"$(map_name).display_name","color":"gold"}]
+$title @s actionbar ["",{"text":"Map: ","bold":true,"color":"gold"},$(display_text)]
