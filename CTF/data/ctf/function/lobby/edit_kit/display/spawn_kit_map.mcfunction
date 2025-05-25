@@ -1,0 +1,2 @@
+execute in void run summon minecraft:interaction 44 80.5 -106 {Tags:["ctf_kit_map_int"],width:1.1,height:1.1}
+execute in void run summon minecraft:text_display 44 80.5 -106 {Tags:["ctf_kit_map_text"],billboard:"center"}
