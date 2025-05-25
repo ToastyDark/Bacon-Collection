@@ -1,1 +1,2 @@
-$title @s actionbar ["",{"text":"Map: ","bold":true,"color":"gold"},{"storage":"ctf:map_registry","nbt":"all[$(map_index)]","color":"gold"}]
+$data modify storage ctf:temp kit_editor.map_name set from storage ctf:map_registry all[$(map_index)]
+function ctf:lobby/edit_kit/interaction/kit_map/display_map_name_internal with storage ctf:temp kit_editor
