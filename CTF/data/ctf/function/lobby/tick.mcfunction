@@ -44,3 +44,7 @@ function ctf:lobby/display/count/tick
 
 # Platform Checking (Queue Spots)
 function ctf:lobby/platform/tick
+
+
+# Kit Editor Tick
+function ctf:lobby/edit_kit/tick
