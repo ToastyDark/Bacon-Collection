@@ -80,3 +80,9 @@ scoreboard objectives add ctf.item.automatic_crossbow dummy
 
 # camel pet (for camel kit) -toasty
 scoreboard objectives add ctf.item.camel_egg_used minecraft.used:minecraft.wandering_trader_spawn_egg
+
+# ------------------ Map Registration ------------------
+
+data remove storage ctf:map_registry all
+data modify storage ctf:map_registry all append value desert_maze
+data modify storage ctf:map_registry all append value sandcastle
