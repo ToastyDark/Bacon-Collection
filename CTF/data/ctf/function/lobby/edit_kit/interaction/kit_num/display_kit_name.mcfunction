@@ -14,4 +14,4 @@ function ctf:player/kit/get/single with storage kit_editor
 data modify storage ctf:temp kit_editor.display_text set from storage ctf:temp kit_item.item.components.minecraft:custom_name
 
 # Display
-function ctf:lobby/edit_kit/interaction/kit_num/display_kit_name_internal with storage kit_editor
+function ctf:lobby/edit_kit/interaction/kit_num/display_kit_name_internal with storage ctf:temp kit_editor
