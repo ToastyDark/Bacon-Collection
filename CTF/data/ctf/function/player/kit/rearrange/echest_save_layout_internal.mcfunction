@@ -3,6 +3,9 @@
 # Fill empty slots with glass panes
 function ctf:player/kit/rearrange/echest_fill_empty_slots
 
+# Clear
+function ctf:player/kit/rearrange/echest_clear
+
 # Save layout
 data modify storage ctf:temp echest_layout.0 set from entity @s EnderItems[0].components."minecraft:custom_data".original_slot
 data modify storage ctf:temp echest_layout.1 set from entity @s EnderItems[1].components."minecraft:custom_data".original_slot
