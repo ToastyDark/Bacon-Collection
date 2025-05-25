@@ -59,6 +59,11 @@ scoreboard objectives add ctf_mined_wool_brown minecraft.mined:brown_wool
 scoreboard objectives add ctf_mined_wool_black minecraft.mined:black_wool
 scoreboard objectives add ctf_mined_wool_white minecraft.mined:white_wool
 
+# ------------------ Player Stuff ------------------
+scoreboard objectives add ctf_kit_editor_map dummy
+scoreboard objectives add ctf_kit_editor_num dummy
+
+
 
 # Time
 scoreboard objectives add ctf_time_tick dummy

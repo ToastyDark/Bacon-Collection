@@ -11,7 +11,7 @@ function ctf:lobby/platform/player
 function ctf:lobby/fall_check/tick
 
 # Commands for changing kits
-execute if entity @s[tag=ctf_lobby] run function ctf:lobby/edit_kit/tick_playr_tick
+execute if entity @s[tag=ctf_lobby] run function ctf:lobby/edit_kit/tick_player_tick
 
 
 # ---------------- Base Game ----------------
