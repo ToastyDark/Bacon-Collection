@@ -7,5 +7,6 @@ $data modify storage ctf:temp kit_item.y set from storage ctf:map $(map).kit.x
 $data modify storage ctf:temp kit_item.z set from storage ctf:map $(map).kit.x
 $data modify storage ctf:temp kit_item.dimension set from storage ctf:map $(map).kit.dimension
 $data modify storage ctf:temp kit_item.kit_num set value $(kit_num)
+$data modify storage ctf:temp kit_item.slot set value $(slot)
 
 function ctf:player/kit/give/single_internal with storage ctf:temp kit_item
