@@ -5,7 +5,10 @@ scoreboard players reset @s ctf_lobby_echest_open
 execute store result storage ctf:temp kit_editor.kit_num int 1 run scoreboard players get @s ctf_kit_editor_num
 
 # Store map data 
-function ctf:lobby/edit_kit/map_id_to_name {"storage":"ctf:temp kit_editor.map","scoreboard":"ctf_kit_editor_map"}
+data modify storage ctf:temp kit_editor.temp.storage set value "ctf:temp kit_editor.map"
+execute store result storage ctf:temp kit_editor.temp.map_index int 1 run scoreboard players get @s ctf_kit_editor_map
+
+function ctf:lobby/edit_kit/map_id_to_name with storage ctf:temp kit_editor.temp
 
 #  Load Echest Data
 function ctf:player/kit/rearrange/echest_load_layout with storage ctf:temp kit_editor
