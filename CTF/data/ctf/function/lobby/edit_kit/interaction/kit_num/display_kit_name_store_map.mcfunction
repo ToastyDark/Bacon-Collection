@@ -1,0 +1,1 @@
+$data modify storage ctf:temp kit_editor.map_name set from storage ctf:map_registry all[$(map_index)]
