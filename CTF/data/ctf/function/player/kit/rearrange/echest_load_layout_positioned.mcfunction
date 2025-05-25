@@ -13,4 +13,4 @@ function ctf:player/kit/rearrange/echest_clear
 
 # Using the current kit layout, set the Hotbar, Offhand and Inventory items
 $execute positioned ~$(kit_num) ~ ~ run function ctf:player/kit/rearrange/set_original_slots
-$execute positioned ~$(kit_num) ~ ~ run function ctf:player/kit/give/give_slots with storage ctf:temp kit_slots
+# $execute positioned ~$(kit_num) ~ ~ run function ctf:player/kit/give/give_slots with storage ctf:temp kit_slots
