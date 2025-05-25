@@ -6,7 +6,7 @@ execute at @s run playsound minecraft:entity.armadillo.scute_drop
 clear @s
 forceload add ~ ~
 
-# Start giving kid with the data passed to ctf:temp kit_swap
+# Start giving kit with the data passed to ctf:temp kit_swap
 function ctf:player/kit/give/start with storage ctf:temp kit_swap
 
 
