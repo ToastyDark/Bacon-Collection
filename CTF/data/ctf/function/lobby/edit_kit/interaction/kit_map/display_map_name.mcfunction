@@ -1,0 +1,1 @@
+$title @s actionbar ["",{"text":"Map: ","bold":true,"color":"gold"},{"storage":"ctf:map_registry","nbt":"all[$(map_index)]","color":"gold"}]
