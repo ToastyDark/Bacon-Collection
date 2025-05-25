@@ -34,8 +34,8 @@ execute if data storage ctf:temp {loading_map:active} run function ctf:lobby/loa
 execute if data storage ctf:temp {loading_map:done} unless data storage ctf:temp {loading_map_done:true} run function ctf:lobby/load_map/done
 
 
-# Tally Lobby Player Counts
-function ctf:lobby/display/count/tick
+# Tally Lobby Player Counts (only if player in lobby)
+execute if entity @a[tag=ctf_lobby] run function ctf:lobby/display/count/tick
 
 # Unpause timer if game can start
 #execute if data storage ctf:lobby {enough_players:true} 
