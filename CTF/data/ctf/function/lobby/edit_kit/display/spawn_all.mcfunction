@@ -3,8 +3,8 @@
 # Remove old first
 kill @e[type=interaction,tag=ctf_kit_map_int]
 kill @e[type=interaction,tag=ctf_kit_num_int]
-kill @e[type=interaction,tag=ctf_kit_map_text]
-kill @e[type=interaction,tag=ctf_kit_num_text]
+kill @e[type=text_display,tag=ctf_kit_map_text]
+kill @e[type=text_display,tag=ctf_kit_num_text]
 
 
 
