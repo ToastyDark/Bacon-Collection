@@ -8,7 +8,7 @@ execute store result storage ctf:temp kit_editor.kit_num int 1 run scoreboard pl
 data modify storage ctf:temp kit_editor.slot set value 26
 
 # Actually get the kit name item
-function ctf:player/kit/get/single with storage kit_editor
+function ctf:player/kit/get/single with storage ctf:temp kit_editor
 
 # Store the text component
 data modify storage ctf:temp kit_editor.display_text set from storage ctf:temp kit_item.item.components.minecraft:custom_name
