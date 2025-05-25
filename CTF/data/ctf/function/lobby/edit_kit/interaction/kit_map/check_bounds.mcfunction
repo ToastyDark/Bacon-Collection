@@ -1,2 +1,2 @@
-execute if score @s ctf_kit_editor_map matches ..0 run function ctf:lobby/edit_kit/interaction/kit_map/select_last_map with storage ctf:temp kit_editor.bounds
+execute if score @s ctf_kit_editor_map matches ..-1 run function ctf:lobby/edit_kit/interaction/kit_map/select_last_map with storage ctf:temp kit_editor.bounds
 $execute if score @s ctf_kit_editor_map matches $(map_count).. run scoreboard players set @s ctf_kit_editor_map 0
