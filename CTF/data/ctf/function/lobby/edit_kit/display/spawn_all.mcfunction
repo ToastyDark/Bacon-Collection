@@ -19,5 +19,5 @@ execute in void run summon minecraft:text_display 42 81 -104 {Tags:["ctf_kit_num
 data modify entity @e[type=text_display,tag=ctf_kit_num_text,limit=1] text set value '["",{"text":"Cycle Kit","color":"green","bold": true}]'
 
 # Kit Editor Text
-execute in void run summon minecraft:text_display 43 81.5 -105 {Tags:["ctf_kit_editor_text"],billboard:"center"}
+execute in void run summon minecraft:text_display 43 80.5 -105 {Tags:["ctf_kit_editor_text"],billboard:"center"}
 data modify entity @e[type=text_display,tag=ctf_kit_editor_text,limit=1] text set value '["",{"text":"Kit Editor","color":"red","bold": true}]'
