@@ -1,0 +1,1 @@
+$execute in $(dimension) positioned $(x) $(y) $(z) run function ctf:player/kit/give/single_positioned with storage ctf:temp kit_item

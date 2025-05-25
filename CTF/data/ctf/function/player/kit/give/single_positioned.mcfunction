@@ -1,0 +1,1 @@
+$data modify storage ctf:temp kit_item.item set from block ~$(kit_num) ~ ~ Items[$(slot)]
