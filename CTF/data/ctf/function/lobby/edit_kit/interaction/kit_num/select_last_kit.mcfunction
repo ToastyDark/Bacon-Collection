@@ -12,7 +12,7 @@ function ctf:player/kit/get/single with storage ctf:temp kit_editor
 # ^^^ copied from display kit name
 
 function ctf:lobby/edit_kit/interaction/kit_num/reached_last_kit with storage ctf:temp kit_item
-execute if score $reached_last_kit ctf_kit_editor.temporary_variables matches 1 run function ctf:lobby/edit_kit/interaction/kit_num/select_last_kit
+execute if score $reached_last_kit ctf_kit_editor.temporary_variables matches 0 run function ctf:lobby/edit_kit/interaction/kit_num/select_last_kit
 
 #scoreboard players remove @s ctf_kit_editor_num 1
 #execute store result storage ctf:temp kit_editor.kit_num int 1 run scoreboard players get @s ctf_kit_editor_num
