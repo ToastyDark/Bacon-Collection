@@ -1,0 +1,2 @@
+scoreboard objectives add ctf_kit_editor.temporary_variables dummy
+$execute store success score $reached_last_kit ctf_kit_editor.temporary_variables run execute in $(dimension) positioned $(x) $(y) $(z) unless items block ~$(kit_num) ~ ~ container.* *

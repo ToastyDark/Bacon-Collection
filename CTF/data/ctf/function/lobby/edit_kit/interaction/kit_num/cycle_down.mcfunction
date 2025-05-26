@@ -1,5 +1,5 @@
-# Stop if kit_num is about to be 0
-execute if entity @s[scores={ctf_kit_editor_num=1}] run return run execute at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 0.3 0.6 0.1
+# Go to last kit if kit_num is about to be 0
+execute if entity @s[scores={ctf_kit_editor_num=1}] run function ctf:lobby/edit_kit/interaction/kit_num/select_last_kit
 
 
 # Remove 1
