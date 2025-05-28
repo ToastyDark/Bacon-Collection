@@ -9,4 +9,3 @@ execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2
 execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
 execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
 execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
-execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
