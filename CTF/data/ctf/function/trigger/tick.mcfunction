@@ -1,5 +1,6 @@
 # Start
-scoreboard players enable @a ctf.start
+scoreboard players enable ToastyDark ctf.start
+scoreboard players enable Jake_28 ctf.start
 execute as @a[scores={ctf.start=1..}] run function ctf:trigger/start/start
 
 # Stop
