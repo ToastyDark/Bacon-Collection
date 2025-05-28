@@ -25,11 +25,9 @@ function ctf:setup/time/restore with storage ctf:game temp
 # Hide Scoreboard
 scoreboard objectives setdisplay sidebar
 
+# Remove Voicechat Groups
+function voicechat:ctf/end
 
 
 # Give player old Inventory Back
 execute as @a[tag=ctf_player] run function ctf:player/leave/leave
-
-
-# Remove Voicechat Groups
-function voicechat:ctf/end
