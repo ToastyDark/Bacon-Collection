@@ -81,3 +81,15 @@ execute if entity @s[scores={ctf_bomb_plant_cd=1..}] run function ctf:player/tim
 
 # Freeze player after respawn
 execute if entity @s[scores={ctf_respawn_freeze_cd=1..}] run function ctf:player/respawn/freeze/main
+
+
+# Run Map Creator
+execute if entity @s[scores={ctf_create_step=1..}] run function ctf:create/get_player_data
+
+
+# Prevent player from leaving voice chat if their VC is enabled
+execute if data storage ctf:game {voicechat:open} if entity @s[tag=ctf_vc,team=ctf_team1] run function voicechat:ctf/join/team_1
+execute if data storage ctf:game {voicechat:open} if entity @s[tag=ctf_vc,team=ctf_team2] run function voicechat:ctf/join/team_2
+#
+execute if data storage ctf:game {voicechat:closed} if entity @s[tag=ctf_vc,team=ctf_team1] run function voicechat:ctf/join/team_1
+execute if data storage ctf:game {voicechat:closed} if entity @s[tag=ctf_vc,team=ctf_team2] run function voicechat:ctf/join/team_2
