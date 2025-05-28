@@ -1,5 +1,8 @@
 title @s actionbar {"text":"Communications Enabled","bold": true,"color": "green"}
 execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
+execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
+execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
+execute at @s run playsound minecraft:entity.guardian.attack master @s ~ ~ ~ 3 2 1
 tag @s add ctf_vc
 
 # Start comms change cooldown
