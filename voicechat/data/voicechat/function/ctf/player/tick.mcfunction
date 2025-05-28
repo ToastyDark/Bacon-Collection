@@ -16,5 +16,5 @@ execute if entity @s[scores={rclick=1..},x_rotation=-90..-50] if items entity @s
 
 # Comms CD
 execute as @a[scores={ctf_comms_change_cd=1..}] run scoreboard players add @s ctf_comms_change_cd 1
-execute as @a[scores={ctf_comms_change_cd=6..}] run stopsound @s master minecraft:entity.guardian.attack
-execute as @a[scores={ctf_comms_change_cd=6..}] run scoreboard players reset @s ctf_comms_change_cd
+execute as @a[scores={ctf_comms_change_cd=12..}] run stopsound @s master minecraft:entity.guardian.attack
+execute as @a[scores={ctf_comms_change_cd=12..}] run scoreboard players reset @s ctf_comms_change_cd
