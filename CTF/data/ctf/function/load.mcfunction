@@ -24,6 +24,7 @@ scoreboard objectives add ctf_music dummy
 scoreboard objectives add ctf_join_time dummy
 scoreboard objectives add ctf_respawn_freeze_cd dummy
 scoreboard objectives add ctf_lobby_echest_open minecraft.custom:minecraft.open_enderchest
+scoreboard objectives add ctf_comms_change_cd dummy
 
 scoreboard objectives add ctf_crouch_time dummy
 scoreboard objectives add ctf_crouch_time_prev dummy
@@ -89,3 +90,7 @@ data modify storage ctf:map_registry all append value sandcastle
 data modify storage ctf:map_registry all append value samuel
 data modify storage ctf:map_registry all append value ctf_epic
 data modify storage ctf:map_registry all append value verygood
+
+
+# CTF Map Creation
+scoreboard objectives add ctf_create_step dummy
