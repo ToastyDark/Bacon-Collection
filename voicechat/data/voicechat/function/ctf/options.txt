@@ -1,0 +1,11 @@
+Disable Voicechat:
+    /data modify storage ctf:game voicechat set value false
+
+# Open Groups - ( Players can hear people in their group and others nearby)
+    /data modify storage ctf:game voicechat set value open
+
+# Proximity Groups - ( No groups created, can only hear players nearby / Only creates 1 group for players and a spectator group)
+    /data modify storage ctf:game voicechat set value false
+
+# Closed Groups - ( People can only hear teammates unless they disable communications )
+    /data modify storage ctf:game voicechat set value closed

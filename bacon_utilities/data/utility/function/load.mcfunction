@@ -1,3 +1,5 @@
+scoreboard objectives add temp dummy
+
 scoreboard objectives add id dummy
 
 # Actionbar Cooldowns

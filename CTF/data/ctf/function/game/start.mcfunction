@@ -70,6 +70,12 @@ function ctf:setup/spawn/start with storage ctf:game team2
 execute as @a[tag=ctf_player] run function ctf:player/join/setup
 
 
+# Prepare Voicechat
+execute unless data storage ctf:game {voicechat:false} run function voicechat:ctf/setup
+
+
+
+
 # Start Game
 data modify storage ctf:game started set value true
 

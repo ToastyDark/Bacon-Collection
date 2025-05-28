@@ -1,0 +1,2 @@
+persistentgroup remove ctf_team1
+persistentgroup remove ctf_team2
