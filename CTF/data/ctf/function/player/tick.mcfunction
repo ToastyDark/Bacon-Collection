@@ -73,6 +73,9 @@ execute if entity @s[scores={ctf_hunger=..16}] run effect give @s minecraft:satu
 execute if entity @s[tag=ctf_stop_fall_dmg] run function ctf:player/respawn/stop_fall_dmg/main
 
 
+# Run Map Creator
+execute if entity @s[scores={ctf_create_step=1..}] run function ctf:create/get_player_data
+
 # Right Click Bombsite
 execute if entity @s[scores={rclick=1}] at @s run function ctf:player/click/click
 
@@ -81,10 +84,6 @@ execute if entity @s[scores={ctf_bomb_plant_cd=1..}] run function ctf:player/tim
 
 # Freeze player after respawn
 execute if entity @s[scores={ctf_respawn_freeze_cd=1..}] run function ctf:player/respawn/freeze/main
-
-
-# Run Map Creator
-execute if entity @s[scores={ctf_create_step=1..}] run function ctf:create/get_player_data
 
 
 # Voice Chat Player Tick
