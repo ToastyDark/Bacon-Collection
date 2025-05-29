@@ -5,7 +5,7 @@ summon minecraft:marker ~ ~ ~ {Tags:[start_randroompos]}
 summon minecraft:marker 15 75 133 {Tags:[room_selector]}
 function mansion_temp:select_room
 
-schedule function mansion_temp:set_room 1t
+schedule function mansion_temp:set_room 5t append
 
 kill @e[type=marker,tag=room_selector]
 
