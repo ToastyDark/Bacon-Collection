@@ -151,13 +151,6 @@ $data modify storage ctf:game bomb_respawn_delay set from storage ctf:map $(map)
 execute unless data storage ctf:game bomb_respawn_delay run data modify storage ctf:game bomb_respawn_delay set value 15
 
 
-# Bomb Method
-data remove storage ctf:game bomb_method
-$data modify storage ctf:game bomb_method set from storage ctf:map $(map).bomb_method
-execute unless data storage ctf:game bomb_method run data modify storage ctf:game bomb_method set value new
-
-
-
 # -------- COLORS --------
 # Team 1 Colors
 data remove storage ctf:game team1.color
