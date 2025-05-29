@@ -21,8 +21,8 @@ execute if score $flag2_respawn_cd value matches 0.. run function ctf:game/flag/
 
 
 # Win if Team reachs points
-execute if score ctf_team1 ctf_points >= $ctf_points_to_win value run function ctf:game/win/win with storage ctf:game team1
-execute if score ctf_team2 ctf_points >= $ctf_points_to_win value run function ctf:game/win/win with storage ctf:game team2
+#execute if score ctf_team1 ctf_points >= $ctf_points_to_win value run function ctf:game/win/win with storage ctf:game team1
+#execute if score ctf_team2 ctf_points >= $ctf_points_to_win value run function ctf:game/win/win with storage ctf:game team2
 
 # Win if no players on other team
 execute unless data storage ctf:game {debug:true} unless entity @a[team=ctf_team1] run function ctf:game/win/win with storage ctf:game team2
