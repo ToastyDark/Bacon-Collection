@@ -74,7 +74,7 @@ execute if entity @s[tag=ctf_stop_fall_dmg] run function ctf:player/respawn/stop
 
 
 # Run Map Creator
-execute if entity @s[scores={ctf_create_step=1..}] run function ctf:create/get_player_data
+execute if entity @s[scores={ctf_create_step=1..}] at @s run function ctf:create/get_player_data
 
 # Right Click Bombsite
 execute if entity @s[scores={rclick=1}] at @s run function ctf:player/click/click
