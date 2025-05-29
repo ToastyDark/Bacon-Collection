@@ -3,9 +3,9 @@ execute unless entity @s[nbt={OnGround:1b}] run return run title @s actionbar {"
 
 
 # Set Bombsite Position
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[0] 1
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_y set from entity @s Pos[1] 1
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[2] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x int 1 run data get entity @s Pos[0] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_y int 1 run data get entity @s Pos[1] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_z int 1 run data get entity @s Pos[2] 1
 
 # Set Bombsite Rotation
 # X

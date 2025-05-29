@@ -4,9 +4,9 @@ execute unless entity @s[nbt={OnGround:1b}] run return run title @s actionbar {"
 
 
 # --------- Set Spawn Positions --------
-$data modify storage ctf:map $(map_id).team$(current_team).spawn.x set from entity @s Pos[0] 1
-$data modify storage ctf:map $(map_id).team$(current_team).spawn.x set from entity @s Pos[1] 1 
-$data modify storage ctf:map $(map_id).team$(current_team).spawn.x set from entity @s Pos[2] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).spawn.x int 1 run data get entity @s Pos[0] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).spawn.y int 1 run data get entity @s Pos[1] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).spawn.z int 1 run data get entity @s Pos[2] 1
 
 # --------- Rotation Calculation --------
 # X
