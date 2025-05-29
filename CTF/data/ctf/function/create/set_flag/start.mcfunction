@@ -1,6 +1,8 @@
 # Stop if not on Ground
 execute unless entity @s[nbt={OnGround:1b}] run return run title @s actionbar {"text":"Must be on ground for the this action","bold": true,"color": "red"}
 
+summon chicken ~ ~ ~
+
 # Stop if block isn't wool
 execute align y unless block ~ ~ ~ #wool run return run title @s actionbar {"text":"Flag block must be wool","bold": true,"color": "red"}
 
