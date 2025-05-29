@@ -4,5 +4,5 @@ execute if entity @s[tag=ctf_door_crushed_blue] in void run tp @s -647 80.5 -128
 
 
 # Remove Door Tags
-tag @s remove ctf_door_crushed_red
-tag @s remove ctf_door_crushed_blue
+#tag @s remove ctf_door_crushed_red
+#tag @s remove ctf_door_crushed_blue
