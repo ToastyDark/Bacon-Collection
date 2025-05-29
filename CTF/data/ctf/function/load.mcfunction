@@ -94,4 +94,4 @@ data modify storage ctf:map_registry all append value verygood
 
 # CTF Map Creation
 scoreboard objectives add ctf_create_step dummy
-scoreboard objectives add ctf_create_step_cd dummy
+scoreboard objectives add ctf_create_click dummy
