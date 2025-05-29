@@ -10,7 +10,7 @@ function ctf:map/sandcastle/door_death/tp
 
 
 # Freeze
-summon area_effect_cloud ~ ~1.6 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"]}
+execute at @s run summon area_effect_cloud ~ ~1.6 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"]}
 execute as @n[distance=..5,type=area_effect_cloud,tag=ctf_new_freeze] run rotate @s ~ 30
 
 # Set ID
