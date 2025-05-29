@@ -9,16 +9,16 @@ $execute if data storage ctf:map $(map_id) run return run title @s actionbar {"t
 execute if items entity @s weapon.mainhand * run return run title @s actionbar {"text": "Please clear your hand!","bold": true,"color": "red"}
 
 
-# Set Next Step
-scoreboard players set @s ctf_create_step 0
-function ctf:create/step/next_step
-
-
 # Give Egg
 function ctf:create/give_egg
 
 # Set the map the player will be working on throughout the process
 $function ctf:create/setup/prep_working_map {"map_id":"$(map_id)", "bombsite_count": "$(bombsites)", "current_team":1}
+
+
+# Set Next Step
+scoreboard players set @s ctf_create_step 0
+function ctf:create/step/next_step with storage ctf:temp map_create_data.temp
 
 # ----------------------------- -----------------------------
 
