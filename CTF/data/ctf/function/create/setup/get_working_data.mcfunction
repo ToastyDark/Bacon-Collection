@@ -9,4 +9,3 @@ $data modify storage ctf:temp map_create_data.temp.bombsite_count set value $(bo
 
 # Set Current Teams
 $data modify storage ctf:temp map_create_data.temp.current_team set value $(current_team)
-
