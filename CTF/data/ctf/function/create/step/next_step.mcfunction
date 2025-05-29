@@ -1,5 +1,5 @@
 # Stop if on cooldown
-execute if entity @s[scores={ctf_create_step_cd=1..}] run return fail
+#execute if entity @s[scores={ctf_create_step_cd=1..}] run return fail
 
 # Add to cooldown
 scoreboard players set @s ctf_create_step_cd 1
