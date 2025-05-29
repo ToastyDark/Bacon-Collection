@@ -40,4 +40,4 @@ title @s actionbar {"text":"Spawnpoint Set","bold": true,"color": "green"}
 
 
 # Next Step
-$function ctf:create/step/next_step with storage ctf:temp map_create_data.player.$(player_id)
+#$function ctf:create/step/next_step with storage ctf:temp map_create_data.player.$(player_id)
