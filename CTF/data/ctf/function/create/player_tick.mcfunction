@@ -1,3 +1,6 @@
+execute if entity @s[scores={ctf_create_step_cd=1..}] run scoreboard players add @s ctf_create_step_cd 1
+execute if entity @s[scores={ctf_create_step_cd=6..}] run scoreboard players reset @s ctf_create_step_cd
+
 # Step 1 - ( Set Team 1 Spawns)
 $execute if entity @s[scores={ctf_create_step=1}] run function ctf:create/set_spawnpoint/try with storage ctf:temp map_create_data.player.$(temp_player)
 
