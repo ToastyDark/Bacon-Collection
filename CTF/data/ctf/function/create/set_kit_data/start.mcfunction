@@ -12,7 +12,7 @@ $data modify storage ctf:map $(map_id).kit.y set from entity @s Pos[1]
 $data modify storage ctf:map $(map_id).kit.z set from entity @s Pos[2]
 
 # Set Y Level to block below player's feet
-$execute store result score %temp temp run data modify storage ctf:map $(map_id).bomb.y
+$execute store result score %temp temp run data get storage ctf:map $(map_id).bomb.y
 scoreboard players remove %temp temp 1
 $execute store result storage ctf:map $(map_id).bomb.y int 1 run scoreboard players get %temp temp
 
