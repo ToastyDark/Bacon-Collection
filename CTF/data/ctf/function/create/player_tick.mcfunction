@@ -1,3 +1,5 @@
+say hi
+
 # Step 1 - ( Set Team 1 Spawns)
 $execute if entity @s[scores={ctf_create_step=1}] run function ctf:create/set_spawnpoint/try with storage ctf:temp map_create_data.player.$(temp_player)
 

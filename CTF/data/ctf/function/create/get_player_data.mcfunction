@@ -2,5 +2,3 @@ execute store result storage ctf:temp map_create_data.temp_player int 1 run scor
 
 # Run Player Tick
 function ctf:create/player_tick with storage ctf:temp map_create_data
-
-say hi
