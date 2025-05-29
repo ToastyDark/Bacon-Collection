@@ -3,13 +3,13 @@ execute unless entity @s[nbt={OnGround:1b}] run return run title @s actionbar {"
 
 
 # Set Bombsite Position
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[0]
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_y set from entity @s Pos[1]
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[2]
+$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[0] 1
+$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_y set from entity @s Pos[1] 1
+$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[2] 1
 
 # Set Bombsite Rotation
 # X
-execute store result score %rotation temp run data get entity @s Rotation[0]
+execute store result score %rotation temp run data get entity @s Rotation[0] 1
 
 $execute if score %rotation temp matches -180..-169 run data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_rx set value -180
 $execute if score %rotation temp matches -168..-147 run data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_rx set value -158

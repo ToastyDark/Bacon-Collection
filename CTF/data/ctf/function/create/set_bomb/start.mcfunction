@@ -6,9 +6,9 @@ execute unless block ~ ~ ~ tnt run return run title @s actionbar {"text":"Bomb b
 
 
 # Set Bomb Block
-$data modify storage ctf:map $(map_id).bomb.x set from entity @s Pos[0]
-$data modify storage ctf:map $(map_id).bomb.y set from entity @s Pos[1]
-$data modify storage ctf:map $(map_id).bomb.z set from entity @s Pos[2]
+$data modify storage ctf:map $(map_id).bomb.x set from entity @s Pos[0] 1
+$data modify storage ctf:map $(map_id).bomb.y set from entity @s Pos[1] 1
+$data modify storage ctf:map $(map_id).bomb.z set from entity @s Pos[2] 1
 
 # Set Y Level to block below player's feet
 $execute store result score %temp temp run data get storage ctf:map $(map_id).bomb.y

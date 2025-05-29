@@ -7,9 +7,9 @@ execute unless entity @s[nbt={OnGround:1b}] run return run title @s actionbar {"
 
 # Set Kit Block & Dimension
 $data modify storage ctf:map $(map_id).kit.dimension set from entity @s Dimension
-$data modify storage ctf:map $(map_id).kit.x set from entity @s Pos[0]
-$data modify storage ctf:map $(map_id).kit.y set from entity @s Pos[1]
-$data modify storage ctf:map $(map_id).kit.z set from entity @s Pos[2]
+$data modify storage ctf:map $(map_id).kit.x set from entity @s Pos[0] 1
+$data modify storage ctf:map $(map_id).kit.y set from entity @s Pos[1] 1
+$data modify storage ctf:map $(map_id).kit.z set from entity @s Pos[2] 1
 
 # Set Y Level to block below player's feet
 $execute store result score %temp temp run data get storage ctf:map $(map_id).bomb.y
