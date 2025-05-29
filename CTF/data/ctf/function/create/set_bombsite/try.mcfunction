@@ -14,4 +14,4 @@ $execute store result storage ctf:temp map_create_data.player.$(player_id).bombs
 
 
 # Check for click and try placing bombsite
-$execute if entity @s[scores={rclick=1..}] if items entity @s weapon.mainhand minecraft:ghast_tear[minecraft:custom_data={ctf_creator:1b}] run function ctf:create/set_bombsite/start with storage ctf:temp map_create_data.player.$(player_id)
+$execute in $(dimension) if entity @s[scores={rclick=1..}] if items entity @s weapon.mainhand minecraft:ghast_tear[minecraft:custom_data={ctf_creator:1b}] run function ctf:create/set_bombsite/start with storage ctf:temp map_create_data.player.$(player_id)
