@@ -13,7 +13,7 @@ execute if items entity @s weapon.mainhand * run return run title @s actionbar {
 function ctf:create/give_egg
 
 # Set the map the player will be working on throughout the process
-$function ctf:create/setup/prep_working_map {"map_id":"$(map_id)", "bombsite_count": "$(bombsites)", "current_team":1}
+$function ctf:create/setup/prep_working_map {"map_id":"$(map_id)", "bombsites": "$(bombsites)", "current_team":1}
 
 
 # Set Next Step
