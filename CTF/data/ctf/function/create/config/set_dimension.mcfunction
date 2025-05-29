@@ -1,0 +1,1 @@
+$data modify storage ctf:map $(map_id).dimension set from entity @s Dimension

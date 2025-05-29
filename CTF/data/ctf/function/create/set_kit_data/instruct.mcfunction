@@ -1,0 +1,2 @@
+# Set Kit Data Message
+tellraw @s ["",{"text":"8. ","bold":true,"color":"gold"},{"text":"Right click the egg while standing on the "},{"text":"the kit block","underlined":true,"color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"This is the block beside the chest with all of your desired kits.","color":"gray"}]}},{"text":"."}]

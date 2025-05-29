@@ -1,0 +1,5 @@
+# Place for Team 1
+execute if entity @s[scores={ctf_create_step=2}] run tellraw @s ["",{"text":"2. ","bold":true,"color":"gold"},{"text":"Right click the egg while standing on the "},{"text":"Team 1 ","bold":true,"color":"red"},{"text":"flag block","underlined":true,"color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"The flag block must be a wool block.","color":"gray"}]}},{"text":"."}]
+
+# Place for Team 2
+execute if entity @s[scores={ctf_create_step=5}] run tellraw @s ["",{"text":"5. ","bold":true,"color":"gold"},{"text":"Right click the egg while standing on the "},{"text":"Team 2 ","bold":true,"color":"blue"},{"text":"flag block","underlined":true,"color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"The flag block must be a wool block.","color":"gray"}]}},{"text":"."}]

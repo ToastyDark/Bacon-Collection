@@ -1,0 +1,1 @@
+data modify storage ctf:map $(map_id).displayname set value $()

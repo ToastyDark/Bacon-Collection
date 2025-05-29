@@ -1,0 +1,2 @@
+# Place for Team 1
+tellraw @s ["",{"text":"7. ","bold":true,"color":"gold"},{"text":"Right click the egg while standing on "},{"text":"the bomb block","underlined":true,"color":"green","hoverEvent":{"action":"show_text","contents":[{"text":"The bomb must be a TNT block","color":"gray"}]}},{"text":"."}]

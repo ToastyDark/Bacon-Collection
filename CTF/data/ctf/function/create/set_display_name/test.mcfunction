@@ -1,0 +1,1 @@
+$execute if data storage ctf:map $(map_id).display_name run function ctf:create/step/next_step with storage ctf:temp map_create_data.player.$(player_id)

@@ -11,4 +11,4 @@ execute store result storage ctf:temp kit_editor.temp.map_index int 1 run scoreb
 function ctf:lobby/edit_kit/map_id_to_name with storage ctf:temp kit_editor.temp
 
 #  Load Echest Data
-#function ctf:player/kit/rearrange/echest_load_layout with storage ctf:temp kit_editor
+function ctf:player/kit/rearrange/echest_load_layout with storage ctf:temp kit_editor
