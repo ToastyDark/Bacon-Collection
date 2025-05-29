@@ -6,3 +6,7 @@ $data modify storage ctf:temp map_create_data.temp.map_id set value $(map_id)
 
 # Temporarily store amount of bombsites
 $data modify storage ctf:temp map_create_data.temp.bombsite_count set value $(bombsite_count)
+
+# Set Current Teams
+$data modify storage ctf:temp map_create_data.temp.current_team set value $(current_team)
+
