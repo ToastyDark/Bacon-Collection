@@ -2,7 +2,7 @@
 execute unless entity @s[nbt={OnGround:1b}] run return run title @s actionbar {"text":"Must be on ground for the this action","bold": true,"color": "red"}
 
 # Stop if block isn't wool
-execute unless block ~ ~ ~ #wool run return run title @s actionbar {"text":"Flag block must be wool","bold": true,"color": "red"}
+execute align y unless block ~ ~ ~ #wool run return run title @s actionbar {"text":"Flag block must be wool","bold": true,"color": "red"}
 
 
 # Set Flag Block
