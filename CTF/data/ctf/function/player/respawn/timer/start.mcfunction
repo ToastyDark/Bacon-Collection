@@ -5,7 +5,7 @@ gamemode spectator
 
 
 # Door Death
-function ctf:map/sandcastle/door_death/tp
+execute if data storage ctf:game {map:sandcastle} run function ctf:map/sandcastle/door_death/tp
 
 
 
