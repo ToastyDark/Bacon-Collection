@@ -135,7 +135,7 @@ execute unless data storage ctf:game time run data modify storage ctf:game time 
 # Points to Win
 data remove storage ctf:game points_to_win
 $data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
-execute unless data storage ctf:game points_to_win run data modify storage ctf:game time set value 5
+execute unless data storage ctf:game points_to_win run data modify storage ctf:game points_to_win set value 5
 execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
 
 
