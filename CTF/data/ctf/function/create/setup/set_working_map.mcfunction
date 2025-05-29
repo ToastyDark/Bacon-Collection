@@ -1,6 +1,6 @@
 # Set data for specific player
 # Set map ID player is working on
-$data modify storage ctf:temp map_create_data.player.$(player_id).map set value $(map_id)
+$data modify storage ctf:temp map_create_data.player.$(player_id).map_id set value $(map_id)
 
 # Set Bombsites for map player is working on
 $data modify storage ctf:temp map_create_data.player.$(player_id).bombsite_count set value $(bombsite_count)
