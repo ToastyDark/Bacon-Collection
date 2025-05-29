@@ -26,7 +26,8 @@ execute if entity @s[scores={ctf_died=1..}] at @s run function ctf:player/respaw
 execute if entity @s[scores={ctf_respawn_cd=0..}] at @s run function ctf:player/respawn/timer/main
 
 # If crushed by door
-execute if entity @s[tag=ctf_door_crushed] at @s run function ctf:player/respawn/door_death/main
+execute if entity @s[tag=ctf_door_crushed_red] at @s run function ctf:map/sandcastle/door_death/main
+execute if entity @s[tag=ctf_door_crushed_blue] at @s run function ctf:map/sandcastle/door_death/main
 
 
 # Set Player Spawn
