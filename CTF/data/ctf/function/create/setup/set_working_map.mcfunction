@@ -3,7 +3,7 @@
 $data modify storage ctf:temp map_create_data.player.$(player_id).map set value $(map_id)
 
 # Set Bombsites for map player is working on
-$data modify storage ctf:temp map_create_data.player.$(player_id).bombsite_count set value $(bombsites)
+$data modify storage ctf:temp map_create_data.player.$(player_id).bombsite_count set value $(bombsite_count)
 
 # Set Working Dimension
 $data modify storage ctf:temp map_create_data.player.$(player_id).dimension set from entity @s Dimension
