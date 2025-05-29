@@ -5,8 +5,8 @@ summon minecraft:marker ~ ~ ~ {Tags:[start_randroompos]}
 summon minecraft:marker 15 75 133 {Tags:[room_selector]}
 function mansion_temp:select_room
 
-execute in void at @e[type=marker,tag=start_randroompos] run clone 15 75 133 22 81 143 ~ ~ ~
-execute in void run kill @e[type=marker,tag=start_randroompos]
+execute at @e[type=marker,tag=start_randroompos] run clone 15 75 133 22 81 143 ~ ~ ~
+kill @e[type=marker,tag=start_randroompos]
 
 kill @e[type=marker,tag=room_selector]
 
