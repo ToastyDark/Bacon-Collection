@@ -57,7 +57,13 @@ $data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
 
 # -------- Bomb Site Data --------
 $data modify storage ctf:game bsite_count set from storage ctf:map $(map).bsite_count
+
+
+# Bomb time to explode default
+data remove storage ctf:game bomb_time_to_explode
 $data modify storage ctf:game bomb_time_to_explode set from storage ctf:map $(map).bomb_time_to_explode
+execute unless data storage ctf:game bomb_time_to_explode run data modify storage ctf:game bomb_time_to_explode set value 14
+
 
 # Get TNT Explode Time in Ticks
 $execute store result score $temp_bomb_time_to_explode_tick value run data get storage ctf:map $(map).bomb_time_to_explode
@@ -195,9 +201,3 @@ execute unless data storage ctf:game bomb_method run data modify storage ctf:gam
 $execute store result score %temp temp run data get storage ctf:map $(map).bombsite_count
 execute if score %temp temp matches 0 run data modify storage ctf:game bomb_method set value old
 execute if score %temp temp matches 1.. run data modify storage ctf:game bomb_method set value new
-
-
-# Bomb time to explode default
-data remove storage ctf:game bomb_time_to_explode
-$data modify storage ctf:game bomb_time_to_explode set from storage ctf:map $(map).bomb_time_to_explode
-execute unless data storage ctf:game bomb_time_to_explode run data modify storage ctf:game bomb_time_to_explode set value 14
