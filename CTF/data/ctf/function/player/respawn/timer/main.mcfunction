@@ -1,4 +1,4 @@
-# Remove 1
+# Remove 1 (from tick)
 scoreboard players remove @s ctf_respawn_cd 1
 
 # TP to Armor Stand

@@ -1,1 +1,1 @@
-kill @e[tag=dry_grass,distance=..1]
+kill @e[type=text_display,tag=dry_grass,distance=..1]
