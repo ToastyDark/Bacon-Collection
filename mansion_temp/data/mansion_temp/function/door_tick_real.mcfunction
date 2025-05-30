@@ -13,3 +13,4 @@ execute unless entity @s[tag=open] as @a[distance=..3] if items entity @s weapon
 execute if entity @s[tag=open] as @a[distance=..3] run title @s actionbar {"text":"The door is open."}
 
 execute as @e[type=minecraft:interaction,tag=door_interaction] run data remove entity @s interaction
+execute as @e[type=minecraft:interaction,tag=door_interaction] run data remove entity @s attack
