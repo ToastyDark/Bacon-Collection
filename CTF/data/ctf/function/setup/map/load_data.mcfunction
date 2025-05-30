@@ -62,7 +62,7 @@ $data modify storage ctf:game bsite_count set from storage ctf:map $(map).bsite_
 # Bomb time to explode default
 data remove storage ctf:game bomb_time_to_explode
 $data modify storage ctf:game bomb_time_to_explode set from storage ctf:map $(map).bomb_time_to_explode
-execute unless data storage ctf:game bomb_time_to_explode run data modify storage ctf:game bomb_time_to_explode set value 14
+execute unless data storage ctf:game bomb_time_to_explode run data modify storage ctf:game bomb_time_to_explode set value 15
 
 
 # Get TNT Explode Time in Ticks
