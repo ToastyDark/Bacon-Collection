@@ -7,3 +7,4 @@ tag @s add museq.ggc_daily_elevator.mmp
 
 schedule function mansion_temp:elevator_end 200t append
 
+execute in void as @a[tag=post_office_member] at @s run tp @s ~-16 ~6 ~
