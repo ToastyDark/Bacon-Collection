@@ -2,7 +2,8 @@
 $execute if data storage ctf:map $(map_id) run return run title @s actionbar {"text": "A Map with that ID already exists","bold": true,"color": "red"}
 
 # Stop if bombsite count is above 3
-
+$scoreboard players set %temp temp $(bombsites)
+execute unless score %temp temp matches 0..3 run return run title @s actionbar {"text":"A map may only have 0 to 3 bombistes","bold": true,"color":"red"}
 
 
 # Check if hand is empty
@@ -25,3 +26,6 @@ function ctf:create/step/next_step with storage ctf:temp map_create_data.temp
 
 # Set selected map's dimension
 function ctf:create/config/set_dimension with storage ctf:temp map_create_data.temp
+
+# Set Bombsite Count
+$data modify storage ctf:map $(map_id).bombsite_count set value $(bombsites)

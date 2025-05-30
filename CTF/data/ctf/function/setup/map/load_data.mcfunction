@@ -191,8 +191,7 @@ function ctf:setup/team/color_dec with storage ctf:game team2
 data remove storage ctf:game bomb_method
 $data modify storage ctf:game bomb_method set from storage ctf:map $(map).bomb_method
 execute unless data storage ctf:game bomb_method run data modify storage ctf:game bomb_method set value old
-
-
-
-
-
+# Old or New based on value
+execute store result score %temp temp run data get storage ctf:map $(map).bombsite_count
+execute if score %temp temp matches 0 run data modify storage ctf:game bomb_method set value old
+execute if score %temp temp matches 1.. run data modify storage ctf:game bomb_method set value new
