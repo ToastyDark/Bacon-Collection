@@ -1,5 +1,5 @@
 # Check how many bombsites are placed
-$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites
+$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place
 
 
 # If not all bombsites are placed, continue trying to place
@@ -15,4 +15,5 @@ $execute in $(dimension) if entity @s[scores={ctf_create_click=1}] if items enti
 
 
 # Move to next step if all bombsites are placed
+$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place
 $execute if score %temp temp matches ..0 run return run function ctf:create/step/next_step with storage ctf:temp map_create_data.player.$(player_id)

@@ -19,3 +19,7 @@ execute if entity @s[scores={ctf_create_step=7}] run return run function ctf:cre
 execute if entity @s[scores={ctf_create_step=8}] run return run function ctf:create/set_kit_data/instruct
 $execute if entity @s[scores={ctf_create_step=9}] run return run function ctf:create/set_display_name/instruct with storage ctf:temp map_create_data.player.$(player_id)
 $execute if entity @s[scores={ctf_create_step=10}] run return run function ctf:create/done/main with storage ctf:temp map_create_data.player.$(player_id)
+
+# Completion Sound
+execute unless entity @s[scores={ctf_create_step=10}] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1
+execute unless entity @s[scores={ctf_create_step=10}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1.3

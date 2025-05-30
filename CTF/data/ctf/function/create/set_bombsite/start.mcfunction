@@ -34,10 +34,18 @@ $data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)
 
 
 
-# Add 1 to total bombsites
-$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites
+# Remove 1 from Bombsites to be placed
+$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place
 scoreboard players remove %temp temp 1
-$execute store result storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites int 1 run scoreboard players get %temp temp
+$execute store result storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place int 1 run scoreboard players get %temp temp
+
+# Add 1 to Bombsites placed
+$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_placed
+scoreboard players add %temp temp 1
+$execute store result storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_placed int 1 run scoreboard players get %temp temp
 
 
 # Success Message
+$title @s actionbar ["",{"text":"Placed Bombsite ","bold":true,"color":"green"},{"nbt":"map_create_data.player.$(player_id).team$(current_team)_bombsites_placed","storage":"ctf:temp","bold":true}]
+$tellraw @s ["",{"text":"There are ","color":"gray"},{"nbt":"map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place","storage":"ctf:temp","bold":true,"color":"dark_aqua"},{"text":" left to place","color":"gray"}]
+execute at @s run playsound entity.item.pickup master @s ~ ~ ~ 1 1.6
