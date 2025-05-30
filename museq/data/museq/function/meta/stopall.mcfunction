@@ -12,6 +12,9 @@ tag @s remove museq.ctf_note_rush.mmp
 # ctf_note_silt.mmp
 tag @s remove museq.ctf_note_silt.mmp
 
+# ggc_daily_elevator.mmp
+tag @s remove museq.ggc_daily_elevator.mmp
+
 # range.mmp
 tag @s remove museq.range.mmp
 

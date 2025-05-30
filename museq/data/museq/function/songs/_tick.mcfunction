@@ -12,6 +12,9 @@ execute as @a[tag=museq.ctf_note_rush.mmp] at @s run function museq:songs/ctf_no
 # ctf_note_silt.mmp
 execute as @a[tag=museq.ctf_note_silt.mmp] at @s run function museq:songs/ctf_note_silt.mmp
 
+# ggc_daily_elevator.mmp
+execute as @a[tag=museq.ggc_daily_elevator.mmp] at @s run function museq:songs/ggc_daily_elevator.mmp
+
 # range.mmp
 execute as @a[tag=museq.range.mmp] at @s run function museq:songs/range.mmp
 
