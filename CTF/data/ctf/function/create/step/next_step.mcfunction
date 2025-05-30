@@ -15,10 +15,10 @@ execute unless entity @s[scores={ctf_create_step=10}] at @s run playsound minecr
 # Display next instructions
 $execute if entity @s[scores={ctf_create_step=1}] run return run function ctf:create/set_spawnpoint/instruct with storage ctf:temp map_create_data.player.$(player_id)
 execute if entity @s[scores={ctf_create_step=2}] run return run function ctf:create/set_flag/instruct
-execute if entity @s[scores={ctf_create_step=3}] run return run function ctf:create/set_bombsite/instruct
+$execute if entity @s[scores={ctf_create_step=3}] run return run function ctf:create/set_bombsite/instruct with storage ctf:temp map_create_data.player.$(player_id)
 $execute if entity @s[scores={ctf_create_step=4}] run return run function ctf:create/set_spawnpoint/instruct with storage ctf:temp map_create_data.player.$(player_id)
 execute if entity @s[scores={ctf_create_step=5}] run return run function ctf:create/set_flag/instruct
-execute if entity @s[scores={ctf_create_step=6}] run return run function ctf:create/set_bombsite/instruct
+$execute if entity @s[scores={ctf_create_step=6}] run return run function ctf:create/set_bombsite/instruct with storage ctf:temp map_create_data.player.$(player_id)
 execute if entity @s[scores={ctf_create_step=7}] run return run function ctf:create/set_bomb/instruct
 execute if entity @s[scores={ctf_create_step=8}] run return run function ctf:create/set_kit_data/instruct
 $execute if entity @s[scores={ctf_create_step=9}] run return run function ctf:create/set_display_name/instruct with storage ctf:temp map_create_data.player.$(player_id)
