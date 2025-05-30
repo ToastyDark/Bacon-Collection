@@ -24,6 +24,12 @@ execute if entity @s[scores={mq.ctf_note_silt.mmp=1..}] run function museq:meta/
 execute if entity @s[scores={mq.ctf_note_silt.mmp=1..}] run tag @s add museq.ctf_note_silt.mmp
 execute if entity @s[scores={mq.ctf_note_silt.mmp=1..}] run scoreboard players reset @s mq.ctf_note_silt.mmp
 
+# ggc_daily_elevator.mmp
+scoreboard players enable @s mq.ggc_daily_elevator.mmp
+execute if entity @s[scores={mq.ggc_daily_elevator.mmp=1..}] run function museq:meta/stopall
+execute if entity @s[scores={mq.ggc_daily_elevator.mmp=1..}] run tag @s add museq.ggc_daily_elevator.mmp
+execute if entity @s[scores={mq.ggc_daily_elevator.mmp=1..}] run scoreboard players reset @s mq.ggc_daily_elevator.mmp
+
 # range.mmp
 scoreboard players enable @s mq.range.mmp
 execute if entity @s[scores={mq.range.mmp=1..}] run function museq:meta/stopall

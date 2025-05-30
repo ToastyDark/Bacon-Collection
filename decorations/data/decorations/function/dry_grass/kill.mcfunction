@@ -1,0 +1,1 @@
+kill @e[tag=dry_grass,distance=..1]
