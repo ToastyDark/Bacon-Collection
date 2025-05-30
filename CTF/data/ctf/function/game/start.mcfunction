@@ -58,7 +58,7 @@ execute as @a[tag=ctf_queue1] run function ctf:setup/team/join with storage ctf:
 execute as @a[tag=ctf_queue2] run function ctf:setup/team/join with storage ctf:game team2
 
 # Random Teams
-execute if data storage ctf:settings {random_teams:true} run function ctf:setup/random_teams/find_lowest_players
+execute if data storage ctf:settings {random_teams:true} run function ctf:setup/random_teams/main
 
 
 # ------------ Spawn Players ------------
