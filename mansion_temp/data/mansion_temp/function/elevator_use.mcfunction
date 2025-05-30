@@ -6,3 +6,4 @@ scoreboard players set @s museq.tick -1
 tag @s add museq.ggc_daily_elevator.mmp
 
 schedule function mansion_temp:elevator_end 200t append
+
