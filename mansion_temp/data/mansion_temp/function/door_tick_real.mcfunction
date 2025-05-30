@@ -2,7 +2,7 @@ execute unless entity @e[type=block_display,tag=door_bottom,distance=..1] run su
 execute unless entity @e[type=block_display,tag=door_top,distance=..1] run summon block_display ~-0.5 ~ ~-0.5 {Tags:[deletable,door_top], interpolation_duration:10,block_state:{"Name":"iron_door"}}
 
 
-execute unless entity @e[type=interaction,tag=door_interaction,distance=..1] run summon interaction ~-.1 ~ ~-.1 {Tags:[deletable,door_interaction], width:1.4, height:2}
+execute unless entity @e[type=interaction,tag=door_interaction,distance=..1] run summon interaction ~ ~ ~ {Tags:[deletable,door_interaction], width:1.4, height:2}
 
 execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction] on target if items entity @s weapon.* minecraft:tripwire_hook as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_open
 execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction] on attacker if items entity @s weapon.* minecraft:tripwire_hook as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_open
