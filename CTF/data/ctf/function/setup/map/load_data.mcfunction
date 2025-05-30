@@ -66,7 +66,7 @@ execute unless data storage ctf:game bomb_time_to_explode run data modify storag
 
 
 # Get TNT Explode Time in Ticks
-$execute store result score $temp_bomb_time_to_explode_tick value run data get storage ctf:map $(map).bomb_time_to_explode
+execute store result score $temp_bomb_time_to_explode_tick value run data get storage ctf:game bomb_time_to_explode
 scoreboard players set $20 value 20
 scoreboard players operation $temp_bomb_time_to_explode_tick value *= $20 value
 execute store result storage ctf:game bomb_time_to_explode_tick int 1 run scoreboard players get $temp_bomb_time_to_explode_tick value
