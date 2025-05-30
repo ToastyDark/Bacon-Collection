@@ -10,7 +10,7 @@ execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_int
 execute unless entity @s[tag=open] as @a[distance=..3] unless items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"You need a key to open this elevator."}
 execute unless entity @s[tag=open] as @a[distance=..3] if items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"Right click door to open elevator."}
 
-#execute if entity @s[tag=open] as @a[distance=..3] run title @s actionbar {"text":"The door is open."}
+execute if entity @s[tag=open] as @a[distance=..3] run title @s actionbar {"text":"The door is open."}
 
-execute as @e[type=minecraft:interaction,tag=door_interaction] run data remove entity @s interaction
-execute as @e[type=minecraft:interaction,tag=door_interaction] run data remove entity @s attack
+execute as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] run data remove entity @s interaction
+execute as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] run data remove entity @s attack
