@@ -9,7 +9,7 @@
 scoreboard players add @s ctf_create_step 1
 
 # Completion Sound
-execute unless entity @s[scores={ctf_create_step=10}] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 1
+execute unless entity @s[scores={ctf_create_step=10}] at @s run playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.6 1
 execute unless entity @s[scores={ctf_create_step=10}] at @s run playsound minecraft:block.note_block.hat master @s ~ ~ ~ 1 1.3
 
 # Display next instructions
