@@ -51,14 +51,7 @@ data remove storage ctf:game losing_team
 scoreboard players set $ctf_team1_count value 0
 scoreboard players set $ctf_team2_count value 0
 # ------------Sort Teams ------------
-# Preset Team 1
-execute as @a[tag=ctf_queue1] run function ctf:setup/team/join with storage ctf:game team1
-
-# Preset Team 2
-execute as @a[tag=ctf_queue2] run function ctf:setup/team/join with storage ctf:game team2
-
-# Random Teams
-execute if data storage ctf:settings {random_teams:true} run function ctf:setup/random_teams/main
+function ctf:setup/team/sort/sort
 
 
 # ------------ Spawn Players ------------
