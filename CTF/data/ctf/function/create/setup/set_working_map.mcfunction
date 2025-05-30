@@ -12,8 +12,8 @@ $data modify storage ctf:temp map_create_data.player.$(player_id).dimension set 
 $data modify storage ctf:temp map_create_data.player.$(player_id).current_team set value $(current_team)
 
 # Set Bombsites placed to 0
-$data modify storage ctf:temp map_create_data.player.$(player_id).team1_bombsites set value 0
-$data modify storage ctf:temp map_create_data.player.$(player_id).team2_bombsites set value 0
+$data modify storage ctf:temp map_create_data.player.$(player_id).team1_bombsites set value 3
+$data modify storage ctf:temp map_create_data.player.$(player_id).team2_bombsites set value 3
 
 # Set Player ID again
 $data modify storage ctf:temp map_create_data.player.$(player_id).player_id set value $(player_id)

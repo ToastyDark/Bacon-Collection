@@ -36,7 +36,7 @@ $data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)
 
 # Add 1 to total bombsites
 $execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites
-scoreboard players add %temp temp 1
+scoreboard players remove %temp temp 1
 $execute store result storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites int 1 run scoreboard players get %temp temp
 
 
