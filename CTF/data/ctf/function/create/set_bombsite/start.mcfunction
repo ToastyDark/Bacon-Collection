@@ -48,4 +48,4 @@ $execute store result storage ctf:temp map_create_data.player.$(player_id).team$
 # Success Message
 $title @s actionbar ["",{"text":"Placed Bombsite ","bold":true,"color":"green"},{"nbt":"map_create_data.player.$(player_id).team$(current_team)_bombsites_placed","storage":"ctf:temp","bold":true}]
 $tellraw @s ["",{"text":"There are ","color":"gray"},{"nbt":"map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place","storage":"ctf:temp","bold":true,"color":"dark_aqua"},{"text":" left to place","color":"gray"}]
-execute at @s run playsound entity.item.pickup master @s ~ ~ ~ 1 1.6
+execute at @s run playsound entity.item.pickup master @s ~ ~ ~ 0.4 1.6
