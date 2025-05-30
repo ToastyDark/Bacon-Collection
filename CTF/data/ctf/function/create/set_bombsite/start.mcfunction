@@ -3,13 +3,13 @@ execute unless entity @s[nbt={OnGround:1b}] run return run title @s actionbar {"
 
 
 # Set Bombsite Position
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[0]
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_y set from entity @s Pos[1]
-$data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x set from entity @s Pos[2]
+$execute store result storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_x int 1 run data get entity @s Pos[0] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_y int 1 run data get entity @s Pos[1] 1
+$execute store result storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_z int 1 run data get entity @s Pos[2] 1
 
 # Set Bombsite Rotation
 # X
-execute store result score %rotation temp run data get entity @s Rotation[0]
+execute store result score %rotation temp run data get entity @s Rotation[0] 1
 
 $execute if score %rotation temp matches -180..-169 run data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_rx set value -180
 $execute if score %rotation temp matches -168..-147 run data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)_rx set value -158
@@ -34,10 +34,18 @@ $data modify storage ctf:map $(map_id).team$(current_team).bsite_$(bombsite_num)
 
 
 
-# Add 1 to total bombsites
-$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites
+# Remove 1 from Bombsites to be placed
+$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place
+scoreboard players remove %temp temp 1
+$execute store result storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place int 1 run scoreboard players get %temp temp
+
+# Add 1 to Bombsites placed
+$execute store result score %temp temp run data get storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_placed
 scoreboard players add %temp temp 1
-$execute store result storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites int 1 run scoreboard players get %temp temp
+$execute store result storage ctf:temp map_create_data.player.$(player_id).team$(current_team)_bombsites_placed int 1 run scoreboard players get %temp temp
 
 
 # Success Message
+$title @s actionbar ["",{"text":"Placed Bombsite ","bold":true,"color":"green"},{"nbt":"map_create_data.player.$(player_id).team$(current_team)_bombsites_placed","storage":"ctf:temp","bold":true}]
+$tellraw @s ["",{"text":"There are ","color":"gray"},{"nbt":"map_create_data.player.$(player_id).team$(current_team)_bombsites_to_place","storage":"ctf:temp","bold":true,"color":"dark_aqua"},{"text":" left to place","color":"gray"}]
+execute at @s run playsound entity.item.pickup master @s ~ ~ ~ 0.4 1.6

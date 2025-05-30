@@ -1,7 +1,16 @@
 scoreboard players set @s ctf_respawn_cd 70
 
+# Spectator Mode
+gamemode spectator
+
+
+# Door Death
+execute if data storage ctf:game {map:sandcastle} run function ctf:map/sandcastle/door_death/tp
+
+
+
 # Freeze
-summon area_effect_cloud ~ ~1.6 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"]}
+execute at @s run summon area_effect_cloud ~ ~1.6 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"]}
 execute as @n[distance=..5,type=area_effect_cloud,tag=ctf_new_freeze] run rotate @s ~ 30
 
 # Set ID
@@ -12,7 +21,5 @@ execute as @n[distance=..5,type=area_effect_cloud,tag=ctf_new_freeze] run tag @s
 # Player Stuff
 clear @s
 
-# Spectator
-#rotate @s ~ 30
-gamemode spectator
+# Spectate Freeze
 spectate @n[distance=..5,type=area_effect_cloud,tag=ctf_freeze] @s

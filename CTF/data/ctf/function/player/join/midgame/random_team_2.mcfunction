@@ -1,0 +1,1 @@
+$function ctf:player/join/midgame/timer with storage ctf:game team$(team_join_next)

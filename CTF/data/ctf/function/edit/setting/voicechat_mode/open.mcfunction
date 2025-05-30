@@ -1,5 +1,6 @@
 data modify storage ctf:game voicechat set value open
 
+scoreboard players add @a[tag=ctf_lobby] actionbar_cd 1
 title @a[tag=ctf_lobby] actionbar ["",{"text":"CTF Voice Chat: ","color":"gold"},{"text":"Opened Groups","bold":true,"color":"green"}]
 title @s actionbar ["",{"text":"CTF Voice Chat: ","color":"gold"},{"text":"Opened Groups","bold":true,"color":"green"}]
 

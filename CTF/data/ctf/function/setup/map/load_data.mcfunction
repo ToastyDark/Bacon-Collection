@@ -57,10 +57,16 @@ $data modify storage ctf:game kit_z set from storage ctf:map $(map).kit.z
 
 # -------- Bomb Site Data --------
 $data modify storage ctf:game bsite_count set from storage ctf:map $(map).bsite_count
+
+
+# Bomb time to explode default
+data remove storage ctf:game bomb_time_to_explode
 $data modify storage ctf:game bomb_time_to_explode set from storage ctf:map $(map).bomb_time_to_explode
+execute unless data storage ctf:game bomb_time_to_explode run data modify storage ctf:game bomb_time_to_explode set value 15
+
 
 # Get TNT Explode Time in Ticks
-$execute store result score $temp_bomb_time_to_explode_tick value run data get storage ctf:map $(map).bomb_time_to_explode
+execute store result score $temp_bomb_time_to_explode_tick value run data get storage ctf:game bomb_time_to_explode
 scoreboard players set $20 value 20
 scoreboard players operation $temp_bomb_time_to_explode_tick value *= $20 value
 execute store result storage ctf:game bomb_time_to_explode_tick int 1 run scoreboard players get $temp_bomb_time_to_explode_tick value
@@ -135,7 +141,7 @@ execute unless data storage ctf:game time run data modify storage ctf:game time 
 # Points to Win
 data remove storage ctf:game points_to_win
 $data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
-execute unless data storage ctf:game points_to_win run data modify storage ctf:game time set value 5
+execute unless data storage ctf:game points_to_win run data modify storage ctf:game points_to_win set value 5
 execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
 
 
@@ -149,7 +155,6 @@ execute unless data storage ctf:game flag_respawn_delay run data modify storage 
 data remove storage ctf:game bomb_respawn_delay
 $data modify storage ctf:game bomb_respawn_delay set from storage ctf:map $(map).bomb_respawn_delay
 execute unless data storage ctf:game bomb_respawn_delay run data modify storage ctf:game bomb_respawn_delay set value 15
-
 
 
 # -------- COLORS --------
@@ -192,8 +197,7 @@ function ctf:setup/team/color_dec with storage ctf:game team2
 data remove storage ctf:game bomb_method
 $data modify storage ctf:game bomb_method set from storage ctf:map $(map).bomb_method
 execute unless data storage ctf:game bomb_method run data modify storage ctf:game bomb_method set value old
-
-
-
-
-
+# Old or New based on value
+$execute store result score %temp temp run data get storage ctf:map $(map).bombsite_count
+execute if score %temp temp matches 0 run data modify storage ctf:game bomb_method set value old
+execute if score %temp temp matches 1.. run data modify storage ctf:game bomb_method set value new

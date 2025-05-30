@@ -1,1 +1,1 @@
-$execute if entity @s[scores={rclick=1..}] if items entity @s weapon.mainhand minecraft:ghast_tear[minecraft:custom_data={ctf_creator:1b}] positioned ~ ~-1 ~ run function ctf:create/set_kit_data/start with storage ctf:temp map_create_data.player.$(player_id)
+$execute if entity @s[scores={ctf_create_click=1}] if items entity @s weapon.mainhand minecraft:ghast_tear[minecraft:custom_data={ctf_creator:1b}] positioned ~ ~-1 ~ run function ctf:create/set_kit_data/start with storage ctf:temp map_create_data.player.$(player_id)

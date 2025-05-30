@@ -24,6 +24,12 @@ function ctf:player/crouch/tick
 # Check if player died
 execute if entity @s[scores={ctf_died=1..}] at @s run function ctf:player/respawn/start
 execute if entity @s[scores={ctf_respawn_cd=0..}] at @s run function ctf:player/respawn/timer/main
+
+# If crushed by door
+execute if entity @s[tag=ctf_door_crushed_red] run function ctf:map/sandcastle/door_death/main
+execute if entity @s[tag=ctf_door_crushed_blue] run function ctf:map/sandcastle/door_death/main
+
+
 # Set Player Spawn
 function ctf:player/respawn/timer/set_spawn
 
@@ -73,6 +79,9 @@ execute if entity @s[scores={ctf_hunger=..16}] run effect give @s minecraft:satu
 execute if entity @s[tag=ctf_stop_fall_dmg] run function ctf:player/respawn/stop_fall_dmg/main
 
 
+# Run Map Creator
+execute if entity @s[scores={ctf_create_step=1..}] at @s run function ctf:create/get_player_data
+
 # Right Click Bombsite
 execute if entity @s[scores={rclick=1}] at @s run function ctf:player/click/click
 
@@ -81,10 +90,6 @@ execute if entity @s[scores={ctf_bomb_plant_cd=1..}] run function ctf:player/tim
 
 # Freeze player after respawn
 execute if entity @s[scores={ctf_respawn_freeze_cd=1..}] run function ctf:player/respawn/freeze/main
-
-
-# Run Map Creator
-execute if entity @s[scores={ctf_create_step=1..}] run function ctf:create/get_player_data
 
 
 # Voice Chat Player Tick

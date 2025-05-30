@@ -1,1 +1,0 @@
-#execute in the_nether positioned 10 10 10 if entity @s[dx=10,dy=5, dz=10] run voicechat join boop
