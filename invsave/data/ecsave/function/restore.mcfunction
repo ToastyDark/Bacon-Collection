@@ -5,4 +5,4 @@ $execute store result storage invsave $(path).id int 1 run scoreboard players ge
 $data modify storage invsave $(path).path set value $(path)
 
 # Begin Saving Inventory with UUID ready
-$execute in overworld positioned 0 -64 0 run function echest:restore/start with storage invsave $(path)
+$execute in overworld positioned 0 -64 0 run function ecsave:restore/start with storage invsave $(path)
