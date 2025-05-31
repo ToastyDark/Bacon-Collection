@@ -15,4 +15,4 @@ function ctf:player/reset
 function ctf:player/respawn/reset
 
 # Tp
-function ctf:lobby/tp
+execute if data storage ctf:game {started:true} run function ctf:lobby/tp/tp

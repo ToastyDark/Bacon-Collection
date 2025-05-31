@@ -9,4 +9,4 @@ tag @s add ctf_lobby_save
 effect give @s slow_falling 1 255 true
 
 # TP
-function ctf:lobby/tp
+function ctf:lobby/tp/tp

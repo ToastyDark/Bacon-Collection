@@ -29,5 +29,8 @@ scoreboard objectives setdisplay sidebar
 function voicechat:ctf/end
 
 
+# Spread out players back to spawn
+function ctf:lobby/tp/spread
+
 # Give player old Inventory Back
 execute as @a[tag=ctf_player] run function ctf:player/leave/leave
