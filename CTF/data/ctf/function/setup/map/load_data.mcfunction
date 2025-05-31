@@ -176,8 +176,8 @@ function ctf:setup/team/color with storage ctf:game team2
 data remove storage ctf:game team1.flag_color
 data remove storage ctf:game team2.flag_color
 # Set Flag Team Colors
-$data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color
-$data modify storage ctf:game team2.flag_color set from storage ctf:map $(map).team2.color
+$data modify storage ctf:game team1.flag_color set from storage ctf:game team1.color
+$data modify storage ctf:game team2.flag_color set from storage ctf:game team2.color
 
 
 
