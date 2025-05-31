@@ -171,7 +171,11 @@ $data modify storage ctf:game team2.color set from storage ctf:map $(map).team2.
 execute unless data storage ctf:game team2.color run data modify storage ctf:game team2.color set value blue
 function ctf:setup/team/color with storage ctf:game team2
 
-# Flag Team Colors
+
+# Remove Flag Colors First
+data remove storage ctf:game team1.flag_color
+data remove storage ctf:game team2.flag_color
+# Set Flag Team Colors
 $data modify storage ctf:game team1.flag_color set from storage ctf:map $(map).team1.color
 $data modify storage ctf:game team2.flag_color set from storage ctf:map $(map).team2.color
 
