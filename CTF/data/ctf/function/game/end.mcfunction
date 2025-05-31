@@ -33,4 +33,4 @@ function voicechat:ctf/end
 schedule function ctf:lobby/tp/spread 2t replace
 
 # Give player old Inventory Back
-function ctf:player/leave/leave
+schedule function ctf:player/leave/end_scheduled 2t replace
