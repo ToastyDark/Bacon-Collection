@@ -30,7 +30,7 @@ function voicechat:ctf/end
 
 
 # Spread out players back to spawn
-function ctf:lobby/tp/spread
+schedule function ctf:lobby/tp/spread 2t replace
 
 # Give player old Inventory Back
-execute as @a[tag=ctf_player] run function ctf:player/leave/leave
+execute as @a[tag=ctf_player] run schedule function ctf:player/leave/leave 2t replace
