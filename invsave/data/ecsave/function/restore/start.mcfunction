@@ -11,5 +11,5 @@ $function ecsave:restore/restore with storage invsave $(path)
 
 
 # ----------- Remove Storage Once Items Restored -----------
-$data remove storage invsave $(path).$(id).enderchest
+$function invsave:reset/previous_ecsave with storage invsave $(path)
 

@@ -1,6 +1,6 @@
 # Reset Shulkerbox and Data
 function invsave:reset/shulkerbox
-$data remove storage invsave $(path).$(id)
+$function invsave:reset/previous_invsave with storage invsave $(path)
 
 # Store Hotbar
 $function invsave:reset/slot with storage invsave $(path)
