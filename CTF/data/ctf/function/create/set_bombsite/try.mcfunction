@@ -4,8 +4,9 @@ $execute store result score %temp temp run data get storage ctf:temp map_create_
 
 # If not all bombsites are placed, continue trying to place
 # Add +1 to temp score and store as next bombsite to place
-scoreboard players remove %temp temp 1
-$execute store result storage ctf:temp map_create_data.player.$(player_id).bombsite_num int 1 run scoreboard players get %temp temp
+
+#scoreboard players remove %temp temp 1
+#$execute store result storage ctf:temp map_create_data.player.$(player_id).bombsite_num int 1 run scoreboard players get %temp temp
 
 
 
