@@ -8,4 +8,4 @@ execute if score $invsave_slot value matches 26.. run return fail
 # Add 1 and Loop again
 scoreboard players add $invsave_slot value 1
 $execute store result storage invsave $(path).slot int 1 run scoreboard players get $invsave_slot value
-$function invsave:restore/restore with storage invsave $(path)
+$function ecsave:restore/restore with storage invsave $(path)

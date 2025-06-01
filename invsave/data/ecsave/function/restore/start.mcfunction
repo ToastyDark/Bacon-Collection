@@ -5,7 +5,6 @@ function ecsave:echest/clear
 function invsave:reset/shulkerbox
 
 # ----------- Return Items -----------
-# Hotbar
 $function invsave:reset/slot with storage invsave $(path)
 $function ecsave:restore/restore with storage invsave $(path)
 
