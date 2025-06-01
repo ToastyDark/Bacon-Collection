@@ -10,8 +10,8 @@ function ctf:lobby/platform/player
 # Check if fall from lobby island
 function ctf:lobby/fall_check/tick
 
-# Commands for changing kits
-execute if entity @s[tag=ctf_lobby] run function ctf:lobby/edit_kit/tick_player_tick
+# Player tick for Kit Editor
+function ctf:lobby/edit_kit/tick_player_tick
 
 
 # ---------------- Base Game ----------------

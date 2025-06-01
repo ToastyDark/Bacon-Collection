@@ -1,0 +1,1 @@
+$function ctf:lobby/edit_kit/still_editing/compare with storage ctf:temp kit_still_edting_data.$(id)

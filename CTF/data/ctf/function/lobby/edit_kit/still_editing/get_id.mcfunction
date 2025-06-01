@@ -1,0 +1,1 @@
+execute store result storage ctf:temp kit_still_edting_data.id int 1 run scoreboard players get @s id

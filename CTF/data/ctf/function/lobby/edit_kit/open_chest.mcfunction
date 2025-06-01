@@ -4,6 +4,15 @@ scoreboard players reset @s ctf_lobby_echest_open
 # Check if player specifically opened Kit Editor Chest
 execute in void positioned 43 79 -105 unless entity @s[dx=-4,dy=5,dz=-4] run return fail
 
+# Save and Clear Ender Chest before showing kit ~dark
+function ecsave:clear {"path":"main"}
+
+# Mark player as still editing kit
+function ctf:lobby/edit_kit/still_editing/start
+
+
+# ---------------- Begin Kit Process ----------------
+
 # Store kit editor num and map into temp data
 execute store result storage ctf:temp kit_editor.kit_num int 1 run scoreboard players get @s ctf_kit_editor_num
 

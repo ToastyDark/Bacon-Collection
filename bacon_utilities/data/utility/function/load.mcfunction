@@ -16,3 +16,5 @@ scoreboard objectives add steps dummy
 scoreboard objectives add x dummy
 scoreboard objectives add y dummy
 scoreboard objectives add z dummy
+scoreboard objectives add rx dummy
+scoreboard objectives add ry dummy
