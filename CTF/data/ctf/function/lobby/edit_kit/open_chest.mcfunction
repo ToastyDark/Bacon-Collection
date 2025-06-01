@@ -5,7 +5,7 @@ scoreboard players reset @s ctf_lobby_echest_open
 execute in void positioned 43 79 -105 unless entity @s[dx=-4,dy=5,dz=-4] run return fail
 
 # Save and Clear Ender Chest before showing kit ~dark
-execute unless entity @s[tag=ctf_kit_still_editing] run function ecsave:clear {"path":"main"}
+function ecsave:clear {"path":"main"}
 
 # Mark player as still editing kit
 function ctf:lobby/edit_kit/still_editing/start
