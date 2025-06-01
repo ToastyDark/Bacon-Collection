@@ -7,8 +7,12 @@ execute unless entity @e[type=interaction,tag=door_interaction,distance=..1] run
 execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on target if items entity @s weapon.* minecraft:tripwire_hook as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_open
 execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on attacker if items entity @s weapon.* minecraft:tripwire_hook as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_open
 
-execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on target if items entity @s weapon.* minecraft:tripwire_hook as @e[type=minecraft:marker,distance=..2] run clear @s tripwire_hook
-execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on attacker if items entity @s weapon.* minecraft:tripwire_hook as @e[type=minecraft:marker,distance=..2] run clear @s tripwire_hook
+
+execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on target if items entity @s weapon.* minecraft:tripwire_hook run playsound minecraft:block.iron_door.open master @s ~ ~ ~
+execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on attacker if items entity @s weapon.* minecraft:tripwire_hook run playsound minecraft:block.iron_door.open master @s ~ ~ ~
+
+execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on target if items entity @s weapon.* minecraft:tripwire_hook run clear @s tripwire_hook 1
+execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on attacker if items entity @s weapon.* minecraft:tripwire_hook run clear @s tripwire_hook 1
 
 execute unless entity @s[tag=open] as @a[distance=..3] unless items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"You need a key to open this elevator."}
 execute unless entity @s[tag=open] as @a[distance=..3] if items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"Right click door to open elevator."}
