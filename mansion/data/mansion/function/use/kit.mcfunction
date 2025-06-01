@@ -1,2 +1,3 @@
 give @s mace[custom_name='{"text":"Door Opener"}', enchantments={"sharpness":255}]
-give @s tripwire_hook[enchantments={"knockback":255}]
+give @s tripwire_hook[enchantments={"knockback":255}] 64
+summon minecraft:item ~ ~4 ~ {Item:{components: {"minecraft:custom_name":"Instant Door", "minecraft:block_entity_data": {auto:1b, Command: '/execute positioned ~ ~-0.5 ~ run summon minecraft:marker ~ ~ ~ {Tags:["post_office_door","deletable"]}',id:"minecraft:command_block"}}, id:"minecraft:command_block"}}
