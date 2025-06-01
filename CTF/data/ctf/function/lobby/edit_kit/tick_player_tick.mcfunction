@@ -6,4 +6,4 @@ execute if entity @s[tag=ctf_lobby] if entity @s[scores={ctf_lobby_echest_open=1
 
 # Check if player is still editing kits
 function ctf:lobby/edit_kit/still_editing/get_id
-execute if entity @s[tag=ctf_kit_still_editing] run function ctf:lobby/edit_kit/still_editing/check_stopped with storage ctf:temp kit_still_edting_data
+execute if entity @s[tag=ctf_kit_still_editing] in void positioned 43 79 -105 unless entity @s[dx=-4,dy=5,dz=-4] run function ctf:lobby/edit_kit/still_editing/check_stopped with storage ctf:temp kit_still_edting_data
