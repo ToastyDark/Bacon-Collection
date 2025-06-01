@@ -14,7 +14,7 @@ execute as @a[tag=was_holding_tripwire_hook] run clear @s tripwire_hook 1
 execute as @a[tag=was_holding_tripwire_hook] as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_open
 tag @a remove was_holding_tripwire_hook
 # Actionbar Text (opening)
-execute unless entity @s[tag=open] as @a[distance=..3] unless items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"You need a key to open this elevator."}
+execute unless entity @s[tag=open] as @a[distance=..3] unless items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"You need a key to open this door."}
 execute unless entity @s[tag=open] as @a[distance=..3] if items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"Right click door to open."}
 execute if entity @s[tag=open] as @a[distance=..3] run title @s actionbar {"text":"The door is open."}
 
