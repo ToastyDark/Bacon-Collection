@@ -1,0 +1,1 @@
+execute as @e[type=marker,tag=post_office_door] at @s run function mansion:door/door_tick_real

@@ -11,7 +11,7 @@ execute unless entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_int
 # Actually open door
 execute as @a[tag=was_holding_tripwire_hook] run playsound minecraft:block.iron_door.open master @s ~ ~ ~
 execute as @a[tag=was_holding_tripwire_hook] run clear @s tripwire_hook 1
-execute as @a[tag=was_holding_tripwire_hook] as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_open
+execute as @a[tag=was_holding_tripwire_hook] as @e[type=minecraft:marker,distance=..2] run function mansion:door/door_open
 tag @a remove was_holding_tripwire_hook
 # Actionbar Text (opening)
 execute unless entity @s[tag=open] as @a[distance=..3] unless items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"You need a key to open this door."}
@@ -23,7 +23,7 @@ execute if entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interac
 execute if entity @s[tag=open] as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] on attacker if items entity @s weapon.* minecraft:mace run tag @s add was_holding_mace
 # Actually close door (only used for development)
 execute as @a[tag=was_holding_mace] run playsound minecraft:block.iron_door.close master @s ~ ~ ~
-execute as @a[tag=was_holding_mace] as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_close
+execute as @a[tag=was_holding_mace] as @e[type=minecraft:marker,distance=..2] run function mansion:door/door_close
 tag @a remove was_holding_mace
 # Actionbar Text (closing)
 execute if entity @s[tag=open] as @a[distance=..3] if items entity @s weapon.* minecraft:mace run title @s actionbar {"text":"Right click door to close.", "color":"red"}

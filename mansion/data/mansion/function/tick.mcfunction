@@ -1,0 +1,1 @@
+function mansion:door/door_tick
