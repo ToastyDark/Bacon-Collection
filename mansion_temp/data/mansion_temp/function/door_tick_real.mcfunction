@@ -26,7 +26,7 @@ execute as @a[tag=was_holding_mace] run playsound minecraft:block.iron_door.clos
 execute as @a[tag=was_holding_mace] as @e[type=minecraft:marker,distance=..2] run function mansion_temp:door_close
 tag @a remove was_holding_mace
 # Actionbar Text (closing)
-execute if entity @s[tag=open] as @a[distance=..3] if items entity @s weapon.* minecraft:tripwire_hook run title @s actionbar {"text":"Right click door to close.", "color":"red"}
+execute if entity @s[tag=open] as @a[distance=..3] if items entity @s weapon.* minecraft:mace run title @s actionbar {"text":"Right click door to close.", "color":"red"}
 
 
 execute as @e[type=minecraft:interaction,tag=door_interaction,distance=..1] run data remove entity @s interaction
