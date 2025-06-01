@@ -1,6 +1,9 @@
 # Reset Open Echest
 scoreboard players reset @s ctf_lobby_echest_open
 
+# Check if player specifically opened Kit Editor Chest
+execute in void positioned 43 79 -105 unless entity @s[dx=-4,dy=5,dz=-4] run return fail
+
 # Store kit editor num and map into temp data
 execute store result storage ctf:temp kit_editor.kit_num int 1 run scoreboard players get @s ctf_kit_editor_num
 
@@ -10,5 +13,5 @@ execute store result storage ctf:temp kit_editor.temp.map_index int 1 run scoreb
 
 function ctf:lobby/edit_kit/map_id_to_name with storage ctf:temp kit_editor.temp
 
-#  Load Echest Data
+# Load Echest Data
 function ctf:player/kit/rearrange/echest_load_layout with storage ctf:temp kit_editor
