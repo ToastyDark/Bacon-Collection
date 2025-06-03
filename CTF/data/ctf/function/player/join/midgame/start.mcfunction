@@ -9,6 +9,9 @@ function ctf:player/join/setup
 # TP Player
 $function ctf:setup/spawn/tp with storage ctf:game team$(team_num)
 
+# Join VC
+function voicechat:ctf/join/assign
+
 
 # Announce player joining
 execute if entity @s[team=ctf_team1] run function ctf:player/join/midgame/msg/main with storage ctf:game team1

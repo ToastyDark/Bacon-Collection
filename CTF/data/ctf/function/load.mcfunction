@@ -12,6 +12,7 @@ scoreboard objectives add ctf_kit dummy
 scoreboard objectives add ctf_kit_swap_cd dummy
 scoreboard objectives add ctf_died deathCount
 scoreboard objectives add ctf_respawn_cd dummy
+scoreboard objectives add ctf_respawn_cd_display dummy
 scoreboard objectives add ctf_flag_time dummy
 scoreboard objectives add ctf_flag_time_firework dummy
 scoreboard objectives add ctf_in_ops_spawn dummy

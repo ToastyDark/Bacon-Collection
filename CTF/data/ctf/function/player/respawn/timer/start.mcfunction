@@ -1,5 +1,14 @@
-scoreboard players set @s ctf_respawn_cd 70
+# Get time to respawn
+#scoreboard players set @s ctf_respawn_cd 70
+execute store result score @s ctf_respawn_cd run data get storage ctf:game player_respawn_time
+scoreboard players set $20 value 20
+scoreboard players operation @s ctf_respawn_cd *= $20 value
 
+# If 20.. show respawn countdown message, then Reset Player Display Timer
+scoreboard players reset @s ctf_respawn_cd_display
+
+
+# ------------------------------------------------
 # Spectator Mode
 gamemode spectator
 

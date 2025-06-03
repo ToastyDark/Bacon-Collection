@@ -13,7 +13,7 @@ function ctf:game/_bomb/plant/misc/spawn_tnt with storage ctf:game
 ride @n[type=tnt] mount @s
 
 # Prepare new time
-scoreboard players set @s ctf_bomb_time 15
+#scoreboard players set @s ctf_bomb_time 15
 
 
 # Spawn Text Display Timer
