@@ -1,9 +1,12 @@
+# Give slowfalling before touching ground
+execute at @s if block ~ ~-.8 ~ #minecraft:sold_block unless entity @s[nbt={OnGround:1b}] run effect give @s minecraft:slow_falling 1 1 true
+
 # Stop if player is not on ground
 execute unless entity @s[nbt={OnGround:1b}] run return fail
 
 
 # Remove Fall Damage Prevention
-execute if entity @s[tag=ctf_stop_fall_dmg_done] run effect clear @s jump_boost
+execute if entity @s[tag=ctf_stop_fall_dmg_done] run effect clear @s slow_falling
 execute if entity @s[tag=ctf_stop_fall_dmg_done] run tag @s remove ctf_stop_fall_dmg
 execute if entity @s[tag=ctf_stop_fall_dmg_done] run tag @s remove ctf_stop_fall_dmg_done
 
