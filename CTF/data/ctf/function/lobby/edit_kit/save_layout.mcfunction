@@ -13,4 +13,4 @@ function ctf:lobby/edit_kit/map_id_to_name with storage ctf:temp kit_editor.temp
 function ctf:player/kit/rearrange/echest_save_layout with storage ctf:temp kit_editor
 
 #say CTF: Saved Kit Layout!
-title @s actionbar {"text":"Saved kit layout!","color":"green"}
+title @s actionbar {"text":"Saved kit layout!","color":"green","bold": true}
