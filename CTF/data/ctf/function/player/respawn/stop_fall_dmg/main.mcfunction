@@ -1,3 +1,6 @@
+# Stop if already prevented
+execute if entity @s[tag=ctf_stop_fall_dmg_done] run return fail
+
 # Give slowfalling before touching ground
 execute at @s if block ~ ~-1 ~ #minecraft:sold_block unless entity @s[nbt={OnGround:1b}] run effect give @s minecraft:slow_falling 1 1 true
 
