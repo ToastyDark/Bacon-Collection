@@ -1,0 +1,1 @@
+$function ctf:map/$(map)/reset_begin

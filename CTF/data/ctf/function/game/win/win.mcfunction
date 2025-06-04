@@ -21,4 +21,4 @@ $data modify storage ctf:game losing_team set value team$(team_ops)
 
 # Schedule end
 scoreboard players set $ctf_timer_end value 8
-function ctf:game/win/end_timer
+function ctf:game/win/end_timer with storage ctf:game

@@ -1,0 +1,1 @@
+execute in minecraft:clone run clone -691 68 -264 -687 79 -258 to minecraft:void -649 74 -246
