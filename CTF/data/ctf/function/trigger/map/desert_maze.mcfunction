@@ -13,7 +13,7 @@ execute if data storage ctf:temp {loading_map:active} run return run function ct
 data modify storage ctf:game map set value desert_maze
 
 # Run on_selected functions
-function ctf:trigger/map/_init_map with storage ctf:game
+#function ctf:trigger/map/_init_map with storage ctf:game
 
 
 
