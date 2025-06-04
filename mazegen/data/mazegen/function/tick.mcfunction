@@ -1,5 +1,5 @@
 # Mazegen Tick
-function mazegen:generate/tick_generate
+#function mazegen:generate/tick_generate
 
 # Generating, but no outstanding tiles are left... So stop generating
 execute if score $generating mazegen matches 1 unless entity @e[type=marker, tag=mazegen_outstanding_tile] run function mazegen:tickrate/set_tickrate_normal
