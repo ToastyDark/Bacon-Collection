@@ -12,10 +12,9 @@ execute if data storage ctf:temp {loading_map:active} run return run function ct
 # Set Map
 data modify storage ctf:game map set value desert_maze
 
-# Run on_selected functions
+# Run reset map functions
 #function ctf:trigger/map/_init_map with storage ctf:game
 
 
-
 # Msg
-function ctf:trigger/map/notif
+schedule function ctf:trigger/map/notif 2t replace
