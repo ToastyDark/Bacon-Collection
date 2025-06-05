@@ -1,0 +1,1 @@
+execute as @e[type=interaction,tag=ctf_map_changer] run function ctf:lobby/display/map/changer/click

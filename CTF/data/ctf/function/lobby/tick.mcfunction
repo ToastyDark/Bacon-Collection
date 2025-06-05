@@ -48,3 +48,6 @@ function ctf:lobby/platform/tick
 
 # Kit Editor Tick
 function ctf:lobby/edit_kit/tick
+
+# Map Changer Tick
+function ctf:lobby/display/map/changer/tick

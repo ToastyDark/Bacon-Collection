@@ -11,10 +11,6 @@ data modify storage ctf:game bomb_planted set value false
 
 
 
-# Back to Spawn
-#execute in void run spreadplayers -1 -109 3 10 under 64 false @a[tag=ctf_player]
-
-
 # Remove Bombsites
 execute as @e[type=armadillo,tag=ctf_bombsite] at @s run function ctf:game/_bomb/site/kill
 
@@ -34,3 +30,7 @@ schedule function ctf:lobby/tp/spread 2t replace
 
 # Give player old Inventory Back
 schedule function ctf:player/leave/end_scheduled 2t replace
+
+
+# Reset Map
+function ctf:map/reset with storage ctf:game

@@ -132,6 +132,12 @@ $data modify storage ctf:game team2.bsite.3.ry set from storage ctf:map $(map).t
 
 
 # ----------------------- Data w- Default Parameters -----------------------
+# Player Respawn Time
+data remove storage ctf:game player_respawn_time
+$data modify storage ctf:game player_respawn_time set from storage ctf:map $(map).player_respawn_time
+execute unless data storage ctf:game player_respawn_time run data modify storage ctf:game player_respawn_time set value 4
+
+
 # Time of Day
 data remove storage ctf:game time
 $data modify storage ctf:game time set from storage ctf:map $(map).time

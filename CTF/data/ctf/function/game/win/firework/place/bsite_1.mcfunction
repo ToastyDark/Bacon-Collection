@@ -1,0 +1,1 @@
+function ctf:game/win/firework/type/1

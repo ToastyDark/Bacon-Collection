@@ -2,7 +2,8 @@
 execute if score $ctf_timer_end value matches ..-1 run return fail
 
 # Summon Fireworks
-function ctf:game/win/firework/main
+scoreboard players set %ctf_firework_spot temp 0
+$function ctf:game/win/firework/main with storage ctf:game team$(winning_team)
 
 
 

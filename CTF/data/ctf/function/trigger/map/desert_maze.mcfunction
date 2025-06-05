@@ -12,11 +12,9 @@ execute if data storage ctf:temp {loading_map:active} run return run function ct
 # Set Map
 data modify storage ctf:game map set value desert_maze
 
-# Run on_selected functions
-function ctf:trigger/map/_init_map with storage ctf:game
-
+# Run reset map functions
+#function ctf:trigger/map/_init_map with storage ctf:game
 
 
 # Msg
-title @s actionbar ["",{"text":"Map Changed: ","bold": true,"color": "gray"},{"text":"Desert Maze","bold": true,"color": "#eb8909"}]
-execute at @s run playsound minecraft:entity.item.pickup master @s ~ ~ ~ 1 0.6 1
+schedule function ctf:trigger/map/notif 2t replace
