@@ -1,5 +1,5 @@
 # Map Reset
-function ctf:map/sandcastle/reset_map with storage ctf:map sandcastle.pos
+#function ctf:map/reset_map with storage ctf:map sandcastle.pos
 
 
 # Door Resets
