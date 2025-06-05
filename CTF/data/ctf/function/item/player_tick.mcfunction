@@ -1,7 +1,7 @@
 # Function for all item checks related to the player (to search for players once)
 
 # Resistance Armor (cactus kit)
-execute if items entity @s armor.* *[minecraft:custom_data={ctf_resistance_armor:true}] at @s run function ctf:item/resistance_armor/tick
+#execute if items entity @s armor.* *[minecraft:custom_data={ctf_resistance_armor:true}] at @s run function ctf:item/resistance_armor/tick
 
 # Slow Shears (cactus kit)
 execute if items entity @s weapon.mainhand *[minecraft:custom_data={ctf_slow_shears:true}] at @s run function ctf:item/slow_shears/tick
