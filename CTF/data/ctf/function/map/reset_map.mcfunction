@@ -7,7 +7,7 @@ $execute in clone run forceload add $(nw_x) $(nw_z) $(se_x) $(se_z)
 # Clone Map
 #function ctf:map/sandcastle/reset_map/clone with storage ctf:map sandcastle.pos
 #schedule function ctf:map/sandcastle/reset_map/schedule_clone 3t replace
-$execute positioned $(se_x) $(se_y) $(se_z) run clone from clone ~ ~ ~ $(nw_x) ~$(map_height) $(nw_z) to void ~ ~ ~
+$execute positioned $(nw_x) $(nw_y) $(nw_z) run clone from clone ~ ~ ~ $(se_x) ~$(map_height) $(se_z) to void ~ ~ ~
 
 
 # Void Forceload 
