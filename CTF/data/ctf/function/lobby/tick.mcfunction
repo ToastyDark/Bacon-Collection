@@ -50,4 +50,4 @@ function ctf:lobby/platform/tick
 function ctf:lobby/edit_kit/tick
 
 # Map Changer Tick
-function ctf:lobby/display/map/changer/click
+function ctf:lobby/display/map/changer/tick
