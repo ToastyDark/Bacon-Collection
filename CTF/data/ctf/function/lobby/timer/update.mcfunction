@@ -18,6 +18,8 @@ execute as @a[tag=ctf_lobby] at @s run function ctf:lobby/timer/cd/main
 # Start Game
 execute if score $ctf_lobby_time value matches 0 run function ctf:game/start
 
+# Reset Map
+execute if score $ctf_lobby_time value matches 10 run function ctf:map/reset with storage ctf:game
 
 
 # Turn this off if needed

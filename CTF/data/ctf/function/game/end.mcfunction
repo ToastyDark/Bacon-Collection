@@ -33,4 +33,4 @@ schedule function ctf:player/leave/end_scheduled 2t replace
 
 
 # Reset Map
-function ctf:map/reset with storage ctf:game
+#function ctf:map/reset with storage ctf:game
