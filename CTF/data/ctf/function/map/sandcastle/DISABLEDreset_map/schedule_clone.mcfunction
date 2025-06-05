@@ -1,1 +1,0 @@
-function ctf:map/sandcastle/reset_map/clone with storage ctf:map sandcastle.pos

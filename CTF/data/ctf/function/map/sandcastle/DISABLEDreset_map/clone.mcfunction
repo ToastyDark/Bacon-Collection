@@ -1,1 +1,0 @@
-$execute positioned $(se_x) $(se_y) $(se_z) run clone from clone ~ ~ ~ $(nw_x) ~$(map_height) $(nw_z) to void ~ ~ ~
