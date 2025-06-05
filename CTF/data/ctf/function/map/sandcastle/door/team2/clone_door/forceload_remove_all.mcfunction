@@ -1,1 +1,1 @@
-forceload remove -645 -364 -586 -337
+execute in clone run forceload remove -645 -364 -586 -337

@@ -1,1 +1,1 @@
-forceload add -672 -336 -734 -366
+execute in clone run forceload add -672 -336 -734 -366
