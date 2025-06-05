@@ -1,0 +1,1 @@
+execute in void positioned 38 81 -109 run summon minecraft:interaction ~ ~ ~ {Tags:["ctf_map_changer"],width:2b,height:1b}

@@ -88,9 +88,9 @@ scoreboard objectives add ctf.item.camel_egg_used minecraft.used:minecraft.wande
 data remove storage ctf:map_registry all
 data modify storage ctf:map_registry all append value desert_maze
 data modify storage ctf:map_registry all append value sandcastle
-data modify storage ctf:map_registry all append value samuel
-data modify storage ctf:map_registry all append value ctf_epic
-data modify storage ctf:map_registry all append value verygood
+#data modify storage ctf:map_registry all append value samuel
+#ata modify storage ctf:map_registry all append value ctf_epic
+#data modify storage ctf:map_registry all append value verygood
 
 
 # CTF Map Creation
