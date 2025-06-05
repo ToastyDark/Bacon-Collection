@@ -1,6 +1,6 @@
 # Check if clicked
-execute on attacker if entity ToastyDark at @s run function ctf:lobby/display/map/changer/swap_up
-execute on target if entity ToastyDark at @s run function ctf:lobby/display/map/changer/swap_up
+execute on attacker if entity @s[scores={id=1..3}] at @s run function ctf:lobby/display/map/changer/swap_up
+execute on target if entity @s[scores={id=1..3}] at @s run function ctf:lobby/display/map/changer/swap_up
 
 
 #Reset Interaction after click
