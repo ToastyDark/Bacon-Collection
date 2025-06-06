@@ -6,6 +6,7 @@ function ctf:stats/load
 
 
 # More
+scoreboard objectives add ctf_new dummy
 scoreboard objectives add value dummy
 scoreboard objectives add ctf_points dummy
 scoreboard objectives add ctf_kit dummy

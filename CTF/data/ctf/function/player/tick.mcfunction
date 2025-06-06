@@ -94,3 +94,7 @@ execute if entity @s[scores={ctf_respawn_freeze_cd=1..}] run function ctf:player
 
 # Voice Chat Player Tick
 function voicechat:ctf/player/tick
+
+
+# CTF Potion Give
+execute unless entity @s[scores={ctf_new=1..}] run function ctf:lobby/event_give_potion
