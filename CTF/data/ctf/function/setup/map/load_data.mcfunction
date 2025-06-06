@@ -139,9 +139,10 @@ execute unless data storage ctf:game player_respawn_time run data modify storage
 
 
 # Time of Day
-data remove storage ctf:game time
-$data modify storage ctf:game time set from storage ctf:map $(map).time
-execute unless data storage ctf:game time run data modify storage ctf:game time set value random
+data remove storage ctf:game time_of_day
+$data modify storage ctf:game time_of_day set from storage ctf:map $(map).time_of_day
+execute unless data storage ctf:game time_of_day run data modify storage ctf:game time_of_day set value random
+function ctf:setup/map/time_of_day with storage ctf:game
 
 
 # Points to Win
