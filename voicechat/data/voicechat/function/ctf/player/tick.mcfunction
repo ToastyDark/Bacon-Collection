@@ -11,7 +11,7 @@ execute unless data storage ctf:game {voicechat:false} if entity @s[tag=!ctf_vc]
 
 
 # Check if player disables VC
-execute if entity @s[scores={rclick=1..},x_rotation=-90..-50] if items entity @s weapon.mainhand minecraft:shears[minecraft:custom_data={ctf_flag_claw:1b}] unless entity @s[scores={ctf_comms_change_cd=1..}] run function voicechat:ctf/player/use
+execute if entity @s[scores={rclick=1..},x_rotation=-90..-50] if items entity @s weapon.mainhand minecraft:shears[minecraft:custom_data~{ctf_flag_claw:1b}] unless entity @s[scores={ctf_comms_change_cd=1..}] run function voicechat:ctf/player/use
 
 
 # Comms CD

@@ -12,6 +12,7 @@ execute if score $ctf_lobby_time value matches ..20 if data storage ctf:lobby {e
 
 # Stop if map is currently being loaded
 execute if data storage ctf:temp {loading_map:active} run return fail
+execute if data storage ctf:temp {loading_map_done:true} run return fail
 bossbar set ctf:lobby_timer max 60
 
 

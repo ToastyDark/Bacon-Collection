@@ -3,7 +3,8 @@ execute store result bossbar ctf:lobby_timer value run scoreboard players get $c
 execute unless data storage ctf:temp {loading_map:active} run bossbar set ctf:lobby_timer name ["",{"text":"CTF Starts in ","bold":true,"color":"#d58a09"},{"score":{"name":"$ctf_lobby_time","objective":"value"},"bold":true,"color":"#e0a308"}]
 
 # Playres
-bossbar set ctf:lobby_timer players @a[tag=ctf_lobby]
+#bossbar set ctf:lobby_timer players @a[tag=ctf_lobby]
+bossbar set ctf:lobby_timer players @a
 
 
 # Check if have enough players
@@ -18,6 +19,8 @@ execute as @a[tag=ctf_lobby] at @s run function ctf:lobby/timer/cd/main
 # Start Game
 execute if score $ctf_lobby_time value matches 0 run function ctf:game/start
 
+# Reset Map
+execute if score $ctf_lobby_time value matches 15 run function ctf:map/reset with storage ctf:game
 
 
 # Turn this off if needed

@@ -17,3 +17,9 @@ $execute positioned ~$(kit_num) ~ ~ run function ctf:player/kit/give/give_slots 
 $execute unless items block ~$(kit_num) ~ ~ container.22 minecraft:light_gray_stained_glass_pane run item replace entity @s armor.chest from block ~$(kit_num) ~ ~ container.22
 $execute unless items block ~$(kit_num) ~ ~ container.23 minecraft:light_gray_stained_glass_pane run item replace entity @s armor.legs from block ~$(kit_num) ~ ~ container.23
 $execute unless items block ~$(kit_num) ~ ~ container.24 minecraft:light_gray_stained_glass_pane run item replace entity @s armor.feet from block ~$(kit_num) ~ ~ container.24
+
+
+
+# Leather Cap
+execute if entity @s[team=ctf_team1] run function ctf:player/kit/give/helmet/immune with storage ctf:game team1
+execute if entity @s[team=ctf_team2] run function ctf:player/kit/give/helmet/immune with storage ctf:game team2

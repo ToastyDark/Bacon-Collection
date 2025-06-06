@@ -1,0 +1,29 @@
+{
+  "description": "",
+  "supported_items": "leather_helmet",
+  "weight": 10,
+  "max_level": 1,
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 11
+  },
+  "max_cost": {
+    "base": 12,
+    "per_level_above_first": 11
+  },
+  "anvil_cost": 1,
+  "slots": [
+    "armor"
+  ],
+  "effects": {
+    "minecraft:damage_immunity": [
+      {
+      "requirements": {
+            "condition": "minecraft:damage_source_properties",
+            "predicate": {
+            }
+          },"effect":{}
+        }
+      ]
+    }
+  }

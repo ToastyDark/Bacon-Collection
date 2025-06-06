@@ -8,6 +8,10 @@ execute if data storage ctf:temp {queue_empty:true} run return run title @s acti
 
 
 # ------------------------Prep Game------------------------
+# Reset Map if hasn't been done
+execute unless data storage ctf:game {map_reset_done:true} run function ctf:map/reset with storage ctf:game
+
+
 # Create Teams
 team add ctf_team1
 team add ctf_team2
