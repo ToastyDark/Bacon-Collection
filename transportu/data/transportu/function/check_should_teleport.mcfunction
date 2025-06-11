@@ -6,7 +6,7 @@ $data modify storage transportu:temp_carrot_info info set from storage transport
 
 # Remove teleport info if not holding a transportu potion
 # TODO: Currently, any potion with any custom data acts like a transportu potion and doesn't clear info
-execute if items entity @s weapon.* potion if items entity @s weapon.* potion[minecraft:custom_data] run data remove storage transportu:temp_potion_info info
+execute if items entity @s weapon.* potion unless items entity @s weapon.* potion[minecraft:custom_data] run data remove storage transportu:temp_potion_info info
 
 # --- Teleport with info stored in TEMP --- #
 
