@@ -5,4 +5,4 @@
 execute as @a run function transportu:check_should_teleport_pre
 
 # Triggers
-execute as @a run function transportu:trigger/tick
+#execute as @a run function transportu:trigger/tick
