@@ -20,5 +20,9 @@ $data modify storage void_lobby:wallcompletor_temp z set from storage void_lobby
 scoreboard players add @s wallcompletor.self 1
 execute store result storage void_lobby:wallcompletor_temp offset int 1 run scoreboard players get @s wallcompletor.self
 
+$data modify storage void_lobby:wallcompletor_temp clone_start_y set from storage void_lobby:wallcompletor sources.$(source).clone_start_y
+$data modify storage void_lobby:wallcompletor_temp clone_end_y set from storage void_lobby:wallcompletor sources.$(source).clone_end_y
+
+
 # Clone
 function void_lobby:tools/wallcompletor/place_wall_section with storage void_lobby:wallcompletor_temp
