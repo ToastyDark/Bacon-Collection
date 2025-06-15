@@ -317,11 +317,4 @@ execute if score $time pastebuild.time matches 315 run function pastebuild:struc
 execute if score $time pastebuild.time matches 316 run function pastebuild:struct_316
 execute if score $time pastebuild.time matches 317 run function pastebuild:struct_317
 execute if score $time pastebuild.time matches 318 run function pastebuild:struct_318
-execute if score $time pastebuild.time matches 319 run function pastebuild:struct_319
-execute if score $time pastebuild.time matches 320 run function pastebuild:struct_320
-execute if score $time pastebuild.time matches 321 run function pastebuild:struct_321
-execute if score $time pastebuild.time matches 322 run function pastebuild:struct_322
-execute if score $time pastebuild.time matches 323 run function pastebuild:struct_323
-execute if score $time pastebuild.time matches 324 run function pastebuild:struct_324
-execute if score $time pastebuild.time matches 325 run function pastebuild:struct_325
 scoreboard players add $time pastebuild.time 1
