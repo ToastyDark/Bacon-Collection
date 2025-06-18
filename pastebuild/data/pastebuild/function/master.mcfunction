@@ -372,4 +372,23 @@ execute if score $time pastebuild.time matches 370 run function pastebuild:struc
 execute if score $time pastebuild.time matches 371 run function pastebuild:struct_371
 execute if score $time pastebuild.time matches 372 run function pastebuild:struct_372
 execute if score $time pastebuild.time matches 373 run function pastebuild:struct_373
+execute if score $time pastebuild.time matches 374 run function pastebuild:struct_374
+execute if score $time pastebuild.time matches 375 run function pastebuild:struct_375
+execute if score $time pastebuild.time matches 376 run function pastebuild:struct_376
+execute if score $time pastebuild.time matches 377 run function pastebuild:struct_377
+execute if score $time pastebuild.time matches 378 run function pastebuild:struct_378
+execute if score $time pastebuild.time matches 379 run function pastebuild:struct_379
+execute if score $time pastebuild.time matches 380 run function pastebuild:struct_380
+execute if score $time pastebuild.time matches 381 run function pastebuild:struct_381
+execute if score $time pastebuild.time matches 382 run function pastebuild:struct_382
+execute if score $time pastebuild.time matches 383 run function pastebuild:struct_383
+execute if score $time pastebuild.time matches 384 run function pastebuild:struct_384
+execute if score $time pastebuild.time matches 385 run function pastebuild:struct_385
+execute if score $time pastebuild.time matches 386 run function pastebuild:struct_386
+execute if score $time pastebuild.time matches 387 run function pastebuild:struct_387
+execute if score $time pastebuild.time matches 388 run function pastebuild:struct_388
+execute if score $time pastebuild.time matches 389 run function pastebuild:struct_389
+execute if score $time pastebuild.time matches 390 run function pastebuild:struct_390
+execute if score $time pastebuild.time matches 391 run function pastebuild:struct_391
+execute if score $time pastebuild.time matches 392 run function pastebuild:struct_392
 scoreboard players add $time pastebuild.time 1
