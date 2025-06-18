@@ -255,4 +255,8 @@ execute if score $time pastebuild.time matches 253 run function pastebuild:struc
 execute if score $time pastebuild.time matches 254 run function pastebuild:struct_254
 execute if score $time pastebuild.time matches 255 run function pastebuild:struct_255
 execute if score $time pastebuild.time matches 256 run function pastebuild:struct_256
+execute if score $time pastebuild.time matches 257 run function pastebuild:struct_257
+execute if score $time pastebuild.time matches 258 run function pastebuild:struct_258
+execute if score $time pastebuild.time matches 259 run function pastebuild:struct_259
+execute if score $time pastebuild.time matches 260 run function pastebuild:struct_260
 scoreboard players add $time pastebuild.time 1
