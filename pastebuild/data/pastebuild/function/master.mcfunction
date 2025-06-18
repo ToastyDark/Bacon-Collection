@@ -86,16 +86,4 @@ execute if score $time pastebuild.time matches 84 run function pastebuild:struct
 execute if score $time pastebuild.time matches 85 run function pastebuild:struct_85
 execute if score $time pastebuild.time matches 86 run function pastebuild:struct_86
 execute if score $time pastebuild.time matches 87 run function pastebuild:struct_87
-execute if score $time pastebuild.time matches 88 run function pastebuild:struct_88
-execute if score $time pastebuild.time matches 89 run function pastebuild:struct_89
-execute if score $time pastebuild.time matches 90 run function pastebuild:struct_90
-execute if score $time pastebuild.time matches 91 run function pastebuild:struct_91
-execute if score $time pastebuild.time matches 92 run function pastebuild:struct_92
-execute if score $time pastebuild.time matches 93 run function pastebuild:struct_93
-execute if score $time pastebuild.time matches 94 run function pastebuild:struct_94
-execute if score $time pastebuild.time matches 95 run function pastebuild:struct_95
-execute if score $time pastebuild.time matches 96 run function pastebuild:struct_96
-execute if score $time pastebuild.time matches 97 run function pastebuild:struct_97
-execute if score $time pastebuild.time matches 98 run function pastebuild:struct_98
-execute if score $time pastebuild.time matches 99 run function pastebuild:struct_99
 scoreboard players add $time pastebuild.time 1
