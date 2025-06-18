@@ -293,4 +293,12 @@ execute if score $time pastebuild.time matches 291 run function pastebuild:struc
 execute if score $time pastebuild.time matches 292 run function pastebuild:struct_292
 execute if score $time pastebuild.time matches 293 run function pastebuild:struct_293
 execute if score $time pastebuild.time matches 294 run function pastebuild:struct_294
+execute if score $time pastebuild.time matches 295 run function pastebuild:struct_295
+execute if score $time pastebuild.time matches 296 run function pastebuild:struct_296
+execute if score $time pastebuild.time matches 297 run function pastebuild:struct_297
+execute if score $time pastebuild.time matches 298 run function pastebuild:struct_298
+execute if score $time pastebuild.time matches 299 run function pastebuild:struct_299
+execute if score $time pastebuild.time matches 300 run function pastebuild:struct_300
+execute if score $time pastebuild.time matches 301 run function pastebuild:struct_301
+execute if score $time pastebuild.time matches 302 run function pastebuild:struct_302
 scoreboard players add $time pastebuild.time 1
