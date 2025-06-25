@@ -1,3 +1,3 @@
-give @s minecraft:leather_chestplate[minecraft:enchantments={thorns:255},minecraft:dyed_color={rgb:6192150},minecraft:custom_data={ctf_resistance_armor:true}]
-give @s minecraft:leather_leggings[minecraft:enchantments={thorns:255},minecraft:dyed_color={rgb:6192150},minecraft:custom_data={ctf_resistance_armor:true}]
-give @s minecraft:leather_boots[minecraft:enchantments={thorns:255},minecraft:dyed_color={rgb:6192150},minecraft:custom_data={ctf_resistance_armor:true}]
+give @s minecraft:leather_chestplate[minecraft:enchantments={thorns:255},minecraft:dyed_color=6192150,minecraft:custom_data={ctf_resistance_armor:true}]
+give @s minecraft:leather_leggings[minecraft:enchantments={thorns:255},minecraft:dyed_color=6192150,minecraft:custom_data={ctf_resistance_armor:true}]
+give @s minecraft:leather_boots[minecraft:enchantments={thorns:255},minecraft:dyed_color=6192150,minecraft:custom_data={ctf_resistance_armor:true}]
