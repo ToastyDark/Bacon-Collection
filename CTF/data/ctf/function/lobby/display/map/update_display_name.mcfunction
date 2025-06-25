@@ -5,4 +5,4 @@ data modify storage ctf:game display_name set value '["",{"text":"Map Name Missi
 $data modify storage ctf:game display_name set from storage ctf:map $(map).display_name
 
 # Update Display
-data modify entity @e[type=text_display,tag=ctf_map_display,limit=1] text set value '["",{"text":"Map: ","color":"green"},{"nbt":"display_name","storage":"ctf:game","interpret":true}]'
+data modify entity @e[type=text_display,tag=ctf_map_display,limit=1] text set value ["",{"text":"Map: ","color":"green"},{"nbt":"display_name","storage":"ctf:game","interpret":true}]
