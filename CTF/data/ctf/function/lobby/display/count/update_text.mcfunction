@@ -4,8 +4,8 @@ execute if score $ctf_queue_count_team1 value matches 1 run data modify entity @
 
 
 # ---------------- Team 2 ----------------
-execute unless score $ctf_queue_count_team2 value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_team2,limit=1] text set value '["",{score:{objective:"value",name:"$ctf_queue_count_team2"},bold: true, color: "gray"},{text:" Players",color:"blue",bold: true}]'
-execute if score $ctf_queue_count_team2 value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_team2,limit=1] text set value '["",{score:{objective:"value",name:"$ctf_queue_count_team2"},bold: true, color: "gray"},{text:" Player",color:"blue",bold: true}]'
+#execute unless score $ctf_queue_count_team2 value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_team2,limit=1] text set value '["",{score:{objective:"value",name:"$ctf_queue_count_team2"},bold: true, color: "gray"},{text:" Players",color:"blue",bold: true}]'
+#execute if score $ctf_queue_count_team2 value matches 1 run data modify entity @e[type=text_display,tag=ctf_display_queue_team2,limit=1] text set value '["",{score:{objective:"value",name:"$ctf_queue_count_team2"},bold: true, color: "gray"},{text:" Player",color:"blue",bold: true}]'
 
 
 # ---------------- Random Teams ----------------
