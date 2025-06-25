@@ -11,4 +11,4 @@ $execute if score $flag$(team_num)_respawn_cd_d value matches ..-1 run scoreboar
 
 
 # Update Display
-$data modify entity @e[type=text_display,tag=ctf_flag$(team_num)_timer,limit=1] text set value '["",{"score":{"name":"$flag$(team_num)_respawn_cd","objective":"value"},"bold":true,"color":"gold"},{"text":".","bold":true,"color":"gold"},{"score":{"name":"$flag$(team_num)_respawn_cd_d","objective":"value"},"bold":true,"color":"gold"},{"text":"s","bold":true,"color":"gold"}]'
+$data modify entity @e[type=text_display,tag=ctf_flag$(team_num)_timer,limit=1] text set value ["",{"score":{"name":"$flag$(team_num)_respawn_cd","objective":"value"},"bold":true,"color":"gold"},{"text":".","bold":true,"color":"gold"},{"score":{"name":"$flag$(team_num)_respawn_cd_d","objective":"value"},"bold":true,"color":"gold"},{"text":"s","bold":true,"color":"gold"}]
