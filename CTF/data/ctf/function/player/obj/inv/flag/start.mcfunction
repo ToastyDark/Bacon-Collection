@@ -16,4 +16,10 @@ $function ctf:player/obj/inv/flag/loop with storage ctf:game team$(team_num)
 
 
 # Replace Head
-$item replace entity @s armor.head with minecraft:$(ops_flag_color)_wool[attribute_modifiers=[{id:"armor",type:"armor",amount:10,operation:"add_value",slot:"any"}],hide_additional_tooltip={}] 1
+$item replace entity @s armor.head with minecraft:$(ops_flag_color)_wool[attribute_modifiers=[{id:"armor",type:"armor",amount:10,operation:"add_value",slot:"any"}],tooltip_display={hidden_components:["attribute_modifiers"]}] 1
+
+
+
+
+
+
