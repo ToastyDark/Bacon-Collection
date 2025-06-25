@@ -20,7 +20,7 @@ execute if data storage ctf:game {map:sandcastle} run function ctf:map/sandcastl
 
 
 # Freeze
-execute at @s run summon area_effect_cloud ~ ~1.6 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"]}
+execute at @s run summon area_effect_cloud ~ ~1.6 ~ {Duration:200,Tags:["ctf_freeze","ctf_new_freeze"],custom_particle:{type:"block",block_state:"minecraft:air"}}
 execute as @n[distance=..5,type=area_effect_cloud,tag=ctf_new_freeze] run rotate @s ~ 30
 
 # Set ID
