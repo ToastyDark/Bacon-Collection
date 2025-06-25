@@ -17,4 +17,4 @@ function ctf:player/obj/inv/bomb/loop with storage ctf:game bomb
 
 
 # Replace Head
-item replace entity @s armor.head with minecraft:tnt[attribute_modifiers=[{id:"armor",type:"armor",amount:10,operation:"add_value",slot:"any"}],hide_additional_tooltip={}] 1
+item replace entity @s armor.head with minecraft:tnt[attribute_modifiers=[{id:"armor",type:"armor",amount:10,operation:"add_value",slot:"any"}],tooltip_display={hidden_components:["attribute_modifiers"]}] 1
