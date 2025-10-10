@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e31c473-ebb4-441b-928e-c28b31f65312" name="Changes" comment="comment">
-      <change beforePath="$PROJECT_DIR$/CTF/data/ctf/function/game/end.mcfunction" beforeDir="false" afterPath="$PROJECT_DIR$/CTF/data/ctf/function/game/end.mcfunction" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF/data/ctf/function/game/win/end_timer.mcfunction" beforeDir="false" afterPath="$PROJECT_DIR$/CTF/data/ctf/function/game/win/end_timer.mcfunction" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF/data/ctf/function/game/win/firework/main.mcfunction" beforeDir="false" afterPath="$PROJECT_DIR$/CTF/data/ctf/function/game/win/firework/main.mcfunction" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CTF/data/ctf/function/game/win/win.mcfunction" beforeDir="false" afterPath="$PROJECT_DIR$/CTF/data/ctf/function/game/win/win.mcfunction" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,22 +16,22 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "ToastyDark"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ToastyDark&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/ToastyDark/Bacon-Collection.git",
-    "accountId": "0f13e50c-a566-4faa-a9fc-b0cdc4cbb804"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ToastyDark/Bacon-Collection.git&quot;,
+    &quot;accountId&quot;: &quot;0f13e50c-a566-4faa-a9fc-b0cdc4cbb804&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2y1MBTRVPG1cdtUMPxI74ltrgXz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -44,7 +42,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "F:/@Minecraft Projects/@Minigames/Bacon-Collection"
   }
 }]]></component>
   <component name="RunManager">
