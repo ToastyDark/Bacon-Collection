@@ -17,5 +17,3 @@ function ctf:lobby/spectate/tick
 
 # Lobby Tick
 function ctf:lobby/tick
-
-function ctf:hi
