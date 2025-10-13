@@ -29,3 +29,6 @@ execute unless data storage ctf:game {debug:true} unless entity @a[team=ctf_team
 # Capture Flag Sound
 execute if score $ctf_team1_capture_sound value matches 1.. run function ctf:game/flag/capture/sound with storage ctf:game team1
 execute if score $ctf_team2_capture_sound value matches 1.. run function ctf:game/flag/capture/sound with storage ctf:game team2
+
+# Dead Body Check
+execute as @e[type=mannequin,tag=ctf_dead_body] at @s run function ctf:player/respawn/body/tick

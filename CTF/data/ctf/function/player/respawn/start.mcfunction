@@ -1,6 +1,9 @@
 # Reset Has Died
 scoreboard players reset @s ctf_died
 
+# Spawn Body
+function ctf:player/respawn/body/spawn
+
 # Reset Player
 function ctf:player/respawn/reset
 
