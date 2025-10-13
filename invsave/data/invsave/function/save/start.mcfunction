@@ -1,3 +1,6 @@
+# ----------- Force Load -----------
+forceload add ~ ~
+
 # Reset Shulkerbox and Data
 function invsave:reset/shulkerbox
 $function invsave:reset/previous_invsave with storage invsave $(path)
@@ -17,3 +20,6 @@ $function invsave:save/store/armor with storage invsave $(path)
 # Store Offhand
 $function invsave:reset/slot with storage invsave $(path)
 $function invsave:save/store/offhand with storage invsave $(path)
+
+# ----------- Remove Force Load -----------
+forceload remove ~ ~

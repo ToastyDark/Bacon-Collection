@@ -1,3 +1,6 @@
+# ----------- Force Load -----------
+forceload add ~ ~
+
 # Prepare Inventory
 clear @s
 
@@ -24,4 +27,8 @@ $function invsave:restore/type/offhand with storage invsave $(path)
 
 # ----------- Remove Storage Once Items Restored -----------
 $function invsave:reset/previous_invsave with storage invsave $(path)
+
+
+# ----------- Remove Force Load -----------
+forceload remove ~ ~
 

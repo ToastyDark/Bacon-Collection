@@ -1,3 +1,6 @@
+# ----------- Force Load -----------
+forceload add ~ ~
+
 # Prepare Enderchest
 function ecsave:echest/clear
 
@@ -11,4 +14,7 @@ $function ecsave:restore/restore with storage invsave $(path)
 
 # ----------- Remove Storage Once Items Restored -----------
 $function invsave:reset/previous_ecsave with storage invsave $(path)
+
+# ----------- Unload Chunk -----------
+forceload remove ~ ~
 
