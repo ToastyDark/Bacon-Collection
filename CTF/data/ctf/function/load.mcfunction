@@ -101,3 +101,6 @@ scoreboard objectives add ctf_create_click dummy
 # Dead Body Team
 team add ctf_dead_bodies
 team modify ctf_dead_bodies collisionRule never
+
+# Bossbars
+function ctf:lobby/timer/bossbar/create
