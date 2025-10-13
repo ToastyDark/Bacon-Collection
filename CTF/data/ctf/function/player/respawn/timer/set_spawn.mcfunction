@@ -8,4 +8,4 @@ execute if entity @s[scores={ctf_died=1..}] run return fail
 execute if entity @s[scores={ctf_respawn_cd=0..}] run return fail
 
 # Set Spawn at player's position
-execute at @s run spawnpoint @s ~ ~ ~ ~
+execute at @s run spawnpoint @s ~ ~ ~ ~ ~
