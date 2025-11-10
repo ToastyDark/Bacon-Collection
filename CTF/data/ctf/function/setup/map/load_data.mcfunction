@@ -212,3 +212,10 @@ execute unless data storage ctf:game bomb_method run data modify storage ctf:gam
 $execute store result score %temp temp run data get storage ctf:map $(map).bombsite_count
 execute if score %temp temp matches 0 run data modify storage ctf:game bomb_method set value old
 execute if score %temp temp matches 1.. run data modify storage ctf:game bomb_method set value new
+
+
+
+# Should Bomb Give Point
+data remove storage ctf:game bomb_gives_point
+$data modify storage ctf:game bomb_gives_point set from storage ctf:map $(map).bomb_gives_point
+execute unless data storage ctf:game bomb_gives_point run data modify storage ctf:game bomb_gives_point set value true

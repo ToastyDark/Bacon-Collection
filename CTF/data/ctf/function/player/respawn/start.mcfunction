@@ -1,3 +1,6 @@
+# Stop if player is not in game
+execute if entity @s[tag=!ctf_player] run return fail
+
 # Reset Has Died
 scoreboard players reset @s ctf_died
 
