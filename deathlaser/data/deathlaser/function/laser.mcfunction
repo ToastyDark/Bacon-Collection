@@ -178,3 +178,4 @@ execute positioned ^ ^1 ^19.5 run function deathlaser:explodeion
 execute positioned ^ ^1 ^19.6 run function deathlaser:explodeion
 execute positioned ^ ^1 ^19.7 run function deathlaser:explodeion
 execute positioned ^ ^1 ^19.8 run function deathlaser:explodeion
+kill @s
