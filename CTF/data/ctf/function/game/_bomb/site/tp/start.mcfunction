@@ -1,3 +1,3 @@
-$execute if data entity @s data{team_num:$(team_num),bombsite_num:1} run function ctf:game/_bomb/site/tp/tp with storage ctf:game team$(team_num).bsite.1
-$execute if data entity @s data{team_num:$(team_num),bombsite_num:2} run function ctf:game/_bomb/site/tp/tp with storage ctf:game team$(team_num).bsite.2
-$execute if data entity @s data{team_num:$(team_num),bombsite_num:3} run function ctf:game/_bomb/site/tp/tp with storage ctf:game team$(team_num).bsite.3
+$execute if data entity @s data{team_num:$(team_num)} run function ctf:game/_bomb/site/tp/tp with entity @s data
+$execute if data entity @s data{team_num:$(team_num)} run function ctf:game/_bomb/site/tp/tp with entity @s data
+$execute if data entity @s data{team_num:$(team_num)} run function ctf:game/_bomb/site/tp/tp with entity @s data

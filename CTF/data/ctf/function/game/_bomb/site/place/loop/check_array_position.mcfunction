@@ -1,0 +1,2 @@
+# Check if there's another bombsite, then loop
+$execute if data storage ctf:map $(map).team$(team_num).bsite[$(bombsites_placed)] run function ctf:game/_bomb/site/place/loop/loop with storage ctf:game team$(team_num)
