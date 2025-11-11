@@ -12,7 +12,7 @@ data modify storage ctf:game bomb_planted set value false
 
 
 # Remove Bombsites
-execute as @e[type=armadillo,tag=ctf_bombsite] at @s run function ctf:game/_bomb/site/kill
+execute as @e[tag=ctf_bombsite] at @s run function ctf:game/_bomb/site/kill
 
 
 # Restore World Time

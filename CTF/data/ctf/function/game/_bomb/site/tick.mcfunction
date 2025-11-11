@@ -31,5 +31,5 @@ execute as @s run data modify entity @s scute_time set value 100
 
 
 # Stop from being moved
-execute if entity @s[tag=ctf_bombsite_team1] run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
-execute if entity @s[tag=ctf_bombsite_team2] run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
+execute if data entity @s data{team_num:1} run function ctf:game/_bomb/site/tp/start with storage ctf:game team1
+execute if data entity @s data{team_num:2} run function ctf:game/_bomb/site/tp/start with storage ctf:game team1

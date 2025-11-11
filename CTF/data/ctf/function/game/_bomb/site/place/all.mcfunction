@@ -3,9 +3,15 @@
 #$execute store result storage ctf:game team$(team_num).bombsites_placed int 1 run scoreboard players get bombsites_placed value
 
 # Place bomb sites depending on how many are set for said map
-$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:game team$(team_num).bsite.1
-$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:game team$(team_num).bsite.2
-$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:game team$(team_num).bsite.3
+$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:map $(map).team$(team_num).bsite[1]
+$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:map $(map).team$(team_num).bsite[2]
+$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:map $(map).team$(team_num).bsite[3]
+#$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:game team$(team_num).bsite[0]
+#$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:game team$(team_num).bsite.2
+#$execute in $(dimension) run function ctf:game/_bomb/site/place/place with storage ctf:game team$(team_num).bsite.3
+
+# Assign Stuff to Bombsite
+$execute as @e[tag=ctf_bombsite_new] run function ctf:game/_bomb/site/place/assign {team_num:$(team_num)}
 
 
 # Loop if haven't placed all bombsites

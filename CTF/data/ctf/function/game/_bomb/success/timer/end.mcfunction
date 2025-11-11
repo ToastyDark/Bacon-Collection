@@ -4,8 +4,8 @@ scoreboard players reset $bomb_explode_timer_d value
 scoreboard players reset $bomb_explode_timer_tick value
 
 # Go Boom
-execute if entity @s[tag=ctf_bombsite_team1] run function ctf:game/_bomb/success/success with storage ctf:game team1
-execute if entity @s[tag=ctf_bombsite_team2] run function ctf:game/_bomb/success/success with storage ctf:game team2
+execute if data entity @s data{team_num:1} run function ctf:game/_bomb/success/success with storage ctf:game team1
+execute if data entity @s data{team_num:2} run function ctf:game/_bomb/success/success with storage ctf:game team2
 
 # Kill Display
 kill @e[type=text_display,tag=ctf_bombsite_timer]

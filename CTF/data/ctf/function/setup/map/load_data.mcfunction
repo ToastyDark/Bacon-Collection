@@ -7,6 +7,10 @@ $data modify storage ctf:game dimension set from storage ctf:map $(map).dimensio
 $data modify storage ctf:game team1.dimension set from storage ctf:map $(map).dimension
 $data modify storage ctf:game team2.dimension set from storage ctf:map $(map).dimension
 
+# Set Map Name for Teams
+data modify storage ctf:game team1.map set from storage ctf:game map
+data modify storage ctf:game team2.map set from storage ctf:game map
+
 # Set Team Spawn Points
 $data modify storage ctf:game team1.spawn_x set from storage ctf:map $(map).team1.spawn.x
 $data modify storage ctf:game team1.spawn_y set from storage ctf:map $(map).team1.spawn.y
@@ -126,6 +130,20 @@ $data modify storage ctf:game team2.bsite.3.y set from storage ctf:map $(map).te
 $data modify storage ctf:game team2.bsite.3.z set from storage ctf:map $(map).team2.bsite_3_z
 $data modify storage ctf:game team2.bsite.3.rx set from storage ctf:map $(map).team2.bsite_3_rx
 $data modify storage ctf:game team2.bsite.3.ry set from storage ctf:map $(map).team2.bsite_3_ry
+
+
+# ----------------------- ARRAY'D BOMBSITES -----------------------
+# ---- Team 1 - 1st Bomb Site -----
+#data modify storage ctf:game team1.bsite.1.bombsite_num set value 1
+#data modify storage ctf:game team1.bsite.1.team_num set value 1
+$data modify storage ctf:game team1.bsite.1.x set from storage ctf:map $(map).team1.bsite_1_x
+$data modify storage ctf:game team1.bsite.1.y set from storage ctf:map $(map).team1.bsite_1_y
+$data modify storage ctf:game team1.bsite.1.z set from storage ctf:map $(map).team1.bsite_1_z
+$data modify storage ctf:game team1.bsite.1.rx set from storage ctf:map $(map).team1.bsite_1_rx
+$data modify storage ctf:game team1.bsite.1.ry set from storage ctf:map $(map).team1.bsite_1_ry
+
+
+#team1.bsites[0].map
 
 
 
