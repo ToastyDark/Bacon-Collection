@@ -1,5 +1,6 @@
 # Summon Ray
 summon area_effect_cloud ~ ~ ~ {Duration: 1, Tags: [ctf_flag_claw_ray] }
+execute as @n[type=area_effect_cloud] run say hi
 
 # Set Player ID of Ray
 scoreboard players operation @n[type=area_effect_cloud] id = @s id
