@@ -1,0 +1,1 @@
+$execute if entity @s[x=$(bomb_x),y=$(bomb_y),z=$(bomb_z),dx=0,dy=0,dz=0] if block ~ ~ ~ tnt 

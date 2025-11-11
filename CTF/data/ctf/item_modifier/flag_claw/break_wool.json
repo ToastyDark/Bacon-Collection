@@ -1,0 +1,13 @@
+{
+  "function": "minecraft:set_components",
+  "components": {
+    "minecraft:can_break": [
+      {
+        "blocks": [
+          "minecraft:red_wool",
+          "minecraft:orange_wool"
+        ]
+      }
+    ]
+  }
+}

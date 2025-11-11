@@ -98,3 +98,6 @@ function voicechat:ctf/player/tick
 
 # CTF Potion Give
 execute unless entity @s[scores={ctf_new=1..}] run function ctf:lobby/event_give_potion
+
+# Player Tick for Flag Claw
+function ctf:game/flag/claw/item_check
