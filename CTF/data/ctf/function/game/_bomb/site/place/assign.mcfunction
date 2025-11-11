@@ -13,7 +13,7 @@ execute unless data entity @s data.time_to_explode store result entity @s data.t
 
 # Set Gives Point, use default if no value set
 $data modify entity @s data.gives_point set from storage ctf:map $(map).team$(team_num).bsite[$(bombsite_num)].gives_point
-execute unless data entity @s data.gives_point store result entity @s data.gives_point int 1 run data modify entity @s data.gives_point set value true
+execute unless data entity @s data.gives_point run data modify entity @s data.gives_point set value true
 
 
 
