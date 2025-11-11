@@ -1,6 +1,5 @@
 # Move forward according to step size
 tp @s ^ ^ ^0.5
-say hi
 
 # For testing
 particle flame ~ ~ ~ 0 0 0 0 1 force
