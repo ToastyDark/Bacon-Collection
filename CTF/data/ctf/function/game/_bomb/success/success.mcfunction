@@ -1,21 +1,18 @@
 # Announce to teammates
-title @a[tag=ctf_has_bomb] actionbar {"text":"You have delivered the bomb!","bold": true, "color": "green"}
-$function ctf:game/flag/capture/sound with storage ctf:game team$(team_ops)
-$execute as @a[tag=ctf_player,team=ctf_team$(team_ops),tag=!ctf_has_bomb] run title @s actionbar {"text":"A teammate delivered the bomb","bold": true, "color": "green"}
-$execute at @s as @a[tag=ctf_player,team=ctf_team$(team_ops),distance=55..] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 0.2 1 0.1
-
+$execute if data entity @s data{gives_point:true} run function ctf:game/_bomb/success/msg/teammates with storage ctf:game team$(team_num)
 
 # Announce to ops
-$execute as @a[tag=ctf_player,team=ctf_team$(team_num)] run title @s actionbar {"text":"Your base was blown up","bold": true, "color": "red"}
-$execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num),distance=55..] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 0.2 1 0.1
-execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a
+$execute if data entity @s data{gives_point:true} run function ctf:game/_bomb/success/msg/ops with storage ctf:game team$(team_num)
 
-# Other Sound
+
+
+
+# Other sounds
+execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a
 execute as @a run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0.3 1.5 0.1
 
 
 # Add to Points
-#$execute if data storage ctf:game {bomb_gives_point:true} run scoreboard players add ctf_team$(team_ops) ctf_points 1
 $execute if data entity @s data{gives_point:true} run scoreboard players add ctf_team$(team_ops) ctf_points 1
 
 # Mark bomb as not stolen

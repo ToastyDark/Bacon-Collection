@@ -1,0 +1,2 @@
+$execute as @a[tag=ctf_player,team=ctf_team$(team_num)] run title @s actionbar {"text":"Your base was blown up","bold": true, "color": "red"}
+$execute at @s as @a[tag=ctf_player,team=ctf_team$(team_num),distance=55..] at @s run playsound minecraft:entity.generic.explode master @s ~ ~ ~ 0.2 1 0.1
