@@ -9,7 +9,7 @@ execute if entity @s[team=ctf_team1] run data modify storage ctf:temp flag_claw.
 execute if entity @s[team=ctf_team2] run data modify storage ctf:temp flag_claw.ops_team_num set value 1
 
 # If can already mine, add still tag
-execute if data entity @s SelectedItem.components.minecraft:custom_data{can_break:1b} run tag @n[tag=ctf_flag_claw_ray] add still
+execute if data entity @s SelectedItem.components.minecraft:custom_data{can_break:1b} run tag @n[tag=ctf_flag_claw_ray] add still_flag
 
 
 # Position the ray at the caster's eyes
