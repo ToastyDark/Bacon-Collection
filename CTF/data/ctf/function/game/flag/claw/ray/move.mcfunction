@@ -2,7 +2,7 @@
 tp @s ^ ^ ^0.5
 
 # For testing
-#particle flame ~ ~ ~ 0 0 0 0 1 force
+particle flame ~ ~ ~ 0 0 0 0 1 force
 
 # Check if hit correct block
 execute if block ~ ~ ~ #ctf_flag_claw run tag @s add hitClawBlock
