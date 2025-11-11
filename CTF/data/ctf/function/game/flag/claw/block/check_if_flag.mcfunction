@@ -3,3 +3,7 @@ $execute if entity @s[x=$(flag_x),y=$(flag_y),z=$(flag_z),dx=0,dy=0,dz=0] if blo
 
 # Now check if a bomb
 function ctf:game/flag/claw/block/check_if_bomb with storage ctf:game
+
+
+# If neither, cannot break
+function ctf:game/flag/claw/modify/reset

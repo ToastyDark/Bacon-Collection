@@ -1,6 +1,5 @@
 # Summon Ray
 summon area_effect_cloud ~ ~ ~ {Duration: 1, Tags: [ctf_flag_claw_ray] }
-#execute as @n[type=area_effect_cloud] run say hi
 
 # Set Player ID of Ray
 scoreboard players operation @n[type=area_effect_cloud] id = @s id
@@ -8,6 +7,9 @@ execute store result storage ctf:temp flag_claw.id int 1 run scoreboard players 
 # Store players current team
 execute if entity @s[team=ctf_team1] run data modify storage ctf:temp flag_claw.ops_team_num set value 2
 execute if entity @s[team=ctf_team2] run data modify storage ctf:temp flag_claw.ops_team_num set value 1
+
+# If can already mine, add still tag
+execute if data entity @s SelectedItem.components.minecraft:custom_data{can_break:1b} run tag @n[tag=ctf_flag_claw_ray] add still
 
 
 # Position the ray at the caster's eyes
