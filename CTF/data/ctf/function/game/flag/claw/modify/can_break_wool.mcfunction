@@ -1,0 +1,1 @@
+item modify entity @s weapon.mainhand ctf:flag_claw/break_wool
