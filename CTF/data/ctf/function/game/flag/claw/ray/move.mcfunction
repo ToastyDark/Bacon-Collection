@@ -14,4 +14,4 @@ execute unless block ~ ~ ~ #ray_permeable run tag @s add hitBlock
 scoreboard players remove @s steps 1
 
 # Recurse until hit a block or marker
-execute as @s[tag=!hitClawBlock,tag=hitBlock,scores={steps=1..}] at @s run function ctf:player/click/ray/move
+execute as @s[tag=!hitClawBlock,tag=!hitBlock,scores={steps=1..}] at @s run function ctf:player/click/ray/move
