@@ -5,7 +5,7 @@ scoreboard players set @s steps 8
 execute at @s run function ctf:game/flag/claw/ray/move
 
 # Check if the ray found a Claw Block
-$execute as @s[tag=hitClawBlock] at @s if block ~ ~ ~ #ctf_flag_claw run function ctf:game/flag/claw/block/check with storage ctf:game team$(ops_team_num)
+$execute as @s[tag=hitBlock] at @s if block ~ ~ ~ #ctf_flag_claw run function ctf:game/flag/claw/block/check with storage ctf:game team$(ops_team_num)
 
 # Remove Ray
 kill @s
