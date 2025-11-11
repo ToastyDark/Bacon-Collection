@@ -15,7 +15,8 @@ execute as @a run playsound minecraft:entity.warden.sonic_boom master @s ~ ~ ~ 0
 
 
 # Add to Points
-$execute if data storage ctf:game {bomb_gives_point:true} run scoreboard players add ctf_team$(team_ops) ctf_points 1
+#$execute if data storage ctf:game {bomb_gives_point:true} run scoreboard players add ctf_team$(team_ops) ctf_points 1
+$execute if data entity @s data{gives_point:true} run scoreboard players add ctf_team$(team_ops) ctf_points 1
 
 # Mark bomb as not stolen
 data modify storage ctf:game bomb.stolen set value false
