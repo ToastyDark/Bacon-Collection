@@ -8,3 +8,4 @@ $execute as @e[tag=chain_decoration_marker] at @s rotated as @s run summon minec
 $execute as @e[tag=chain_decoration_marker] at @s rotated as @s run summon minecraft:block_display ^ ^-6 ^ {block_state:{Name:iron_chain},Tags:["chain_decoration"], Rotation:[$(rotation)]}
 $execute as @e[tag=chain_decoration_marker] at @s rotated as @s run summon minecraft:block_display ^ ^-7 ^ {block_state:{Name:iron_chain},Tags:["chain_decoration"], Rotation:[$(rotation)]}
 $execute as @e[tag=chain_decoration_marker] at @s rotated as @s run summon minecraft:block_display ^ ^-8 ^ {block_state:{Name:iron_chain},Tags:["chain_decoration"], Rotation:[$(rotation)]}
+kill @e[tag=chain_decoration_marker]
