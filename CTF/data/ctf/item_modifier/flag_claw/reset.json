@@ -1,10 +1,19 @@
-{
-  "function": "minecraft:set_components",
-  "components": {
-    "minecraft:can_break": [
-      {
-        "blocks": []
-      }
-    ]
+[
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:can_break": [
+        {
+          "blocks": []
+        }
+      ]
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": {
+      "can_break": false
+    }
   }
-}
+]
+  
