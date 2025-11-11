@@ -12,7 +12,7 @@ execute unless block ~ ~ ~ #ray_permeable run tag @s add hitBlock
 
 # Decrease the number of steps remaining
 scoreboard players remove @s steps 1
-tellraw @a {score:{name:"@s",objective:"steps"}}
+#tellraw @a {score:{name:"@s",objective:"steps"}}
 
 # Recurse until hit a block or marker
 execute as @s[tag=!hitClawBlock,tag=!hitBlock,scores={steps=1..}] at @s run function ctf:player/click/ray/move
