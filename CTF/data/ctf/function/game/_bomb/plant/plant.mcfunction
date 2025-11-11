@@ -9,7 +9,7 @@ $data modify storage ctf:game bomb_planted set value team$(team_num)
 
 
 # Spawn TNT
-function ctf:game/_bomb/plant/misc/spawn_tnt with storage ctf:game
+function ctf:game/_bomb/plant/misc/tnt_time_calc with entity @s data
 ride @n[type=tnt] mount @s
 
 # Prepare new time
