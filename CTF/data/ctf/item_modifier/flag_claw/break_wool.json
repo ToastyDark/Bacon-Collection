@@ -8,6 +8,9 @@
           "minecraft:orange_wool"
         ]
       }
-    ]
+    ],
+    "minecraft:custom_data": {
+      "can_break": true
+    }
   }
 }
