@@ -51,3 +51,6 @@ function ctf:lobby/edit_kit/tick
 
 # Map Changer Tick
 function ctf:lobby/display/map/changer/tick
+
+# Check if host leaves
+function ctf:lobby/invite/host_leave/check with storage ctf:lobby
