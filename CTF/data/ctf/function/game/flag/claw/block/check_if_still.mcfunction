@@ -1,1 +1,1 @@
-$execute positioned $(flag_x) $(flag_y) $(flag_z) unless entity @s[distance=..1] as @a if score @s id = @n[tag=ctf_flag_claw_ray] id run return run function ctf:game/flag/claw/modify/reset
+$execute positioned $(flag_x).5 $(flag_y).5 $(flag_z).5 unless entity @s[distance=..1] as @a if score @s id = @n[tag=ctf_flag_claw_ray] id run return run function ctf:game/flag/claw/modify/reset
