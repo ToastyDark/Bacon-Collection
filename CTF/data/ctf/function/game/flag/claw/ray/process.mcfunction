@@ -11,7 +11,7 @@ $execute as @s[tag=hitBlock,tag=still_flag] at @s align xyz run function ctf:gam
 # If not hitting a Claw Block, reset
 execute as @s[tag=hitBlock] unless block ~ ~ ~ #ctf_flag_claw run function ctf:game/flag/claw/modify/reset
 # If hitting air, reset
-execute as @s[tag=hitBlock,tag=still_flag] if block ~ ~ ~ air run function ctf:game/flag/claw/modify/reset
+execute as @s[tag=!hitBlock] if block ~ ~ ~ air run function ctf:game/flag/claw/modify/reset
 
 
 execute at @s run particle flame ~ ~ ~ 0 0 0 0 1 force
