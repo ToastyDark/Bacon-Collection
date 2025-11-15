@@ -15,7 +15,7 @@ execute as @s[tag=!hitBlock] if block ~ ~ ~ air run function ctf:game/flag/claw/
 
 
 # Testing Particles
-execute at @s run particle flame ~ ~ ~ 0 0 0 0 1 force
+#execute at @s run particle flame ~ ~ ~ 0 0 0 0 1 force
 
 
 # Remove Ray
