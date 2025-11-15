@@ -9,7 +9,7 @@ $execute as @s[tag=hitBlock] at @s align xyz if block ~.5 ~.5 ~.5 #ctf_flag_claw
 # Check if still hitting a Claw Block
 $execute as @s[tag=hitBlock,tag=still_flag] at @s align xyz run function ctf:game/flag/claw/block/check_if_still with storage ctf:game team$(ops_team_num)
 # If not hitting a Claw Block, reset
-execute as @s[tag=hitBlock] at @s align xyz unless block ~.5 ~.5 ~.5 #ctf_flag_claw run function ctf:game/flag/claw/modify/reset
+execute as @s[tag=hitBlock] at @s align xyz unless block ~ ~ ~ #ctf_flag_claw run function ctf:game/flag/claw/modify/reset
 # If hitting air, reset
 execute as @s[tag=!hitBlock] if block ~ ~ ~ air run function ctf:game/flag/claw/modify/reset
 
