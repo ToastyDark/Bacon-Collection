@@ -1,1 +1,5 @@
-$execute positioned $(flag_x) $(flag_y) $(flag_z) unless entity @s[distance=..2] as @a if score @s id = @n[tag=ctf_flag_claw_ray] id run return run function ctf:game/flag/claw/modify/reset
+# Stop if still on the flag
+$execute positioned $(flag_x) $(flag_y) $(flag_z) if entity @s[distance=..2] run return fail
+
+# Stop if still on bomb
+function ctf:game/flag/claw/block/check_if_still_bomb with storage ctf:game
