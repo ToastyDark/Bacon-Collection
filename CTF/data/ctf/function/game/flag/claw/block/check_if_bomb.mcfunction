@@ -1,1 +1,1 @@
-$execute if entity @s[x=$(bomb_x),y=$(bomb_y),z=$(bomb_z),dx=0,dy=0,dz=0] if block ~ ~ ~ tnt 
+$execute if entity @s[x=$(bomb_x),y=$(bomb_y),z=$(bomb_z),dx=0,dy=0,dz=0] if block ~ ~ ~ tnt as @a if score @s id = @n[tag=ctf_flag_claw_ray] id run return run function ctf:game/flag/claw/modify/can_break_wool
