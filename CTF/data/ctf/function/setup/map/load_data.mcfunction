@@ -168,6 +168,10 @@ data remove storage ctf:game points_to_win
 $data modify storage ctf:game points_to_win set from storage ctf:map $(map).points_to_win
 execute unless data storage ctf:game points_to_win run data modify storage ctf:game points_to_win set value 5
 execute store result score $ctf_points_to_win value run data get storage ctf:game points_to_win
+# Points to Win Per Team
+data modify storage ctf:game team1.points_to_win set from storage ctf:game points_to_win
+data modify storage ctf:game team2.points_to_win set from storage ctf:game points_to_win
+
 
 
 # Flag Respawn Delay

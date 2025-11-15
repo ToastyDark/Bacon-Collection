@@ -24,4 +24,5 @@ execute at @s run playsound minecraft:entity.experience_orb.pickup player @s ~ ~
 
 
 # Replace Flag
-$function ctf:game/flag/place/timer/start with storage ctf:game team$(team_num)
+# Check if should replace flag after capture
+$function ctf:game/flag/capture/replace with storage ctf:game team$(team_num)
