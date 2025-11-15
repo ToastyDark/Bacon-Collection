@@ -16,4 +16,4 @@ execute if data entity @s SelectedItem.components.minecraft:custom_data{can_brea
 execute anchored eyes rotated as @s run tp @n[tag=ctf_flag_claw_ray] ^ ^ ^ ~ ~
 
 # Procress the ray
-execute as @n[tag=ctf_flag_claw_ray] run function ctf:game/flag/claw/ray/process with storage ctf:temp flag_claw
+execute as @n[tag=ctf_flag_claw_ray] at @s run function ctf:game/flag/claw/ray/process with storage ctf:temp flag_claw
