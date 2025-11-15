@@ -11,5 +11,7 @@ $execute as @s[tag=hitBlock,tag=still_flag] at @s run function ctf:game/flag/cla
 # If not hitting a Claw Block, reset
 execute as @s[tag=hitBlock] at @s unless block ~ ~ ~ #ctf_flag_claw run function ctf:game/flag/claw/modify/reset
 
+particle flame ~0.5 ~1.5 ~0.5 0 0 0 0 1 force
+
 # Remove Ray
 kill @s
