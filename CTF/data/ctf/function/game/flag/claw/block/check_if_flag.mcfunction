@@ -6,5 +6,5 @@ function ctf:game/flag/claw/block/check_if_bomb with storage ctf:game
 
 
 # If neither, cannot break
-say hi
+playsound entity.experience_orb.pickup master ToastyDark ~ ~ ~
 function ctf:game/flag/claw/modify/reset
